@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(npm ping *)",
+      "Bash(node -e \"console.log\\('next', require\\('./node_modules/next/package.json'\\).version\\)\")"
+    ]
+  }
+}
