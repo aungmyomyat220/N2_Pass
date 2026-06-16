@@ -3,9 +3,8 @@
     "kanji": "党",
     "strokes": 10,
     "meanings": [
-      "Party",
-      "Faction",
-      "Clique"
+      "ပါတီ",
+      "အုပ်စု"
     ],
     "on": [
       "とう"
@@ -14,28 +13,36 @@
       "なかま",
       "むら"
     ],
-    "freq": 39
+    "freq": 39,
+    "example": {
+      "word": "政党",
+      "reading": "せいとう",
+      "meaning": "နိုင်ငံရေးပါတီ"
+    }
   },
   {
     "kanji": "協",
     "strokes": 8,
     "meanings": [
-      "Co-",
-      "Cooperation"
+      "ပူးပေါင်းဆောင်ရွက်ခြင်း"
     ],
     "on": [
       "きょう"
     ],
     "kun": [],
-    "freq": 121
+    "freq": 121,
+    "example": {
+      "word": "協力",
+      "reading": "きょうりょく",
+      "meaning": "ပူးပေါင်းဆောင်ရွက်မှု"
+    }
   },
   {
     "kanji": "総",
     "strokes": 14,
     "meanings": [
-      "General",
-      "Whole",
-      "All"
+      "စုစုပေါင်း",
+      "အလုံးစုံ"
     ],
     "on": [
       "そう"
@@ -45,14 +52,19 @@
       "すべ.て",
       "ふさ"
     ],
-    "freq": 129
+    "freq": 129,
+    "example": {
+      "word": "総合",
+      "reading": "そうごう",
+      "meaning": "ပေါင်းစပ်ခြင်း"
+    }
   },
   {
     "kanji": "区",
     "strokes": 4,
     "meanings": [
-      "Ward",
-      "District"
+      "ခရိုင်",
+      "ရပ်ကွက်"
     ],
     "on": [
       "く",
@@ -60,15 +72,19 @@
       "こう"
     ],
     "kun": [],
-    "freq": 137
+    "freq": 137,
+    "example": {
+      "word": "地区",
+      "reading": "ちく",
+      "meaning": "ဒေသ/ခရိုင်"
+    }
   },
   {
     "kanji": "領",
     "strokes": 14,
     "meanings": [
-      "Jurisdiction",
-      "Dominion",
-      "Territory"
+      "နယ်မြေ",
+      "ပိုင်နက်"
     ],
     "on": [
       "りょう"
@@ -76,13 +92,18 @@
     "kun": [
       "えり"
     ],
-    "freq": 138
+    "freq": 138,
+    "example": {
+      "word": "領土",
+      "reading": "りょうど",
+      "meaning": "ပိုင်နက်နယ်မြေ"
+    }
   },
   {
     "kanji": "県",
     "strokes": 9,
     "meanings": [
-      "Prefecture"
+      "ခရိုင်(ခရိုင်ကြီး)"
     ],
     "on": [
       "けん"
@@ -90,15 +111,19 @@
     "kun": [
       "か.ける"
     ],
-    "freq": 140
+    "freq": 140,
+    "example": {
+      "word": "県庁",
+      "reading": "けんちょう",
+      "meaning": "ခရိုင်အစိုးရရုံး"
+    }
   },
   {
     "kanji": "設",
     "strokes": 11,
     "meanings": [
-      "Establishment",
-      "Provision",
-      "Prepare"
+      "တည်ထောင်ခြင်း",
+      "စီစဉ်ခြင်း"
     ],
     "on": [
       "せつ"
@@ -106,15 +131,18 @@
     "kun": [
       "もう.ける"
     ],
-    "freq": 145
+    "freq": 145,
+    "example": {
+      "word": "設立",
+      "reading": "せつりつ",
+      "meaning": "တည်ထောင်ခြင်း"
+    }
   },
   {
     "kanji": "改",
     "strokes": 7,
     "meanings": [
-      "Reformation",
-      "Change",
-      "Modify"
+      "ပြုပြင်ပြောင်းလဲခြင်း"
     ],
     "on": [
       "かい"
@@ -123,41 +151,54 @@
       "あらた.める",
       "あらた.まる"
     ],
-    "freq": 147
+    "freq": 147,
+    "example": {
+      "word": "改正",
+      "reading": "かいせい",
+      "meaning": "ပြင်ဆင်ခြင်း"
+    }
   },
   {
     "kanji": "府",
     "strokes": 8,
     "meanings": [
-      "Borough",
-      "Urban Prefecture",
-      "Govt Office"
+      "မြို့တော်ခရိုင်",
+      "အစိုးရရုံး"
     ],
     "on": [
       "ふ"
     ],
     "kun": [],
-    "freq": 170
+    "freq": 170,
+    "example": {
+      "word": "政府",
+      "reading": "せいふ",
+      "meaning": "အစိုးရ"
+    }
   },
   {
     "kanji": "査",
     "strokes": 9,
     "meanings": [
-      "Investigate"
+      "စုံစမ်းစစ်ဆေးခြင်း"
     ],
     "on": [
       "さ"
     ],
     "kun": [],
-    "freq": 184
+    "freq": 184,
+    "example": {
+      "word": "調査",
+      "reading": "ちょうさ",
+      "meaning": "စစ်တမ်း/စုံစမ်းစစ်ဆေးခြင်း"
+    }
   },
   {
     "kanji": "委",
     "strokes": 8,
     "meanings": [
-      "Committee",
-      "Entrust To",
-      "Leave To"
+      "ကော်မတီ",
+      "အပ်နှံခြင်း"
     ],
     "on": [
       "い"
@@ -165,15 +206,18 @@
     "kun": [
       "ゆだ.ねる"
     ],
-    "freq": 187
+    "freq": 187,
+    "example": {
+      "word": "委員",
+      "reading": "いいん",
+      "meaning": "ကော်မတီဝင်"
+    }
   },
   {
     "kanji": "軍",
     "strokes": 9,
     "meanings": [
-      "Army",
-      "Force",
-      "Troops"
+      "စစ်တပ်"
     ],
     "on": [
       "ぐん"
@@ -181,14 +225,19 @@
     "kun": [
       "いくさ"
     ],
-    "freq": 189
+    "freq": 189,
+    "example": {
+      "word": "軍隊",
+      "reading": "ぐんたい",
+      "meaning": "စစ်တပ်"
+    }
   },
   {
     "kanji": "団",
     "strokes": 6,
     "meanings": [
-      "Group",
-      "Association"
+      "အဖွဲ့",
+      "အသင်း"
     ],
     "on": [
       "だん",
@@ -198,15 +247,19 @@
       "かたまり",
       "まる.い"
     ],
-    "freq": 213
+    "freq": 213,
+    "example": {
+      "word": "団体",
+      "reading": "だんたい",
+      "meaning": "အဖွဲ့အစည်း"
+    }
   },
   {
     "kanji": "各",
     "strokes": 6,
     "meanings": [
-      "Each",
-      "Every",
-      "Either"
+      "တစ်ခုစီ",
+      "အသီးသီး"
     ],
     "on": [
       "かく"
@@ -214,13 +267,18 @@
     "kun": [
       "おのおの"
     ],
-    "freq": 243
+    "freq": 243,
+    "example": {
+      "word": "各国",
+      "reading": "かっこく",
+      "meaning": "နိုင်ငံအသီးသီး"
+    }
   },
   {
     "kanji": "島",
     "strokes": 10,
     "meanings": [
-      "Island"
+      "ကျွန်း"
     ],
     "on": [
       "とう"
@@ -228,15 +286,19 @@
     "kun": [
       "しま"
     ],
-    "freq": 245
+    "freq": 245,
+    "example": {
+      "word": "半島",
+      "reading": "はんとう",
+      "meaning": "ကျွန်းဆွယ်"
+    }
   },
   {
     "kanji": "革",
     "strokes": 9,
     "meanings": [
-      "Leather",
-      "Skin",
-      "Reform"
+      "သားရေ",
+      "ပြုပြင်ပြောင်းလဲရေး"
     ],
     "on": [
       "かく"
@@ -244,14 +306,18 @@
     "kun": [
       "かわ"
     ],
-    "freq": 249
+    "freq": 249,
+    "example": {
+      "word": "革命",
+      "reading": "かくめい",
+      "meaning": "တော်လှန်ရေး"
+    }
   },
   {
     "kanji": "村",
     "strokes": 7,
     "meanings": [
-      "Village",
-      "Town"
+      "ရွာ"
     ],
     "on": [
       "そん"
@@ -259,15 +325,19 @@
     "kun": [
       "むら"
     ],
-    "freq": 253
+    "freq": 253,
+    "example": {
+      "word": "農村",
+      "reading": "のうそん",
+      "meaning": "တောရွာ"
+    }
   },
   {
     "kanji": "勢",
     "strokes": 13,
     "meanings": [
-      "Forces",
-      "Energy",
-      "Military Strength"
+      "အင်အား",
+      "ဟုန်"
     ],
     "on": [
       "せい",
@@ -277,15 +347,19 @@
       "いきお.い",
       "はずみ"
     ],
-    "freq": 260
+    "freq": 260,
+    "example": {
+      "word": "勢力",
+      "reading": "せいりょく",
+      "meaning": "ဩဇာအာဏာ"
+    }
   },
   {
     "kanji": "減",
     "strokes": 12,
     "meanings": [
-      "Dwindle",
-      "Decrease",
-      "Reduce"
+      "လျှော့ချ",
+      "လျော့ကျ"
     ],
     "on": [
       "げん"
@@ -294,15 +368,19 @@
       "へ.る",
       "へ.らす"
     ],
-    "freq": 261
+    "freq": 261,
+    "example": {
+      "word": "減少",
+      "reading": "げんしょう",
+      "meaning": "လျော့ကျခြင်း"
+    }
   },
   {
     "kanji": "再",
     "strokes": 6,
     "meanings": [
-      "Again",
-      "Twice",
-      "Second Time"
+      "ထပ်မံ",
+      "ဒုတိယအကြိမ်"
     ],
     "on": [
       "さい",
@@ -311,28 +389,36 @@
     "kun": [
       "ふたた.び"
     ],
-    "freq": 275
+    "freq": 275,
+    "example": {
+      "word": "再会",
+      "reading": "さいかい",
+      "meaning": "ပြန်လည်ဆုံတွေ့ခြင်း"
+    }
   },
   {
     "kanji": "税",
     "strokes": 12,
     "meanings": [
-      "Tax",
-      "Duty"
+      "အခွန်"
     ],
     "on": [
       "ぜい"
     ],
     "kun": [],
-    "freq": 289
+    "freq": 289,
+    "example": {
+      "word": "税金",
+      "reading": "ぜいきん",
+      "meaning": "အခွန်"
+    }
   },
   {
     "kanji": "営",
     "strokes": 12,
     "meanings": [
-      "Occupation",
-      "Camp",
-      "Perform"
+      "စီမံခန့်ခွဲ",
+      "စခန်း"
     ],
     "on": [
       "えい"
@@ -341,15 +427,19 @@
       "いとな.む",
       "いとな.み"
     ],
-    "freq": 303
+    "freq": 303,
+    "example": {
+      "word": "経営",
+      "reading": "けいえい",
+      "meaning": "စီမံခန့်ခွဲမှု"
+    }
   },
   {
     "kanji": "比",
     "strokes": 4,
     "meanings": [
-      "Compare",
-      "Race",
-      "Ratio"
+      "နှိုင်းယှဉ်",
+      "အချိုး"
     ],
     "on": [
       "ひ"
@@ -357,15 +447,19 @@
     "kun": [
       "くら.べる"
     ],
-    "freq": 329
+    "freq": 329,
+    "example": {
+      "word": "比較",
+      "reading": "ひかく",
+      "meaning": "နှိုင်းယှဉ်ခြင်း"
+    }
   },
   {
     "kanji": "防",
     "strokes": 7,
     "meanings": [
-      "Ward Off",
-      "Defend",
-      "Protect"
+      "ကာကွယ်",
+      "တားဆီး"
     ],
     "on": [
       "ぼう"
@@ -373,15 +467,18 @@
     "kun": [
       "ふせ.ぐ"
     ],
-    "freq": 331
+    "freq": 331,
+    "example": {
+      "word": "予防",
+      "reading": "よぼう",
+      "meaning": "ကြိုတင်ကာကွယ်ခြင်း"
+    }
   },
   {
     "kanji": "補",
     "strokes": 12,
     "meanings": [
-      "Supplement",
-      "Supply",
-      "Make Good"
+      "ဖြည့်စွက်"
     ],
     "on": [
       "ほ"
@@ -389,15 +486,19 @@
     "kun": [
       "おぎな.う"
     ],
-    "freq": 332
+    "freq": 332,
+    "example": {
+      "word": "補助",
+      "reading": "ほじょ",
+      "meaning": "ထောက်ပံ့ကူညီခြင်း"
+    }
   },
   {
     "kanji": "境",
     "strokes": 14,
     "meanings": [
-      "Boundary",
-      "Border",
-      "Region"
+      "နယ်နိမိတ်",
+      "အနေအထား"
     ],
     "on": [
       "きょう",
@@ -406,15 +507,18 @@
     "kun": [
       "さかい"
     ],
-    "freq": 346
+    "freq": 346,
+    "example": {
+      "word": "環境",
+      "reading": "かんきょう",
+      "meaning": "ပတ်ဝန်းကျင်"
+    }
   },
   {
     "kanji": "導",
     "strokes": 15,
     "meanings": [
-      "Guidance",
-      "Leading",
-      "Conduct"
+      "လမ်းညွှန်"
     ],
     "on": [
       "どう"
@@ -422,29 +526,36 @@
     "kun": [
       "みちび.く"
     ],
-    "freq": 354
+    "freq": 354,
+    "example": {
+      "word": "指導",
+      "reading": "しどう",
+      "meaning": "လမ်းညွှန်ပြသခြင်း"
+    }
   },
   {
     "kanji": "副",
     "strokes": 11,
     "meanings": [
-      "Vice-",
-      "Assistant",
-      "Aide"
+      "ဒု-",
+      "လက်ထောက်"
     ],
     "on": [
       "ふく"
     ],
     "kun": [],
-    "freq": 360
+    "freq": 360,
+    "example": {
+      "word": "副業",
+      "reading": "ふくぎょう",
+      "meaning": "အပိုအလုပ်"
+    }
   },
   {
     "kanji": "算",
     "strokes": 14,
     "meanings": [
-      "Calculate",
-      "Divining",
-      "Number"
+      "တွက်ချက်ခြင်း"
     ],
     "on": [
       "さん"
@@ -452,30 +563,37 @@
     "kun": [
       "そろ"
     ],
-    "freq": 361
+    "freq": 361,
+    "example": {
+      "word": "計算",
+      "reading": "けいさん",
+      "meaning": "တွက်ချက်ခြင်း"
+    }
   },
   {
     "kanji": "輸",
     "strokes": 16,
     "meanings": [
-      "Transport",
-      "Send",
-      "Be Inferior"
+      "သယ်ယူပို့ဆောင်"
     ],
     "on": [
       "ゆ",
       "しゅ"
     ],
     "kun": [],
-    "freq": 371
+    "freq": 371,
+    "example": {
+      "word": "輸出",
+      "reading": "ゆしゅつ",
+      "meaning": "ပို့ကုန်"
+    }
   },
   {
     "kanji": "述",
     "strokes": 8,
     "meanings": [
-      "Mention",
-      "State",
-      "Speak"
+      "ဖော်ပြ",
+      "ပြောဆို"
     ],
     "on": [
       "じゅつ"
@@ -483,14 +601,19 @@
     "kun": [
       "の.べる"
     ],
-    "freq": 379
+    "freq": 379,
+    "example": {
+      "word": "記述",
+      "reading": "きじゅつ",
+      "meaning": "ဖော်ပြချက်"
+    }
   },
   {
     "kanji": "線",
     "strokes": 15,
     "meanings": [
-      "Line",
-      "Track"
+      "မျဉ်း",
+      "လမ်းကြောင်း"
     ],
     "on": [
       "せん"
@@ -498,27 +621,35 @@
     "kun": [
       "すじ"
     ],
-    "freq": 382
+    "freq": 382,
+    "example": {
+      "word": "路線",
+      "reading": "ろせん",
+      "meaning": "လမ်းကြောင်း"
+    }
   },
   {
     "kanji": "農",
     "strokes": 13,
     "meanings": [
-      "Agriculture",
-      "Farmers"
+      "လယ်ယာစိုက်ပျိုးရေး"
     ],
     "on": [
       "のう"
     ],
     "kun": [],
-    "freq": 385
+    "freq": 385,
+    "example": {
+      "word": "農業",
+      "reading": "のうぎょう",
+      "meaning": "စိုက်ပျိုးရေးလုပ်ငန်း"
+    }
   },
   {
     "kanji": "州",
     "strokes": 6,
     "meanings": [
-      "State",
-      "Province"
+      "ပြည်နယ်"
     ],
     "on": [
       "しゅう",
@@ -527,15 +658,19 @@
     "kun": [
       "す"
     ],
-    "freq": 386
+    "freq": 386,
+    "example": {
+      "word": "州都",
+      "reading": "しゅうと",
+      "meaning": "ပြည်နယ်မြို့တော်"
+    }
   },
   {
     "kanji": "武",
     "strokes": 8,
     "meanings": [
-      "Warrior",
-      "Military",
-      "Chivalry"
+      "စစ်ရေး",
+      "စစ်သည်"
     ],
     "on": [
       "ぶ",
@@ -545,15 +680,19 @@
       "たけ",
       "たけ.し"
     ],
-    "freq": 387
+    "freq": 387,
+    "example": {
+      "word": "武器",
+      "reading": "ぶき",
+      "meaning": "လက်နက်"
+    }
   },
   {
     "kanji": "象",
     "strokes": 12,
     "meanings": [
-      "Elephant",
-      "Pattern After",
-      "Imitate"
+      "ဆင်",
+      "သရုပ်"
     ],
     "on": [
       "しょう",
@@ -562,29 +701,37 @@
     "kun": [
       "かたど.る"
     ],
-    "freq": 394
+    "freq": 394,
+    "example": {
+      "word": "現象",
+      "reading": "げんしょう",
+      "meaning": "ဖြစ်စဉ်"
+    }
   },
   {
     "kanji": "域",
     "strokes": 11,
     "meanings": [
-      "Range",
-      "Region",
-      "Limits"
+      "ဧရိယာ",
+      "နယ်ပယ်"
     ],
     "on": [
       "いき"
     ],
     "kun": [],
-    "freq": 396
+    "freq": 396,
+    "example": {
+      "word": "地域",
+      "reading": "ちいき",
+      "meaning": "ဒေသ"
+    }
   },
   {
     "kanji": "額",
     "strokes": 18,
     "meanings": [
-      "Forehead",
-      "Tablet",
-      "Plaque"
+      "နဖူး",
+      "ပမာဏ"
     ],
     "on": [
       "がく"
@@ -592,13 +739,18 @@
     "kun": [
       "ひたい"
     ],
-    "freq": 407
+    "freq": 407,
+    "example": {
+      "word": "金額",
+      "reading": "きんがく",
+      "meaning": "ငွေပမာဏ"
+    }
   },
   {
     "kanji": "欧",
     "strokes": 8,
     "meanings": [
-      "Europe"
+      "ဥရောပ"
     ],
     "on": [
       "おう"
@@ -607,15 +759,18 @@
       "うた.う",
       "は.く"
     ],
-    "freq": 421
+    "freq": 421,
+    "example": {
+      "word": "欧米",
+      "reading": "おうべい",
+      "meaning": "ဥရောပနှင့်အမေရိက"
+    }
   },
   {
     "kanji": "担",
     "strokes": 8,
     "meanings": [
-      "Shouldering",
-      "Carry",
-      "Raise"
+      "ထမ်းဆောင်ခြင်း"
     ],
     "on": [
       "たん"
@@ -624,15 +779,19 @@
       "かつ.ぐ",
       "にな.う"
     ],
-    "freq": 422
+    "freq": 422,
+    "example": {
+      "word": "担当",
+      "reading": "たんとう",
+      "meaning": "တာဝန်ယူခြင်း"
+    }
   },
   {
     "kanji": "準",
     "strokes": 13,
     "meanings": [
-      "Semi-",
-      "Correspond To",
-      "Proportionate To"
+      "အဆင့်",
+      "စံ"
     ],
     "on": [
       "じゅん"
@@ -645,15 +804,19 @@
       "ひと.しい",
       "みずもり"
     ],
-    "freq": 425
+    "freq": 425,
+    "example": {
+      "word": "準備",
+      "reading": "じゅんび",
+      "meaning": "ပြင်ဆင်ခြင်း"
+    }
   },
   {
     "kanji": "賞",
     "strokes": 15,
     "meanings": [
-      "Prize",
-      "Reward",
-      "Praise"
+      "ဆု",
+      "ချီးမြှင့်"
     ],
     "on": [
       "しょう"
@@ -661,15 +824,19 @@
     "kun": [
       "ほ.める"
     ],
-    "freq": 426
+    "freq": 426,
+    "example": {
+      "word": "賞品",
+      "reading": "しょうひん",
+      "meaning": "ဆုပစ္စည်း"
+    }
   },
   {
     "kanji": "辺",
     "strokes": 5,
     "meanings": [
-      "Environs",
-      "Boundary",
-      "Border"
+      "ပတ်ဝန်းကျင်",
+      "အနီး"
     ],
     "on": [
       "へん"
@@ -679,15 +846,19 @@
       "ほと.り",
       "-べ"
     ],
-    "freq": 428
+    "freq": 428,
+    "example": {
+      "word": "周辺",
+      "reading": "しゅうへん",
+      "meaning": "ပတ်ဝန်းကျင်"
+    }
   },
   {
     "kanji": "造",
     "strokes": 10,
     "meanings": [
-      "Create",
-      "Make",
-      "Structure"
+      "တည်ဆောက်",
+      "ပြုလုပ်"
     ],
     "on": [
       "ぞう"
@@ -697,15 +868,19 @@
       "つく.り",
       "-づく.り"
     ],
-    "freq": 429
+    "freq": 429,
+    "example": {
+      "word": "製造",
+      "reading": "せいぞう",
+      "meaning": "ထုတ်လုပ်ခြင်း"
+    }
   },
   {
     "kanji": "被",
     "strokes": 10,
     "meanings": [
-      "Incur",
-      "Cover",
-      "Veil"
+      "ခံရ",
+      "ဖုံးအုပ်"
     ],
     "on": [
       "ひ"
@@ -716,15 +891,19 @@
       "かぶ.る",
       "かぶ.せる"
     ],
-    "freq": 431
+    "freq": 431,
+    "example": {
+      "word": "被害",
+      "reading": "ひがい",
+      "meaning": "ထိခိုက်ဆုံးရှုံးမှု"
+    }
   },
   {
     "kanji": "技",
     "strokes": 7,
     "meanings": [
-      "Skill",
-      "Art",
-      "Craft"
+      "ကျွမ်းကျင်မှု",
+      "အတတ်ပညာ"
     ],
     "on": [
       "ぎ"
@@ -732,15 +911,19 @@
     "kun": [
       "わざ"
     ],
-    "freq": 434
+    "freq": 434,
+    "example": {
+      "word": "技術",
+      "reading": "ぎじゅつ",
+      "meaning": "နည်းပညာ"
+    }
   },
   {
     "kanji": "低",
     "strokes": 7,
     "meanings": [
-      "Lower",
-      "Short",
-      "Humble"
+      "နိမ့်",
+      "ပုၻ"
     ],
     "on": [
       "てい"
@@ -750,15 +933,19 @@
       "ひく.める",
       "ひく.まる"
     ],
-    "freq": 435
+    "freq": 435,
+    "example": {
+      "word": "低い",
+      "reading": "ひくい",
+      "meaning": "နိမ့်သော"
+    }
   },
   {
     "kanji": "復",
     "strokes": 12,
     "meanings": [
-      "Restore",
-      "Return To",
-      "Revert"
+      "ပြန်လည်",
+      "ပြန်ထူ"
     ],
     "on": [
       "ふく"
@@ -766,15 +953,18 @@
     "kun": [
       "また"
     ],
-    "freq": 438
+    "freq": 438,
+    "example": {
+      "word": "復習",
+      "reading": "ふくしゅう",
+      "meaning": "ပြန်လည်လေ့လာခြင်း"
+    }
   },
   {
     "kanji": "移",
     "strokes": 11,
     "meanings": [
-      "Shift",
-      "Move",
-      "Change"
+      "ရွှေ့ပြောင်း"
     ],
     "on": [
       "い"
@@ -783,28 +973,37 @@
       "うつ.る",
       "うつ.す"
     ],
-    "freq": 448
+    "freq": 448,
+    "example": {
+      "word": "移動",
+      "reading": "いどう",
+      "meaning": "ရွှေ့ပြောင်းခြင်း"
+    }
   },
   {
     "kanji": "個",
     "strokes": 10,
     "meanings": [
-      "Individual",
-      "Counter For Articles"
+      "တစ်ခု(အရေအတွက်)",
+      "တစ်ဦးချင်း"
     ],
     "on": [
       "こ",
       "か"
     ],
     "kun": [],
-    "freq": 451
+    "freq": 451,
+    "example": {
+      "word": "個人",
+      "reading": "こじん",
+      "meaning": "တစ်ဦးချင်းပုဂ္ဂိုလ်"
+    }
   },
   {
     "kanji": "門",
     "strokes": 8,
     "meanings": [
-      "Gate",
-      "Counter For Cannons"
+      "တံခါးပေါက်"
     ],
     "on": [
       "もん"
@@ -813,28 +1012,36 @@
       "かど",
       "と"
     ],
-    "freq": 452
+    "freq": 452,
+    "example": {
+      "word": "専門",
+      "reading": "せんもん",
+      "meaning": "အထူးပြုဘာသာရပ်"
+    }
   },
   {
     "kanji": "課",
     "strokes": 15,
     "meanings": [
-      "Chapter",
-      "Lesson",
-      "Section"
+      "အပိုင်း",
+      "သင်ခန်းစာ"
     ],
     "on": [
       "か"
     ],
     "kun": [],
-    "freq": 455
+    "freq": 455,
+    "example": {
+      "word": "課題",
+      "reading": "かだい",
+      "meaning": "လုပ်ငန်းတာဝန်"
+    }
   },
   {
     "kanji": "脳",
     "strokes": 11,
     "meanings": [
-      "Brain",
-      "Memory"
+      "ဦးနှောက်"
     ],
     "on": [
       "のう",
@@ -843,15 +1050,19 @@
     "kun": [
       "のうずる"
     ],
-    "freq": 459
+    "freq": 459,
+    "example": {
+      "word": "頭脳",
+      "reading": "ずのう",
+      "meaning": "ဦးနှောက်/ဉာဏ်ရည်"
+    }
   },
   {
     "kanji": "極",
     "strokes": 12,
     "meanings": [
-      "Poles",
-      "Settlement",
-      "Conclusion"
+      "အစွန်း",
+      "အလွန်ဆုံး"
     ],
     "on": [
       "きょく",
@@ -866,15 +1077,18 @@
       "-ぎ.め",
       "き.まる"
     ],
-    "freq": 460
+    "freq": 460,
+    "example": {
+      "word": "極端",
+      "reading": "きょくたん",
+      "meaning": "အစွန်းရောက်"
+    }
   },
   {
     "kanji": "含",
     "strokes": 7,
     "meanings": [
-      "Contain",
-      "Include",
-      "Hold In The Mouth"
+      "ပါဝင်ခြင်း"
     ],
     "on": [
       "がん"
@@ -883,15 +1097,19 @@
       "ふく.む",
       "ふく.める"
     ],
-    "freq": 466
+    "freq": 466,
+    "example": {
+      "word": "含む",
+      "reading": "ふくむ",
+      "meaning": "ပါဝင်သည်"
+    }
   },
   {
     "kanji": "蔵",
     "strokes": 15,
     "meanings": [
-      "Storehouse",
-      "Hide",
-      "Own"
+      "သိုလှောင်ရုံ",
+      "ဝှက်"
     ],
     "on": [
       "ぞう",
@@ -902,15 +1120,19 @@
       "おさ.める",
       "かく.れる"
     ],
-    "freq": 468
+    "freq": 468,
+    "example": {
+      "word": "冷蔵庫",
+      "reading": "れいぞうこ",
+      "meaning": "ရေခဲသေတ္တာ"
+    }
   },
   {
     "kanji": "量",
     "strokes": 12,
     "meanings": [
-      "Quantity",
-      "Measure",
-      "Weight"
+      "ပမာဏ",
+      "အတိုင်းအတာ"
     ],
     "on": [
       "りょう"
@@ -918,15 +1140,19 @@
     "kun": [
       "はか.る"
     ],
-    "freq": 469
+    "freq": 469,
+    "example": {
+      "word": "数量",
+      "reading": "すうりょう",
+      "meaning": "အရေအတွက်ပမာဏ"
+    }
   },
   {
     "kanji": "型",
     "strokes": 9,
     "meanings": [
-      "Mould",
-      "Type",
-      "Model"
+      "ပုံစံ",
+      "အမျိုးအစား"
     ],
     "on": [
       "けい"
@@ -935,14 +1161,18 @@
       "かた",
       "-がた"
     ],
-    "freq": 482
+    "freq": 482,
+    "example": {
+      "word": "型",
+      "reading": "かた",
+      "meaning": "ပုံစံ/အမျိုးအစား"
+    }
   },
   {
     "kanji": "況",
     "strokes": 8,
     "meanings": [
-      "Condition",
-      "Situation"
+      "အခြေအနေ"
     ],
     "on": [
       "きょう"
@@ -952,15 +1182,18 @@
       "いわ.んや",
       "おもむき"
     ],
-    "freq": 490
+    "freq": 490,
+    "example": {
+      "word": "状況",
+      "reading": "じょうきょう",
+      "meaning": "အခြေအနေ"
+    }
   },
   {
     "kanji": "針",
     "strokes": 10,
     "meanings": [
-      "Needle",
-      "Pin",
-      "Staple"
+      "အပ်"
     ],
     "on": [
       "しん"
@@ -968,15 +1201,19 @@
     "kun": [
       "はり"
     ],
-    "freq": 505
+    "freq": 505,
+    "example": {
+      "word": "針",
+      "reading": "はり",
+      "meaning": "အပ်"
+    }
   },
   {
     "kanji": "専",
     "strokes": 9,
     "meanings": [
-      "Specialty",
-      "Exclusive",
-      "Mainly"
+      "အထူး",
+      "သီးသန့်"
     ],
     "on": [
       "せん"
@@ -984,13 +1221,18 @@
     "kun": [
       "もっぱ.ら"
     ],
-    "freq": 506
+    "freq": 506,
+    "example": {
+      "word": "専門",
+      "reading": "せんもん",
+      "meaning": "အထူးပြုနယ်ပယ်"
+    }
   },
   {
     "kanji": "谷",
     "strokes": 7,
     "meanings": [
-      "Valley"
+      "တောင်ကြားချိုင့်ဝှမ်း"
     ],
     "on": [
       "こく"
@@ -999,28 +1241,36 @@
       "たに",
       "きわ.まる"
     ],
-    "freq": 508
+    "freq": 508,
+    "example": {
+      "word": "谷",
+      "reading": "たに",
+      "meaning": "တောင်ကြားချိုင့်ဝှမ်း"
+    }
   },
   {
     "kanji": "史",
     "strokes": 5,
     "meanings": [
-      "History",
-      "Chronicle"
+      "သမိုင်း"
     ],
     "on": [
       "し"
     ],
     "kun": [],
-    "freq": 511
+    "freq": 511,
+    "example": {
+      "word": "歴史",
+      "reading": "れきし",
+      "meaning": "သမိုင်း"
+    }
   },
   {
     "kanji": "階",
     "strokes": 12,
     "meanings": [
-      "Storey",
-      "Stair",
-      "Counter For Storeys Of A Building"
+      "အထပ်",
+      "လှေကား"
     ],
     "on": [
       "かい"
@@ -1028,15 +1278,19 @@
     "kun": [
       "きざはし"
     ],
-    "freq": 513
+    "freq": 513,
+    "example": {
+      "word": "階段",
+      "reading": "かいだん",
+      "meaning": "လှေကား"
+    }
   },
   {
     "kanji": "管",
     "strokes": 14,
     "meanings": [
-      "Pipe",
-      "Tube",
-      "Wind Instrument"
+      "ပိုက်",
+      "ပြွန်"
     ],
     "on": [
       "かん"
@@ -1044,15 +1298,18 @@
     "kun": [
       "くだ"
     ],
-    "freq": 517
+    "freq": 517,
+    "example": {
+      "word": "管理",
+      "reading": "かんり",
+      "meaning": "စီမံအုပ်ချုပ်ခြင်း"
+    }
   },
   {
     "kanji": "兵",
     "strokes": 7,
     "meanings": [
-      "Soldier",
-      "Private",
-      "Troops"
+      "စစ်သား"
     ],
     "on": [
       "へい",
@@ -1061,15 +1318,19 @@
     "kun": [
       "つわもの"
     ],
-    "freq": 522
+    "freq": 522,
+    "example": {
+      "word": "兵士",
+      "reading": "へいし",
+      "meaning": "စစ်သား"
+    }
   },
   {
     "kanji": "接",
     "strokes": 11,
     "meanings": [
-      "Touch",
-      "Contact",
-      "Adjoin"
+      "ဆက်သွယ်",
+      "ထိတွေ့"
     ],
     "on": [
       "せつ",
@@ -1078,15 +1339,19 @@
     "kun": [
       "つ.ぐ"
     ],
-    "freq": 523
+    "freq": 523,
+    "example": {
+      "word": "直接",
+      "reading": "ちょくせつ",
+      "meaning": "တိုက်ရိုက်"
+    }
   },
   {
     "kanji": "細",
     "strokes": 11,
     "meanings": [
-      "Dainty",
-      "Get Thin",
-      "Taper"
+      "သေးငယ်",
+      "အသေးစိတ်"
     ],
     "on": [
       "さい"
@@ -1097,15 +1362,18 @@
       "こま.か",
       "こま.かい"
     ],
-    "freq": 537
+    "freq": 537,
+    "example": {
+      "word": "細かい",
+      "reading": "こまかい",
+      "meaning": "အသေးစိတ်"
+    }
   },
   {
     "kanji": "効",
     "strokes": 8,
     "meanings": [
-      "Merit",
-      "Efficacy",
-      "Efficiency"
+      "အကျိုးသက်ရောက်မှု"
     ],
     "on": [
       "こう"
@@ -1115,15 +1383,19 @@
       "ききめ",
       "なら.う"
     ],
-    "freq": 538
+    "freq": 538,
+    "example": {
+      "word": "効果",
+      "reading": "こうか",
+      "meaning": "အကျိုးသက်ရောက်မှု"
+    }
   },
   {
     "kanji": "丸",
     "strokes": 3,
     "meanings": [
-      "Round",
-      "Full (month)",
-      "Perfection"
+      "ဝိုင်း",
+      "လုံး"
     ],
     "on": [
       "がん"
@@ -1133,15 +1405,18 @@
       "まる.める",
       "まる.い"
     ],
-    "freq": 542
+    "freq": 542,
+    "example": {
+      "word": "丸い",
+      "reading": "まるい",
+      "meaning": "ဝိုင်းသော"
+    }
   },
   {
     "kanji": "湾",
     "strokes": 12,
     "meanings": [
-      "Gulf",
-      "Bay",
-      "Inlet"
+      "ပင်လယ်ကွေ့"
     ],
     "on": [
       "わん"
@@ -1149,13 +1424,18 @@
     "kun": [
       "いりえ"
     ],
-    "freq": 545
+    "freq": 545,
+    "example": {
+      "word": "湾",
+      "reading": "わん",
+      "meaning": "ပင်လယ်ကွေ့"
+    }
   },
   {
     "kanji": "録",
     "strokes": 16,
     "meanings": [
-      "Record"
+      "မှတ်တမ်း"
     ],
     "on": [
       "ろく"
@@ -1164,15 +1444,19 @@
       "しる.す",
       "と.る"
     ],
-    "freq": 546
+    "freq": 546,
+    "example": {
+      "word": "記録",
+      "reading": "きろく",
+      "meaning": "မှတ်တမ်း"
+    }
   },
   {
     "kanji": "省",
     "strokes": 9,
     "meanings": [
-      "Focus",
-      "Government Ministry",
-      "Conserve"
+      "ဝန်ကြီးဌာန",
+      "ချွေတာ"
     ],
     "on": [
       "せい",
@@ -1182,15 +1466,19 @@
       "かえり.みる",
       "はぶ.く"
     ],
-    "freq": 548
+    "freq": 548,
+    "example": {
+      "word": "反省",
+      "reading": "はんせい",
+      "meaning": "ပြန်လည်သုံးသပ်ခြင်း"
+    }
   },
   {
     "kanji": "旧",
     "strokes": 5,
     "meanings": [
-      "Old Times",
-      "Old Things",
-      "Old Friend"
+      "ဟောင်း",
+      "ရှေး"
     ],
     "on": [
       "きゅう"
@@ -1199,13 +1487,18 @@
       "ふる.い",
       "もと"
     ],
-    "freq": 549
+    "freq": 549,
+    "example": {
+      "word": "旧友",
+      "reading": "きゅうゆう",
+      "meaning": "သူငယ်ချင်းဟောင်း"
+    }
   },
   {
     "kanji": "橋",
     "strokes": 16,
     "meanings": [
-      "Bridge"
+      "တံတား"
     ],
     "on": [
       "きょう"
@@ -1213,13 +1506,18 @@
     "kun": [
       "はし"
     ],
-    "freq": 553
+    "freq": 553,
+    "example": {
+      "word": "橋",
+      "reading": "はし",
+      "meaning": "တံတား"
+    }
   },
   {
     "kanji": "岸",
     "strokes": 8,
     "meanings": [
-      "Beach"
+      "ကမ်းခြေ"
     ],
     "on": [
       "がん"
@@ -1227,15 +1525,19 @@
     "kun": [
       "きし"
     ],
-    "freq": 556
+    "freq": 556,
+    "example": {
+      "word": "海岸",
+      "reading": "かいがん",
+      "meaning": "ပင်လယ်ကမ်းခြေ"
+    }
   },
   {
     "kanji": "周",
     "strokes": 8,
     "meanings": [
-      "Circumference",
-      "Circuit",
-      "Lap"
+      "ပတ်လည်",
+      "အပတ်"
     ],
     "on": [
       "しゅう"
@@ -1243,29 +1545,37 @@
     "kun": [
       "まわ.り"
     ],
-    "freq": 562
+    "freq": 562,
+    "example": {
+      "word": "周囲",
+      "reading": "しゅうい",
+      "meaning": "ပတ်ဝန်းကျင်"
+    }
   },
   {
     "kanji": "材",
     "strokes": 7,
     "meanings": [
-      "Lumber",
-      "Log",
-      "Timber"
+      "ပစ္စည်း",
+      "သစ်"
     ],
     "on": [
       "ざい"
     ],
     "kun": [],
-    "freq": 565
+    "freq": 565,
+    "example": {
+      "word": "材料",
+      "reading": "ざいりょう",
+      "meaning": "ကုန်ကြမ်း/ပါဝင်ပစ္စည်း"
+    }
   },
   {
     "kanji": "戸",
     "strokes": 4,
     "meanings": [
-      "Door",
-      "Counter For Houses",
-      "Door Radical (no. 63)"
+      "တံခါး",
+      "အိမ်"
     ],
     "on": [
       "こ"
@@ -1273,40 +1583,53 @@
     "kun": [
       "と"
     ],
-    "freq": 575
+    "freq": 575,
+    "example": {
+      "word": "戸",
+      "reading": "と",
+      "meaning": "တံခါး"
+    }
   },
   {
     "kanji": "央",
     "strokes": 5,
     "meanings": [
-      "Center",
-      "Middle"
+      "အလယ်"
     ],
     "on": [
       "おう"
     ],
     "kun": [],
-    "freq": 582
+    "freq": 582,
+    "example": {
+      "word": "中央",
+      "reading": "ちゅうおう",
+      "meaning": "အလယ်ဗဟို"
+    }
   },
   {
     "kanji": "券",
     "strokes": 8,
     "meanings": [
-      "Ticket"
+      "လက်မှတ်"
     ],
     "on": [
       "けん"
     ],
     "kun": [],
-    "freq": 583
+    "freq": 583,
+    "example": {
+      "word": "入場券",
+      "reading": "にゅうじょうけん",
+      "meaning": "ဝင်ခွင့်လက်မှတ်"
+    }
   },
   {
     "kanji": "編",
     "strokes": 15,
     "meanings": [
-      "Compilation",
-      "Knit",
-      "Plait"
+      "စုစည်း",
+      "ထိုး(ဂွမ်း)"
     ],
     "on": [
       "へん"
@@ -1315,15 +1638,18 @@
       "あ.む",
       "-あ.み"
     ],
-    "freq": 591
+    "freq": 591,
+    "example": {
+      "word": "編集",
+      "reading": "へんしゅう",
+      "meaning": "တည်းဖြတ်ခြင်း"
+    }
   },
   {
     "kanji": "捜",
     "strokes": 10,
     "meanings": [
-      "Search",
-      "Look For",
-      "Locate"
+      "ရှာဖွေ"
     ],
     "on": [
       "そう",
@@ -1333,13 +1659,18 @@
     "kun": [
       "さが.す"
     ],
-    "freq": 592
+    "freq": 592,
+    "example": {
+      "word": "捜査",
+      "reading": "そうさ",
+      "meaning": "(ရာဇဝတ်မှု)စုံစမ်းရှာဖွေခြင်း"
+    }
   },
   {
     "kanji": "竹",
     "strokes": 6,
     "meanings": [
-      "Bamboo"
+      "ဝါး"
     ],
     "on": [
       "ちく"
@@ -1347,15 +1678,19 @@
     "kun": [
       "たけ"
     ],
-    "freq": 593
+    "freq": 593,
+    "example": {
+      "word": "竹",
+      "reading": "たけ",
+      "meaning": "ဝါး"
+    }
   },
   {
     "kanji": "超",
     "strokes": 12,
     "meanings": [
-      "Transcend",
-      "Super-",
-      "Ultra-"
+      "ကျော်လွန်",
+      "အလွန်"
     ],
     "on": [
       "ちょう"
@@ -1364,15 +1699,19 @@
       "こ.える",
       "こ.す"
     ],
-    "freq": 597
+    "freq": 597,
+    "example": {
+      "word": "超える",
+      "reading": "こえる",
+      "meaning": "ကျော်လွန်သည်"
+    }
   },
   {
     "kanji": "並",
     "strokes": 8,
     "meanings": [
-      "Row",
-      "And",
-      "Besides"
+      "တန်း",
+      "စီတန်း"
     ],
     "on": [
       "へい",
@@ -1385,28 +1724,36 @@
       "なら.ぶ",
       "なら.びに"
     ],
-    "freq": 599
+    "freq": 599,
+    "example": {
+      "word": "並ぶ",
+      "reading": "ならぶ",
+      "meaning": "တန်းစီသည်"
+    }
   },
   {
     "kanji": "療",
     "strokes": 17,
     "meanings": [
-      "Heal",
-      "Cure"
+      "ကုသ"
     ],
     "on": [
       "りょう"
     ],
     "kun": [],
-    "freq": 600
+    "freq": 600,
+    "example": {
+      "word": "治療",
+      "reading": "ちりょう",
+      "meaning": "ကုသမှု"
+    }
   },
   {
     "kanji": "採",
     "strokes": 11,
     "meanings": [
-      "Pick",
-      "Take",
-      "Fetch"
+      "ရွေးယူ",
+      "ဆွတ်ခူး"
     ],
     "on": [
       "さい"
@@ -1414,14 +1761,18 @@
     "kun": [
       "と.る"
     ],
-    "freq": 607
+    "freq": 607,
+    "example": {
+      "word": "採用",
+      "reading": "さいよう",
+      "meaning": "ခန့်အပ်ခြင်း"
+    }
   },
   {
     "kanji": "森",
     "strokes": 12,
     "meanings": [
-      "Forest",
-      "Woods"
+      "သစ်တော"
     ],
     "on": [
       "しん"
@@ -1429,15 +1780,18 @@
     "kun": [
       "もり"
     ],
-    "freq": 609
+    "freq": 609,
+    "example": {
+      "word": "森林",
+      "reading": "しんりん",
+      "meaning": "သစ်တော"
+    }
   },
   {
     "kanji": "競",
     "strokes": 20,
     "meanings": [
-      "Emulate",
-      "Compete With",
-      "Bid"
+      "ပြိုင်ဆိုင်"
     ],
     "on": [
       "きょう",
@@ -1448,29 +1802,36 @@
       "せ.る",
       "くら.べる"
     ],
-    "freq": 610
+    "freq": 610,
+    "example": {
+      "word": "競争",
+      "reading": "きょうそう",
+      "meaning": "ပြိုင်ဆိုင်မှု"
+    }
   },
   {
     "kanji": "介",
     "strokes": 4,
     "meanings": [
-      "Jammed In",
-      "Shellfish",
-      "Mediate"
+      "ကြားဝင်",
+      "ဆက်သွယ်"
     ],
     "on": [
       "かい"
     ],
     "kun": [],
-    "freq": 617
+    "freq": 617,
+    "example": {
+      "word": "紹介",
+      "reading": "しょうかい",
+      "meaning": "မိတ်ဆက်ခြင်း"
+    }
   },
   {
     "kanji": "根",
     "strokes": 10,
     "meanings": [
-      "Root",
-      "Radical",
-      "Head (pimple)"
+      "အမြစ်"
     ],
     "on": [
       "こん"
@@ -1479,44 +1840,54 @@
       "ね",
       "-ね"
     ],
-    "freq": 620
+    "freq": 620,
+    "example": {
+      "word": "根本",
+      "reading": "こんぽん",
+      "meaning": "အခြေခံ/အရင်းခံ"
+    }
   },
   {
     "kanji": "販",
     "strokes": 11,
     "meanings": [
-      "Marketing",
-      "Sell",
-      "Trade"
+      "ရောင်းချ"
     ],
     "on": [
       "はん"
     ],
     "kun": [],
-    "freq": 627
+    "freq": 627,
+    "example": {
+      "word": "販売",
+      "reading": "はんばい",
+      "meaning": "အရောင်း"
+    }
   },
   {
     "kanji": "歴",
     "strokes": 14,
     "meanings": [
-      "Curriculum",
-      "Continuation",
-      "Passage Of Time"
+      "သမိုင်း",
+      "ဖြတ်သန်းမှု"
     ],
     "on": [
       "れき",
       "れっき"
     ],
     "kun": [],
-    "freq": 632
+    "freq": 632,
+    "example": {
+      "word": "歴史",
+      "reading": "れきし",
+      "meaning": "သမိုင်း"
+    }
   },
   {
     "kanji": "将",
     "strokes": 10,
     "meanings": [
-      "Leader",
-      "Commander",
-      "General"
+      "ဗိုလ်ချုပ်"
     ],
     "on": [
       "しょう",
@@ -1529,14 +1900,18 @@
       "ひきい.る",
       "もって"
     ],
-    "freq": 634
+    "freq": 634,
+    "example": {
+      "word": "将来",
+      "reading": "しょうらい",
+      "meaning": "အနာဂတ်"
+    }
   },
   {
     "kanji": "幅",
     "strokes": 12,
     "meanings": [
-      "Hanging Scroll",
-      "Width"
+      "အကျယ်"
     ],
     "on": [
       "ふく"
@@ -1544,55 +1919,69 @@
     "kun": [
       "はば"
     ],
-    "freq": 641
+    "freq": 641,
+    "example": {
+      "word": "大幅",
+      "reading": "おおはば",
+      "meaning": "အကျယ်ပြန့်/များပြားစွာ"
+    }
   },
   {
     "kanji": "般",
     "strokes": 10,
     "meanings": [
-      "Carrier",
-      "Carry",
-      "All"
+      "ယေဘုယျ"
     ],
     "on": [
       "はん"
     ],
     "kun": [],
-    "freq": 649
+    "freq": 649,
+    "example": {
+      "word": "一般",
+      "reading": "いっぱん",
+      "meaning": "ယေဘုယျ/သာမန်"
+    }
   },
   {
     "kanji": "貿",
     "strokes": 12,
     "meanings": [
-      "Trade",
-      "Exchange"
+      "ကုန်သွယ်ရေး"
     ],
     "on": [
       "ぼう"
     ],
     "kun": [],
-    "freq": 652
+    "freq": 652,
+    "example": {
+      "word": "貿易",
+      "reading": "ぼうえき",
+      "meaning": "ကုန်သွယ်ရေး"
+    }
   },
   {
     "kanji": "講",
     "strokes": 17,
     "meanings": [
-      "Lecture",
-      "Club",
-      "Association"
+      "ဟောပြောချက်"
     ],
     "on": [
       "こう"
     ],
     "kun": [],
-    "freq": 653
+    "freq": 653,
+    "example": {
+      "word": "講義",
+      "reading": "こうぎ",
+      "meaning": "ပို့ချချက်"
+    }
   },
   {
     "kanji": "林",
     "strokes": 8,
     "meanings": [
-      "Grove",
-      "Forest"
+      "တောအုပ်"
     ],
     "on": [
       "りん"
@@ -1600,15 +1989,19 @@
     "kun": [
       "はやし"
     ],
-    "freq": 656
+    "freq": 656,
+    "example": {
+      "word": "林",
+      "reading": "はやし",
+      "meaning": "တောအုပ်"
+    }
   },
   {
     "kanji": "装",
     "strokes": 12,
     "meanings": [
-      "Attire",
-      "Dress",
-      "Pretend"
+      "ဝတ်ဆင်",
+      "တပ်ဆင်"
     ],
     "on": [
       "そう",
@@ -1618,15 +2011,18 @@
       "よそお.う",
       "よそお.い"
     ],
-    "freq": 657
+    "freq": 657,
+    "example": {
+      "word": "服装",
+      "reading": "ふくそう",
+      "meaning": "ဝတ်စားဆင်ယင်မှု"
+    }
   },
   {
     "kanji": "諸",
     "strokes": 15,
     "meanings": [
-      "Various",
-      "Many",
-      "Several"
+      "အမျိုးမျိုး"
     ],
     "on": [
       "しょ"
@@ -1634,26 +2030,35 @@
     "kun": [
       "もろ"
     ],
-    "freq": 658
+    "freq": 658,
+    "example": {
+      "word": "諸国",
+      "reading": "しょこく",
+      "meaning": "နိုင်ငံအသီးသီး"
+    }
   },
   {
     "kanji": "劇",
     "strokes": 15,
     "meanings": [
-      "Drama",
-      "Play"
+      "ဇာတ်"
     ],
     "on": [
       "げき"
     ],
     "kun": [],
-    "freq": 662
+    "freq": 662,
+    "example": {
+      "word": "演劇",
+      "reading": "えんげき",
+      "meaning": "ပြဇာတ်"
+    }
   },
   {
     "kanji": "河",
     "strokes": 8,
     "meanings": [
-      "River"
+      "မြစ်"
     ],
     "on": [
       "か"
@@ -1661,27 +2066,35 @@
     "kun": [
       "かわ"
     ],
-    "freq": 663
+    "freq": 663,
+    "example": {
+      "word": "河",
+      "reading": "かわ",
+      "meaning": "မြစ်"
+    }
   },
   {
     "kanji": "航",
     "strokes": 10,
     "meanings": [
-      "Navigate",
-      "Sail",
-      "Cruise"
+      "သင်္ဘော/လေယာဉ်ဖြင့်ခရီးသွား"
     ],
     "on": [
       "こう"
     ],
     "kun": [],
-    "freq": 665
+    "freq": 665,
+    "example": {
+      "word": "航空",
+      "reading": "こうくう",
+      "meaning": "လေကြောင်း"
+    }
   },
   {
     "kanji": "鉄",
     "strokes": 13,
     "meanings": [
-      "Iron"
+      "သံ"
     ],
     "on": [
       "てつ"
@@ -1689,15 +2102,19 @@
     "kun": [
       "くろがね"
     ],
-    "freq": 672
+    "freq": 672,
+    "example": {
+      "word": "鉄道",
+      "reading": "てつどう",
+      "meaning": "မီးရထားလမ်း"
+    }
   },
   {
     "kanji": "児",
     "strokes": 7,
     "meanings": [
-      "Newborn Babe",
-      "Child",
-      "Young Of Animals"
+      "ကလေး",
+      "နို့စို့"
     ],
     "on": [
       "じ",
@@ -1709,29 +2126,36 @@
       "-こ",
       "-っこ"
     ],
-    "freq": 679
+    "freq": 679,
+    "example": {
+      "word": "児童",
+      "reading": "じどう",
+      "meaning": "ကလေးသူငယ်"
+    }
   },
   {
     "kanji": "禁",
     "strokes": 13,
     "meanings": [
-      "Prohibition",
-      "Ban",
-      "Forbid"
+      "တားမြစ်"
     ],
     "on": [
       "きん"
     ],
     "kun": [],
-    "freq": 681
+    "freq": 681,
+    "example": {
+      "word": "禁止",
+      "reading": "きんし",
+      "meaning": "တားမြစ်ခြင်း"
+    }
   },
   {
     "kanji": "印",
     "strokes": 6,
     "meanings": [
-      "Stamp",
-      "Seal",
-      "Mark"
+      "တံဆိပ်",
+      "အမှတ်အသား"
     ],
     "on": [
       "いん"
@@ -1741,15 +2165,19 @@
       "-じるし",
       "しる.す"
     ],
-    "freq": 682
+    "freq": 682,
+    "example": {
+      "word": "印象",
+      "reading": "いんしょう",
+      "meaning": "အထင်အမြင်"
+    }
   },
   {
     "kanji": "逆",
     "strokes": 9,
     "meanings": [
-      "Inverted",
-      "Reverse",
-      "Opposite"
+      "ပြောင်းပြန်",
+      "ဆန့်ကျင်"
     ],
     "on": [
       "ぎゃく",
@@ -1760,15 +2188,18 @@
       "さか.さ",
       "さか.らう"
     ],
-    "freq": 683
+    "freq": 683,
+    "example": {
+      "word": "逆",
+      "reading": "ぎゃく",
+      "meaning": "ပြောင်းပြန်"
+    }
   },
   {
     "kanji": "換",
     "strokes": 12,
     "meanings": [
-      "Interchange",
-      "Period",
-      "Change"
+      "လဲလှယ်"
     ],
     "on": [
       "かん"
@@ -1778,14 +2209,18 @@
       "-か.える",
       "か.わる"
     ],
-    "freq": 687
+    "freq": 687,
+    "example": {
+      "word": "交換",
+      "reading": "こうかん",
+      "meaning": "လဲလှယ်ခြင်း"
+    }
   },
   {
     "kanji": "久",
     "strokes": 3,
     "meanings": [
-      "Long Time",
-      "Old Story"
+      "ကြာရှည်"
     ],
     "on": [
       "きゅう",
@@ -1794,15 +2229,18 @@
     "kun": [
       "ひさ.しい"
     ],
-    "freq": 688
+    "freq": 688,
+    "example": {
+      "word": "永久",
+      "reading": "えいきゅう",
+      "meaning": "ထာဝရ"
+    }
   },
   {
     "kanji": "短",
     "strokes": 12,
     "meanings": [
-      "Short",
-      "Brevity",
-      "Fault"
+      "တို"
     ],
     "on": [
       "たん"
@@ -1810,14 +2248,18 @@
     "kun": [
       "みじか.い"
     ],
-    "freq": 689
+    "freq": 689,
+    "example": {
+      "word": "短い",
+      "reading": "みじかい",
+      "meaning": "တိုသော"
+    }
   },
   {
     "kanji": "油",
     "strokes": 8,
     "meanings": [
-      "Oil",
-      "Fat"
+      "ဆီ"
     ],
     "on": [
       "ゆ",
@@ -1826,15 +2268,19 @@
     "kun": [
       "あぶら"
     ],
-    "freq": 690
+    "freq": 690,
+    "example": {
+      "word": "石油",
+      "reading": "せきゆ",
+      "meaning": "ရေနံ"
+    }
   },
   {
     "kanji": "暴",
     "strokes": 15,
     "meanings": [
-      "Outburst",
-      "Rave",
-      "Fret"
+      "အကြမ်းဖက်",
+      "ဖောက်ထွက်"
     ],
     "on": [
       "ぼう",
@@ -1844,15 +2290,19 @@
       "あば.く",
       "あば.れる"
     ],
-    "freq": 692
+    "freq": 692,
+    "example": {
+      "word": "暴力",
+      "reading": "ぼうりょく",
+      "meaning": "အကြမ်းဖက်မှု"
+    }
   },
   {
     "kanji": "輪",
     "strokes": 15,
     "meanings": [
-      "Wheel",
-      "Ring",
-      "Circle"
+      "ဘီး",
+      "ကွင်း"
     ],
     "on": [
       "りん"
@@ -1860,15 +2310,19 @@
     "kun": [
       "わ"
     ],
-    "freq": 693
+    "freq": 693,
+    "example": {
+      "word": "指輪",
+      "reading": "ゆびわ",
+      "meaning": "လက်စွပ်"
+    }
   },
   {
     "kanji": "占",
     "strokes": 5,
     "meanings": [
-      "Fortune-telling",
-      "Divining",
-      "Forecasting"
+      "သိမ်းပိုက်",
+      "ဗေဒင်"
     ],
     "on": [
       "せん"
@@ -1877,13 +2331,18 @@
       "し.める",
       "うらな.う"
     ],
-    "freq": 694
+    "freq": 694,
+    "example": {
+      "word": "占領",
+      "reading": "せんりょう",
+      "meaning": "သိမ်းပိုက်ခြင်း"
+    }
   },
   {
     "kanji": "植",
     "strokes": 12,
     "meanings": [
-      "Plant"
+      "စိုက်ပျိုး"
     ],
     "on": [
       "しょく"
@@ -1892,15 +2351,18 @@
       "う.える",
       "う.わる"
     ],
-    "freq": 699
+    "freq": 699,
+    "example": {
+      "word": "植物",
+      "reading": "しょくぶつ",
+      "meaning": "အပင်"
+    }
   },
   {
     "kanji": "清",
     "strokes": 11,
     "meanings": [
-      "Pure",
-      "Purify",
-      "Cleanse"
+      "သန့်ရှင်း"
     ],
     "on": [
       "せい",
@@ -1912,28 +2374,37 @@
       "きよ.まる",
       "きよ.める"
     ],
-    "freq": 705
+    "freq": 705,
+    "example": {
+      "word": "清潔",
+      "reading": "せいけつ",
+      "meaning": "သန့်ရှင်းမှု"
+    }
   },
   {
     "kanji": "倍",
     "strokes": 10,
     "meanings": [
-      "Double",
-      "Twice",
-      "Times"
+      "နှစ်ဆ",
+      "အဆ"
     ],
     "on": [
       "ばい"
     ],
     "kun": [],
-    "freq": 714
+    "freq": 714,
+    "example": {
+      "word": "倍",
+      "reading": "ばい",
+      "meaning": "နှစ်ဆ/အဆ"
+    }
   },
   {
     "kanji": "均",
     "strokes": 7,
     "meanings": [
-      "Level",
-      "Average"
+      "ပျမ်းမျှ",
+      "ညီ"
     ],
     "on": [
       "きん"
@@ -1941,28 +2412,35 @@
     "kun": [
       "なら.す"
     ],
-    "freq": 715
+    "freq": 715,
+    "example": {
+      "word": "平均",
+      "reading": "へいきん",
+      "meaning": "ပျမ်းမျှ"
+    }
   },
   {
     "kanji": "億",
     "strokes": 15,
     "meanings": [
-      "Hundred Million",
-      "10**8"
+      "သန်းတစ်ရာ"
     ],
     "on": [
       "おく"
     ],
     "kun": [],
-    "freq": 716
+    "freq": 716,
+    "example": {
+      "word": "一億",
+      "reading": "いちおく",
+      "meaning": "သန်းတစ်ရာ"
+    }
   },
   {
     "kanji": "圧",
     "strokes": 5,
     "meanings": [
-      "Pressure",
-      "Push",
-      "Overwhelm"
+      "ဖိအား"
     ],
     "on": [
       "あつ",
@@ -1975,15 +2453,19 @@
       "おさ.える",
       "お.さえる"
     ],
-    "freq": 718
+    "freq": 718,
+    "example": {
+      "word": "圧力",
+      "reading": "あつりょく",
+      "meaning": "ဖိအား"
+    }
   },
   {
     "kanji": "芸",
     "strokes": 7,
     "meanings": [
-      "Technique",
-      "Art",
-      "Craft"
+      "အနုပညာ",
+      "အတတ်ပညာ"
     ],
     "on": [
       "げい",
@@ -1994,29 +2476,37 @@
       "のり",
       "わざ"
     ],
-    "freq": 719
+    "freq": 719,
+    "example": {
+      "word": "芸術",
+      "reading": "げいじゅつ",
+      "meaning": "အနုပညာ"
+    }
   },
   {
     "kanji": "署",
     "strokes": 13,
     "meanings": [
-      "Signature",
-      "Govt Office",
-      "Police Station"
+      "ရုံး",
+      "ရဲစခန်း"
     ],
     "on": [
       "しょ"
     ],
     "kun": [],
-    "freq": 725
+    "freq": 725,
+    "example": {
+      "word": "警察署",
+      "reading": "けいさつしょ",
+      "meaning": "ရဲစခန်း"
+    }
   },
   {
     "kanji": "伸",
     "strokes": 7,
     "meanings": [
-      "Expand",
-      "Stretch",
-      "Extend"
+      "ဆန့်",
+      "တိုးချဲ့"
     ],
     "on": [
       "しん"
@@ -2027,14 +2517,18 @@
       "の.べる",
       "の.す"
     ],
-    "freq": 730
+    "freq": 730,
+    "example": {
+      "word": "伸びる",
+      "reading": "のびる",
+      "meaning": "ဆန့်ထွက်/တိုးတက်သည်"
+    }
   },
   {
     "kanji": "停",
     "strokes": 11,
     "meanings": [
-      "Halt",
-      "Stopping"
+      "ရပ်"
     ],
     "on": [
       "てい"
@@ -2043,15 +2537,19 @@
       "と.める",
       "と.まる"
     ],
-    "freq": 733
+    "freq": 733,
+    "example": {
+      "word": "停止",
+      "reading": "ていし",
+      "meaning": "ရပ်တန့်ခြင်း"
+    }
   },
   {
     "kanji": "爆",
     "strokes": 19,
     "meanings": [
-      "Bomb",
-      "Burst Open",
-      "Pop"
+      "ဗုံး",
+      "ပေါက်ကွဲ"
     ],
     "on": [
       "ばく"
@@ -2059,14 +2557,19 @@
     "kun": [
       "は.ぜる"
     ],
-    "freq": 735
+    "freq": 735,
+    "example": {
+      "word": "爆発",
+      "reading": "ばくはつ",
+      "meaning": "ပေါက်ကွဲမှု"
+    }
   },
   {
     "kanji": "陸",
     "strokes": 11,
     "meanings": [
-      "Land",
-      "Six"
+      "ကုန်း",
+      "ကမ္ဘာမြေ"
     ],
     "on": [
       "りく",
@@ -2075,14 +2578,19 @@
     "kun": [
       "おか"
     ],
-    "freq": 736
+    "freq": 736,
+    "example": {
+      "word": "大陸",
+      "reading": "たいりく",
+      "meaning": "တိုက်ကြီး"
+    }
   },
   {
     "kanji": "玉",
     "strokes": 5,
     "meanings": [
-      "Jewel",
-      "Ball"
+      "ကျောက်မျက်",
+      "လုံး"
     ],
     "on": [
       "ぎょく"
@@ -2092,15 +2600,18 @@
       "たま-",
       "-だま"
     ],
-    "freq": 737
+    "freq": 737,
+    "example": {
+      "word": "目玉",
+      "reading": "めだま",
+      "meaning": "မျက်လုံးသား"
+    }
   },
   {
     "kanji": "波",
     "strokes": 8,
     "meanings": [
-      "Waves",
-      "Billows",
-      "Poland"
+      "လှိုင်း"
     ],
     "on": [
       "は"
@@ -2108,15 +2619,19 @@
     "kun": [
       "なみ"
     ],
-    "freq": 740
+    "freq": 740,
+    "example": {
+      "word": "波",
+      "reading": "なみ",
+      "meaning": "လှိုင်း"
+    }
   },
   {
     "kanji": "帯",
     "strokes": 10,
     "meanings": [
-      "Sash",
-      "Belt",
-      "Obi"
+      "ခါးပတ်",
+      "ဇုန်"
     ],
     "on": [
       "たい"
@@ -2125,14 +2640,19 @@
       "お.びる",
       "おび"
     ],
-    "freq": 746
+    "freq": 746,
+    "example": {
+      "word": "携帯",
+      "reading": "けいたい",
+      "meaning": "မိုဘိုင်းဖုန်း/သယ်ဆောင်"
+    }
   },
   {
     "kanji": "延",
     "strokes": 8,
     "meanings": [
-      "Prolong",
-      "Stretching"
+      "ဆွဲဆန့်",
+      "ရွှေ့ဆိုင်း"
     ],
     "on": [
       "えん"
@@ -2143,14 +2663,19 @@
       "の.べ",
       "の.ばす"
     ],
-    "freq": 747
+    "freq": 747,
+    "example": {
+      "word": "延長",
+      "reading": "えんちょう",
+      "meaning": "သက်တမ်းတိုးခြင်း"
+    }
   },
   {
     "kanji": "羽",
     "strokes": 6,
     "meanings": [
-      "Feathers",
-      "Counter For Birds, Rabbits"
+      "အတောင်ပံ",
+      "အမွေး"
     ],
     "on": [
       "う"
@@ -2160,15 +2685,19 @@
       "わ",
       "はね"
     ],
-    "freq": 748
+    "freq": 748,
+    "example": {
+      "word": "羽",
+      "reading": "はね",
+      "meaning": "အတောင်ပံ"
+    }
   },
   {
     "kanji": "固",
     "strokes": 8,
     "meanings": [
-      "Harden",
-      "Set",
-      "Clot"
+      "မာ",
+      "တောင့်တင်း"
     ],
     "on": [
       "こ"
@@ -2179,15 +2708,18 @@
       "かた.まり",
       "かた.い"
     ],
-    "freq": 750
+    "freq": 750,
+    "example": {
+      "word": "固い",
+      "reading": "かたい",
+      "meaning": "မာသော/တောင့်တင်းသော"
+    }
   },
   {
     "kanji": "則",
     "strokes": 9,
     "meanings": [
-      "Rule",
-      "Follow",
-      "Based On"
+      "စည်းမျဉ်း"
     ],
     "on": [
       "そく"
@@ -2195,15 +2727,19 @@
     "kun": [
       "のっと.る"
     ],
-    "freq": 753
+    "freq": 753,
+    "example": {
+      "word": "規則",
+      "reading": "きそく",
+      "meaning": "စည်းမျဉ်း"
+    }
   },
   {
     "kanji": "乱",
     "strokes": 7,
     "meanings": [
-      "Riot",
-      "War",
-      "Disorder"
+      "ရှုပ်ထွေး",
+      "ဆူပူ"
     ],
     "on": [
       "らん",
@@ -2217,15 +2753,19 @@
       "おさ.める",
       "わた.る"
     ],
-    "freq": 755
+    "freq": 755,
+    "example": {
+      "word": "混乱",
+      "reading": "こんらん",
+      "meaning": "ရှုပ်ထွေးမှု"
+    }
   },
   {
     "kanji": "普",
     "strokes": 12,
     "meanings": [
-      "Universal",
-      "Wide(ly)",
-      "Generally"
+      "ယေဘုယျ",
+      "အများသုံး"
     ],
     "on": [
       "ふ"
@@ -2234,15 +2774,18 @@
       "あまね.く",
       "あまねし"
     ],
-    "freq": 757
+    "freq": 757,
+    "example": {
+      "word": "普通",
+      "reading": "ふつう",
+      "meaning": "သာမန်"
+    }
   },
   {
     "kanji": "測",
     "strokes": 12,
     "meanings": [
-      "Fathom",
-      "Plan",
-      "Scheme"
+      "တိုင်းတာ"
     ],
     "on": [
       "そく"
@@ -2250,15 +2793,19 @@
     "kun": [
       "はか.る"
     ],
-    "freq": 761
+    "freq": 761,
+    "example": {
+      "word": "測定",
+      "reading": "そくてい",
+      "meaning": "တိုင်းတာခြင်း"
+    }
   },
   {
     "kanji": "豊",
     "strokes": 13,
     "meanings": [
-      "Bountiful",
-      "Excellent",
-      "Rich"
+      "ကြွယ်ဝ",
+      "ပေါများ"
     ],
     "on": [
       "ほう",
@@ -2268,15 +2815,18 @@
       "ゆた.か",
       "とよ"
     ],
-    "freq": 762
+    "freq": 762,
+    "example": {
+      "word": "豊か",
+      "reading": "ゆたか",
+      "meaning": "ကြွယ်ဝချမ်းသာ"
+    }
   },
   {
     "kanji": "厚",
     "strokes": 9,
     "meanings": [
-      "Thick",
-      "Heavy",
-      "Rich"
+      "ထူ"
     ],
     "on": [
       "こう"
@@ -2285,13 +2835,18 @@
       "あつ.い",
       "あか"
     ],
-    "freq": 768
+    "freq": 768,
+    "example": {
+      "word": "厚い",
+      "reading": "あつい",
+      "meaning": "ထူသော"
+    }
   },
   {
     "kanji": "齢",
     "strokes": 17,
     "meanings": [
-      "Age"
+      "အသက်"
     ],
     "on": [
       "れい"
@@ -2300,15 +2855,18 @@
       "よわい",
       "とし"
     ],
-    "freq": 770
+    "freq": 770,
+    "example": {
+      "word": "年齢",
+      "reading": "ねんれい",
+      "meaning": "အသက်အရွယ်"
+    }
   },
   {
     "kanji": "囲",
     "strokes": 7,
     "meanings": [
-      "Surround",
-      "Besiege",
-      "Store"
+      "ဝိုင်းရံ"
     ],
     "on": [
       "い"
@@ -2318,15 +2876,18 @@
       "かこ.う",
       "かこ.い"
     ],
-    "freq": 771
+    "freq": 771,
+    "example": {
+      "word": "範囲",
+      "reading": "はんい",
+      "meaning": "နယ်ပယ်/အတိုင်းအတာ"
+    }
   },
   {
     "kanji": "卒",
     "strokes": 8,
     "meanings": [
-      "Graduate",
-      "Soldier",
-      "Private"
+      "ဘွဲ့ရ"
     ],
     "on": [
       "そつ",
@@ -2339,15 +2900,19 @@
       "ついに",
       "にわか"
     ],
-    "freq": 772
+    "freq": 772,
+    "example": {
+      "word": "卒業",
+      "reading": "そつぎょう",
+      "meaning": "ဘွဲ့ရ/ကျောင်းပြီးခြင်း"
+    }
   },
   {
     "kanji": "略",
     "strokes": 11,
     "meanings": [
-      "Abbreviation",
-      "Omission",
-      "Outline"
+      "အတိုကောက်",
+      "ချုံ့"
     ],
     "on": [
       "りゃく"
@@ -2360,15 +2925,19 @@
       "はかりごと",
       "はか.る"
     ],
-    "freq": 774
+    "freq": 774,
+    "example": {
+      "word": "省略",
+      "reading": "しょうりゃく",
+      "meaning": "ချုံ့ဖြတ်ခြင်း"
+    }
   },
   {
     "kanji": "承",
     "strokes": 8,
     "meanings": [
-      "Acquiesce",
-      "Hear",
-      "Listen To"
+      "သဘောတူ",
+      "လက်ခံ"
     ],
     "on": [
       "しょう",
@@ -2378,29 +2947,36 @@
       "うけたまわ.る",
       "う.ける"
     ],
-    "freq": 775
+    "freq": 775,
+    "example": {
+      "word": "承知",
+      "reading": "しょうち",
+      "meaning": "သဘောတူလက်ခံခြင်း"
+    }
   },
   {
     "kanji": "順",
     "strokes": 12,
     "meanings": [
-      "Obey",
-      "Order",
-      "Turn"
+      "အစီအစဉ်",
+      "နာခံ"
     ],
     "on": [
       "じゅん"
     ],
     "kun": [],
-    "freq": 779
+    "freq": 779,
+    "example": {
+      "word": "順番",
+      "reading": "じゅんばん",
+      "meaning": "အလှည့်/အစီအစဉ်"
+    }
   },
   {
     "kanji": "岩",
     "strokes": 8,
     "meanings": [
-      "Boulder",
-      "Rock",
-      "Cliff"
+      "ကျောက်ဆောင်"
     ],
     "on": [
       "がん"
@@ -2408,15 +2984,18 @@
     "kun": [
       "いわ"
     ],
-    "freq": 787
+    "freq": 787,
+    "example": {
+      "word": "岩",
+      "reading": "いわ",
+      "meaning": "ကျောက်ဆောင်"
+    }
   },
   {
     "kanji": "練",
     "strokes": 14,
     "meanings": [
-      "Practice",
-      "Gloss",
-      "Train"
+      "လေ့ကျင့်"
     ],
     "on": [
       "れん"
@@ -2425,15 +3004,18 @@
       "ね.る",
       "ね.り"
     ],
-    "freq": 788
+    "freq": 788,
+    "example": {
+      "word": "練習",
+      "reading": "れんしゅう",
+      "meaning": "လေ့ကျင့်ခြင်း"
+    }
   },
   {
     "kanji": "軽",
     "strokes": 12,
     "meanings": [
-      "Lightly",
-      "Trifling",
-      "Unimportant"
+      "ပေါ့"
     ],
     "on": [
       "けい",
@@ -2445,26 +3027,35 @@
       "かろ.やか",
       "かろ.んじる"
     ],
-    "freq": 790
+    "freq": 790,
+    "example": {
+      "word": "軽い",
+      "reading": "かるい",
+      "meaning": "ပေါ့သော"
+    }
   },
   {
     "kanji": "了",
     "strokes": 2,
     "meanings": [
-      "Complete",
-      "Finish"
+      "ပြီးဆုံး"
     ],
     "on": [
       "りょう"
     ],
     "kun": [],
-    "freq": 792
+    "freq": 792,
+    "example": {
+      "word": "完了",
+      "reading": "かんりょう",
+      "meaning": "ပြီးစီးခြင်း"
+    }
   },
   {
     "kanji": "庁",
     "strokes": 5,
     "meanings": [
-      "Government Office"
+      "အစိုးရဌာန/ရုံး"
     ],
     "on": [
       "ちょう",
@@ -2473,13 +3064,18 @@
     "kun": [
       "やくしょ"
     ],
-    "freq": 793
+    "freq": 793,
+    "example": {
+      "word": "官庁",
+      "reading": "かんちょう",
+      "meaning": "အစိုးရဌာန"
+    }
   },
   {
     "kanji": "城",
     "strokes": 9,
     "meanings": [
-      "Castle"
+      "ရဲတိုက်"
     ],
     "on": [
       "じょう",
@@ -2488,15 +3084,19 @@
     "kun": [
       "しろ"
     ],
-    "freq": 795
+    "freq": 795,
+    "example": {
+      "word": "城",
+      "reading": "しろ",
+      "meaning": "ရဲတိုက်/နန်းတော်"
+    }
   },
   {
     "kanji": "患",
     "strokes": 11,
     "meanings": [
-      "Afflicted",
-      "Disease",
-      "Suffer From"
+      "ဖျားနာ",
+      "ခံစား"
     ],
     "on": [
       "かん"
@@ -2504,57 +3104,71 @@
     "kun": [
       "わずら.う"
     ],
-    "freq": 796
+    "freq": 796,
+    "example": {
+      "word": "患者",
+      "reading": "かんじゃ",
+      "meaning": "လူနာ"
+    }
   },
   {
     "kanji": "層",
     "strokes": 14,
     "meanings": [
-      "Stratum",
-      "Social Class",
-      "Layer"
+      "အလွှာ",
+      "လူတန်းစား"
     ],
     "on": [
       "そう"
     ],
     "kun": [],
-    "freq": 801
+    "freq": 801,
+    "example": {
+      "word": "層",
+      "reading": "そう",
+      "meaning": "အလွှာ"
+    }
   },
   {
     "kanji": "版",
     "strokes": 8,
     "meanings": [
-      "Printing Block",
-      "Printing Plate",
-      "Edition"
+      "ထုတ်ဝေမှု",
+      "ပုံနှိပ်ပြား"
     ],
     "on": [
       "はん"
     ],
     "kun": [],
-    "freq": 802
+    "freq": 802,
+    "example": {
+      "word": "出版",
+      "reading": "しゅっぱん",
+      "meaning": "ထုတ်ဝေခြင်း"
+    }
   },
   {
     "kanji": "令",
     "strokes": 5,
     "meanings": [
-      "Orders",
-      "Ancient Laws",
-      "Command"
+      "အမိန့်"
     ],
     "on": [
       "れい"
     ],
     "kun": [],
-    "freq": 804
+    "freq": 804,
+    "example": {
+      "word": "命令",
+      "reading": "めいれい",
+      "meaning": "အမိန့်"
+    }
   },
   {
     "kanji": "角",
     "strokes": 7,
     "meanings": [
-      "Angle",
-      "Corner",
-      "Square"
+      "ထောင့်"
     ],
     "on": [
       "かく"
@@ -2563,15 +3177,19 @@
       "かど",
       "つの"
     ],
-    "freq": 805
+    "freq": 805,
+    "example": {
+      "word": "角",
+      "reading": "かど",
+      "meaning": "ထောင့်"
+    }
   },
   {
     "kanji": "絡",
     "strokes": 12,
     "meanings": [
-      "Entwine",
-      "Coil Around",
-      "Get Caught In"
+      "ဆက်သွယ်",
+      "ရစ်ပတ်"
     ],
     "on": [
       "らく"
@@ -2580,15 +3198,19 @@
       "から.む",
       "から.まる"
     ],
-    "freq": 806
+    "freq": 806,
+    "example": {
+      "word": "連絡",
+      "reading": "れんらく",
+      "meaning": "ဆက်သွယ်ခြင်း"
+    }
   },
   {
     "kanji": "損",
     "strokes": 13,
     "meanings": [
-      "Damage",
-      "Loss",
-      "Disadvantage"
+      "ဆုံးရှုံး",
+      "နစ်နာ"
     ],
     "on": [
       "そん"
@@ -2600,15 +3222,19 @@
       "そこ.ねる",
       "-そこ.ねる"
     ],
-    "freq": 807
+    "freq": 807,
+    "example": {
+      "word": "損害",
+      "reading": "そんがい",
+      "meaning": "ထိခိုက်ဆုံးရှုံးမှု"
+    }
   },
   {
     "kanji": "募",
     "strokes": 12,
     "meanings": [
-      "Recruit",
-      "Campaign",
-      "Gather (contributions)"
+      "စုဆောင်း",
+      "ခေါ်ယူ"
     ],
     "on": [
       "ぼ"
@@ -2616,15 +3242,19 @@
     "kun": [
       "つの.る"
     ],
-    "freq": 809
+    "freq": 809,
+    "example": {
+      "word": "募集",
+      "reading": "ぼしゅう",
+      "meaning": "ခေါ်ယူ/စုဆောင်းခြင်း"
+    }
   },
   {
     "kanji": "裏",
     "strokes": 13,
     "meanings": [
-      "Back",
-      "Amidst",
-      "In"
+      "နောက်ဘက်",
+      "အတွင်း"
     ],
     "on": [
       "り"
@@ -2632,15 +3262,18 @@
     "kun": [
       "うら"
     ],
-    "freq": 812
+    "freq": 812,
+    "example": {
+      "word": "裏",
+      "reading": "うら",
+      "meaning": "နောက်ဘက်အခြမ်း"
+    }
   },
   {
     "kanji": "仏",
     "strokes": 4,
     "meanings": [
-      "Buddha",
-      "The Dead",
-      "France"
+      "ဘုရား"
     ],
     "on": [
       "ぶつ",
@@ -2649,29 +3282,36 @@
     "kun": [
       "ほとけ"
     ],
-    "freq": 819
+    "freq": 819,
+    "example": {
+      "word": "仏教",
+      "reading": "ぶっきょう",
+      "meaning": "ဗုဒ္ဓဘာသာ"
+    }
   },
   {
     "kanji": "績",
     "strokes": 17,
     "meanings": [
-      "Exploits",
-      "Achievements",
-      "Unreeling Cocoons"
+      "ဆောင်ရွက်ချက်",
+      "အောင်မြင်မှု"
     ],
     "on": [
       "せき"
     ],
     "kun": [],
-    "freq": 820
+    "freq": 820,
+    "example": {
+      "word": "成績",
+      "reading": "せいせき",
+      "meaning": "ရမှတ်/အောင်မြင်မှု"
+    }
   },
   {
     "kanji": "築",
     "strokes": 16,
     "meanings": [
-      "Fabricate",
-      "Build",
-      "Construct"
+      "တည်ဆောက်"
     ],
     "on": [
       "ちく"
@@ -2679,15 +3319,19 @@
     "kun": [
       "きず.く"
     ],
-    "freq": 821
+    "freq": 821,
+    "example": {
+      "word": "建築",
+      "reading": "けんちく",
+      "meaning": "ဗိသုကာ/တည်ဆောက်ရေး"
+    }
   },
   {
     "kanji": "貨",
     "strokes": 11,
     "meanings": [
-      "Freight",
-      "Goods",
-      "Property"
+      "ကုန်ပစ္စည်း",
+      "ငွေ"
     ],
     "on": [
       "か"
@@ -2695,15 +3339,18 @@
     "kun": [
       "たから"
     ],
-    "freq": 822
+    "freq": 822,
+    "example": {
+      "word": "貨物",
+      "reading": "かもつ",
+      "meaning": "ကုန်စည်/ကုန်ပစ္စည်း"
+    }
   },
   {
     "kanji": "混",
     "strokes": 11,
     "meanings": [
-      "Mix",
-      "Blend",
-      "Confuse"
+      "ရောနှော"
     ],
     "on": [
       "こん"
@@ -2715,13 +3362,18 @@
       "ま.ぜる",
       "こ.む"
     ],
-    "freq": 824
+    "freq": 824,
+    "example": {
+      "word": "混雑",
+      "reading": "こんざつ",
+      "meaning": "ထူထပ်ကျပ်ညပ်မှု"
+    }
   },
   {
     "kanji": "昇",
     "strokes": 8,
     "meanings": [
-      "Rise Up"
+      "တက်"
     ],
     "on": [
       "しょう"
@@ -2729,15 +3381,18 @@
     "kun": [
       "のぼ.る"
     ],
-    "freq": 826
+    "freq": 826,
+    "example": {
+      "word": "上昇",
+      "reading": "じょうしょう",
+      "meaning": "မြင့်တက်ခြင်း"
+    }
   },
   {
     "kanji": "池",
     "strokes": 6,
     "meanings": [
-      "Pond",
-      "Cistern",
-      "Pool"
+      "ရေကန်"
     ],
     "on": [
       "ち"
@@ -2745,13 +3400,18 @@
     "kun": [
       "いけ"
     ],
-    "freq": 827
+    "freq": 827,
+    "example": {
+      "word": "電池",
+      "reading": "でんち",
+      "meaning": "ဘက်ထရီ"
+    }
   },
   {
     "kanji": "血",
     "strokes": 6,
     "meanings": [
-      "Blood"
+      "သွေး"
     ],
     "on": [
       "けつ"
@@ -2759,13 +3419,18 @@
     "kun": [
       "ち"
     ],
-    "freq": 832
+    "freq": 832,
+    "example": {
+      "word": "血液",
+      "reading": "けつえき",
+      "meaning": "သွေး"
+    }
   },
   {
     "kanji": "温",
     "strokes": 12,
     "meanings": [
-      "Warm"
+      "နွေး"
     ],
     "on": [
       "おん"
@@ -2777,27 +3442,35 @@
       "あたた.める",
       "ぬく"
     ],
-    "freq": 838
+    "freq": 838,
+    "example": {
+      "word": "温度",
+      "reading": "おんど",
+      "meaning": "အပူချိန်"
+    }
   },
   {
     "kanji": "季",
     "strokes": 8,
     "meanings": [
-      "Seasons"
+      "ရာသီ"
     ],
     "on": [
       "き"
     ],
     "kun": [],
-    "freq": 842
+    "freq": 842,
+    "example": {
+      "word": "季節",
+      "reading": "きせつ",
+      "meaning": "ရာသီ"
+    }
   },
   {
     "kanji": "星",
     "strokes": 9,
     "meanings": [
-      "Star",
-      "Spot",
-      "Dot"
+      "ကြယ်"
     ],
     "on": [
       "せい",
@@ -2807,15 +3480,19 @@
       "ほし",
       "-ぼし"
     ],
-    "freq": 844
+    "freq": 844,
+    "example": {
+      "word": "星",
+      "reading": "ほし",
+      "meaning": "ကြယ်"
+    }
   },
   {
     "kanji": "永",
     "strokes": 5,
     "meanings": [
-      "Eternity",
-      "Long",
-      "Lengthy"
+      "ထာဝရ",
+      "ကြာရှည်"
     ],
     "on": [
       "えい"
@@ -2823,15 +3500,19 @@
     "kun": [
       "なが.い"
     ],
-    "freq": 846
+    "freq": 846,
+    "example": {
+      "word": "永遠",
+      "reading": "えいえん",
+      "meaning": "ထာဝရ"
+    }
   },
   {
     "kanji": "著",
     "strokes": 11,
     "meanings": [
-      "Renowned",
-      "Publish",
-      "Write"
+      "ထင်ရှား",
+      "ရေးသား"
     ],
     "on": [
       "ちょ",
@@ -2841,27 +3522,36 @@
       "あらわ.す",
       "いちじる.しい"
     ],
-    "freq": 849
+    "freq": 849,
+    "example": {
+      "word": "著者",
+      "reading": "ちょしゃ",
+      "meaning": "စာရေးသူ"
+    }
   },
   {
     "kanji": "誌",
     "strokes": 14,
     "meanings": [
-      "Document",
-      "Records"
+      "မဂ္ဂဇင်း",
+      "မှတ်တမ်း"
     ],
     "on": [
       "し"
     ],
     "kun": [],
-    "freq": 851
+    "freq": 851,
+    "example": {
+      "word": "雑誌",
+      "reading": "ざっし",
+      "meaning": "မဂ္ဂဇင်း"
+    }
   },
   {
     "kanji": "庫",
     "strokes": 10,
     "meanings": [
-      "Warehouse",
-      "Storehouse"
+      "သိုလှောင်ရုံ"
     ],
     "on": [
       "こ",
@@ -2870,43 +3560,54 @@
     "kun": [
       "くら"
     ],
-    "freq": 852
+    "freq": 852,
+    "example": {
+      "word": "倉庫",
+      "reading": "そうこ",
+      "meaning": "ဂိုဒေါင်"
+    }
   },
   {
     "kanji": "刊",
     "strokes": 5,
     "meanings": [
-      "Publish",
-      "Carve",
-      "Engrave"
+      "ထုတ်ဝေ"
     ],
     "on": [
       "かん"
     ],
     "kun": [],
-    "freq": 855
+    "freq": 855,
+    "example": {
+      "word": "週刊",
+      "reading": "しゅうかん",
+      "meaning": "အပတ်စဉ်ထုတ်"
+    }
   },
   {
     "kanji": "像",
     "strokes": 14,
     "meanings": [
-      "Statue",
-      "Picture",
-      "Image"
+      "ရုပ်ပွား",
+      "ပုံရိပ်"
     ],
     "on": [
       "ぞう"
     ],
     "kun": [],
-    "freq": 856
+    "freq": 856,
+    "example": {
+      "word": "想像",
+      "reading": "そうぞう",
+      "meaning": "စိတ်ကူး"
+    }
   },
   {
     "kanji": "香",
     "strokes": 9,
     "meanings": [
-      "Incense",
-      "Smell",
-      "Perfume"
+      "ရနံ့",
+      "မွှေး"
     ],
     "on": [
       "こう",
@@ -2917,15 +3618,19 @@
       "かお.り",
       "かお.る"
     ],
-    "freq": 859
+    "freq": 859,
+    "example": {
+      "word": "香り",
+      "reading": "かおり",
+      "meaning": "ရနံ့မွှေး"
+    }
   },
   {
     "kanji": "坂",
     "strokes": 7,
     "meanings": [
-      "Slope",
-      "Incline",
-      "Hill"
+      "ကုန်း",
+      "စောက်"
     ],
     "on": [
       "はん"
@@ -2933,15 +3638,18 @@
     "kun": [
       "さか"
     ],
-    "freq": 865
+    "freq": 865,
+    "example": {
+      "word": "坂道",
+      "reading": "さかみち",
+      "meaning": "ကုန်းလမ်း"
+    }
   },
   {
     "kanji": "底",
     "strokes": 8,
     "meanings": [
-      "Bottom",
-      "Sole",
-      "Depth"
+      "အောက်ခြေ"
     ],
     "on": [
       "てい"
@@ -2949,15 +3657,18 @@
     "kun": [
       "そこ"
     ],
-    "freq": 867
+    "freq": 867,
+    "example": {
+      "word": "底",
+      "reading": "そこ",
+      "meaning": "အောက်ခြေ"
+    }
   },
   {
     "kanji": "布",
     "strokes": 5,
     "meanings": [
-      "Linen",
-      "Cloth",
-      "Spread"
+      "အဝတ်စ"
     ],
     "on": [
       "ふ"
@@ -2965,13 +3676,18 @@
     "kun": [
       "ぬの"
     ],
-    "freq": 877
+    "freq": 877,
+    "example": {
+      "word": "財布",
+      "reading": "さいふ",
+      "meaning": "ပိုက်ဆံအိတ်"
+    }
   },
   {
     "kanji": "寺",
     "strokes": 6,
     "meanings": [
-      "Buddhist Temple"
+      "ဘုန်းကြီးကျောင်း"
     ],
     "on": [
       "じ"
@@ -2979,43 +3695,54 @@
     "kun": [
       "てら"
     ],
-    "freq": 879
+    "freq": 879,
+    "example": {
+      "word": "寺",
+      "reading": "てら",
+      "meaning": "ဘုရားကျောင်း"
+    }
   },
   {
     "kanji": "宇",
     "strokes": 6,
     "meanings": [
-      "Eaves",
-      "Roof",
-      "House"
+      "ယက်မ",
+      "စကြဝဠာ"
     ],
     "on": [
       "う"
     ],
     "kun": [],
-    "freq": 883
+    "freq": 883,
+    "example": {
+      "word": "宇宙",
+      "reading": "うちゅう",
+      "meaning": "စကြဝဠာ/အာကာသ"
+    }
   },
   {
     "kanji": "巨",
     "strokes": 5,
     "meanings": [
-      "Gigantic",
-      "Big",
-      "Large"
+      "ကြီးမား"
     ],
     "on": [
       "きょ"
     ],
     "kun": [],
-    "freq": 892
+    "freq": 892,
+    "example": {
+      "word": "巨大",
+      "reading": "きょだい",
+      "meaning": "ကြီးမားသော"
+    }
   },
   {
     "kanji": "震",
     "strokes": 15,
     "meanings": [
-      "Quake",
-      "Shake",
-      "Tremble"
+      "တုန်ခါ",
+      "ငလျင်"
     ],
     "on": [
       "しん"
@@ -3024,15 +3751,19 @@
       "ふる.う",
       "ふる.える"
     ],
-    "freq": 893
+    "freq": 893,
+    "example": {
+      "word": "地震",
+      "reading": "じしん",
+      "meaning": "ငလျင်"
+    }
   },
   {
     "kanji": "希",
     "strokes": 7,
     "meanings": [
-      "Hope",
-      "Beg",
-      "Request"
+      "မျှော်လင့်",
+      "ရှား"
     ],
     "on": [
       "き",
@@ -3041,15 +3772,18 @@
     "kun": [
       "まれ"
     ],
-    "freq": 896
+    "freq": 896,
+    "example": {
+      "word": "希望",
+      "reading": "きぼう",
+      "meaning": "မျှော်လင့်ချက်"
+    }
   },
   {
     "kanji": "触",
     "strokes": 13,
     "meanings": [
-      "Contact",
-      "Touch",
-      "Feel"
+      "ထိ"
     ],
     "on": [
       "しょく"
@@ -3059,15 +3793,19 @@
       "さわ.る",
       "さわ"
     ],
-    "freq": 904
+    "freq": 904,
+    "example": {
+      "word": "触る",
+      "reading": "さわる",
+      "meaning": "ထိ/ကိုင်တွယ်သည်"
+    }
   },
   {
     "kanji": "依",
     "strokes": 8,
     "meanings": [
-      "Reliant",
-      "Depend On",
-      "Consequently"
+      "မှီခို",
+      "အားကိုး"
     ],
     "on": [
       "い",
@@ -3076,29 +3814,37 @@
     "kun": [
       "よ.る"
     ],
-    "freq": 906
+    "freq": 906,
+    "example": {
+      "word": "依頼",
+      "reading": "いらい",
+      "meaning": "တောင်းဆို/အပ်နှံခြင်း"
+    }
   },
   {
     "kanji": "籍",
     "strokes": 20,
     "meanings": [
-      "Enroll",
-      "Domiciliary Register",
-      "Membership"
+      "စာရင်းသွင်း",
+      "အသင်းဝင်"
     ],
     "on": [
       "せき"
     ],
     "kun": [],
-    "freq": 907
+    "freq": 907,
+    "example": {
+      "word": "国籍",
+      "reading": "こくせき",
+      "meaning": "နိုင်ငံသား"
+    }
   },
   {
     "kanji": "汚",
     "strokes": 6,
     "meanings": [
-      "Dirty",
-      "Pollute",
-      "Disgrace"
+      "ညစ်ပေ",
+      "ညစ်ညမ်း"
     ],
     "on": [
       "お"
@@ -3111,55 +3857,72 @@
       "よご.れる",
       "きたな.い"
     ],
-    "freq": 908
+    "freq": 908,
+    "example": {
+      "word": "汚い",
+      "reading": "きたない",
+      "meaning": "ညစ်ပတ်သော"
+    }
   },
   {
     "kanji": "枚",
     "strokes": 8,
     "meanings": [
-      "Sheet Of...",
-      "Counter For Flat Thin Objects Or Sheets"
+      "(ပြားသောအရာ)ရေတွက်ရာ"
     ],
     "on": [
       "まい",
       "ばい"
     ],
     "kun": [],
-    "freq": 911
+    "freq": 911,
+    "example": {
+      "word": "一枚",
+      "reading": "いちまい",
+      "meaning": "တစ်ရွက်"
+    }
   },
   {
     "kanji": "複",
     "strokes": 14,
     "meanings": [
-      "Duplicate",
-      "Double",
-      "Compound"
+      "ပွား",
+      "ပေါင်းစပ်"
     ],
     "on": [
       "ふく"
     ],
     "kun": [],
-    "freq": 915
+    "freq": 915,
+    "example": {
+      "word": "複雑",
+      "reading": "ふくざつ",
+      "meaning": "ရှုပ်ထွေးသော"
+    }
   },
   {
     "kanji": "郵",
     "strokes": 11,
     "meanings": [
-      "Mail",
-      "Stagecoach Stop"
+      "စာတိုက်"
     ],
     "on": [
       "ゆう"
     ],
     "kun": [],
-    "freq": 917
+    "freq": 917,
+    "example": {
+      "word": "郵便",
+      "reading": "ゆうびん",
+      "meaning": "စာပို့/စာတိုက်"
+    }
   },
   {
     "kanji": "仲",
     "strokes": 6,
     "meanings": [
-      "Go-between",
-      "Relationship"
+      "ဆက်ဆံရေး",
+      "ကြားလူ"
     ],
     "on": [
       "ちゅう"
@@ -3167,15 +3930,19 @@
     "kun": [
       "なか"
     ],
-    "freq": 919
+    "freq": 919,
+    "example": {
+      "word": "仲間",
+      "reading": "なかま",
+      "meaning": "အပေါင်းအဖော်/မိတ်ဆွေ"
+    }
   },
   {
     "kanji": "栄",
     "strokes": 9,
     "meanings": [
-      "Flourish",
-      "Prosperity",
-      "Honor"
+      "စည်ပင်",
+      "ဂုဏ်"
     ],
     "on": [
       "えい",
@@ -3188,15 +3955,19 @@
       "は.える",
       "え"
     ],
-    "freq": 920
+    "freq": 920,
+    "example": {
+      "word": "栄養",
+      "reading": "えいよう",
+      "meaning": "အာဟာရ"
+    }
   },
   {
     "kanji": "札",
     "strokes": 5,
     "meanings": [
-      "Tag",
-      "Paper Money",
-      "Counter For Bonds"
+      "ကတ်",
+      "ငွေစက္ကူ"
     ],
     "on": [
       "さつ"
@@ -3204,15 +3975,19 @@
     "kun": [
       "ふだ"
     ],
-    "freq": 921
+    "freq": 921,
+    "example": {
+      "word": "お札",
+      "reading": "おさつ",
+      "meaning": "ငွေစက္ကူ"
+    }
   },
   {
     "kanji": "板",
     "strokes": 8,
     "meanings": [
-      "Plank",
-      "Board",
-      "Plate"
+      "ပြား",
+      "ပျဉ်"
     ],
     "on": [
       "はん",
@@ -3221,15 +3996,18 @@
     "kun": [
       "いた"
     ],
-    "freq": 926
+    "freq": 926,
+    "example": {
+      "word": "黒板",
+      "reading": "こくばん",
+      "meaning": "ကျောက်သင်ပုန်း"
+    }
   },
   {
     "kanji": "骨",
     "strokes": 10,
     "meanings": [
-      "Skeleton",
-      "Bone",
-      "Remains"
+      "အရိုး"
     ],
     "on": [
       "こつ"
@@ -3237,15 +4015,19 @@
     "kun": [
       "ほね"
     ],
-    "freq": 936
+    "freq": 936,
+    "example": {
+      "word": "骨",
+      "reading": "ほね",
+      "meaning": "အရိုး"
+    }
   },
   {
     "kanji": "傾",
     "strokes": 13,
     "meanings": [
-      "Lean",
-      "Incline",
-      "Tilt"
+      "စောင်း",
+      "ယိမ်း"
     ],
     "on": [
       "けい"
@@ -3257,15 +4039,19 @@
       "かた.げる",
       "かし.げる"
     ],
-    "freq": 938
+    "freq": 938,
+    "example": {
+      "word": "傾向",
+      "reading": "けいこう",
+      "meaning": "သဘောထား/လမ်းကြောင်း"
+    }
   },
   {
     "kanji": "届",
     "strokes": 8,
     "meanings": [
-      "Deliver",
-      "Reach",
-      "Arrive"
+      "ပို့",
+      "ရောက်"
     ],
     "on": [
       "かい"
@@ -3275,15 +4061,19 @@
       "-とど.け",
       "とど.く"
     ],
-    "freq": 939
+    "freq": 939,
+    "example": {
+      "word": "届く",
+      "reading": "とどく",
+      "meaning": "ရောက်ရှိသည်"
+    }
   },
   {
     "kanji": "巻",
     "strokes": 9,
     "meanings": [
-      "Scroll",
-      "Volume",
-      "Book"
+      "လိပ်",
+      "အတွဲ"
     ],
     "on": [
       "かん",
@@ -3294,15 +4084,18 @@
       "まき",
       "ま.き"
     ],
-    "freq": 944
+    "freq": 944,
+    "example": {
+      "word": "巻く",
+      "reading": "まく",
+      "meaning": "လိပ်/ပတ်သည်"
+    }
   },
   {
     "kanji": "燃",
     "strokes": 16,
     "meanings": [
-      "Burn",
-      "Blaze",
-      "Glow"
+      "လောင်ကျွမ်း"
     ],
     "on": [
       "ねん"
@@ -3312,15 +4105,19 @@
       "も.やす",
       "も.す"
     ],
-    "freq": 948
+    "freq": 948,
+    "example": {
+      "word": "燃える",
+      "reading": "もえる",
+      "meaning": "မီးလောင်သည်"
+    }
   },
   {
     "kanji": "跡",
     "strokes": 13,
     "meanings": [
-      "Tracks",
-      "Mark",
-      "Print"
+      "ခြေရာ",
+      "အမှတ်"
     ],
     "on": [
       "せき"
@@ -3328,15 +4125,18 @@
     "kun": [
       "あと"
     ],
-    "freq": 953
+    "freq": 953,
+    "example": {
+      "word": "足跡",
+      "reading": "あしあと",
+      "meaning": "ခြေရာ"
+    }
   },
   {
     "kanji": "包",
     "strokes": 5,
     "meanings": [
-      "Wrap",
-      "Pack Up",
-      "Cover"
+      "ထုပ်ပိုး"
     ],
     "on": [
       "ほう"
@@ -3345,28 +4145,36 @@
       "つつ.む",
       "くる.む"
     ],
-    "freq": 954
+    "freq": 954,
+    "example": {
+      "word": "包む",
+      "reading": "つつむ",
+      "meaning": "ထုပ်ပိုးသည်"
+    }
   },
   {
     "kanji": "駐",
     "strokes": 15,
     "meanings": [
-      "Stop-over",
-      "Reside In",
-      "Resident"
+      "ရပ်နား",
+      "နေထိုင်"
     ],
     "on": [
       "ちゅう"
     ],
     "kun": [],
-    "freq": 955
+    "freq": 955,
+    "example": {
+      "word": "駐車",
+      "reading": "ちゅうしゃ",
+      "meaning": "ကားရပ်နားခြင်း"
+    }
   },
   {
     "kanji": "弱",
     "strokes": 10,
     "meanings": [
-      "Weak",
-      "Frail"
+      "အားနည်း"
     ],
     "on": [
       "じゃく"
@@ -3377,28 +4185,36 @@
       "よわ.まる",
       "よわ.める"
     ],
-    "freq": 958
+    "freq": 958,
+    "example": {
+      "word": "弱い",
+      "reading": "よわい",
+      "meaning": "အားနည်းသော"
+    }
   },
   {
     "kanji": "紹",
     "strokes": 11,
     "meanings": [
-      "Introduce",
-      "Inherit",
-      "Help"
+      "မိတ်ဆက်"
     ],
     "on": [
       "しょう"
     ],
     "kun": [],
-    "freq": 963
+    "freq": 963,
+    "example": {
+      "word": "紹介",
+      "reading": "しょうかい",
+      "meaning": "မိတ်ဆက်ခြင်း"
+    }
   },
   {
     "kanji": "雇",
     "strokes": 12,
     "meanings": [
-      "Employ",
-      "Hire"
+      "ငှားရမ်း",
+      "အလုပ်ခန့်"
     ],
     "on": [
       "こ"
@@ -3406,15 +4222,19 @@
     "kun": [
       "やと.う"
     ],
-    "freq": 975
+    "freq": 975,
+    "example": {
+      "word": "雇用",
+      "reading": "こよう",
+      "meaning": "အလုပ်အကိုင်ခန့်အပ်မှု"
+    }
   },
   {
     "kanji": "替",
     "strokes": 12,
     "meanings": [
-      "Exchange",
-      "Spare",
-      "Substitute"
+      "လဲလှယ်",
+      "အစားထိုး"
     ],
     "on": [
       "たい"
@@ -3424,15 +4244,19 @@
       "か.え-",
       "か.わる"
     ],
-    "freq": 979
+    "freq": 979,
+    "example": {
+      "word": "両替",
+      "reading": "りょうがえ",
+      "meaning": "ငွေလဲလှယ်ခြင်း"
+    }
   },
   {
     "kanji": "預",
     "strokes": 13,
     "meanings": [
-      "Deposit",
-      "Custody",
-      "Leave With"
+      "အပ်နှံ",
+      "သိမ်းဆည်း"
     ],
     "on": [
       "よ"
@@ -3441,14 +4265,19 @@
       "あず.ける",
       "あず.かる"
     ],
-    "freq": 981
+    "freq": 981,
+    "example": {
+      "word": "預金",
+      "reading": "よきん",
+      "meaning": "ဘဏ်ငွေစုဆောင်းမှု"
+    }
   },
   {
     "kanji": "焼",
     "strokes": 12,
     "meanings": [
-      "Bake",
-      "Burning"
+      "ဖုတ်",
+      "ကင်"
     ],
     "on": [
       "しょう"
@@ -3460,14 +4289,18 @@
       "-や.き",
       "や.ける"
     ],
-    "freq": 982
+    "freq": 982,
+    "example": {
+      "word": "焼く",
+      "reading": "やく",
+      "meaning": "ဖုတ်/ကင်သည်"
+    }
   },
   {
     "kanji": "簡",
     "strokes": 18,
     "meanings": [
-      "Simplicity",
-      "Brevity"
+      "ရိုးရှင်း"
     ],
     "on": [
       "かん",
@@ -3477,29 +4310,37 @@
       "えら.ぶ",
       "ふだ"
     ],
-    "freq": 983
+    "freq": 983,
+    "example": {
+      "word": "簡単",
+      "reading": "かんたん",
+      "meaning": "ရိုးရှင်းလွယ်ကူသော"
+    }
   },
   {
     "kanji": "章",
     "strokes": 11,
     "meanings": [
-      "Badge",
-      "Chapter",
-      "Composition"
+      "အခန်း",
+      "တံဆိပ်"
     ],
     "on": [
       "しょう"
     ],
     "kun": [],
-    "freq": 990
+    "freq": 990,
+    "example": {
+      "word": "文章",
+      "reading": "ぶんしょう",
+      "meaning": "စာစီစာကုံး"
+    }
   },
   {
     "kanji": "臓",
     "strokes": 19,
     "meanings": [
-      "Entrails",
-      "Viscera",
-      "Bowels"
+      "အတွင်းခန္ဓာ",
+      "အူ"
     ],
     "on": [
       "ぞう"
@@ -3507,15 +4348,19 @@
     "kun": [
       "はらわた"
     ],
-    "freq": 991
+    "freq": 991,
+    "example": {
+      "word": "心臓",
+      "reading": "しんぞう",
+      "meaning": "နှလုံး"
+    }
   },
   {
     "kanji": "律",
     "strokes": 9,
     "meanings": [
-      "Rhythm",
-      "Law",
-      "Regulation"
+      "ဥပဒေ",
+      "စည်း"
     ],
     "on": [
       "りつ",
@@ -3523,15 +4368,19 @@
       "れつ"
     ],
     "kun": [],
-    "freq": 992
+    "freq": 992,
+    "example": {
+      "word": "法律",
+      "reading": "ほうりつ",
+      "meaning": "ဥပဒေ"
+    }
   },
   {
     "kanji": "贈",
     "strokes": 18,
     "meanings": [
-      "Presents",
-      "Send",
-      "Give To"
+      "လက်ဆောင်",
+      "ပေး"
     ],
     "on": [
       "ぞう",
@@ -3540,15 +4389,19 @@
     "kun": [
       "おく.る"
     ],
-    "freq": 1001
+    "freq": 1001,
+    "example": {
+      "word": "贈り物",
+      "reading": "おくりもの",
+      "meaning": "လက်ဆောင်"
+    }
   },
   {
     "kanji": "照",
     "strokes": 13,
     "meanings": [
-      "Illuminate",
-      "Shine",
-      "Compare"
+      "ထွန်းလင်း",
+      "နှိုင်းယှဉ်"
     ],
     "on": [
       "しょう"
@@ -3558,15 +4411,19 @@
       "て.らす",
       "て.れる"
     ],
-    "freq": 1004
+    "freq": 1004,
+    "example": {
+      "word": "照明",
+      "reading": "しょうめい",
+      "meaning": "အလင်းရောင်"
+    }
   },
   {
     "kanji": "薄",
     "strokes": 16,
     "meanings": [
-      "Dilute",
-      "Thin",
-      "Weak (tea)"
+      "ပါး",
+      "ဖျော့"
     ],
     "on": [
       "はく"
@@ -3582,15 +4439,19 @@
       "うす.れる",
       "すすき"
     ],
-    "freq": 1009
+    "freq": 1009,
+    "example": {
+      "word": "薄い",
+      "reading": "うすい",
+      "meaning": "ပါးသော/ဖျော့သော"
+    }
   },
   {
     "kanji": "群",
     "strokes": 13,
     "meanings": [
-      "Flock",
-      "Group",
-      "Crowd"
+      "အုပ်စု",
+      "အုံ"
     ],
     "on": [
       "ぐん"
@@ -3601,26 +4462,36 @@
       "むら",
       "むら.がる"
     ],
-    "freq": 1012
+    "freq": 1012,
+    "example": {
+      "word": "群れ",
+      "reading": "むれ",
+      "meaning": "အုပ်စု/တိရစ္ဆာန်အုံ"
+    }
   },
   {
     "kanji": "秒",
     "strokes": 9,
     "meanings": [
-      "Second (1/60 Minute)"
+      "စက္ကန့်"
     ],
     "on": [
       "びょう"
     ],
     "kun": [],
-    "freq": 1015
+    "freq": 1015,
+    "example": {
+      "word": "秒",
+      "reading": "びょう",
+      "meaning": "စက္ကန့်"
+    }
   },
   {
     "kanji": "奥",
     "strokes": 12,
     "meanings": [
-      "Heart",
-      "Interior"
+      "အတွင်းပိုင်း",
+      "အနက်"
     ],
     "on": [
       "おう"
@@ -3630,15 +4501,19 @@
       "おく.まる",
       "くま"
     ],
-    "freq": 1018
+    "freq": 1018,
+    "example": {
+      "word": "奥",
+      "reading": "おく",
+      "meaning": "အတွင်းပိုင်း"
+    }
   },
   {
     "kanji": "詰",
     "strokes": 13,
     "meanings": [
-      "Packed",
-      "Close",
-      "Pressed"
+      "ဖြည့်",
+      "ထိုးသွင်း"
     ],
     "on": [
       "きつ",
@@ -3651,15 +4526,18 @@
       "つ.まる",
       "つ.む"
     ],
-    "freq": 1020
+    "freq": 1020,
+    "example": {
+      "word": "詰める",
+      "reading": "つめる",
+      "meaning": "ထည့်/ဖြည့်သည်"
+    }
   },
   {
     "kanji": "双",
     "strokes": 4,
     "meanings": [
-      "Pair",
-      "Set",
-      "Comparison"
+      "အတွဲ"
     ],
     "on": [
       "そう"
@@ -3670,15 +4548,19 @@
       "ならぶ",
       "ふたつ"
     ],
-    "freq": 1029
+    "freq": 1029,
+    "example": {
+      "word": "双子",
+      "reading": "ふたご",
+      "meaning": "အမြွှာ"
+    }
   },
   {
     "kanji": "刺",
     "strokes": 8,
     "meanings": [
-      "Thorn",
-      "Pierce",
-      "Stab"
+      "ထိုး",
+      "စူး"
     ],
     "on": [
       "し"
@@ -3690,42 +4572,54 @@
       "さし",
       "とげ"
     ],
-    "freq": 1031
+    "freq": 1031,
+    "example": {
+      "word": "名刺",
+      "reading": "めいし",
+      "meaning": "လိပ်စာကတ်"
+    }
   },
   {
     "kanji": "純",
     "strokes": 10,
     "meanings": [
-      "Genuine",
-      "Purity",
-      "Innocence"
+      "သန့်စင်",
+      "စစ်မှန်"
     ],
     "on": [
       "じゅん"
     ],
     "kun": [],
-    "freq": 1044
+    "freq": 1044,
+    "example": {
+      "word": "純粋",
+      "reading": "じゅんすい",
+      "meaning": "သန့်စင်စစ်မှန်သော"
+    }
   },
   {
     "kanji": "翌",
     "strokes": 11,
     "meanings": [
-      "The Following",
-      "Next"
+      "နောက်တစ်ရက်"
     ],
     "on": [
       "よく"
     ],
     "kun": [],
-    "freq": 1070
+    "freq": 1070,
+    "example": {
+      "word": "翌日",
+      "reading": "よくじつ",
+      "meaning": "နောက်တစ်နေ့"
+    }
   },
   {
     "kanji": "快",
     "strokes": 7,
     "meanings": [
-      "Cheerful",
-      "Pleasant",
-      "Agreeable"
+      "ကြည်နူး",
+      "သက်တောင့်သက်သာ"
     ],
     "on": [
       "かい"
@@ -3733,15 +4627,19 @@
     "kun": [
       "こころよ.い"
     ],
-    "freq": 1074
+    "freq": 1074,
+    "example": {
+      "word": "快適",
+      "reading": "かいてき",
+      "meaning": "သက်တောင့်သက်သာ"
+    }
   },
   {
     "kanji": "片",
     "strokes": 4,
     "meanings": [
-      "One-sided",
-      "Leaf",
-      "Sheet"
+      "တစ်ဖက်",
+      "အပိုင်းအစ"
     ],
     "on": [
       "へん"
@@ -3750,15 +4648,18 @@
       "かた-",
       "かた"
     ],
-    "freq": 1076
+    "freq": 1076,
+    "example": {
+      "word": "片方",
+      "reading": "かたほう",
+      "meaning": "တစ်ဖက်/တစ်ခုစီ"
+    }
   },
   {
     "kanji": "敬",
     "strokes": 12,
     "meanings": [
-      "Awe",
-      "Respect",
-      "Honor"
+      "ရိုသေ"
     ],
     "on": [
       "けい",
@@ -3767,15 +4668,19 @@
     "kun": [
       "うやま.う"
     ],
-    "freq": 1078
+    "freq": 1078,
+    "example": {
+      "word": "尊敬",
+      "reading": "そんけい",
+      "meaning": "လေးစားမှု"
+    }
   },
   {
     "kanji": "悩",
     "strokes": 10,
     "meanings": [
-      "Trouble",
-      "Worry",
-      "In Pain"
+      "ပူပင်",
+      "စိတ်ညစ်"
     ],
     "on": [
       "のう"
@@ -3786,14 +4691,19 @@
       "なや.ましい",
       "なやみ"
     ],
-    "freq": 1084
+    "freq": 1084,
+    "example": {
+      "word": "悩む",
+      "reading": "なやむ",
+      "meaning": "စိုးရိမ်ပူပင်သည်"
+    }
   },
   {
     "kanji": "泉",
     "strokes": 9,
     "meanings": [
-      "Spring",
-      "Fountain"
+      "စမ်းရေ",
+      "ရေပန်း"
     ],
     "on": [
       "せん"
@@ -3801,15 +4711,19 @@
     "kun": [
       "いずみ"
     ],
-    "freq": 1086
+    "freq": 1086,
+    "example": {
+      "word": "温泉",
+      "reading": "おんせん",
+      "meaning": "ရေပူစမ်း"
+    }
   },
   {
     "kanji": "皮",
     "strokes": 5,
     "meanings": [
-      "Pelt",
-      "Skin",
-      "Hide"
+      "အရေ",
+      "အခွံ"
     ],
     "on": [
       "ひ"
@@ -3817,14 +4731,18 @@
     "kun": [
       "かわ"
     ],
-    "freq": 1092
+    "freq": 1092,
+    "example": {
+      "word": "皮",
+      "reading": "かわ",
+      "meaning": "အရေ/အခွံ"
+    }
   },
   {
     "kanji": "漁",
     "strokes": 14,
     "meanings": [
-      "Fishing",
-      "Fishery"
+      "ငါးဖမ်း"
     ],
     "on": [
       "ぎょ",
@@ -3833,15 +4751,19 @@
     "kun": [
       "あさ.る"
     ],
-    "freq": 1094
+    "freq": 1094,
+    "example": {
+      "word": "漁業",
+      "reading": "ぎょぎょう",
+      "meaning": "ငါးဖမ်းလုပ်ငန်း"
+    }
   },
   {
     "kanji": "荒",
     "strokes": 9,
     "meanings": [
-      "Laid Waste",
-      "Rough",
-      "Rude"
+      "ကြမ်း",
+      "ပျက်စီး"
     ],
     "on": [
       "こう"
@@ -3854,15 +4776,18 @@
       "-あ.らし",
       "すさ.む"
     ],
-    "freq": 1099
+    "freq": 1099,
+    "example": {
+      "word": "荒い",
+      "reading": "あらい",
+      "meaning": "ကြမ်းတမ်းသော"
+    }
   },
   {
     "kanji": "貯",
     "strokes": 12,
     "meanings": [
-      "Savings",
-      "Store",
-      "Lay In"
+      "စုဆောင်း"
     ],
     "on": [
       "ちょ"
@@ -3871,14 +4796,19 @@
       "た.める",
       "たくわ.える"
     ],
-    "freq": 1100
+    "freq": 1100,
+    "example": {
+      "word": "貯金",
+      "reading": "ちょきん",
+      "meaning": "ငွေစုဆောင်းမှု"
+    }
   },
   {
     "kanji": "硬",
     "strokes": 12,
     "meanings": [
-      "Stiff",
-      "Hard"
+      "မာ",
+      "တောင့်"
     ],
     "on": [
       "こう"
@@ -3886,15 +4816,18 @@
     "kun": [
       "かた.い"
     ],
-    "freq": 1101
+    "freq": 1101,
+    "example": {
+      "word": "硬い",
+      "reading": "かたい",
+      "meaning": "မာကြောသော"
+    }
   },
   {
     "kanji": "埋",
     "strokes": 10,
     "meanings": [
-      "Bury",
-      "Be Filled Up",
-      "Embedded"
+      "မြှုပ်"
     ],
     "on": [
       "まい"
@@ -3907,15 +4840,18 @@
       "うず.まる",
       "い.ける"
     ],
-    "freq": 1110
+    "freq": 1110,
+    "example": {
+      "word": "埋める",
+      "reading": "うめる",
+      "meaning": "မြှုပ်/ဖို့သည်"
+    }
   },
   {
     "kanji": "柱",
     "strokes": 9,
     "meanings": [
-      "Pillar",
-      "Post",
-      "Cylinder"
+      "တိုင်"
     ],
     "on": [
       "ちゅう"
@@ -3923,15 +4859,18 @@
     "kun": [
       "はしら"
     ],
-    "freq": 1119
+    "freq": 1119,
+    "example": {
+      "word": "柱",
+      "reading": "はしら",
+      "meaning": "တိုင်"
+    }
   },
   {
     "kanji": "祭",
     "strokes": 11,
     "meanings": [
-      "Ritual",
-      "Offer Prayers",
-      "Celebrate"
+      "ပွဲတော်"
     ],
     "on": [
       "さい"
@@ -3941,15 +4880,18 @@
       "まつ.り",
       "まつり"
     ],
-    "freq": 1124
+    "freq": 1124,
+    "example": {
+      "word": "祭り",
+      "reading": "まつり",
+      "meaning": "ပွဲတော်"
+    }
   },
   {
     "kanji": "袋",
     "strokes": 11,
     "meanings": [
-      "Sack",
-      "Bag",
-      "Pouch"
+      "အိတ်"
     ],
     "on": [
       "たい",
@@ -3958,15 +4900,19 @@
     "kun": [
       "ふくろ"
     ],
-    "freq": 1125
+    "freq": 1125,
+    "example": {
+      "word": "袋",
+      "reading": "ふくろ",
+      "meaning": "အိတ်"
+    }
   },
   {
     "kanji": "筆",
     "strokes": 12,
     "meanings": [
-      "Writing Brush",
-      "Writing",
-      "Painting Brush"
+      "စုတ်တံ",
+      "ကလောင်"
     ],
     "on": [
       "ひつ"
@@ -3974,15 +4920,19 @@
     "kun": [
       "ふで"
     ],
-    "freq": 1132
+    "freq": 1132,
+    "example": {
+      "word": "鉛筆",
+      "reading": "えんぴつ",
+      "meaning": "ခဲတံ"
+    }
   },
   {
     "kanji": "訓",
     "strokes": 10,
     "meanings": [
-      "Instruction",
-      "Japanese Character Reading",
-      "Explanation"
+      "သင်ကြားချက်",
+      "ကွန်းဖတ်"
     ],
     "on": [
       "くん",
@@ -3993,15 +4943,18 @@
       "よ.む",
       "くん.ずる"
     ],
-    "freq": 1134
+    "freq": 1134,
+    "example": {
+      "word": "訓練",
+      "reading": "くんれん",
+      "meaning": "လေ့ကျင့်ရေး"
+    }
   },
   {
     "kanji": "浴",
     "strokes": 10,
     "meanings": [
-      "Bathe",
-      "Be Favored With",
-      "Bask In"
+      "ရေချိုး"
     ],
     "on": [
       "よく"
@@ -4010,14 +4963,18 @@
       "あ.びる",
       "あ.びせる"
     ],
-    "freq": 1136
+    "freq": 1136,
+    "example": {
+      "word": "浴びる",
+      "reading": "あびる",
+      "meaning": "ရေချိုးသည်"
+    }
   },
   {
     "kanji": "童",
     "strokes": 12,
     "meanings": [
-      "Juvenile",
-      "Child"
+      "ကလေး"
     ],
     "on": [
       "どう"
@@ -4025,15 +4982,18 @@
     "kun": [
       "わらべ"
     ],
-    "freq": 1138
+    "freq": 1138,
+    "example": {
+      "word": "童話",
+      "reading": "どうわ",
+      "meaning": "ကလေးပုံပြင်"
+    }
   },
   {
     "kanji": "宝",
     "strokes": 8,
     "meanings": [
-      "Treasure",
-      "Wealth",
-      "Valuables"
+      "ရတနာ"
     ],
     "on": [
       "ほう"
@@ -4041,29 +5001,36 @@
     "kun": [
       "たから"
     ],
-    "freq": 1139
+    "freq": 1139,
+    "example": {
+      "word": "宝物",
+      "reading": "たからもの",
+      "meaning": "ရတနာ/အဖိုးတန်ပစ္စည်း"
+    }
   },
   {
     "kanji": "封",
     "strokes": 9,
     "meanings": [
-      "Seal",
-      "Closing"
+      "ပိတ်ချိပ်"
     ],
     "on": [
       "ふう",
       "ほう"
     ],
     "kun": [],
-    "freq": 1143
+    "freq": 1143,
+    "example": {
+      "word": "封筒",
+      "reading": "ふうとう",
+      "meaning": "စာအိတ်"
+    }
   },
   {
     "kanji": "胸",
     "strokes": 10,
     "meanings": [
-      "Bosom",
-      "Breast",
-      "Chest"
+      "ရင်ဘတ်"
     ],
     "on": [
       "きょう"
@@ -4072,13 +5039,18 @@
       "むね",
       "むな-"
     ],
-    "freq": 1144
+    "freq": 1144,
+    "example": {
+      "word": "胸",
+      "reading": "むね",
+      "meaning": "ရင်ဘတ်"
+    }
   },
   {
     "kanji": "砂",
     "strokes": 9,
     "meanings": [
-      "Sand"
+      "သဲ"
     ],
     "on": [
       "さ",
@@ -4087,13 +5059,18 @@
     "kun": [
       "すな"
     ],
-    "freq": 1146
+    "freq": 1146,
+    "example": {
+      "word": "砂糖",
+      "reading": "さとう",
+      "meaning": "သကြား"
+    }
   },
   {
     "kanji": "塩",
     "strokes": 13,
     "meanings": [
-      "Salt"
+      "ဆား"
     ],
     "on": [
       "えん"
@@ -4101,15 +5078,19 @@
     "kun": [
       "しお"
     ],
-    "freq": 1148
+    "freq": 1148,
+    "example": {
+      "word": "塩",
+      "reading": "しお",
+      "meaning": "ဆား"
+    }
   },
   {
     "kanji": "賢",
     "strokes": 16,
     "meanings": [
-      "Intelligent",
-      "Wise",
-      "Wisdom"
+      "တော်",
+      "ပညာ"
     ],
     "on": [
       "けん"
@@ -4117,15 +5098,19 @@
     "kun": [
       "かしこ.い"
     ],
-    "freq": 1159
+    "freq": 1159,
+    "example": {
+      "word": "賢い",
+      "reading": "かしこい",
+      "meaning": "ဉာဏ်ကောင်းသော"
+    }
   },
   {
     "kanji": "腕",
     "strokes": 12,
     "meanings": [
-      "Arm",
-      "Ability",
-      "Talent"
+      "လက်မောင်း",
+      "စွမ်းရည်"
     ],
     "on": [
       "わん"
@@ -4133,15 +5118,19 @@
     "kun": [
       "うで"
     ],
-    "freq": 1163
+    "freq": 1163,
+    "example": {
+      "word": "腕",
+      "reading": "うで",
+      "meaning": "လက်မောင်း"
+    }
   },
   {
     "kanji": "兆",
     "strokes": 6,
     "meanings": [
-      "Portent",
-      "10**12",
-      "Trillion"
+      "နိမိတ်",
+      "ဂဏန်းကြီး"
     ],
     "on": [
       "ちょう"
@@ -4150,15 +5139,19 @@
       "きざ.す",
       "きざ.し"
     ],
-    "freq": 1174
+    "freq": 1174,
+    "example": {
+      "word": "兆候",
+      "reading": "ちょうこう",
+      "meaning": "နိမိတ်/လက္ခဏာ"
+    }
   },
   {
     "kanji": "床",
     "strokes": 7,
     "meanings": [
-      "Bed",
-      "Counter For Beds",
-      "Floor"
+      "ကြမ်းပြင်",
+      "အိပ်ရာ"
     ],
     "on": [
       "しょう"
@@ -4167,15 +5160,19 @@
       "とこ",
       "ゆか"
     ],
-    "freq": 1175
+    "freq": 1175,
+    "example": {
+      "word": "床",
+      "reading": "ゆか",
+      "meaning": "ကြမ်းပြင်"
+    }
   },
   {
     "kanji": "毛",
     "strokes": 4,
     "meanings": [
-      "Fur",
-      "Hair",
-      "Feather"
+      "မွေး",
+      "ဆံ"
     ],
     "on": [
       "もう"
@@ -4183,13 +5180,18 @@
     "kun": [
       "け"
     ],
-    "freq": 1179
+    "freq": 1179,
+    "example": {
+      "word": "毛",
+      "reading": "け",
+      "meaning": "အမွေး"
+    }
   },
   {
     "kanji": "緑",
     "strokes": 14,
     "meanings": [
-      "Green"
+      "အစိမ်းရောင်"
     ],
     "on": [
       "りょく",
@@ -4198,15 +5200,19 @@
     "kun": [
       "みどり"
     ],
-    "freq": 1180
+    "freq": 1180,
+    "example": {
+      "word": "緑",
+      "reading": "みどり",
+      "meaning": "အစိမ်းရောင်"
+    }
   },
   {
     "kanji": "尊",
     "strokes": 12,
     "meanings": [
-      "Revered",
-      "Valuable",
-      "Precious"
+      "မြတ်နိုး",
+      "အဖိုးတန်"
     ],
     "on": [
       "そん"
@@ -4217,14 +5223,19 @@
       "たっと.ぶ",
       "とうと.ぶ"
     ],
-    "freq": 1181
+    "freq": 1181,
+    "example": {
+      "word": "尊敬",
+      "reading": "そんけい",
+      "meaning": "လေးစားမှု"
+    }
   },
   {
     "kanji": "祝",
     "strokes": 9,
     "meanings": [
-      "Celebrate",
-      "Congratulate"
+      "ဂုဏ်ပြု",
+      "ဆုတောင်း"
     ],
     "on": [
       "しゅく",
@@ -4233,15 +5244,19 @@
     "kun": [
       "いわ.う"
     ],
-    "freq": 1184
+    "freq": 1184,
+    "example": {
+      "word": "祝う",
+      "reading": "いわう",
+      "meaning": "ဂုဏ်ပြုဆုမွန်ပေးသည်"
+    }
   },
   {
     "kanji": "柔",
     "strokes": 9,
     "meanings": [
-      "Tender",
-      "Weakness",
-      "Gentleness"
+      "ပျော့",
+      "နူးညံ့"
     ],
     "on": [
       "じゅう",
@@ -4253,15 +5268,19 @@
       "やわ",
       "やわ.ら"
     ],
-    "freq": 1187
+    "freq": 1187,
+    "example": {
+      "word": "柔らかい",
+      "reading": "やわらかい",
+      "meaning": "ပျော့ပျောင်းသော"
+    }
   },
   {
     "kanji": "殿",
     "strokes": 13,
     "meanings": [
-      "Mr.",
-      "Hall",
-      "Mansion"
+      "အရှင်",
+      "ခန်းမ"
     ],
     "on": [
       "でん",
@@ -4271,15 +5290,19 @@
       "との",
       "-どの"
     ],
-    "freq": 1199
+    "freq": 1199,
+    "example": {
+      "word": "宮殿",
+      "reading": "きゅうでん",
+      "meaning": "နန်းတော်"
+    }
   },
   {
     "kanji": "濃",
     "strokes": 16,
     "meanings": [
-      "Concentrated",
-      "Thick",
-      "Dark"
+      "ပြင်း",
+      "ရင့်"
     ],
     "on": [
       "のう"
@@ -4287,29 +5310,35 @@
     "kun": [
       "こ.い"
     ],
-    "freq": 1200
+    "freq": 1200,
+    "example": {
+      "word": "濃い",
+      "reading": "こい",
+      "meaning": "ပြင်းသော/ရင့်သော"
+    }
   },
   {
     "kanji": "液",
     "strokes": 11,
     "meanings": [
-      "Fluid",
-      "Liquid",
-      "Juice"
+      "အရည်"
     ],
     "on": [
       "えき"
     ],
     "kun": [],
-    "freq": 1210
+    "freq": 1210,
+    "example": {
+      "word": "液体",
+      "reading": "えきたい",
+      "meaning": "အရည်"
+    }
   },
   {
     "kanji": "衣",
     "strokes": 6,
     "meanings": [
-      "Garment",
-      "Clothes",
-      "Dressing"
+      "အဝတ်အစား"
     ],
     "on": [
       "い",
@@ -4320,13 +5349,18 @@
       "きぬ",
       "-ぎ"
     ],
-    "freq": 1214
+    "freq": 1214,
+    "example": {
+      "word": "衣服",
+      "reading": "いふく",
+      "meaning": "အဝတ်အစား"
+    }
   },
   {
     "kanji": "肩",
     "strokes": 8,
     "meanings": [
-      "Shoulder"
+      "ပခုံး"
     ],
     "on": [
       "けん"
@@ -4334,15 +5368,18 @@
     "kun": [
       "かた"
     ],
-    "freq": 1215
+    "freq": 1215,
+    "example": {
+      "word": "肩",
+      "reading": "かた",
+      "meaning": "ပခုံး"
+    }
   },
   {
     "kanji": "零",
     "strokes": 13,
     "meanings": [
-      "Zero",
-      "Spill",
-      "Overflow"
+      "သုည"
     ],
     "on": [
       "れい"
@@ -4352,14 +5389,19 @@
       "こぼ.す",
       "こぼ.れる"
     ],
-    "freq": 1217
+    "freq": 1217,
+    "example": {
+      "word": "零度",
+      "reading": "れいど",
+      "meaning": "သုညဒီဂရီ"
+    }
   },
   {
     "kanji": "幼",
     "strokes": 5,
     "meanings": [
-      "Infancy",
-      "Childhood"
+      "ကလေးဘဝ",
+      "ငယ်"
     ],
     "on": [
       "よう"
@@ -4367,15 +5409,19 @@
     "kun": [
       "おさな.い"
     ],
-    "freq": 1227
+    "freq": 1227,
+    "example": {
+      "word": "幼児",
+      "reading": "ようじ",
+      "meaning": "ကလေးငယ်/နို့စို့ကလေး"
+    }
   },
   {
     "kanji": "荷",
     "strokes": 10,
     "meanings": [
-      "Baggage",
-      "Shoulder-pole Load",
-      "Bear (a Burden)"
+      "ဝန်ထုပ်",
+      "ကုန်"
     ],
     "on": [
       "か"
@@ -4383,15 +5429,19 @@
     "kun": [
       "に"
     ],
-    "freq": 1230
+    "freq": 1230,
+    "example": {
+      "word": "荷物",
+      "reading": "にもつ",
+      "meaning": "ပစ္စည်းအထုပ်"
+    }
   },
   {
     "kanji": "泊",
     "strokes": 8,
     "meanings": [
-      "Overnight Stay",
-      "Put Up At",
-      "Ride At Anchor"
+      "တစ်ည",
+      "တည်းခို"
     ],
     "on": [
       "はく"
@@ -4400,13 +5450,18 @@
       "と.まる",
       "と.める"
     ],
-    "freq": 1233
+    "freq": 1233,
+    "example": {
+      "word": "宿泊",
+      "reading": "しゅくはく",
+      "meaning": "တည်းခိုနေထိုင်ခြင်း"
+    }
   },
   {
     "kanji": "黄",
     "strokes": 11,
     "meanings": [
-      "Yellow"
+      "အဝါရောင်"
     ],
     "on": [
       "こう",
@@ -4416,15 +5471,18 @@
       "き",
       "こ-"
     ],
-    "freq": 1240
+    "freq": 1240,
+    "example": {
+      "word": "黄色",
+      "reading": "きいろ",
+      "meaning": "အဝါရောင်"
+    }
   },
   {
     "kanji": "甘",
     "strokes": 5,
     "meanings": [
-      "Sweet",
-      "Coax",
-      "Pamper"
+      "ချို"
     ],
     "on": [
       "かん"
@@ -4435,29 +5493,37 @@
       "あま.やかす",
       "うま.い"
     ],
-    "freq": 1248
+    "freq": 1248,
+    "example": {
+      "word": "甘い",
+      "reading": "あまい",
+      "meaning": "ချိုသော"
+    }
   },
   {
     "kanji": "臣",
     "strokes": 7,
     "meanings": [
-      "Retainer",
-      "Subject"
+      "အမတ်",
+      "မှူးမတ်"
     ],
     "on": [
       "しん",
       "じん"
     ],
     "kun": [],
-    "freq": 1249
+    "freq": 1249,
+    "example": {
+      "word": "大臣",
+      "reading": "だいじん",
+      "meaning": "ဝန်ကြီး"
+    }
   },
   {
     "kanji": "浅",
     "strokes": 9,
     "meanings": [
-      "Shallow",
-      "Superficial",
-      "Frivolous"
+      "တိမ်"
     ],
     "on": [
       "せん"
@@ -4465,14 +5531,18 @@
     "kun": [
       "あさ.い"
     ],
-    "freq": 1253
+    "freq": 1253,
+    "example": {
+      "word": "浅い",
+      "reading": "あさい",
+      "meaning": "တိမ်သော"
+    }
   },
   {
     "kanji": "掃",
     "strokes": 11,
     "meanings": [
-      "Sweep",
-      "Brush"
+      "တံမြက်လှည်း"
     ],
     "on": [
       "そう",
@@ -4481,13 +5551,18 @@
     "kun": [
       "は.く"
     ],
-    "freq": 1255
+    "freq": 1255,
+    "example": {
+      "word": "掃除",
+      "reading": "そうじ",
+      "meaning": "သန့်ရှင်းရေး"
+    }
   },
   {
     "kanji": "雲",
     "strokes": 12,
     "meanings": [
-      "Cloud"
+      "တိမ်"
     ],
     "on": [
       "うん"
@@ -4496,15 +5571,18 @@
       "くも",
       "-ぐも"
     ],
-    "freq": 1256
+    "freq": 1256,
+    "example": {
+      "word": "雲",
+      "reading": "くも",
+      "meaning": "တိမ်"
+    }
   },
   {
     "kanji": "掘",
     "strokes": 11,
     "meanings": [
-      "Dig",
-      "Delve",
-      "Excavate"
+      "တူး"
     ],
     "on": [
       "くつ"
@@ -4512,15 +5590,18 @@
     "kun": [
       "ほ.る"
     ],
-    "freq": 1257
+    "freq": 1257,
+    "example": {
+      "word": "掘る",
+      "reading": "ほる",
+      "meaning": "တူးသည်"
+    }
   },
   {
     "kanji": "捨",
     "strokes": 11,
     "meanings": [
-      "Discard",
-      "Throw Away",
-      "Abandon"
+      "စွန့်ပစ်"
     ],
     "on": [
       "しゃ"
@@ -4528,13 +5609,18 @@
     "kun": [
       "す.てる"
     ],
-    "freq": 1266
+    "freq": 1266,
+    "example": {
+      "word": "捨てる",
+      "reading": "すてる",
+      "meaning": "စွန့်ပစ်သည်"
+    }
   },
   {
     "kanji": "軟",
     "strokes": 11,
     "meanings": [
-      "Soft"
+      "ပျော့"
     ],
     "on": [
       "なん"
@@ -4543,15 +5629,19 @@
       "やわ.らか",
       "やわ.らかい"
     ],
-    "freq": 1269
+    "freq": 1269,
+    "example": {
+      "word": "柔軟",
+      "reading": "じゅうなん",
+      "meaning": "ပြောင်းလွယ်ပြင်လွယ်/ပျော့ပျောင်းသော"
+    }
   },
   {
     "kanji": "沈",
     "strokes": 7,
     "meanings": [
-      "Sink",
-      "Be Submerged",
-      "Subside"
+      "နစ်",
+      "မြုပ်"
     ],
     "on": [
       "ちん",
@@ -4561,15 +5651,19 @@
       "しず.む",
       "しず.める"
     ],
-    "freq": 1271
+    "freq": 1271,
+    "example": {
+      "word": "沈む",
+      "reading": "しずむ",
+      "meaning": "နစ်မြုပ်သည်"
+    }
   },
   {
     "kanji": "凍",
     "strokes": 10,
     "meanings": [
-      "Frozen",
-      "Congeal",
-      "Refrigerate"
+      "ခဲ",
+      "အေးခဲ"
     ],
     "on": [
       "とう"
@@ -4581,14 +5675,18 @@
       "い.てる",
       "し.みる"
     ],
-    "freq": 1284
+    "freq": 1284,
+    "example": {
+      "word": "凍る",
+      "reading": "こおる",
+      "meaning": "အေးခဲသည်"
+    }
   },
   {
     "kanji": "乳",
     "strokes": 8,
     "meanings": [
-      "Milk",
-      "Breasts"
+      "နို့"
     ],
     "on": [
       "にゅう"
@@ -4597,15 +5695,18 @@
       "ちち",
       "ち"
     ],
-    "freq": 1289
+    "freq": 1289,
+    "example": {
+      "word": "牛乳",
+      "reading": "ぎゅうにゅう",
+      "meaning": "နွားနို့"
+    }
   },
   {
     "kanji": "恋",
     "strokes": 10,
     "meanings": [
-      "Romance",
-      "In Love",
-      "Yearn For"
+      "အချစ်"
     ],
     "on": [
       "れん"
@@ -4615,14 +5716,19 @@
       "こい",
       "こい.しい"
     ],
-    "freq": 1296
+    "freq": 1296,
+    "example": {
+      "word": "恋人",
+      "reading": "こいびと",
+      "meaning": "ချစ်သူ"
+    }
   },
   {
     "kanji": "紅",
     "strokes": 9,
     "meanings": [
-      "Crimson",
-      "Deep Red"
+      "နီရဲ",
+      "အနီ"
     ],
     "on": [
       "こう",
@@ -4633,29 +5739,35 @@
       "くれない",
       "あか.い"
     ],
-    "freq": 1299
+    "freq": 1299,
+    "example": {
+      "word": "口紅",
+      "reading": "くちべに",
+      "meaning": "နှုတ်ခမ်းနီ"
+    }
   },
   {
     "kanji": "郊",
     "strokes": 9,
     "meanings": [
-      "Outskirts",
-      "Suburbs",
-      "Rural Area"
+      "ဆင်ခြေဖုံး"
     ],
     "on": [
       "こう"
     ],
     "kun": [],
-    "freq": 1304
+    "freq": 1304,
+    "example": {
+      "word": "郊外",
+      "reading": "こうがい",
+      "meaning": "မြို့စွန်/ဆင်ခြေဖုံး"
+    }
   },
   {
     "kanji": "腰",
     "strokes": 13,
     "meanings": [
-      "Loins",
-      "Hips",
-      "Waist"
+      "ခါး"
     ],
     "on": [
       "よう"
@@ -4663,14 +5775,18 @@
     "kun": [
       "こし"
     ],
-    "freq": 1306
+    "freq": 1306,
+    "example": {
+      "word": "腰",
+      "reading": "こし",
+      "meaning": "ခါး"
+    }
   },
   {
     "kanji": "炭",
     "strokes": 9,
     "meanings": [
-      "Charcoal",
-      "Coal"
+      "မီးသွေး"
     ],
     "on": [
       "たん"
@@ -4678,15 +5794,18 @@
     "kun": [
       "すみ"
     ],
-    "freq": 1307
+    "freq": 1307,
+    "example": {
+      "word": "石炭",
+      "reading": "せきたん",
+      "meaning": "ကျောက်မီးသွေး"
+    }
   },
   {
     "kanji": "踊",
     "strokes": 14,
     "meanings": [
-      "Jump",
-      "Dance",
-      "Leap"
+      "က"
     ],
     "on": [
       "よう"
@@ -4694,15 +5813,18 @@
     "kun": [
       "おど.る"
     ],
-    "freq": 1308
+    "freq": 1308,
+    "example": {
+      "word": "踊る",
+      "reading": "おどる",
+      "meaning": "ကသည်"
+    }
   },
   {
     "kanji": "冊",
     "strokes": 5,
     "meanings": [
-      "Tome",
-      "Counter For Books",
-      "Volume"
+      "(စာအုပ်)ရေတွက်ရာ"
     ],
     "on": [
       "さつ",
@@ -4711,15 +5833,18 @@
     "kun": [
       "ふみ"
     ],
-    "freq": 1313
+    "freq": 1313,
+    "example": {
+      "word": "一冊",
+      "reading": "いっさつ",
+      "meaning": "တစ်အုပ်"
+    }
   },
   {
     "kanji": "勇",
     "strokes": 9,
     "meanings": [
-      "Courage",
-      "Cheer Up",
-      "Be In High Spirits"
+      "သတ္တိ"
     ],
     "on": [
       "ゆう"
@@ -4727,15 +5852,18 @@
     "kun": [
       "いさ.む"
     ],
-    "freq": 1319
+    "freq": 1319,
+    "example": {
+      "word": "勇気",
+      "reading": "ゆうき",
+      "meaning": "သတ္တိ"
+    }
   },
   {
     "kanji": "械",
     "strokes": 11,
     "meanings": [
-      "Contraption",
-      "Fetter",
-      "Machine"
+      "စက်"
     ],
     "on": [
       "かい"
@@ -4743,15 +5871,18 @@
     "kun": [
       "かせ"
     ],
-    "freq": 1321
+    "freq": 1321,
+    "example": {
+      "word": "機械",
+      "reading": "きかい",
+      "meaning": "စက်ပစ္စည်း"
+    }
   },
   {
     "kanji": "菜",
     "strokes": 11,
     "meanings": [
-      "Vegetable",
-      "Side Dish",
-      "Greens"
+      "ဟင်းသီးဟင်းရွက်"
     ],
     "on": [
       "さい"
@@ -4759,15 +5890,19 @@
     "kun": [
       "な"
     ],
-    "freq": 1327
+    "freq": 1327,
+    "example": {
+      "word": "野菜",
+      "reading": "やさい",
+      "meaning": "ဟင်းသီးဟင်းရွက်"
+    }
   },
   {
     "kanji": "珍",
     "strokes": 9,
     "meanings": [
-      "Rare",
-      "Curious",
-      "Strange"
+      "ရှား",
+      "ထူးဆန်း"
     ],
     "on": [
       "ちん"
@@ -4776,15 +5911,18 @@
       "めずら.しい",
       "たから"
     ],
-    "freq": 1330
+    "freq": 1330,
+    "example": {
+      "word": "珍しい",
+      "reading": "めずらしい",
+      "meaning": "ရှားပါးထူးဆန်းသော"
+    }
   },
   {
     "kanji": "卵",
     "strokes": 7,
     "meanings": [
-      "Egg",
-      "Ovum",
-      "Spawn"
+      "ဥ"
     ],
     "on": [
       "らん"
@@ -4792,13 +5930,18 @@
     "kun": [
       "たまご"
     ],
-    "freq": 1342
+    "freq": 1342,
+    "example": {
+      "word": "卵",
+      "reading": "たまご",
+      "meaning": "ကြက်ဥ/ဥ"
+    }
   },
   {
     "kanji": "湖",
     "strokes": 12,
     "meanings": [
-      "Lake"
+      "ရေကန်ကြီး"
     ],
     "on": [
       "こ"
@@ -4806,15 +5949,18 @@
     "kun": [
       "みずうみ"
     ],
-    "freq": 1344
+    "freq": 1344,
+    "example": {
+      "word": "湖",
+      "reading": "みずうみ",
+      "meaning": "ကန်/အိုင်"
+    }
   },
   {
     "kanji": "喫",
     "strokes": 12,
     "meanings": [
-      "Consume",
-      "Eat",
-      "Drink"
+      "သုံးဆောင်"
     ],
     "on": [
       "きつ"
@@ -4822,15 +5968,19 @@
     "kun": [
       "の.む"
     ],
-    "freq": 1347
+    "freq": 1347,
+    "example": {
+      "word": "喫茶店",
+      "reading": "きっさてん",
+      "meaning": "လက်ဖက်ရည်ဆိုင်/ကဖေး"
+    }
   },
   {
     "kanji": "干",
     "strokes": 3,
     "meanings": [
-      "Dry",
-      "Parch",
-      "Ebb"
+      "ခြောက်",
+      "အခြောက်လှန်း"
     ],
     "on": [
       "かん"
@@ -4841,15 +5991,18 @@
       "-ぼ.し",
       "ひ.る"
     ],
-    "freq": 1349
+    "freq": 1349,
+    "example": {
+      "word": "干す",
+      "reading": "ほす",
+      "meaning": "အခြောက်လှန်းသည်"
+    }
   },
   {
     "kanji": "虫",
     "strokes": 6,
     "meanings": [
-      "Insect",
-      "Bug",
-      "Temper"
+      "ပိုးကောင်"
     ],
     "on": [
       "ちゅう",
@@ -4858,15 +6011,18 @@
     "kun": [
       "むし"
     ],
-    "freq": 1351
+    "freq": 1351,
+    "example": {
+      "word": "虫",
+      "reading": "むし",
+      "meaning": "ပိုးမွှား/အင်းဆက်"
+    }
   },
   {
     "kanji": "刷",
     "strokes": 8,
     "meanings": [
-      "Printing",
-      "Print",
-      "Brush"
+      "ပုံနှိပ်"
     ],
     "on": [
       "さつ"
@@ -4877,15 +6033,18 @@
       "-ずり",
       "は.く"
     ],
-    "freq": 1352
+    "freq": 1352,
+    "example": {
+      "word": "印刷",
+      "reading": "いんさつ",
+      "meaning": "ပုံနှိပ်ခြင်း"
+    }
   },
   {
     "kanji": "湯",
     "strokes": 12,
     "meanings": [
-      "Hot Water",
-      "Bath",
-      "Hot Spring"
+      "ရေနွေး"
     ],
     "on": [
       "とう"
@@ -4893,15 +6052,18 @@
     "kun": [
       "ゆ"
     ],
-    "freq": 1356
+    "freq": 1356,
+    "example": {
+      "word": "お湯",
+      "reading": "おゆ",
+      "meaning": "ရေနွေး"
+    }
   },
   {
     "kanji": "溶",
     "strokes": 13,
     "meanings": [
-      "Melt",
-      "Dissolve",
-      "Thaw"
+      "အရည်ပျော်"
     ],
     "on": [
       "よう"
@@ -4911,14 +6073,18 @@
       "と.かす",
       "と.く"
     ],
-    "freq": 1364
+    "freq": 1364,
+    "example": {
+      "word": "溶ける",
+      "reading": "とける",
+      "meaning": "အရည်ပျော်သည်"
+    }
   },
   {
     "kanji": "鉱",
     "strokes": 13,
     "meanings": [
-      "Mineral",
-      "Ore"
+      "သတ္တုရိုင်း"
     ],
     "on": [
       "こう"
@@ -4926,14 +6092,18 @@
     "kun": [
       "あらがね"
     ],
-    "freq": 1376
+    "freq": 1376,
+    "example": {
+      "word": "鉱物",
+      "reading": "こうぶつ",
+      "meaning": "သတ္တုဓာတ်"
+    }
   },
   {
     "kanji": "涙",
     "strokes": 10,
     "meanings": [
-      "Tears",
-      "Sympathy"
+      "မျက်ရည်"
     ],
     "on": [
       "るい",
@@ -4942,15 +6112,18 @@
     "kun": [
       "なみだ"
     ],
-    "freq": 1381
+    "freq": 1381,
+    "example": {
+      "word": "涙",
+      "reading": "なみだ",
+      "meaning": "မျက်ရည်"
+    }
   },
   {
     "kanji": "匹",
     "strokes": 4,
     "meanings": [
-      "Equal",
-      "Head",
-      "Counter For Small Animals"
+      "(တိရစ္ဆာန်)ရေတွက်ရာ"
     ],
     "on": [
       "ひつ"
@@ -4958,14 +6131,18 @@
     "kun": [
       "ひき"
     ],
-    "freq": 1384
+    "freq": 1384,
+    "example": {
+      "word": "一匹",
+      "reading": "いっぴき",
+      "meaning": "(တိရစ္ဆာန်)တစ်ကောင်"
+    }
   },
   {
     "kanji": "孫",
     "strokes": 10,
     "meanings": [
-      "Grandchild",
-      "Descendants"
+      "မြေး"
     ],
     "on": [
       "そん"
@@ -4973,15 +6150,19 @@
     "kun": [
       "まご"
     ],
-    "freq": 1388
+    "freq": 1388,
+    "example": {
+      "word": "孫",
+      "reading": "まご",
+      "meaning": "မြေး"
+    }
   },
   {
     "kanji": "鋭",
     "strokes": 15,
     "meanings": [
-      "Pointed",
-      "Sharpness",
-      "Edge"
+      "ထက်",
+      "ချွန်"
     ],
     "on": [
       "えい"
@@ -4989,15 +6170,18 @@
     "kun": [
       "するど.い"
     ],
-    "freq": 1395
+    "freq": 1395,
+    "example": {
+      "word": "鋭い",
+      "reading": "するどい",
+      "meaning": "ထက်မြက်/ချွန်ထက်သော"
+    }
   },
   {
     "kanji": "枝",
     "strokes": 8,
     "meanings": [
-      "Bough",
-      "Branch",
-      "Twig"
+      "အကိုင်း"
     ],
     "on": [
       "し"
@@ -5005,15 +6189,19 @@
     "kun": [
       "えだ"
     ],
-    "freq": 1401
+    "freq": 1401,
+    "example": {
+      "word": "枝",
+      "reading": "えだ",
+      "meaning": "သစ်ကိုင်း"
+    }
   },
   {
     "kanji": "塗",
     "strokes": 13,
     "meanings": [
-      "Paint",
-      "Plaster",
-      "Daub"
+      "သုတ်",
+      "လိမ်း"
     ],
     "on": [
       "と"
@@ -5023,15 +6211,18 @@
       "ぬ.り",
       "まみ.れる"
     ],
-    "freq": 1414
+    "freq": 1414,
+    "example": {
+      "word": "塗る",
+      "reading": "ぬる",
+      "meaning": "သုတ်/လိမ်းသည်"
+    }
   },
   {
     "kanji": "軒",
     "strokes": 10,
     "meanings": [
-      "Flats",
-      "Counter For Houses",
-      "Eaves"
+      "(အိမ်)ရေတွက်ရာ"
     ],
     "on": [
       "けん"
@@ -5039,29 +6230,35 @@
     "kun": [
       "のき"
     ],
-    "freq": 1416
+    "freq": 1416,
+    "example": {
+      "word": "一軒",
+      "reading": "いっけん",
+      "meaning": "အိမ်တစ်လုံး"
+    }
   },
   {
     "kanji": "毒",
     "strokes": 8,
     "meanings": [
-      "Poison",
-      "Virus",
-      "Venom"
+      "အဆိပ်"
     ],
     "on": [
       "どく"
     ],
     "kun": [],
-    "freq": 1419
+    "freq": 1419,
+    "example": {
+      "word": "毒",
+      "reading": "どく",
+      "meaning": "အဆိပ်"
+    }
   },
   {
     "kanji": "叫",
     "strokes": 6,
     "meanings": [
-      "Shout",
-      "Exclaim",
-      "Yell"
+      "အော်ဟစ်"
     ],
     "on": [
       "きょう"
@@ -5069,15 +6266,19 @@
     "kun": [
       "さけ.ぶ"
     ],
-    "freq": 1426
+    "freq": 1426,
+    "example": {
+      "word": "叫ぶ",
+      "reading": "さけぶ",
+      "meaning": "အော်ဟစ်သည်"
+    }
   },
   {
     "kanji": "拝",
     "strokes": 8,
     "meanings": [
-      "Worship",
-      "Adore",
-      "Pray To"
+      "ကန်တော့",
+      "ရှိခိုး"
     ],
     "on": [
       "はい"
@@ -5086,15 +6287,18 @@
       "おが.む",
       "おろが.む"
     ],
-    "freq": 1443
+    "freq": 1443,
+    "example": {
+      "word": "拝む",
+      "reading": "おがむ",
+      "meaning": "ရှိခိုးကန်တော့သည်"
+    }
   },
   {
     "kanji": "氷",
     "strokes": 5,
     "meanings": [
-      "Icicle",
-      "Ice",
-      "Hail"
+      "ရေခဲ"
     ],
     "on": [
       "ひょう"
@@ -5104,15 +6308,18 @@
       "ひ",
       "こお.る"
     ],
-    "freq": 1450
+    "freq": 1450,
+    "example": {
+      "word": "氷",
+      "reading": "こおり",
+      "meaning": "ရေခဲ"
+    }
   },
   {
     "kanji": "乾",
     "strokes": 11,
     "meanings": [
-      "Drought",
-      "Dry",
-      "Dessicate"
+      "ခြောက်သွေ့"
     ],
     "on": [
       "かん",
@@ -5125,28 +6332,36 @@
       "ひ.る",
       "いぬい"
     ],
-    "freq": 1453
+    "freq": 1453,
+    "example": {
+      "word": "乾く",
+      "reading": "かわく",
+      "meaning": "ခြောက်သွေ့သည်"
+    }
   },
   {
     "kanji": "棒",
     "strokes": 12,
     "meanings": [
-      "Rod",
-      "Stick",
-      "Cane"
+      "တုတ်",
+      "တံ"
     ],
     "on": [
       "ぼう"
     ],
     "kun": [],
-    "freq": 1455
+    "freq": 1455,
+    "example": {
+      "word": "棒",
+      "reading": "ぼう",
+      "meaning": "တုတ်ချောင်း"
+    }
   },
   {
     "kanji": "祈",
     "strokes": 8,
     "meanings": [
-      "Pray",
-      "Wish"
+      "ဆုတောင်း"
     ],
     "on": [
       "き"
@@ -5154,15 +6369,18 @@
     "kun": [
       "いの.る"
     ],
-    "freq": 1462
+    "freq": 1462,
+    "example": {
+      "word": "祈る",
+      "reading": "いのる",
+      "meaning": "ဆုတောင်းသည်"
+    }
   },
   {
     "kanji": "拾",
     "strokes": 9,
     "meanings": [
-      "Pick Up",
-      "Gather",
-      "Find"
+      "ကောက်ယူ"
     ],
     "on": [
       "しゅう",
@@ -5171,15 +6389,18 @@
     "kun": [
       "ひろ.う"
     ],
-    "freq": 1479
+    "freq": 1479,
+    "example": {
+      "word": "拾う",
+      "reading": "ひろう",
+      "meaning": "ကောက်ယူသည်"
+    }
   },
   {
     "kanji": "粉",
     "strokes": 10,
     "meanings": [
-      "Flour",
-      "Powder",
-      "Dust"
+      "မှုန့်"
     ],
     "on": [
       "ふん"
@@ -5189,13 +6410,18 @@
       "こ",
       "こな"
     ],
-    "freq": 1484
+    "freq": 1484,
+    "example": {
+      "word": "粉",
+      "reading": "こな",
+      "meaning": "မှုန့်"
+    }
   },
   {
     "kanji": "糸",
     "strokes": 6,
     "meanings": [
-      "Thread"
+      "ချည်"
     ],
     "on": [
       "し"
@@ -5203,13 +6429,19 @@
     "kun": [
       "いと"
     ],
-    "freq": 1488
+    "freq": 1488,
+    "example": {
+      "word": "糸",
+      "reading": "いと",
+      "meaning": "ချည်မျှင်"
+    }
   },
   {
     "kanji": "綿",
     "strokes": 14,
     "meanings": [
-      "Cotton"
+      "ဂွမ်း",
+      "ချည်"
     ],
     "on": [
       "めん"
@@ -5217,14 +6449,18 @@
     "kun": [
       "わた"
     ],
-    "freq": 1495
+    "freq": 1495,
+    "example": {
+      "word": "綿",
+      "reading": "わた",
+      "meaning": "ဂွမ်း"
+    }
   },
   {
     "kanji": "汗",
     "strokes": 6,
     "meanings": [
-      "Sweat",
-      "Perspire"
+      "ချွေး"
     ],
     "on": [
       "かん"
@@ -5232,13 +6468,18 @@
     "kun": [
       "あせ"
     ],
-    "freq": 1502
+    "freq": 1502,
+    "example": {
+      "word": "汗",
+      "reading": "あせ",
+      "meaning": "ချွေး"
+    }
   },
   {
     "kanji": "銅",
     "strokes": 14,
     "meanings": [
-      "Copper"
+      "ကြေးနီ"
     ],
     "on": [
       "どう"
@@ -5246,15 +6487,19 @@
     "kun": [
       "あかがね"
     ],
-    "freq": 1505
+    "freq": 1505,
+    "example": {
+      "word": "銅",
+      "reading": "どう",
+      "meaning": "ကြေးနီ"
+    }
   },
   {
     "kanji": "湿",
     "strokes": 12,
     "meanings": [
-      "Damp",
-      "Wet",
-      "Moist"
+      "စို",
+      "စိုထိုင်း"
     ],
     "on": [
       "しつ",
@@ -5266,15 +6511,18 @@
       "うるお.う",
       "うるお.す"
     ],
-    "freq": 1517
+    "freq": 1517,
+    "example": {
+      "word": "湿気",
+      "reading": "しっけ",
+      "meaning": "စိုထိုင်းဆ"
+    }
   },
   {
     "kanji": "瓶",
     "strokes": 11,
     "meanings": [
-      "Bottle",
-      "Vial",
-      "Jar"
+      "ပုလင်း"
     ],
     "on": [
       "びん"
@@ -5282,14 +6530,18 @@
     "kun": [
       "かめ"
     ],
-    "freq": 1528
+    "freq": 1528,
+    "example": {
+      "word": "瓶",
+      "reading": "びん",
+      "meaning": "ပုလင်း"
+    }
   },
   {
     "kanji": "咲",
     "strokes": 9,
     "meanings": [
-      "Blossom",
-      "Bloom"
+      "ပွင့်"
     ],
     "on": [
       "しょう"
@@ -5298,15 +6550,19 @@
       "さ.く",
       "-ざき"
     ],
-    "freq": 1534
+    "freq": 1534,
+    "example": {
+      "word": "咲く",
+      "reading": "さく",
+      "meaning": "(ပန်း)ပွင့်သည်"
+    }
   },
   {
     "kanji": "召",
     "strokes": 5,
     "meanings": [
-      "Seduce",
-      "Call",
-      "Send For"
+      "ခေါ်",
+      "ဆင့်ခေါ်"
     ],
     "on": [
       "しょう"
@@ -5314,15 +6570,18 @@
     "kun": [
       "め.す"
     ],
-    "freq": 1540
+    "freq": 1540,
+    "example": {
+      "word": "召し上がる",
+      "reading": "めしあがる",
+      "meaning": "သုံးဆောင်သည်(ရိုသေ)"
+    }
   },
   {
     "kanji": "缶",
     "strokes": 6,
     "meanings": [
-      "Tin Can",
-      "Container",
-      "Jar Radical (no. 121)"
+      "သံဗူး"
     ],
     "on": [
       "かん"
@@ -5330,29 +6589,35 @@
     "kun": [
       "かま"
     ],
-    "freq": 1543
+    "freq": 1543,
+    "example": {
+      "word": "缶",
+      "reading": "かん",
+      "meaning": "ဘူးခွံ/သံဗူး"
+    }
   },
   {
     "kanji": "隻",
     "strokes": 10,
     "meanings": [
-      "Vessels",
-      "Counter For Ships",
-      "Fish"
+      "(သင်္ဘော)ရေတွက်ရာ"
     ],
     "on": [
       "せき"
     ],
     "kun": [],
-    "freq": 1546
+    "freq": 1546,
+    "example": {
+      "word": "一隻",
+      "reading": "いっせき",
+      "meaning": "သင်္ဘောတစ်စင်း"
+    }
   },
   {
     "kanji": "脂",
     "strokes": 10,
     "meanings": [
-      "Fat",
-      "Grease",
-      "Tallow"
+      "အဆီ"
     ],
     "on": [
       "し"
@@ -5360,15 +6625,19 @@
     "kun": [
       "あぶら"
     ],
-    "freq": 1548
+    "freq": 1548,
+    "example": {
+      "word": "脂肪",
+      "reading": "しぼう",
+      "meaning": "အဆီ/အဆီဓာတ်"
+    }
   },
   {
     "kanji": "蒸",
     "strokes": 13,
     "meanings": [
-      "Steam",
-      "Heat",
-      "Sultry"
+      "ပေါင်း",
+      "နွေး"
     ],
     "on": [
       "じょう",
@@ -5379,15 +6648,19 @@
       "む.れる",
       "む.らす"
     ],
-    "freq": 1552
+    "freq": 1552,
+    "example": {
+      "word": "蒸す",
+      "reading": "むす",
+      "meaning": "ပေါင်းသည်"
+    }
   },
   {
     "kanji": "肌",
     "strokes": 6,
     "meanings": [
-      "Texture",
-      "Skin",
-      "Body"
+      "အသား",
+      "အရေ"
     ],
     "on": [
       "き"
@@ -5395,15 +6668,19 @@
     "kun": [
       "はだ"
     ],
-    "freq": 1559
+    "freq": 1559,
+    "example": {
+      "word": "肌",
+      "reading": "はだ",
+      "meaning": "အသားအရေ"
+    }
   },
   {
     "kanji": "耕",
     "strokes": 10,
     "meanings": [
-      "Till",
-      "Plow",
-      "Cultivate"
+      "ထွန်ယက်",
+      "စိုက်ပျိုး"
     ],
     "on": [
       "こう"
@@ -5411,15 +6688,19 @@
     "kun": [
       "たがや.す"
     ],
-    "freq": 1568
+    "freq": 1568,
+    "example": {
+      "word": "耕す",
+      "reading": "たがやす",
+      "meaning": "ထွန်ယက်စိုက်ပျိုးသည်"
+    }
   },
   {
     "kanji": "鈍",
     "strokes": 12,
     "meanings": [
-      "Dull",
-      "Slow",
-      "Foolish"
+      "တုံး",
+      "ထိုင်း"
     ],
     "on": [
       "どん"
@@ -5431,15 +6712,18 @@
       "なま.る",
       "なまく.ら"
     ],
-    "freq": 1574
+    "freq": 1574,
+    "example": {
+      "word": "鈍い",
+      "reading": "にぶい",
+      "meaning": "တုံးသော/ထိုင်းမှိုင်းသော"
+    }
   },
   {
     "kanji": "泥",
     "strokes": 8,
     "meanings": [
-      "Mud",
-      "Mire",
-      "Adhere To"
+      "ရွှံ့"
     ],
     "on": [
       "でい",
@@ -5451,14 +6735,19 @@
       "どろ",
       "なず.む"
     ],
-    "freq": 1589
+    "freq": 1589,
+    "example": {
+      "word": "泥",
+      "reading": "どろ",
+      "meaning": "ရွှံ့နွံ"
+    }
   },
   {
     "kanji": "隅",
     "strokes": 12,
     "meanings": [
-      "Corner",
-      "Nook"
+      "ထောင့်",
+      "ဒေါင့်"
     ],
     "on": [
       "ぐう"
@@ -5466,15 +6755,19 @@
     "kun": [
       "すみ"
     ],
-    "freq": 1601
+    "freq": 1601,
+    "example": {
+      "word": "隅",
+      "reading": "すみ",
+      "meaning": "ထောင့်/ဒေါင့်"
+    }
   },
   {
     "kanji": "灯",
     "strokes": 6,
     "meanings": [
-      "Lamp",
-      "A Light",
-      "Light"
+      "မီးအိမ်",
+      "မီး"
     ],
     "on": [
       "とう"
@@ -5486,15 +6779,20 @@
       "とも.す",
       "あかり"
     ],
-    "freq": 1605
+    "freq": 1605,
+    "example": {
+      "word": "電灯",
+      "reading": "でんとう",
+      "meaning": "လျှပ်စစ်မီးအိမ်"
+    }
   },
   {
     "kanji": "辛",
     "strokes": 7,
     "meanings": [
-      "Spicy",
-      "Bitter",
-      "Hot"
+      "စပ်",
+      "ခါး",
+      "ခက်ခဲ"
     ],
     "on": [
       "しん"
@@ -5505,15 +6803,19 @@
       "-づら.い",
       "かのと"
     ],
-    "freq": 1607
+    "freq": 1607,
+    "example": {
+      "word": "辛い",
+      "reading": "からい",
+      "meaning": "စပ်သော"
+    }
   },
   {
     "kanji": "磨",
     "strokes": 16,
     "meanings": [
-      "Grind",
-      "Polish",
-      "Scour"
+      "တိုက်ချွတ်",
+      "သွေး"
     ],
     "on": [
       "ま"
@@ -5522,14 +6824,19 @@
       "みが.く",
       "す.る"
     ],
-    "freq": 1608
+    "freq": 1608,
+    "example": {
+      "word": "磨く",
+      "reading": "みがく",
+      "meaning": "တိုက်ချွတ်/ပွတ်တိုက်သည်"
+    }
   },
   {
     "kanji": "麦",
     "strokes": 7,
     "meanings": [
-      "Barley",
-      "Wheat"
+      "ဂျုံ",
+      "မုယော"
     ],
     "on": [
       "ばく"
@@ -5537,28 +6844,37 @@
     "kun": [
       "むぎ"
     ],
-    "freq": 1615
+    "freq": 1615,
+    "example": {
+      "word": "麦",
+      "reading": "むぎ",
+      "meaning": "ဂျုံ"
+    }
   },
   {
     "kanji": "姓",
     "strokes": 8,
     "meanings": [
-      "Surname"
+      "မျိုးနွယ်အမည်"
     ],
     "on": [
       "せい",
       "しょう"
     ],
     "kun": [],
-    "freq": 1628
+    "freq": 1628,
+    "example": {
+      "word": "姓",
+      "reading": "せい",
+      "meaning": "မိသားစုအမည်(မျိုးနွယ်)"
+    }
   },
   {
     "kanji": "筒",
     "strokes": 12,
     "meanings": [
-      "Cylinder",
-      "Pipe",
-      "Tube"
+      "ပြွန်",
+      "ဘူး"
     ],
     "on": [
       "とう"
@@ -5566,14 +6882,18 @@
     "kun": [
       "つつ"
     ],
-    "freq": 1631
+    "freq": 1631,
+    "example": {
+      "word": "筒",
+      "reading": "つつ",
+      "meaning": "ပြွန်"
+    }
   },
   {
     "kanji": "鼻",
     "strokes": 14,
     "meanings": [
-      "Nose",
-      "Snout"
+      "နှာခေါင်း"
     ],
     "on": [
       "び"
@@ -5581,15 +6901,19 @@
     "kun": [
       "はな"
     ],
-    "freq": 1632
+    "freq": 1632,
+    "example": {
+      "word": "鼻",
+      "reading": "はな",
+      "meaning": "နှာခေါင်း"
+    }
   },
   {
     "kanji": "粒",
     "strokes": 11,
     "meanings": [
-      "Grains",
-      "Drop",
-      "Counter For Tiny Particles"
+      "အစေ့",
+      "အလုံး"
     ],
     "on": [
       "りゅう"
@@ -5597,15 +6921,19 @@
     "kun": [
       "つぶ"
     ],
-    "freq": 1635
+    "freq": 1635,
+    "example": {
+      "word": "粒",
+      "reading": "つぶ",
+      "meaning": "အစေ့/အလုံး"
+    }
   },
   {
     "kanji": "詞",
     "strokes": 12,
     "meanings": [
-      "Part Of Speech",
-      "Words",
-      "Poetry"
+      "စကားလုံး",
+      "ပုဒ်"
     ],
     "on": [
       "し"
@@ -5613,29 +6941,36 @@
     "kun": [
       "ことば"
     ],
-    "freq": 1636
+    "freq": 1636,
+    "example": {
+      "word": "歌詞",
+      "reading": "かし",
+      "meaning": "သီချင်းစာသား"
+    }
   },
   {
     "kanji": "胃",
     "strokes": 9,
     "meanings": [
-      "Stomach",
-      "Paunch",
-      "Crop"
+      "အစာအိမ်"
     ],
     "on": [
       "い"
     ],
     "kun": [],
-    "freq": 1647
+    "freq": 1647,
+    "example": {
+      "word": "胃",
+      "reading": "い",
+      "meaning": "အစာအိမ်"
+    }
   },
   {
     "kanji": "畳",
     "strokes": 12,
     "meanings": [
-      "Tatami Mat",
-      "Counter For Tatami Mats",
-      "Fold"
+      "တာတမိ",
+      "ခေါက်"
     ],
     "on": [
       "じょう",
@@ -5646,14 +6981,19 @@
       "たたみ",
       "かさ.なる"
     ],
-    "freq": 1665
+    "freq": 1665,
+    "example": {
+      "word": "畳",
+      "reading": "たたみ",
+      "meaning": "တာတမိဖျာ"
+    }
   },
   {
     "kanji": "机",
     "strokes": 6,
     "meanings": [
-      "Desk",
-      "Table"
+      "စားပွဲ",
+      "ဒက်စ်"
     ],
     "on": [
       "き"
@@ -5661,15 +7001,18 @@
     "kun": [
       "つくえ"
     ],
-    "freq": 1671
+    "freq": 1671,
+    "example": {
+      "word": "机",
+      "reading": "つくえ",
+      "meaning": "စာအုပ်စားပွဲ"
+    }
   },
   {
     "kanji": "膚",
     "strokes": 15,
     "meanings": [
-      "Skin",
-      "Body",
-      "Grain"
+      "အသားအရေ"
     ],
     "on": [
       "ふ"
@@ -5677,15 +7020,18 @@
     "kun": [
       "はだ"
     ],
-    "freq": 1679
+    "freq": 1679,
+    "example": {
+      "word": "皮膚",
+      "reading": "ひふ",
+      "meaning": "အသားအရေ"
+    }
   },
   {
     "kanji": "濯",
     "strokes": 17,
     "meanings": [
-      "Laundry",
-      "Wash",
-      "Pour On"
+      "လျှော်ဖွပ်"
     ],
     "on": [
       "たく"
@@ -5694,29 +7040,36 @@
       "すす.ぐ",
       "ゆす.ぐ"
     ],
-    "freq": 1698
+    "freq": 1698,
+    "example": {
+      "word": "洗濯",
+      "reading": "せんたく",
+      "meaning": "အဝတ်လျှော်ခြင်း"
+    }
   },
   {
     "kanji": "塔",
     "strokes": 12,
     "meanings": [
-      "Pagoda",
-      "Tower",
-      "Steeple"
+      "မျှော်စင်",
+      "ဘုံ"
     ],
     "on": [
       "とう"
     ],
     "kun": [],
-    "freq": 1708
+    "freq": 1708,
+    "example": {
+      "word": "塔",
+      "reading": "とう",
+      "meaning": "မျှော်စင်/စေတီဘုံ"
+    }
   },
   {
     "kanji": "沸",
     "strokes": 8,
     "meanings": [
-      "Seethe",
-      "Boil",
-      "Ferment"
+      "ဆူ"
     ],
     "on": [
       "ふつ"
@@ -5725,15 +7078,18 @@
       "わ.く",
       "わ.かす"
     ],
-    "freq": 1709
+    "freq": 1709,
+    "example": {
+      "word": "沸く",
+      "reading": "わく",
+      "meaning": "(ရေ)ဆူသည်"
+    }
   },
   {
     "kanji": "灰",
     "strokes": 6,
     "meanings": [
-      "Ashes",
-      "Puckery Juice",
-      "Cremate"
+      "ပြာ"
     ],
     "on": [
       "かい"
@@ -5741,28 +7097,36 @@
     "kun": [
       "はい"
     ],
-    "freq": 1717
+    "freq": 1717,
+    "example": {
+      "word": "灰",
+      "reading": "はい",
+      "meaning": "ပြာ"
+    }
   },
   {
     "kanji": "菓",
     "strokes": 11,
     "meanings": [
-      "Candy",
-      "Cakes",
-      "Fruit"
+      "မုန့်",
+      "သရေစာ"
     ],
     "on": [
       "か"
     ],
     "kun": [],
-    "freq": 1719
+    "freq": 1719,
+    "example": {
+      "word": "菓子",
+      "reading": "かし",
+      "meaning": "မုန့်/သရေစာ"
+    }
   },
   {
     "kanji": "帽",
     "strokes": 12,
     "meanings": [
-      "Cap",
-      "Headgear"
+      "ဦးထုပ်"
     ],
     "on": [
       "ぼう",
@@ -5772,15 +7136,19 @@
       "ずきん",
       "おお.う"
     ],
-    "freq": 1742
+    "freq": 1742,
+    "example": {
+      "word": "帽子",
+      "reading": "ぼうし",
+      "meaning": "ဦးထုပ်"
+    }
   },
   {
     "kanji": "枯",
     "strokes": 9,
     "meanings": [
-      "Wither",
-      "Die",
-      "Dry Up"
+      "ညှိုးနွမ်း",
+      "ခြောက်"
     ],
     "on": [
       "こ"
@@ -5789,14 +7157,18 @@
       "か.れる",
       "か.らす"
     ],
-    "freq": 1749
+    "freq": 1749,
+    "example": {
+      "word": "枯れる",
+      "reading": "かれる",
+      "meaning": "(အပင်)ညှိုးခြောက်သည်"
+    }
   },
   {
     "kanji": "涼",
     "strokes": 11,
     "meanings": [
-      "Refreshing",
-      "Nice And Cool"
+      "အေးမြ"
     ],
     "on": [
       "りょう"
@@ -5809,14 +7181,19 @@
       "ひや.す",
       "まことに"
     ],
-    "freq": 1783
+    "freq": 1783,
+    "example": {
+      "word": "涼しい",
+      "reading": "すずしい",
+      "meaning": "အေးမြသော"
+    }
   },
   {
     "kanji": "舟",
     "strokes": 6,
     "meanings": [
-      "Boat",
-      "Ship"
+      "လှေ",
+      "သင်္ဘော"
     ],
     "on": [
       "しゅう"
@@ -5826,13 +7203,19 @@
       "ふな-",
       "-ぶね"
     ],
-    "freq": 1786
+    "freq": 1786,
+    "example": {
+      "word": "舟",
+      "reading": "ふね",
+      "meaning": "လှေ"
+    }
   },
   {
     "kanji": "貝",
     "strokes": 7,
     "meanings": [
-      "Shellfish"
+      "ခရု",
+      "ယောက်သွား"
     ],
     "on": [
       "ばい"
@@ -5840,28 +7223,36 @@
     "kun": [
       "かい"
     ],
-    "freq": 1787
+    "freq": 1787,
+    "example": {
+      "word": "貝",
+      "reading": "かい",
+      "meaning": "ခရုခွံ/ယောက်သွား"
+    }
   },
   {
     "kanji": "符",
     "strokes": 11,
     "meanings": [
-      "Token",
-      "Sign",
-      "Mark"
+      "သင်္ကေတ",
+      "အမှတ်"
     ],
     "on": [
       "ふ"
     ],
     "kun": [],
-    "freq": 1798
+    "freq": 1798,
+    "example": {
+      "word": "切符",
+      "reading": "きっぷ",
+      "meaning": "လက်မှတ်"
+    }
   },
   {
     "kanji": "憎",
     "strokes": 14,
     "meanings": [
-      "Hate",
-      "Detest"
+      "မုန်း"
     ],
     "on": [
       "ぞう"
@@ -5872,15 +7263,18 @@
       "にく.らしい",
       "にく.しみ"
     ],
-    "freq": 1808
+    "freq": 1808,
+    "example": {
+      "word": "憎む",
+      "reading": "にくむ",
+      "meaning": "မုန်းတီးသည်"
+    }
   },
   {
     "kanji": "皿",
     "strokes": 5,
     "meanings": [
-      "Dish",
-      "A Helping",
-      "Plate"
+      "ပန်းကန်ပြား"
     ],
     "on": [
       "べい"
@@ -5888,15 +7282,19 @@
     "kun": [
       "さら"
     ],
-    "freq": 1812
+    "freq": 1812,
+    "example": {
+      "word": "皿",
+      "reading": "さら",
+      "meaning": "ပန်းကန်ပြား"
+    }
   },
   {
     "kanji": "肯",
     "strokes": 8,
     "meanings": [
-      "Agreement",
-      "Consent",
-      "Comply With"
+      "သဘောတူ",
+      "လက်ခံ"
     ],
     "on": [
       "こう"
@@ -5904,14 +7302,18 @@
     "kun": [
       "がえんじ.る"
     ],
-    "freq": 1813
+    "freq": 1813,
+    "example": {
+      "word": "肯定",
+      "reading": "こうてい",
+      "meaning": "ထောက်ခံ/အတည်ပြုခြင်း"
+    }
   },
   {
     "kanji": "燥",
     "strokes": 17,
     "meanings": [
-      "Parch",
-      "Dry Up"
+      "ခြောက်သွေ့"
     ],
     "on": [
       "そう"
@@ -5919,27 +7321,36 @@
     "kun": [
       "はしゃ.ぐ"
     ],
-    "freq": 1819
+    "freq": 1819,
+    "example": {
+      "word": "乾燥",
+      "reading": "かんそう",
+      "meaning": "ခြောက်သွေ့မှု"
+    }
   },
   {
     "kanji": "畜",
     "strokes": 10,
     "meanings": [
-      "Livestock",
-      "Domestic Fowl And Animals"
+      "မွေးမြူရေးတိရစ္ဆာန်"
     ],
     "on": [
       "ちく"
     ],
     "kun": [],
-    "freq": 1824
+    "freq": 1824,
+    "example": {
+      "word": "家畜",
+      "reading": "かちく",
+      "meaning": "မွေးမြူရေးတိရစ္ဆာန်"
+    }
   },
   {
     "kanji": "挟",
     "strokes": 9,
     "meanings": [
-      "Pinch",
-      "Between"
+      "ညှပ်",
+      "ကြားထဲ"
     ],
     "on": [
       "きょう",
@@ -5951,14 +7362,19 @@
       "わきばさ.む",
       "さしはさ.む"
     ],
-    "freq": 1870
+    "freq": 1870,
+    "example": {
+      "word": "挟む",
+      "reading": "はさむ",
+      "meaning": "ညှပ်/ကြားထဲထည့်သည်"
+    }
   },
   {
     "kanji": "曇",
     "strokes": 16,
     "meanings": [
-      "Cloudy Weather",
-      "Cloud Up"
+      "တိမ်ထူ",
+      "မှုန်"
     ],
     "on": [
       "どん"
@@ -5966,14 +7382,19 @@
     "kun": [
       "くも.る"
     ],
-    "freq": 1899
+    "freq": 1899,
+    "example": {
+      "word": "曇る",
+      "reading": "くもる",
+      "meaning": "တိမ်ထူသည်/မှုန်သည်"
+    }
   },
   {
     "kanji": "滴",
     "strokes": 14,
     "meanings": [
-      "Drip",
-      "Drop"
+      "စက်",
+      "ယို"
     ],
     "on": [
       "てき"
@@ -5982,15 +7403,19 @@
       "しずく",
       "したた.る"
     ],
-    "freq": 2019
+    "freq": 2019,
+    "example": {
+      "word": "滴",
+      "reading": "しずく",
+      "meaning": "ရေစက်"
+    }
   },
   {
     "kanji": "伺",
     "strokes": 7,
     "meanings": [
-      "Pay Respects",
-      "Visit",
-      "Ask"
+      "မေးမြန်း",
+      "လာရောက်"
     ],
     "on": [
       "し"
@@ -5998,6 +7423,11 @@
     "kun": [
       "うかが.う"
     ],
-    "freq": 2209
+    "freq": 2209,
+    "example": {
+      "word": "伺う",
+      "reading": "うかがう",
+      "meaning": "မေးမြန်း/လာရောက်သည်(နှိမ့်ချ)"
+    }
   }
 ]
