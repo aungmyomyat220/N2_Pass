@@ -137,6 +137,15 @@ export default function Home() {
                     ))}
                   </div>
                 )}
+                {current.example && (
+                  <div className="ex-inline">
+                    <span className="ex-word">{current.example.word}</span>
+                    <span className="ex-reading">
+                      （{current.example.reading}）
+                    </span>
+                    <span className="ex-meaning">{current.example.meaning}</span>
+                  </div>
+                )}
                 <div className="meta">
                   {current.strokes} strokes
                   {current.freq ? ` · freq #${current.freq}` : ""}

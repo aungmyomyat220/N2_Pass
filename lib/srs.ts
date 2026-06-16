@@ -2,6 +2,12 @@
 // Boxes 0..4 — higher box = longer interval. A correct answer promotes a card,
 // a wrong answer sends it back to box 0.
 
+export type KanjiExample = {
+  word: string;
+  reading: string;
+  meaning: string;
+};
+
 export type KanjiCard = {
   kanji: string;
   strokes: number | null;
@@ -9,6 +15,7 @@ export type KanjiCard = {
   on: string[];
   kun: string[];
   freq: number | null;
+  example?: KanjiExample;
 };
 
 export type CardProgress = {
