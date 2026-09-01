@@ -1,6 +1,12 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+  type FormEvent,
+} from "react";
 import rawData from "@/data/n2-kanji.json";
 import KanjiFlashcard from "@/app/components/KanjiFlashcard";
 import {
@@ -24,6 +30,8 @@ export default function Home() {
   const [starred, setStarred] = useState<string[] | null>(null);
   const [revealed, setRevealed] = useState(false);
   const [now, setNow] = useState(0);
+  const [manualIndex, setManualIndex] = useState<number | null>(null);
+  const [jumpValue, setJumpValue] = useState("");
 
   useEffect(() => {
     setProgress(loadProgress());
@@ -41,7 +49,14 @@ export default function Home() {
     return computeStats(CARDS, progress, now);
   }, [progress, now]);
 
-  const current: KanjiCard | undefined = queue[0];
+  const current: KanjiCard | undefined =
+    manualIndex === null ? queue[0] : CARDS[manualIndex];
+  const currentNumber = current
+    ? CARDS.findIndex((card) => card.kanji === current.kanji) + 1
+    : null;
+  const jumpNumber = Number(jumpValue);
+  const jumpIsValid =
+    Number.isInteger(jumpNumber) && jumpNumber >= 1 && jumpNumber <= CARDS.length;
 
   const answer = useCallback(
     (knewIt: boolean) => {
@@ -50,8 +65,18 @@ export default function Home() {
       saveProgress(next);
       setProgress(next);
       setRevealed(false);
+      if (manualIndex !== null) {
+        const nextIndex = manualIndex + 1;
+        if (nextIndex < CARDS.length) {
+          setManualIndex(nextIndex);
+          setJumpValue(String(nextIndex + 1));
+        } else {
+          setManualIndex(null);
+          setJumpValue("");
+        }
+      }
     },
-    [progress, current],
+    [progress, current, manualIndex],
   );
 
   // Keyboard shortcuts: Space/Enter to reveal, 1=again, 2=good.
@@ -77,6 +102,26 @@ export default function Home() {
     setProgress({});
     setRevealed(false);
     setNow(Date.now());
+    setManualIndex(null);
+    setJumpValue("");
+  };
+
+  const jumpToIndex = (index: number) => {
+    const safeIndex = Math.min(Math.max(index, 0), CARDS.length - 1);
+    setManualIndex(safeIndex);
+    setJumpValue(String(safeIndex + 1));
+    setRevealed(false);
+  };
+
+  const handleJump = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (!jumpIsValid) return;
+    jumpToIndex(jumpNumber - 1);
+  };
+
+  const skipCard = (direction: -1 | 1) => {
+    const index = currentNumber ? currentNumber - 1 : 0;
+    jumpToIndex(index + direction);
   };
 
   const handleToggleStar = () => {
@@ -112,6 +157,58 @@ export default function Home() {
             <div className="value">{stats.mastered}</div>
           </div>
         </div>
+      )}
+
+      {progress !== null && (
+        <form className="card-jump" onSubmit={handleJump}>
+          <div className="card-jump-label">
+            <span>Jump to card</span>
+            {currentNumber && (
+              <span className="card-position">
+                Card {currentNumber} of {CARDS.length}
+              </span>
+            )}
+          </div>
+          <div className="card-jump-controls">
+            <button
+              type="button"
+              className="jump-step"
+              aria-label="Previous card"
+              disabled={!currentNumber || currentNumber <= 1}
+              onClick={() => skipCard(-1)}
+            >
+              ←
+            </button>
+            <input
+              className="jump-input"
+              type="number"
+              min="1"
+              max={CARDS.length}
+              inputMode="numeric"
+              aria-label={`Card number from 1 to ${CARDS.length}`}
+              placeholder="300"
+              value={jumpValue}
+              onChange={(event) => setJumpValue(event.target.value)}
+            />
+            <span className="jump-total">/ {CARDS.length}</span>
+            <button
+              type="submit"
+              className="jump-go"
+              disabled={!jumpIsValid}
+            >
+              Go
+            </button>
+            <button
+              type="button"
+              className="jump-step"
+              aria-label="Next card"
+              disabled={!currentNumber || currentNumber >= CARDS.length}
+              onClick={() => skipCard(1)}
+            >
+              →
+            </button>
+          </div>
+        </form>
       )}
 
       {progress === null ? (
