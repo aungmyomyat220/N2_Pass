@@ -9,6 +9,7 @@ import {
 } from "react";
 import rawData from "@/data/n2-kanji.json";
 import KanjiFlashcard from "@/app/components/KanjiFlashcard";
+import KanjiWritingPad from "@/app/components/KanjiWritingPad";
 import {
   KanjiCard,
   ProgressMap,
@@ -132,7 +133,7 @@ export default function Home() {
   };
 
   return (
-    <main>
+    <main className="kanji-page">
       <header className="app-header">
         <h1>N2 Kanji Flashcards</h1>
         <button className="ghost" onClick={handleReset}>
@@ -140,119 +141,127 @@ export default function Home() {
         </button>
       </header>
 
-      {stats && (
-        <div className="stats">
-          <div className="stat">
-            <div className="label">Due now</div>
-            <div className="value">{stats.due}</div>
-          </div>
-          <div className="stat">
-            <div className="label">Studied</div>
-            <div className="value">
-              {stats.studied}/{stats.total}
-            </div>
-          </div>
-          <div className="stat">
-            <div className="label">Mastered</div>
-            <div className="value">{stats.mastered}</div>
-          </div>
-        </div>
-      )}
-
-      {progress !== null && (
-        <form className="card-jump" onSubmit={handleJump}>
-          <div className="card-jump-label">
-            <span>Jump to card</span>
-            {currentNumber && (
-              <span className="card-position">
-                Card {currentNumber} of {CARDS.length}
-              </span>
-            )}
-          </div>
-          <div className="card-jump-controls">
-            <button
-              type="button"
-              className="jump-step"
-              aria-label="Previous card"
-              disabled={!currentNumber || currentNumber <= 1}
-              onClick={() => skipCard(-1)}
-            >
-              ←
-            </button>
-            <input
-              className="jump-input"
-              type="number"
-              min="1"
-              max={CARDS.length}
-              inputMode="numeric"
-              aria-label={`Card number from 1 to ${CARDS.length}`}
-              placeholder="300"
-              value={jumpValue}
-              onChange={(event) => setJumpValue(event.target.value)}
-            />
-            <span className="jump-total">/ {CARDS.length}</span>
-            <button
-              type="submit"
-              className="jump-go"
-              disabled={!jumpIsValid}
-            >
-              Go
-            </button>
-            <button
-              type="button"
-              className="jump-step"
-              aria-label="Next card"
-              disabled={!currentNumber || currentNumber >= CARDS.length}
-              onClick={() => skipCard(1)}
-            >
-              →
-            </button>
-          </div>
-        </form>
-      )}
-
-      {progress === null ? (
-        <div className="empty">Loading…</div>
-      ) : current ? (
-        <>
-          <KanjiFlashcard
-            card={current}
-            revealed={revealed}
-            starred={starred?.includes(current.kanji) ?? false}
-            onReveal={() => setRevealed(true)}
-            onToggleStar={handleToggleStar}
-          />
-
-          {!revealed ? (
-            <div className="actions">
-              <button className="reveal" onClick={() => setRevealed(true)}>
-                Reveal
-              </button>
-            </div>
-          ) : (
-            <div className="actions">
-              <button className="bad" onClick={() => answer(false)}>
-                Again (1)
-              </button>
-              <button className="good" onClick={() => answer(true)}>
-                Got it (2)
-              </button>
+      <div className="kanji-workspace">
+        <section className="kanji-study-column">
+          {stats && (
+            <div className="stats">
+              <div className="stat">
+                <div className="label">Due now</div>
+                <div className="value">{stats.due}</div>
+              </div>
+              <div className="stat">
+                <div className="label">Studied</div>
+                <div className="value">
+                  {stats.studied}/{stats.total}
+                </div>
+              </div>
+              <div className="stat">
+                <div className="label">Mastered</div>
+                <div className="value">{stats.mastered}</div>
+              </div>
             </div>
           )}
 
-          <div className="kbd-hint">
-            Space/Enter reveal · 1 = again · 2 = got it
-          </div>
-        </>
-      ) : (
-        <div className="empty">
-          <div className="big">🎉</div>
-          <div>All caught up — nothing due right now.</div>
-          <div style={{ marginTop: 8, fontSize: 13 }}>
-            Come back later, or reset progress to study again.
-          </div>
-        </div>
-      )}
+          {progress !== null && (
+            <form className="card-jump" onSubmit={handleJump}>
+              <div className="card-jump-label">
+                <span>Jump to card</span>
+                {currentNumber && (
+                  <span className="card-position">
+                    Card {currentNumber} of {CARDS.length}
+                  </span>
+                )}
+              </div>
+              <div className="card-jump-controls">
+                <button
+                  type="button"
+                  className="jump-step"
+                  aria-label="Previous card"
+                  disabled={!currentNumber || currentNumber <= 1}
+                  onClick={() => skipCard(-1)}
+                >
+                  ←
+                </button>
+                <input
+                  className="jump-input"
+                  type="number"
+                  min="1"
+                  max={CARDS.length}
+                  inputMode="numeric"
+                  aria-label={`Card number from 1 to ${CARDS.length}`}
+                  placeholder="300"
+                  value={jumpValue}
+                  onChange={(event) => setJumpValue(event.target.value)}
+                />
+                <span className="jump-total">/ {CARDS.length}</span>
+                <button
+                  type="submit"
+                  className="jump-go"
+                  disabled={!jumpIsValid}
+                >
+                  Go
+                </button>
+                <button
+                  type="button"
+                  className="jump-step"
+                  aria-label="Next card"
+                  disabled={!currentNumber || currentNumber >= CARDS.length}
+                  onClick={() => skipCard(1)}
+                >
+                  →
+                </button>
+              </div>
+            </form>
+          )}
+
+          {progress === null ? (
+            <div className="empty">Loading…</div>
+          ) : current ? (
+            <>
+              <KanjiFlashcard
+                card={current}
+                revealed={revealed}
+                starred={starred?.includes(current.kanji) ?? false}
+                onReveal={() => setRevealed(true)}
+                onToggleStar={handleToggleStar}
+              />
+
+              {!revealed ? (
+                <div className="actions">
+                  <button className="reveal" onClick={() => setRevealed(true)}>
+                    Reveal
+                  </button>
+                </div>
+              ) : (
+                <div className="actions">
+                  <button className="bad" onClick={() => answer(false)}>
+                    Again (1)
+                  </button>
+                  <button className="good" onClick={() => answer(true)}>
+                    Got it (2)
+                  </button>
+                </div>
+              )}
+
+              <div className="kbd-hint">
+                Space/Enter reveal · 1 = again · 2 = got it
+              </div>
+            </>
+          ) : (
+            <div className="empty">
+              <div className="big">🎉</div>
+              <div>All caught up — nothing due right now.</div>
+              <div style={{ marginTop: 8, fontSize: 13 }}>
+                Come back later, or choose a card from the drawer.
+              </div>
+            </div>
+          )}
+        </section>
+
+        <aside className="writing-panel" aria-label="Kanji writing practice">
+          <KanjiWritingPad kanji={current?.kanji} />
+        </aside>
+      </div>
     </main>
   );
 }

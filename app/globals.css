@@ -57,10 +57,20 @@ body {
 .content {
   flex: 1 1 auto;
   min-width: 0;
-  max-width: 640px;
-  margin: 0 auto;
+  margin: 0;
   padding: 24px 16px 64px;
   width: 100%;
+}
+
+.content > main {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.content > main.kanji-page {
+  max-width: 1180px;
+  margin: 0;
 }
 
 .tabs {
@@ -457,6 +467,201 @@ header.app-header h1 {
   font-size: 20px;
   margin: 0;
   font-weight: 600;
+}
+
+.kanji-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 640px) minmax(280px, 1fr);
+  align-items: start;
+  gap: 24px;
+}
+
+.kanji-study-column {
+  min-width: 0;
+}
+
+.writing-panel {
+  position: sticky;
+  top: 24px;
+  min-width: 0;
+}
+
+.writing-pad {
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.writing-pad-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.writing-pad-header h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.writing-pad-header p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.writing-current {
+  min-width: 42px;
+  height: 42px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  line-height: 1;
+}
+
+.writing-canvas-wrap {
+  position: relative;
+  aspect-ratio: 1;
+  margin: 16px;
+  overflow: hidden;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.writing-grid,
+.writing-grid::before,
+.writing-grid::after {
+  position: absolute;
+  pointer-events: none;
+}
+
+.writing-grid {
+  inset: 0;
+  background:
+    linear-gradient(
+      to right,
+      transparent calc(50% - 0.5px),
+      var(--border) 50%,
+      transparent calc(50% + 0.5px)
+    ),
+    linear-gradient(
+      to bottom,
+      transparent calc(50% - 0.5px),
+      var(--border) 50%,
+      transparent calc(50% + 0.5px)
+    );
+}
+
+.writing-grid::before,
+.writing-grid::after {
+  content: "";
+  inset: 50%;
+  width: 140%;
+  height: 1px;
+  background: var(--border);
+  opacity: 0.65;
+  transform-origin: center;
+}
+
+.writing-grid::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.writing-grid::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.writing-guide {
+  position: absolute;
+  inset: 0;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(130px, 15vw, 220px);
+  font-weight: 500;
+  line-height: 1;
+  opacity: 0.16;
+  pointer-events: none;
+  user-select: none;
+}
+
+.writing-hint {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: 14px;
+  padding: 5px 9px;
+  background: rgba(15, 17, 21, 0.78);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.writing-canvas {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--text);
+  cursor: crosshair;
+  touch-action: none;
+  user-select: none;
+}
+
+polyline.writing-stroke {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+circle.writing-stroke {
+  fill: currentColor;
+}
+
+.writing-actions {
+  display: flex;
+  gap: 8px;
+  padding: 0 16px 16px;
+}
+
+button.writing-tool {
+  min-width: 0;
+  padding: 10px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+button.writing-tool:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+button.writing-tool svg {
+  width: 16px;
+  height: 16px;
 }
 
 .stats {
@@ -1064,4 +1269,14 @@ button.restart-review {
 
 .result .actions {
   margin-top: 28px;
+}
+
+@media (max-width: 1280px) {
+  .kanji-workspace {
+    grid-template-columns: minmax(0, 640px);
+  }
+
+  .writing-panel {
+    position: static;
+  }
 }
