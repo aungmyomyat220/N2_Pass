@@ -120,6 +120,8 @@ export default function Home() {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (!current || kanjiDrawerOpen) return;
+      const target = e.target as HTMLElement | null;
+      if (target?.closest("input, textarea, button, select")) return;
       if (!revealed && (e.key === " " || e.key === "Enter")) {
         e.preventDefault();
         setRevealed(true);

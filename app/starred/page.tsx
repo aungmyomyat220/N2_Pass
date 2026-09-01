@@ -42,6 +42,8 @@ export default function StarredPage() {
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       if (!current) return;
+      const target = event.target as HTMLElement | null;
+      if (target?.closest("input, textarea, button, select")) return;
       if (!revealed && (event.key === " " || event.key === "Enter")) {
         event.preventDefault();
         setRevealed(true);

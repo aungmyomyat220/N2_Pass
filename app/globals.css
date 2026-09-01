@@ -1169,9 +1169,16 @@ button.jump-go:disabled {
   gap: 14px;
 }
 
-button.copy-kanji {
+.flashcard-tools {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+button.copy-kanji,
+button.meaning-add {
   flex: 0 0 auto;
-  align-self: center;
   padding: 7px 11px;
   display: inline-flex;
   align-items: center;
@@ -1183,7 +1190,9 @@ button.copy-kanji {
   font-size: 11px;
 }
 
-button.copy-kanji:hover {
+button.copy-kanji:hover,
+button.meaning-add:hover,
+button.meaning-add.active {
   color: var(--text);
   border-color: var(--accent);
 }
@@ -1193,9 +1202,98 @@ button.copy-kanji.copied {
   border-color: var(--good);
 }
 
-button.copy-kanji svg {
+button.copy-kanji svg,
+button.meaning-add svg {
   width: 14px;
   height: 14px;
+}
+
+.meaning-editor {
+  width: 100%;
+  padding: 14px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-align: left;
+}
+
+.meaning-editor label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.meaning-editor textarea {
+  width: 100%;
+  min-height: 132px;
+  padding: 10px 11px;
+  resize: vertical;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  outline: none;
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.meaning-editor textarea:focus {
+  border-color: var(--accent);
+}
+
+.meaning-editor textarea::placeholder {
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+.meaning-format-hint {
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.meaning-error {
+  margin-top: 8px;
+  color: var(--bad);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.meaning-editor-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+button.meaning-cancel,
+button.meaning-save {
+  padding: 9px 12px;
+  border: 1px solid var(--border);
+  font-size: 12px;
+}
+
+button.meaning-cancel {
+  background: var(--surface-2);
+  color: var(--muted);
+}
+
+button.meaning-save {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+button.meaning-save:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.meaning-notice {
+  color: var(--good);
+  font-size: 11px;
+  font-weight: 600;
 }
 
 .answer .meanings {
@@ -1337,6 +1435,60 @@ button.restart-review {
 
 .ex-meaning {
   color: var(--muted);
+}
+
+.custom-meaning-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.original-meaning-item.removable,
+.custom-meaning-item {
+  position: relative;
+  padding-right: 42px;
+}
+
+button.restore-original {
+  flex: 0 0 auto;
+  align-self: center;
+  padding: 7px 11px;
+  background: transparent;
+  border: 1px dashed var(--border);
+  color: var(--muted);
+  font-size: 11px;
+}
+
+button.restore-original:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+button.remove-meaning {
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--muted);
+  transform: translateY(-50%);
+}
+
+button.remove-meaning:hover {
+  color: var(--bad);
+  border-color: var(--bad);
+}
+
+button.remove-meaning svg {
+  width: 14px;
+  height: 14px;
 }
 
 /* ---- Exam mode ---- */
