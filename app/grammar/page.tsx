@@ -19,6 +19,15 @@ export default function GrammarPage() {
   const [query, setQuery] = useState("");
   const [openIdx, setOpenIdx] = useState<number | null>(null);
 
+  const selectGrammar = (index: number) => {
+    setOpenIdx(index);
+    window.requestAnimationFrame(() => {
+      document
+        .getElementById(`grammar-point-${index}`)
+        ?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  };
+
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (!q) return GRAMMAR;
@@ -31,72 +40,109 @@ export default function GrammarPage() {
   }, [query]);
 
   return (
-    <main>
+    <main className="grammar-page">
       <header className="app-header">
         <h1>N2 Grammar</h1>
         <span className="meta">{GRAMMAR.length} points</span>
       </header>
 
-      <input
-        className="search"
-        type="search"
-        placeholder="Search by pattern, reading, or meaning…"
-        value={query}
-        onChange={(e) => {
-          setQuery(e.target.value);
-          setOpenIdx(null);
-        }}
-      />
+      <div className="grammar-workspace">
+        <section className="grammar-study-column">
+          <input
+            className="search"
+            type="search"
+            placeholder="Search by pattern, reading, or meaning…"
+            value={query}
+            onChange={(e) => {
+              setQuery(e.target.value);
+              setOpenIdx(null);
+            }}
+          />
 
-      {filtered.length === 0 ? (
-        <div className="empty">No grammar points match “{query}”.</div>
-      ) : (
-        <ul className="grammar-list">
-          {filtered.map((g, i) => {
-            const open = openIdx === i;
-            return (
-              <li
-                key={g.grammar + i}
-                className={open ? "grammar-item open" : "grammar-item"}
-              >
-                <button
-                  className="grammar-head"
-                  onClick={() => setOpenIdx(open ? null : i)}
-                  aria-expanded={open}
-                >
-                  <span className="g-pattern">{g.grammar}</span>
-                  <span className="g-meaning">{g.meaning}</span>
-                  <span className="g-chevron">{open ? "−" : "+"}</span>
-                </button>
+          {filtered.length === 0 ? (
+            <div className="empty">No grammar points match “{query}”.</div>
+          ) : (
+            <ul className="grammar-list">
+              {filtered.map((g, i) => {
+                const open = openIdx === i;
+                return (
+                  <li
+                    id={`grammar-point-${i}`}
+                    key={g.grammar + i}
+                    className={open ? "grammar-item open" : "grammar-item"}
+                  >
+                    <button
+                      className="grammar-head"
+                      onClick={() => setOpenIdx(open ? null : i)}
+                      aria-expanded={open}
+                    >
+                      <span className="g-pattern">{g.grammar}</span>
+                      <span className="g-meaning">{g.meaning}</span>
+                      <span className="g-chevron">{open ? "−" : "+"}</span>
+                    </button>
 
-                {open && (
-                  <div className="grammar-body">
-                    <div className="g-row">
-                      <span className="g-label">Reading</span>
-                      <span>{g.reading}</span>
-                    </div>
-                    <div className="g-row">
-                      <span className="g-label">Formation</span>
-                      <span className="g-formation">{g.formation}</span>
-                    </div>
-                    <p className="g-explanation">{g.explanation}</p>
-                    {g.examples.length > 0 && (
-                      <div className="examples">
-                        {g.examples.map((ex, j) => (
-                          <div className="example" key={j}>
-                            <div className="ex-jp">{ex.jp}</div>
-                            <div className="ex-en">{ex.en}</div>
+                    {open && (
+                      <div className="grammar-body">
+                        <div className="g-row">
+                          <span className="g-label">Reading</span>
+                          <span>{g.reading}</span>
+                        </div>
+                        <div className="g-row">
+                          <span className="g-label">Formation</span>
+                          <span className="g-formation">{g.formation}</span>
+                        </div>
+                        <p className="g-explanation">{g.explanation}</p>
+                        {g.examples.length > 0 && (
+                          <div className="examples">
+                            {g.examples.map((ex, j) => (
+                              <div className="example" key={j}>
+                                <div className="ex-jp">{ex.jp}</div>
+                                <div className="ex-en">{ex.en}</div>
+                              </div>
+                            ))}
                           </div>
-                        ))}
+                        )}
                       </div>
                     )}
-                  </div>
-                )}
-              </li>
-            );
-          })}
-        </ul>
-      )}
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+        </section>
+
+        <aside className="grammar-index" aria-label="Grammar quick index">
+          <div className="grammar-index-header">
+            <div>
+              <h2>Grammar Index</h2>
+              <p>Jump to a grammar point</p>
+            </div>
+            <span>{filtered.length}</span>
+          </div>
+          {filtered.length === 0 ? (
+            <div className="grammar-index-empty">No matching patterns</div>
+          ) : (
+            <nav className="grammar-index-list">
+              {filtered.map((grammar, index) => (
+                <button
+                  type="button"
+                  className={
+                    openIdx === index
+                      ? "grammar-index-item active"
+                      : "grammar-index-item"
+                  }
+                  aria-current={openIdx === index ? "true" : undefined}
+                  onClick={() => selectGrammar(index)}
+                  key={`${grammar.grammar}-${index}`}
+                >
+                  <span>{grammar.grammar}</span>
+                  <small>{grammar.reading}</small>
+                </button>
+              ))}
+            </nav>
+          )}
+        </aside>
+      </div>
     </main>
   );
 }

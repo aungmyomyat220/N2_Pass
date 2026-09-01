@@ -68,7 +68,8 @@ body {
   margin: 0 auto;
 }
 
-.content > main.kanji-page {
+.content > main.kanji-page,
+.content > main.grammar-page {
   max-width: 1180px;
   margin: 0;
 }
@@ -344,6 +345,116 @@ body {
   color: var(--muted);
 }
 
+.grammar-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 640px) minmax(280px, 1fr);
+  align-items: start;
+  gap: 24px;
+}
+
+.grammar-study-column {
+  min-width: 0;
+}
+
+.grammar-index {
+  position: sticky;
+  top: 24px;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.grammar-index-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.grammar-index-header h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.grammar-index-header p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.grammar-index-header > span {
+  min-width: 36px;
+  padding: 5px 8px;
+  background: var(--surface-2);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.grammar-index-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: calc(100vh - 135px);
+  padding: 10px;
+  overflow-y: auto;
+}
+
+button.grammar-index-item {
+  flex: 0 0 auto;
+  min-width: 0;
+  padding: 10px 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text);
+  text-align: left;
+  font-size: 13px;
+}
+
+button.grammar-index-item:hover,
+button.grammar-index-item.active {
+  background: var(--surface-2);
+  border-color: var(--border);
+}
+
+button.grammar-index-item.active {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.grammar-index-item > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.grammar-index-item small {
+  flex: 0 0 auto;
+  max-width: 42%;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.grammar-index-empty {
+  padding: 32px 16px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+
 .grammar-list {
   list-style: none;
   margin: 0;
@@ -358,6 +469,7 @@ body {
   border: 1px solid var(--border);
   border-radius: 12px;
   overflow: hidden;
+  scroll-margin-top: 24px;
 }
 
 .grammar-item.open {
@@ -1272,11 +1384,16 @@ button.restart-review {
 }
 
 @media (max-width: 1280px) {
-  .kanji-workspace {
+  .kanji-workspace,
+  .grammar-workspace {
     grid-template-columns: minmax(0, 640px);
   }
 
   .writing-panel {
     position: static;
+  }
+
+  .grammar-index {
+    display: none;
   }
 }
