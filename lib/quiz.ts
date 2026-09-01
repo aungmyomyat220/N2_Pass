@@ -11,6 +11,8 @@ export type QuizOption = {
 
 export type QuizQuestion = {
   card: KanjiCard;
+  kind: "single" | "compound";
+  prompt: string;
   options: QuizOption[];
 };
 
@@ -56,6 +58,44 @@ export function buildQuiz(cards: KanjiCard[], count: number): QuizQuestion[] {
       ...distractors.map((label) => ({ label, correct: false })),
     ]);
 
-    return { card, options };
+    return { card, kind: "single", prompt: card.kanji, options };
+  });
+}
+
+// Build JLPT-style reading questions from the compound example on each card.
+// The prompt is a word written with kanji and the options are kana readings.
+export function buildCompoundQuiz(
+  cards: KanjiCard[],
+  count: number,
+): QuizQuestion[] {
+  const eligible = cards.filter(
+    (card) => card.example?.word && card.example.reading,
+  );
+  const picked = shuffle(eligible).slice(0, Math.min(count, eligible.length));
+
+  return picked.map((card) => {
+    const example = card.example!;
+    const distractors: string[] = [];
+    const seen = new Set<string>([example.reading]);
+
+    for (const other of shuffle(eligible)) {
+      if (distractors.length >= OPTIONS_PER_QUESTION - 1) break;
+      const reading = other.example!.reading;
+      if (seen.has(reading)) continue;
+      seen.add(reading);
+      distractors.push(reading);
+    }
+
+    const options: QuizOption[] = shuffle([
+      { label: example.reading, correct: true },
+      ...distractors.map((label) => ({ label, correct: false })),
+    ]);
+
+    return {
+      card,
+      kind: "compound",
+      prompt: example.word,
+      options,
+    };
   });
 }

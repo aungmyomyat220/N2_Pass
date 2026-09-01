@@ -3,18 +3,24 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import rawData from "@/data/n2-kanji.json";
 import type { KanjiCard } from "@/lib/srs";
-import { buildQuiz, type QuizQuestion } from "@/lib/quiz";
+import {
+  buildCompoundQuiz,
+  buildQuiz,
+  type QuizQuestion,
+} from "@/lib/quiz";
 
 const CARDS = rawData as KanjiCard[];
 
-type Mode = "kanji" | "grammar";
-type Phase = "mode" | "count" | "quiz" | "result";
+type ExamTab = "kanji" | "grammar";
+type KanjiMode = "single" | "compound";
+type Phase = "choose" | "count" | "quiz" | "result";
 
 const COUNT_OPTIONS = [10, 20, 50, CARDS.length];
 
 export default function ExamPage() {
-  const [phase, setPhase] = useState<Phase>("mode");
-  const [mode, setMode] = useState<Mode | null>(null);
+  const [activeTab, setActiveTab] = useState<ExamTab>("kanji");
+  const [phase, setPhase] = useState<Phase>("choose");
+  const [kanjiMode, setKanjiMode] = useState<KanjiMode | null>(null);
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -24,19 +30,47 @@ export default function ExamPage() {
   const answered = picked !== null;
   const isLast = index === questions.length - 1;
 
-  const startQuiz = useCallback((count: number) => {
-    setQuestions(buildQuiz(CARDS, count));
+  const clearQuiz = useCallback(() => {
+    setQuestions([]);
     setIndex(0);
     setScore(0);
     setPicked(null);
-    setPhase("quiz");
   }, []);
+
+  const selectTab = (tab: ExamTab) => {
+    setActiveTab(tab);
+    setPhase("choose");
+    setKanjiMode(null);
+    clearQuiz();
+  };
+
+  const startOver = () => {
+    setPhase("choose");
+    setKanjiMode(null);
+    clearQuiz();
+  };
+
+  const startQuiz = useCallback(
+    (count: number) => {
+      if (!kanjiMode) return;
+      const nextQuestions =
+        kanjiMode === "compound"
+          ? buildCompoundQuiz(CARDS, count)
+          : buildQuiz(CARDS, count);
+      setQuestions(nextQuestions);
+      setIndex(0);
+      setScore(0);
+      setPicked(null);
+      setPhase("quiz");
+    },
+    [kanjiMode],
+  );
 
   const choose = useCallback(
     (optionIndex: number) => {
       if (answered || !current) return;
       setPicked(optionIndex);
-      if (current.options[optionIndex].correct) setScore((s) => s + 1);
+      if (current.options[optionIndex].correct) setScore((value) => value + 1);
     },
     [answered, current],
   );
@@ -46,34 +80,26 @@ export default function ExamPage() {
       setPhase("result");
       return;
     }
-    setIndex((i) => i + 1);
+    setIndex((value) => value + 1);
     setPicked(null);
   }, [isLast]);
 
-  // Keyboard: 1-4 to pick an option, Space/Enter to advance once answered.
   useEffect(() => {
     if (phase !== "quiz") return;
-    const onKey = (e: KeyboardEvent) => {
-      if (!answered && /^[1-4]$/.test(e.key)) {
-        const i = Number(e.key) - 1;
-        if (current && i < current.options.length) choose(i);
-      } else if (answered && (e.key === " " || e.key === "Enter")) {
-        e.preventDefault();
+    const onKey = (event: KeyboardEvent) => {
+      if (!answered && /^[1-4]$/.test(event.key)) {
+        const optionIndex = Number(event.key) - 1;
+        if (current && optionIndex < current.options.length) {
+          choose(optionIndex);
+        }
+      } else if (answered && (event.key === " " || event.key === "Enter")) {
+        event.preventDefault();
         next();
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [phase, answered, current, choose, next]);
-
-  const restart = () => {
-    setPhase("mode");
-    setMode(null);
-    setQuestions([]);
-    setIndex(0);
-    setScore(0);
-    setPicked(null);
-  };
 
   const percent = useMemo(
     () => (questions.length ? Math.round((score / questions.length) * 100) : 0),
@@ -84,140 +110,189 @@ export default function ExamPage() {
     <main>
       <header className="app-header">
         <h1>Exam mode</h1>
-        {phase !== "mode" && (
-          <button className="ghost" onClick={restart}>
+        {activeTab === "kanji" && phase !== "choose" && (
+          <button className="ghost" onClick={startOver}>
             Start over
           </button>
         )}
       </header>
 
-      {/* Step 1 — choose mode */}
-      {phase === "mode" && (
-        <div className="chooser">
-          <div className="chooser-title">Choose a mode</div>
-          <div className="mode-grid">
-            <button
-              className="mode-card"
-              onClick={() => {
-                setMode("kanji");
-                setPhase("count");
-              }}
-            >
-              <div className="mode-emoji">漢</div>
-              <div className="mode-name">Kanji</div>
-              <div className="mode-sub">Japanese reading quiz</div>
-            </button>
-            <button className="mode-card disabled" disabled>
-              <div className="mode-emoji">文</div>
-              <div className="mode-name">Grammar</div>
-              <div className="mode-sub">Coming soon</div>
-            </button>
-          </div>
+      <div className="exam-tabs" role="tablist" aria-label="Exam subjects">
+        <button
+          className={activeTab === "kanji" ? "exam-tab active" : "exam-tab"}
+          role="tab"
+          aria-selected={activeTab === "kanji"}
+          onClick={() => selectTab("kanji")}
+        >
+          漢 Kanji Exam
+        </button>
+        <button
+          className={activeTab === "grammar" ? "exam-tab active" : "exam-tab"}
+          role="tab"
+          aria-selected={activeTab === "grammar"}
+          onClick={() => selectTab("grammar")}
+        >
+          文 Grammar Exam
+          <span className="coming-badge">Soon</span>
+        </button>
+      </div>
+
+      {activeTab === "grammar" ? (
+        <div className="coming-soon-panel" role="tabpanel">
+          <div className="coming-soon-mark">文</div>
+          <h2>Grammar Exam</h2>
+          <p>Coming soon</p>
         </div>
-      )}
-
-      {/* Step 2 — choose how many */}
-      {phase === "count" && mode === "kanji" && (
-        <div className="chooser">
-          <div className="chooser-title">How many questions?</div>
-          <div className="count-grid">
-            {COUNT_OPTIONS.map((c) => (
-              <button
-                key={c}
-                className="count-card"
-                onClick={() => startQuiz(c)}
-              >
-                {c === CARDS.length ? `All (${c})` : c}
-              </button>
-            ))}
-          </div>
-          <button className="ghost back" onClick={() => setPhase("mode")}>
-            ← Back
-          </button>
-        </div>
-      )}
-
-      {/* Step 3 — the quiz */}
-      {phase === "quiz" && current && (
-        <>
-          <div className="quiz-progress">
-            <span>
-              Question {index + 1} / {questions.length}
-            </span>
-            <span>Score {score}</span>
-          </div>
-
-          <div className="quiz-prompt">
-            <div className="quiz-kanji">{current.card.kanji}</div>
-            <div className="quiz-ask">この漢字の読み方はどれですか？</div>
-          </div>
-
-          <div className="options">
-            {current.options.map((opt, i) => {
-              let cls = "option";
-              if (answered) {
-                if (opt.correct) cls += " correct";
-                else if (i === picked) cls += " wrong";
-                else cls += " dim";
-              }
-              return (
+      ) : (
+        <div role="tabpanel">
+          {phase === "choose" && (
+            <div className="chooser">
+              <div className="chooser-title">Choose a Kanji test</div>
+              <div className="mode-grid">
                 <button
-                  key={i}
-                  className={cls}
-                  onClick={() => choose(i)}
-                  disabled={answered}
+                  className="mode-card"
+                  onClick={() => {
+                    setKanjiMode("single");
+                    setPhase("count");
+                  }}
                 >
-                  <span className="opt-num">{i + 1}</span>
-                  <span className="opt-label">{opt.label}</span>
+                  <div className="mode-emoji">漢</div>
+                  <div className="mode-name">Single Kanji</div>
+                  <div className="mode-sub">Read one kanji at a time</div>
                 </button>
-              );
-            })}
-          </div>
+                <button
+                  className="mode-card"
+                  onClick={() => {
+                    setKanjiMode("compound");
+                    setPhase("count");
+                  }}
+                >
+                  <div className="mode-emoji compound-mark">熟語</div>
+                  <div className="mode-name">Compound Kanji</div>
+                  <div className="mode-sub">JLPT-style word reading</div>
+                </button>
+              </div>
+            </div>
+          )}
 
-          {answered && (
-            <div className="feedback">
-              {current.card.example && (
-                <div className="ex-inline">
-                  <span className="ex-word">{current.card.example.word}</span>
-                  <span className="ex-reading">
-                    （{current.card.example.reading}）
-                  </span>
-                </div>
-              )}
-              <button className="reveal" onClick={next}>
-                {isLast ? "See results" : "Next"}
+          {phase === "count" && kanjiMode && (
+            <div className="chooser">
+              <div className="chooser-title">
+                {kanjiMode === "compound" ? "Compound Kanji" : "Single Kanji"}
+                : How many questions?
+              </div>
+              <div className="count-grid">
+                {COUNT_OPTIONS.map((count) => (
+                  <button
+                    key={count}
+                    className="count-card"
+                    onClick={() => startQuiz(count)}
+                  >
+                    {count === CARDS.length ? `All (${count})` : count}
+                  </button>
+                ))}
+              </div>
+              <button className="ghost back" onClick={startOver}>
+                ← Back
               </button>
             </div>
           )}
 
-          <div className="kbd-hint">
-            1–4 to answer · Space/Enter for next
-          </div>
-        </>
-      )}
+          {phase === "quiz" && current && (
+            <>
+              <div className="quiz-progress">
+                <span>
+                  Question {index + 1} / {questions.length}
+                </span>
+                <span>Score {score}</span>
+              </div>
 
-      {/* Step 4 — result */}
-      {phase === "result" && (
-        <div className="result">
-          <div className="result-score">
-            {score} / {questions.length}
-          </div>
-          <div className="result-percent">{percent}%</div>
-          <div className="result-msg">
-            {percent >= 80
-              ? "🎉 Excellent!"
-              : percent >= 50
-                ? "👍 Keep going!"
-                : "💪 More practice needed."}
-          </div>
-          <div className="actions">
-            <button className="good" onClick={() => setPhase("count")}>
-              Choose count
-            </button>
-            <button className="reveal" onClick={restart}>
-              New exam
-            </button>
-          </div>
+              <div className="quiz-prompt">
+                <div
+                  className={
+                    current.kind === "compound"
+                      ? "quiz-kanji compound"
+                      : "quiz-kanji"
+                  }
+                >
+                  {current.prompt}
+                </div>
+                <div className="quiz-ask">
+                  {current.kind === "compound"
+                    ? "この言葉の読み方はどれですか？"
+                    : "この漢字の読み方はどれですか？"}
+                </div>
+              </div>
+
+              <div className="options">
+                {current.options.map((option, optionIndex) => {
+                  let className = "option";
+                  if (answered) {
+                    if (option.correct) className += " correct";
+                    else if (optionIndex === picked) className += " wrong";
+                    else className += " dim";
+                  }
+                  return (
+                    <button
+                      key={`${option.label}-${optionIndex}`}
+                      className={className}
+                      onClick={() => choose(optionIndex)}
+                      disabled={answered}
+                    >
+                      <span className="opt-num">{optionIndex + 1}</span>
+                      <span className="opt-label">{option.label}</span>
+                    </button>
+                  );
+                })}
+              </div>
+
+              {answered && (
+                <div className="feedback">
+                  {current.card.example && (
+                    <div className="ex-inline">
+                      <span className="ex-word">
+                        {current.card.example.word}
+                      </span>
+                      <span className="ex-reading">
+                        （{current.card.example.reading}）
+                      </span>
+                    </div>
+                  )}
+                  <button className="reveal" onClick={next}>
+                    {isLast ? "See results" : "Next"}
+                  </button>
+                </div>
+              )}
+
+              <div className="kbd-hint">
+                1–4 to answer · Space/Enter for next
+              </div>
+            </>
+          )}
+
+          {phase === "result" && (
+            <div className="result">
+              <div className="result-score">
+                {score} / {questions.length}
+              </div>
+              <div className="result-percent">{percent}%</div>
+              <div className="result-msg">
+                {percent >= 80
+                  ? "🎉 Excellent!"
+                  : percent >= 50
+                    ? "👍 Keep going!"
+                    : "💪 More practice needed."}
+              </div>
+              <div className="actions">
+                <button className="good" onClick={() => setPhase("count")}>
+                  Choose count
+                </button>
+                <button className="reveal" onClick={startOver}>
+                  Change test
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       )}
     </main>

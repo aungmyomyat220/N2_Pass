@@ -700,6 +700,76 @@ button.restart-review {
 }
 
 /* ---- Exam mode ---- */
+.exam-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  padding: 4px;
+  margin-bottom: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.exam-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: transparent;
+  color: var(--muted);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.exam-tab:hover,
+.exam-tab.active {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.exam-tab.active {
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+
+.coming-badge {
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: rgba(110, 168, 254, 0.12);
+  color: var(--accent);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.coming-soon-panel {
+  min-height: 300px;
+  padding: 48px 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  text-align: center;
+}
+
+.coming-soon-mark {
+  color: var(--accent);
+  font-size: 72px;
+  line-height: 1;
+}
+
+.coming-soon-panel h2 {
+  margin: 18px 0 6px;
+  font-size: 20px;
+}
+
+.coming-soon-panel p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .chooser {
   margin-top: 24px;
 }
@@ -742,6 +812,11 @@ button.restart-review {
 .mode-emoji {
   font-size: 40px;
   line-height: 1;
+}
+
+.mode-emoji.compound-mark {
+  font-size: 28px;
+  letter-spacing: 0.08em;
 }
 
 .mode-name {
@@ -802,6 +877,11 @@ button.restart-review {
   font-size: 96px;
   line-height: 1;
   font-weight: 500;
+}
+
+.quiz-kanji.compound {
+  font-size: 64px;
+  line-height: 1.15;
 }
 
 .quiz-ask {
