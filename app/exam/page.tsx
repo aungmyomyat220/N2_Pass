@@ -105,7 +105,7 @@ export default function ExamPage() {
             >
               <div className="mode-emoji">漢</div>
               <div className="mode-name">Kanji</div>
-              <div className="mode-sub">Multiple-choice meaning quiz</div>
+              <div className="mode-sub">Japanese reading quiz</div>
             </button>
             <button className="mode-card disabled" disabled>
               <div className="mode-emoji">文</div>
@@ -149,7 +149,7 @@ export default function ExamPage() {
 
           <div className="quiz-prompt">
             <div className="quiz-kanji">{current.card.kanji}</div>
-            <div className="quiz-ask">What does this kanji mean?</div>
+            <div className="quiz-ask">この漢字の読み方はどれですか？</div>
           </div>
 
           <div className="options">
@@ -181,9 +181,6 @@ export default function ExamPage() {
                   <span className="ex-word">{current.card.example.word}</span>
                   <span className="ex-reading">
                     （{current.card.example.reading}）
-                  </span>
-                  <span className="ex-meaning">
-                    {current.card.example.meaning}
                   </span>
                 </div>
               )}

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import rawData from "@/data/n2-kanji.json";
+import KanjiFlashcard from "@/app/components/KanjiFlashcard";
 import {
   KanjiCard,
   ProgressMap,
@@ -12,6 +13,7 @@ import {
   review,
   saveProgress,
 } from "@/lib/srs";
+import { loadStarred, saveStarred, toggleStarred } from "@/lib/starred";
 
 const CARDS = rawData as KanjiCard[];
 
@@ -19,11 +21,13 @@ export default function Home() {
   // `null` until we've hydrated from localStorage, so SSR and first client
   // render agree (avoids hydration mismatch).
   const [progress, setProgress] = useState<ProgressMap | null>(null);
+  const [starred, setStarred] = useState<string[] | null>(null);
   const [revealed, setRevealed] = useState(false);
   const [now, setNow] = useState(0);
 
   useEffect(() => {
     setProgress(loadProgress());
+    setStarred(loadStarred());
     setNow(Date.now());
   }, []);
 
@@ -75,6 +79,13 @@ export default function Home() {
     setNow(Date.now());
   };
 
+  const handleToggleStar = () => {
+    if (!current || starred === null) return;
+    const next = toggleStarred(starred, current.kanji);
+    saveStarred(next);
+    setStarred(next);
+  };
+
   return (
     <main>
       <header className="app-header">
@@ -107,52 +118,13 @@ export default function Home() {
         <div className="empty">Loading…</div>
       ) : current ? (
         <>
-          <div
-            className="card"
-            onClick={() => !revealed && setRevealed(true)}
-          >
-            <div className="kanji">{current.kanji}</div>
-            {!revealed ? (
-              <div className="hint">Tap or press Space to reveal</div>
-            ) : (
-              <div className="answer">
-                <div className="meanings">{current.meanings.join(", ")}</div>
-                {current.on.length > 0 && (
-                  <div className="reading-row">
-                    <span className="tag">on</span>
-                    {current.on.map((r) => (
-                      <span className="reading" key={r}>
-                        {r}
-                      </span>
-                    ))}
-                  </div>
-                )}
-                {current.kun.length > 0 && (
-                  <div className="reading-row">
-                    <span className="tag">kun</span>
-                    {current.kun.map((r) => (
-                      <span className="reading" key={r}>
-                        {r}
-                      </span>
-                    ))}
-                  </div>
-                )}
-                {current.example && (
-                  <div className="ex-inline">
-                    <span className="ex-word">{current.example.word}</span>
-                    <span className="ex-reading">
-                      （{current.example.reading}）
-                    </span>
-                    <span className="ex-meaning">{current.example.meaning}</span>
-                  </div>
-                )}
-                <div className="meta">
-                  {current.strokes} strokes
-                  {current.freq ? ` · freq #${current.freq}` : ""}
-                </div>
-              </div>
-            )}
-          </div>
+          <KanjiFlashcard
+            card={current}
+            revealed={revealed}
+            starred={starred?.includes(current.kanji) ?? false}
+            onReveal={() => setRevealed(true)}
+            onToggleStar={handleToggleStar}
+          />
 
           {!revealed ? (
             <div className="actions">

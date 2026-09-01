@@ -1,10 +1,12 @@
 # N2 Kanji & Grammar
 
-A web app for studying JLPT **N2** Japanese. Two tabs:
+A web app for studying JLPT **N2** Japanese. Four tabs:
 
 - **Kanji** — the ~367 N2 kanji as flashcards with spaced repetition.
+- **Starred** — save difficult kanji and relearn them in a focused review.
 - **Grammar** — 96 N2 grammar points with meaning, formation, explanation, and
   example sentences; searchable and expandable.
+- **Exam** — test Japanese kanji readings with multiple-choice questions.
 
 Built with Next.js (App Router) + TypeScript. No backend — kanji study progress
 is saved in your browser's `localStorage`.
@@ -30,6 +32,9 @@ npm start
 - **Spaced repetition:** A simple [Leitner system](https://en.wikipedia.org/wiki/Leitner_system)
   (5 boxes, intervals 0/1/3/7/16 days). "Got it" promotes a card; "Again" sends
   it back to box 0. Logic lives in [lib/srs.ts](lib/srs.ts).
+- **Starred review:** Tap ☆ on any kanji card to save it. In the Starred tab,
+  "Again" keeps the card in the current review and "Got it" completes it for
+  that session without removing the star.
 - **Keyboard:** `Space`/`Enter` reveal · `1` again · `2` got it.
 
 ## Data
