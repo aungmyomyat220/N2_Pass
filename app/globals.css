@@ -319,7 +319,8 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .sidebar-footer::after {
+  .sidebar-footer::after,
+  .all-kanji-drawer {
     animation: none;
   }
 }
@@ -579,6 +580,214 @@ header.app-header h1 {
   font-size: 20px;
   margin: 0;
   font-weight: 600;
+}
+
+.app-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button.all-kanji-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+button.all-kanji-trigger svg {
+  width: 15px;
+  height: 15px;
+}
+
+.all-kanji-overlay {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  display: flex;
+  justify-content: flex-end;
+  background: rgba(7, 9, 12, 0.72);
+  backdrop-filter: blur(3px);
+}
+
+.all-kanji-drawer {
+  width: min(440px, 100%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  box-shadow: -18px 0 50px rgba(0, 0, 0, 0.3);
+  animation: all-kanji-slide-in 0.22s ease-out;
+}
+
+@keyframes all-kanji-slide-in {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.all-kanji-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.all-kanji-header h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.all-kanji-header p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+button.drawer-close {
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+button.drawer-close:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+button.drawer-close svg {
+  width: 18px;
+  height: 18px;
+}
+
+.all-kanji-search {
+  height: 42px;
+  margin: 14px 16px 8px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--muted);
+}
+
+.all-kanji-search:focus-within {
+  border-color: var(--accent);
+}
+
+.all-kanji-search svg {
+  width: 17px;
+  height: 17px;
+}
+
+.all-kanji-search input {
+  width: 100%;
+  min-width: 0;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+}
+
+.all-kanji-search input::placeholder {
+  color: var(--muted);
+}
+
+.all-kanji-results {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 4px 16px 20px;
+}
+
+.all-kanji-result-count {
+  padding: 6px 1px 10px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.all-kanji-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+button.all-kanji-item {
+  position: relative;
+  flex: none;
+  min-width: 0;
+  min-height: 78px;
+  padding: 16px 5px 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+button.all-kanji-item:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+button.all-kanji-item.studied {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+button.all-kanji-item.current {
+  background: rgba(110, 168, 254, 0.14);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.all-kanji-number {
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  font-size: 8px;
+  opacity: 0.65;
+}
+
+.all-kanji-character {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.all-kanji-reading {
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 9px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.all-kanji-empty {
+  padding: 48px 16px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
 }
 
 .kanji-workspace {
@@ -958,6 +1167,35 @@ button.jump-go:disabled {
   display: flex;
   flex-direction: column;
   gap: 14px;
+}
+
+button.copy-kanji {
+  flex: 0 0 auto;
+  align-self: center;
+  padding: 7px 11px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 11px;
+}
+
+button.copy-kanji:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+button.copy-kanji.copied {
+  color: var(--good);
+  border-color: var(--good);
+}
+
+button.copy-kanji svg {
+  width: 14px;
+  height: 14px;
 }
 
 .answer .meanings {

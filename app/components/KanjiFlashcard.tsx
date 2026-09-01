@@ -1,3 +1,7 @@
+"use client";
+
+import { useState, type MouseEvent } from "react";
+import { Check, Copy } from "lucide-react";
 import type { KanjiCard } from "@/lib/srs";
 
 type Props = {
@@ -15,6 +19,31 @@ export default function KanjiFlashcard({
   onReveal,
   onToggleStar,
 }: Props) {
+  const [copiedKanji, setCopiedKanji] = useState<string | null>(null);
+  const copied = copiedKanji === card.kanji;
+
+  const handleCopy = async (event: MouseEvent<HTMLButtonElement>) => {
+    event.stopPropagation();
+
+    try {
+      await navigator.clipboard.writeText(card.kanji);
+    } catch {
+      const textarea = document.createElement("textarea");
+      textarea.value = card.kanji;
+      textarea.style.position = "fixed";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      textarea.remove();
+    }
+
+    setCopiedKanji(card.kanji);
+    window.setTimeout(() => {
+      setCopiedKanji((current) => (current === card.kanji ? null : current));
+    }, 1600);
+  };
+
   return (
     <div
       className="card"
@@ -42,6 +71,15 @@ export default function KanjiFlashcard({
         <div className="hint">Tap or press Space to reveal</div>
       ) : (
         <div className="answer">
+          <button
+            type="button"
+            className={copied ? "copy-kanji copied" : "copy-kanji"}
+            aria-label={`Copy ${card.kanji}`}
+            onClick={handleCopy}
+          >
+            {copied ? <Check aria-hidden="true" /> : <Copy aria-hidden="true" />}
+            {copied ? "Copied" : "Copy kanji"}
+          </button>
           <div className="meanings">{card.meanings.join(", ")}</div>
           {card.on.length > 0 && (
             <div className="reading-row">

@@ -7,6 +7,7 @@ import {
   useState,
   type FormEvent,
 } from "react";
+import { Grid3X3, Search, X } from "lucide-react";
 import rawData from "@/data/n2-kanji.json";
 import KanjiFlashcard from "@/app/components/KanjiFlashcard";
 import KanjiWritingPad from "@/app/components/KanjiWritingPad";
@@ -33,6 +34,8 @@ export default function Home() {
   const [now, setNow] = useState(0);
   const [manualIndex, setManualIndex] = useState<number | null>(null);
   const [jumpValue, setJumpValue] = useState("");
+  const [kanjiDrawerOpen, setKanjiDrawerOpen] = useState(false);
+  const [kanjiSearch, setKanjiSearch] = useState("");
 
   useEffect(() => {
     setProgress(loadProgress());
@@ -49,6 +52,23 @@ export default function Home() {
     if (progress === null) return null;
     return computeStats(CARDS, progress, now);
   }, [progress, now]);
+
+  const drawerCards = useMemo(() => {
+    const query = kanjiSearch.trim().toLowerCase();
+    return CARDS.map((card, index) => ({ card, index })).filter(({ card }) => {
+      if (!query) return true;
+      return [
+        card.kanji,
+        ...card.on,
+        ...card.kun,
+        card.example?.word ?? "",
+        card.example?.reading ?? "",
+      ]
+        .join(" ")
+        .toLowerCase()
+        .includes(query);
+    });
+  }, [kanjiSearch]);
 
   const current: KanjiCard | undefined =
     manualIndex === null ? queue[0] : CARDS[manualIndex];
@@ -82,8 +102,24 @@ export default function Home() {
 
   // Keyboard shortcuts: Space/Enter to reveal, 1=again, 2=good.
   useEffect(() => {
+    if (!kanjiDrawerOpen) return;
+
+    const previousOverflow = document.body.style.overflow;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setKanjiDrawerOpen(false);
+    };
+
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", closeOnEscape);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", closeOnEscape);
+    };
+  }, [kanjiDrawerOpen]);
+
+  useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (!current) return;
+      if (!current || kanjiDrawerOpen) return;
       if (!revealed && (e.key === " " || e.key === "Enter")) {
         e.preventDefault();
         setRevealed(true);
@@ -95,7 +131,7 @@ export default function Home() {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [current, revealed, answer]);
+  }, [current, revealed, answer, kanjiDrawerOpen]);
 
   const handleReset = () => {
     if (!window.confirm("Reset all study progress?")) return;
@@ -136,9 +172,18 @@ export default function Home() {
     <main className="kanji-page">
       <header className="app-header">
         <h1>N2 Kanji Flashcards</h1>
-        <button className="ghost" onClick={handleReset}>
-          Reset progress
-        </button>
+        <div className="app-header-actions">
+          <button
+            className="ghost all-kanji-trigger"
+            onClick={() => setKanjiDrawerOpen(true)}
+          >
+            <Grid3X3 aria-hidden="true" />
+            All Kanji
+          </button>
+          <button className="ghost" onClick={handleReset}>
+            Reset progress
+          </button>
+        </div>
       </header>
 
       <div className="kanji-workspace">
@@ -262,6 +307,93 @@ export default function Home() {
           <KanjiWritingPad kanji={current?.kanji} />
         </aside>
       </div>
+
+      {kanjiDrawerOpen && (
+        <div
+          className="all-kanji-overlay"
+          onMouseDown={(event) => {
+            if (event.target === event.currentTarget) setKanjiDrawerOpen(false);
+          }}
+        >
+          <aside
+            className="all-kanji-drawer"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="all-kanji-title"
+          >
+            <div className="all-kanji-header">
+              <div>
+                <h2 id="all-kanji-title">All Kanji</h2>
+                <p>{CARDS.length} flashcards</p>
+              </div>
+              <button
+                type="button"
+                className="drawer-close"
+                aria-label="Close all kanji drawer"
+                onClick={() => setKanjiDrawerOpen(false)}
+              >
+                <X aria-hidden="true" />
+              </button>
+            </div>
+
+            <label className="all-kanji-search">
+              <Search aria-hidden="true" />
+              <input
+                type="search"
+                placeholder="Search kanji, word, or reading…"
+                value={kanjiSearch}
+                autoFocus
+                onChange={(event) => setKanjiSearch(event.target.value)}
+              />
+            </label>
+
+            <div className="all-kanji-results">
+              <div className="all-kanji-result-count">
+                {drawerCards.length} results
+              </div>
+              {drawerCards.length === 0 ? (
+                <div className="all-kanji-empty">No matching kanji</div>
+              ) : (
+                <div className="all-kanji-grid">
+                  {drawerCards.map(({ card, index }) => {
+                    const isCurrent = current?.kanji === card.kanji;
+                    const wasStudied = Boolean(progress?.[card.kanji]);
+                    const className = [
+                      "all-kanji-item",
+                      isCurrent ? "current" : "",
+                      wasStudied ? "studied" : "",
+                    ]
+                      .filter(Boolean)
+                      .join(" ");
+
+                    return (
+                      <button
+                        type="button"
+                        className={className}
+                        aria-current={isCurrent ? "true" : undefined}
+                        aria-label={`Card ${index + 1}: ${card.kanji}`}
+                        key={`${card.kanji}-${index}`}
+                        onClick={() => {
+                          jumpToIndex(index);
+                          setKanjiDrawerOpen(false);
+                        }}
+                      >
+                        <span className="all-kanji-number">{index + 1}</span>
+                        <span className="all-kanji-character" lang="ja">
+                          {card.kanji}
+                        </span>
+                        <span className="all-kanji-reading">
+                          {card.on[0] ?? card.kun[0] ?? "—"}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          </aside>
+        </div>
+      )}
     </main>
   );
 }
