@@ -1,48 +1,27 @@
-import { promises as fs } from "node:fs";
-import path from "node:path";
 import { NextRequest, NextResponse } from "next/server";
 import {
   parseMeaningBlock,
   type CustomMeaning,
 } from "@/lib/custom-meanings";
+import { getDatabase } from "@/lib/db";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-type MeaningStore = Record<string, CustomMeaning[]>;
+type MeaningRow = CustomMeaning & { kanji: string };
 
-const DATA_FILE = path.join(process.cwd(), "data", "custom-meanings.json");
 const MAX_ENTRIES_PER_REQUEST = 100;
-let writeQueue: Promise<void> = Promise.resolve();
 
 function error(message: string, status = 400) {
   return NextResponse.json({ ok: false, error: message }, { status });
 }
 
-async function readStore(): Promise<MeaningStore> {
-  try {
-    const raw = await fs.readFile(DATA_FILE, "utf8");
-    return JSON.parse(raw) as MeaningStore;
-  } catch (readError) {
-    const code = (readError as NodeJS.ErrnoException).code;
-    if (code === "ENOENT") return {};
-    throw readError;
+function databaseError(operation: string, caught: unknown) {
+  console.error(`Unable to ${operation} meanings:`, caught);
+  if (caught instanceof Error && caught.message.includes("DATABASE_URL")) {
+    return error("Meaning database is not configured.", 503);
   }
-}
-
-async function writeStore(store: MeaningStore): Promise<void> {
-  const temporaryFile = `${DATA_FILE}.${process.pid}.${Date.now()}.tmp`;
-  await fs.writeFile(temporaryFile, `${JSON.stringify(store, null, 2)}\n`, "utf8");
-  await fs.rename(temporaryFile, DATA_FILE);
-}
-
-function withWriteLock<T>(action: () => Promise<T>): Promise<T> {
-  const result = writeQueue.then(action, action);
-  writeQueue = result.then(
-    () => undefined,
-    () => undefined,
-  );
-  return result;
+  return error(`Unable to ${operation} meanings.`, 500);
 }
 
 function cleanEntry(value: unknown): CustomMeaning | null {
@@ -83,22 +62,50 @@ function deduplicate(entries: CustomMeaning[]): CustomMeaning[] {
   });
 }
 
+function withoutKanji(row: MeaningRow): CustomMeaning {
+  return {
+    word: row.word,
+    reading: row.reading,
+    meaning: row.meaning,
+  };
+}
+
 export async function GET(request: NextRequest) {
   try {
-    const store = await readStore();
+    const sql = getDatabase();
     const kanji = request.nextUrl.searchParams.get("kanji")?.trim();
 
     if (kanji) {
+      const rows = (await sql`
+        SELECT kanji, word, reading, meaning
+        FROM kanji_meanings
+        WHERE kanji = ${kanji}
+        ORDER BY id
+      `) as MeaningRow[];
+
       return NextResponse.json({
         ok: true,
         kanji,
-        entries: store[kanji] ?? [],
+        entries: rows.map(withoutKanji),
       });
     }
 
-    return NextResponse.json({ ok: true, meanings: store });
-  } catch {
-    return error("Unable to read meanings.", 500);
+    const rows = (await sql`
+      SELECT kanji, word, reading, meaning
+      FROM kanji_meanings
+      ORDER BY kanji, id
+    `) as MeaningRow[];
+    const meanings = rows.reduce<Record<string, CustomMeaning[]>>(
+      (all, row) => {
+        (all[row.kanji] ??= []).push(withoutKanji(row));
+        return all;
+      },
+      {},
+    );
+
+    return NextResponse.json({ ok: true, meanings });
+  } catch (caught) {
+    return databaseError("read", caught);
   }
 }
 
@@ -142,33 +149,38 @@ export async function POST(request: NextRequest) {
   }
 
   try {
-    return await withWriteLock(async () => {
-      const store = await readStore();
-      const current = store[kanji] ?? [];
-      const existing = new Set(
-        current.map((entry) => `${entry.word}\u0000${entry.reading}`),
-      );
-      const addedEntries = entries.filter(
-        (entry) => !existing.has(`${entry.word}\u0000${entry.reading}`),
-      );
-      const next = [...current, ...addedEntries];
-      store[kanji] = next;
-      if (addedEntries.length > 0) await writeStore(store);
+    const sql = getDatabase();
+    let added = 0;
+    for (const entry of entries) {
+      const inserted = (await sql`
+        INSERT INTO kanji_meanings (kanji, word, reading, meaning)
+        VALUES (${kanji}, ${entry.word}, ${entry.reading}, ${entry.meaning})
+        ON CONFLICT (kanji, word, reading) DO NOTHING
+        RETURNING id
+      `) as { id: string }[];
+      added += inserted.length;
+    }
 
-      return NextResponse.json(
-        {
-          ok: true,
-          kanji,
-          added: addedEntries.length,
-          total: next.length,
-          entries: next,
-          invalidLines,
-        },
-        { status: addedEntries.length > 0 ? 201 : 200 },
-      );
-    });
-  } catch {
-    return error("Unable to save meanings.", 500);
+    const rows = (await sql`
+      SELECT kanji, word, reading, meaning
+      FROM kanji_meanings
+      WHERE kanji = ${kanji}
+      ORDER BY id
+    `) as MeaningRow[];
+
+    return NextResponse.json(
+      {
+        ok: true,
+        kanji,
+        added,
+        total: rows.length,
+        entries: rows.map(withoutKanji),
+        invalidLines,
+      },
+      { status: added > 0 ? 201 : 200 },
+    );
+  } catch (caught) {
+    return databaseError("save", caught);
   }
 }
 
@@ -190,27 +202,29 @@ export async function DELETE(request: NextRequest) {
   }
 
   try {
-    return await withWriteLock(async () => {
-      const store = await readStore();
-      const current = store[kanji] ?? [];
-      const next = current.filter(
-        (entry) => entry.word !== word || entry.reading !== reading,
-      );
-      const removed = current.length - next.length;
+    const sql = getDatabase();
+    const removedRows = (await sql`
+      DELETE FROM kanji_meanings
+      WHERE kanji = ${kanji}
+        AND word = ${word}
+        AND reading = ${reading}
+      RETURNING id
+    `) as { id: string }[];
+    const rows = (await sql`
+      SELECT kanji, word, reading, meaning
+      FROM kanji_meanings
+      WHERE kanji = ${kanji}
+      ORDER BY id
+    `) as MeaningRow[];
 
-      if (next.length === 0) delete store[kanji];
-      else store[kanji] = next;
-      if (removed > 0) await writeStore(store);
-
-      return NextResponse.json({
-        ok: true,
-        kanji,
-        removed,
-        total: next.length,
-        entries: next,
-      });
+    return NextResponse.json({
+      ok: true,
+      kanji,
+      removed: removedRows.length,
+      total: rows.length,
+      entries: rows.map(withoutKanji),
     });
-  } catch {
-    return error("Unable to delete the meaning.", 500);
+  } catch (caught) {
+    return databaseError("delete", caught);
   }
 }

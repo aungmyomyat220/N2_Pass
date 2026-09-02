@@ -8,22 +8,38 @@ A web app for studying JLPT **N2** Japanese. Four tabs:
   example sentences; searchable and expandable.
 - **Exam** — test Japanese kanji readings with multiple-choice questions.
 
-Built with Next.js (App Router) + TypeScript. No backend — kanji study progress
-is saved in your browser's `localStorage`.
+Built with Next.js (App Router) + TypeScript. Study progress is saved in the
+browser's `localStorage`; shared custom kanji meanings are stored in Neon
+PostgreSQL through a Next.js API route.
 
 ## Quick start
 
 ```bash
-npm install
-npm run dev      # http://localhost:3000
+pnpm install
+pnpm dev      # http://localhost:3000
 ```
 
 Build for production:
 
 ```bash
-npm run build
-npm start
+pnpm build
+pnpm start
 ```
+
+## Shared meaning database
+
+1. Create a Neon project and copy its connection string.
+2. Copy `.env.example` to `.env.local` and replace the placeholder with the
+   connection string.
+3. Create the table and import `data/custom-meanings.json`:
+
+```bash
+pnpm db:setup
+```
+
+The setup command is idempotent: it is safe to run again, and matching
+`kanji + word + reading` entries are not duplicated. Add the same
+`DATABASE_URL` to the deployment environment before deploying.
 
 ## How it works
 

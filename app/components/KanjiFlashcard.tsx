@@ -59,10 +59,9 @@ export default function KanjiFlashcard({
   const copied = copiedKanji === card.kanji;
 
   useEffect(() => {
-    const savedMeanings = loadCustomMeanings(card.kanji);
     const savedOriginalHidden = isOriginalExampleHidden(card.kanji);
     let cancelled = false;
-    setCustomMeanings(savedMeanings);
+    setCustomMeanings(loadCustomMeanings(card.kanji));
     setEditorOpen(false);
     setMeaningInput("");
     setMeaningError(null);
@@ -71,7 +70,8 @@ export default function KanjiFlashcard({
     setOriginalExampleHiddenState(savedOriginalHidden);
 
     const loadApiMeanings = async () => {
-      let combined = savedMeanings;
+      const localMeanings = loadCustomMeanings(card.kanji);
+      let combined = localMeanings;
       try {
         const response = await fetch(
           `/api/meanings?kanji=${encodeURIComponent(card.kanji)}`,
@@ -79,7 +79,7 @@ export default function KanjiFlashcard({
         );
         const data = (await response.json()) as MeaningsApiResponse;
         if (response.ok && data.entries) {
-          combined = mergeMeanings(savedMeanings, data.entries);
+          combined = mergeMeanings(localMeanings, data.entries);
         }
       } catch {
         // Local meanings remain available if the API cannot be reached.
@@ -94,8 +94,12 @@ export default function KanjiFlashcard({
     };
 
     void loadApiMeanings();
+    const refreshTimer = window.setInterval(loadApiMeanings, 3000);
+    window.addEventListener("focus", loadApiMeanings);
     return () => {
       cancelled = true;
+      window.clearInterval(refreshTimer);
+      window.removeEventListener("focus", loadApiMeanings);
     };
   }, [card.kanji]);
 
