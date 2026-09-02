@@ -7,9 +7,10 @@ import {
   useState,
   type FormEvent,
 } from "react";
-import { Grid3X3, Search, X } from "lucide-react";
+import { Grid3X3, PencilLine, Search, X } from "lucide-react";
 import rawData from "@/data/n2-kanji.json";
 import KanjiFlashcard from "@/app/components/KanjiFlashcard";
+import KanjiRevealPanel from "@/app/components/KanjiRevealPanel";
 import KanjiWritingPad from "@/app/components/KanjiWritingPad";
 import {
   KanjiCard,
@@ -35,6 +36,7 @@ export default function Home() {
   const [manualIndex, setManualIndex] = useState<number | null>(null);
   const [jumpValue, setJumpValue] = useState("");
   const [kanjiDrawerOpen, setKanjiDrawerOpen] = useState(false);
+  const [writingPadOpen, setWritingPadOpen] = useState(false);
   const [kanjiSearch, setKanjiSearch] = useState("");
 
   useEffect(() => {
@@ -102,11 +104,13 @@ export default function Home() {
 
   // Keyboard shortcuts: Space/Enter to reveal, 1=again, 2=good.
   useEffect(() => {
-    if (!kanjiDrawerOpen) return;
+    if (!kanjiDrawerOpen && !writingPadOpen) return;
 
     const previousOverflow = document.body.style.overflow;
     const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setKanjiDrawerOpen(false);
+      if (event.key !== "Escape") return;
+      if (writingPadOpen) setWritingPadOpen(false);
+      else setKanjiDrawerOpen(false);
     };
 
     document.body.style.overflow = "hidden";
@@ -115,11 +119,11 @@ export default function Home() {
       document.body.style.overflow = previousOverflow;
       window.removeEventListener("keydown", closeOnEscape);
     };
-  }, [kanjiDrawerOpen]);
+  }, [kanjiDrawerOpen, writingPadOpen]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (!current || kanjiDrawerOpen) return;
+      if (!current || kanjiDrawerOpen || writingPadOpen) return;
       const target = e.target as HTMLElement | null;
       if (target?.closest("input, textarea, button, select")) return;
       if (!revealed && (e.key === " " || e.key === "Enter")) {
@@ -133,7 +137,7 @@ export default function Home() {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [current, revealed, answer, kanjiDrawerOpen]);
+  }, [current, revealed, answer, kanjiDrawerOpen, writingPadOpen]);
 
   const handleReset = () => {
     if (!window.confirm("Reset all study progress?")) return;
@@ -175,6 +179,14 @@ export default function Home() {
       <header className="app-header">
         <h1>N2 Kanji Flashcards</h1>
         <div className="app-header-actions">
+          <button
+            className="ghost writing-pad-trigger"
+            disabled={!current}
+            onClick={() => setWritingPadOpen(true)}
+          >
+            <PencilLine aria-hidden="true" />
+            Writing Pad
+          </button>
           <button
             className="ghost all-kanji-trigger"
             onClick={() => setKanjiDrawerOpen(true)}
@@ -269,6 +281,7 @@ export default function Home() {
                 card={current}
                 revealed={revealed}
                 starred={starred?.includes(current.kanji) ?? false}
+                showDetails={false}
                 onReveal={() => setRevealed(true)}
                 onToggleStar={handleToggleStar}
               />
@@ -305,10 +318,41 @@ export default function Home() {
           )}
         </section>
 
-        <aside className="writing-panel" aria-label="Kanji writing practice">
-          <KanjiWritingPad kanji={current?.kanji} />
+        <aside className="reveal-details-panel" aria-label="Kanji details">
+          {current && revealed ? (
+            <KanjiRevealPanel card={current} />
+          ) : (
+            <div className="reveal-details-placeholder">
+              <span className="reveal-details-placeholder-mark" lang="ja">
+                例
+              </span>
+              <h2>Meaning &amp; Examples</h2>
+              <p>Reveal the card to see its meaning and example sentence.</p>
+            </div>
+          )}
         </aside>
       </div>
+
+      {writingPadOpen && (
+        <div
+          className="writing-modal-overlay"
+          onMouseDown={(event) => {
+            if (event.target === event.currentTarget) setWritingPadOpen(false);
+          }}
+        >
+          <div
+            className="writing-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-label={`Writing practice for ${current?.kanji ?? "kanji"}`}
+          >
+            <KanjiWritingPad
+              kanji={current?.kanji}
+              onClose={() => setWritingPadOpen(false)}
+            />
+          </div>
+        </div>
+      )}
 
       {kanjiDrawerOpen && (
         <div

@@ -588,15 +588,22 @@ header.app-header h1 {
   gap: 8px;
 }
 
-button.all-kanji-trigger {
+button.all-kanji-trigger,
+button.writing-pad-trigger {
   display: inline-flex;
   align-items: center;
   gap: 7px;
 }
 
-button.all-kanji-trigger svg {
+button.all-kanji-trigger svg,
+button.writing-pad-trigger svg {
   width: 15px;
   height: 15px;
+}
+
+button.writing-pad-trigger:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 .all-kanji-overlay {
@@ -801,10 +808,148 @@ button.all-kanji-item.current {
   min-width: 0;
 }
 
-.writing-panel {
+.reveal-details-panel {
   position: sticky;
   top: 24px;
   min-width: 0;
+}
+
+.reveal-details,
+.reveal-details-placeholder {
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.reveal-details-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.reveal-details-header h2,
+.reveal-details-placeholder h2 {
+  margin: 3px 0 0;
+  font-size: 17px;
+}
+
+.reveal-details-eyebrow {
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.reveal-details-kanji {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--accent);
+  font-size: 28px;
+}
+
+.reveal-detail-section {
+  padding: 17px 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.reveal-detail-section:last-child {
+  border-bottom: 0;
+}
+
+.reveal-detail-section h3 {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.reveal-meaning {
+  margin: 0;
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.reveal-vocabulary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reveal-vocabulary-list .ex-inline {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.reveal-sentence-section .sentence-example-empty {
+  margin: 0;
+}
+
+.reveal-details-placeholder {
+  min-height: 320px;
+  padding: 40px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  text-align: center;
+}
+
+.reveal-details-placeholder-mark {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 12px;
+  background: rgba(110, 168, 254, 0.1);
+  border: 1px solid rgba(110, 168, 254, 0.25);
+  border-radius: 50%;
+  color: var(--accent);
+  font-size: 27px;
+}
+
+.reveal-details-placeholder p {
+  max-width: 260px;
+  margin: 8px 0 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.writing-modal-overlay {
+  position: fixed;
+  z-index: 120;
+  inset: 0;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  background: rgba(7, 9, 12, 0.78);
+  backdrop-filter: blur(5px);
+}
+
+.writing-modal {
+  width: min(520px, 100%);
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  border-radius: 16px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+}
+
+.writing-modal .writing-pad {
+  box-shadow: none;
 }
 
 .writing-pad {
@@ -832,6 +977,17 @@ button.all-kanji-item.current {
   margin: 4px 0 0;
   color: var(--muted);
   font-size: 12px;
+}
+
+.writing-pad-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button.writing-close {
+  width: 42px;
+  height: 42px;
 }
 
 .writing-current {
@@ -1840,7 +1996,7 @@ button.remove-meaning svg {
     grid-template-columns: minmax(0, 640px);
   }
 
-  .writing-panel {
+  .reveal-details-panel {
     position: static;
   }
 

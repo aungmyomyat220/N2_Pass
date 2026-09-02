@@ -16,6 +16,7 @@ type Props = {
   card: KanjiCard;
   revealed: boolean;
   starred: boolean;
+  showDetails?: boolean;
   onReveal: () => void;
   onToggleStar: () => void;
 };
@@ -49,6 +50,7 @@ export default function KanjiFlashcard({
   card,
   revealed,
   starred,
+  showDetails = true,
   onReveal,
   onToggleStar,
 }: Props) {
@@ -244,17 +246,21 @@ export default function KanjiFlashcard({
             </button>
           </div>
 
-          {meaningNotice && (
-            <div className="meaning-notice" role="status">
-              {meaningNotice}
-            </div>
+          {showDetails && (
+            <>
+              {meaningNotice && (
+                <div className="meaning-notice" role="status">
+                  {meaningNotice}
+                </div>
+              )}
+              {meaningError && (
+                <div className="meaning-error" role="alert">
+                  {meaningError}
+                </div>
+              )}
+              <div className="meanings">{card.meanings.join(", ")}</div>
+            </>
           )}
-          {meaningError && (
-            <div className="meaning-error" role="alert">
-              {meaningError}
-            </div>
-          )}
-          <div className="meanings">{card.meanings.join(", ")}</div>
           {card.on.length > 0 && (
             <div className="reading-row">
               <span className="tag">on</span>
@@ -275,7 +281,7 @@ export default function KanjiFlashcard({
               ))}
             </div>
           )}
-          {card.example && !originalExampleHidden && (
+          {showDetails && card.example && !originalExampleHidden && (
             <div
               className={
                 customMeanings.length > 0
@@ -302,7 +308,7 @@ export default function KanjiFlashcard({
               )}
             </div>
           )}
-          {customMeanings.length > 0 && (
+          {showDetails && customMeanings.length > 0 && (
             <div className="custom-meaning-list">
               {customMeanings.map((entry, index) => (
                 <div
@@ -328,7 +334,7 @@ export default function KanjiFlashcard({
               ))}
             </div>
           )}
-          {card.example && originalExampleHidden && (
+          {showDetails && card.example && originalExampleHidden && (
             <button
               type="button"
               className="restore-original"
@@ -340,24 +346,26 @@ export default function KanjiFlashcard({
               Restore original example
             </button>
           )}
-          <section className="sentence-example" aria-label="Example sentence">
-            <div className="sentence-example-label">例</div>
-            {sentenceExample ? (
-              <div className="sentence-example-content">
-                <p className="sentence-example-japanese">
-                  {sentenceExample.japanese}
-                </p>
-                <p className="sentence-example-romaji">
-                  {sentenceExample.romaji}
-                </p>
-                <p className="sentence-example-translation">
-                  {sentenceExample.translation}
-                </p>
-              </div>
-            ) : (
-              <p className="sentence-example-empty">No example yet.</p>
-            )}
-          </section>
+          {showDetails && (
+            <section className="sentence-example" aria-label="Example sentence">
+              <div className="sentence-example-label">例</div>
+              {sentenceExample ? (
+                <div className="sentence-example-content">
+                  <p className="sentence-example-japanese">
+                    {sentenceExample.japanese}
+                  </p>
+                  <p className="sentence-example-romaji">
+                    {sentenceExample.romaji}
+                  </p>
+                  <p className="sentence-example-translation">
+                    {sentenceExample.translation}
+                  </p>
+                </div>
+              ) : (
+                <p className="sentence-example-empty">No example yet.</p>
+              )}
+            </section>
+          )}
           <div className="meta">
             {card.strokes} strokes
             {card.freq ? ` · freq #${card.freq}` : ""}

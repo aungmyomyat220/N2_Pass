@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Eye, EyeOff, Eraser } from "lucide-react";
+import { Eye, EyeOff, Eraser, X } from "lucide-react";
 
 type Props = {
   kanji?: string;
+  onClose?: () => void;
 };
 
 type Point = {
@@ -14,7 +15,7 @@ type Point = {
 
 const PAD_SIZE = 400;
 
-export default function KanjiWritingPad({ kanji }: Props) {
+export default function KanjiWritingPad({ kanji, onClose }: Props) {
   const activeStrokeRef = useRef<Point[] | null>(null);
   const [strokes, setStrokes] = useState<Point[][]>([]);
   const [draftStroke, setDraftStroke] = useState<Point[]>([]);
@@ -80,9 +81,22 @@ export default function KanjiWritingPad({ kanji }: Props) {
           <h2>Kanji Writing</h2>
           <p>Practice the current character</p>
         </div>
-        <span className="writing-current" lang="ja">
-          {kanji || "漢"}
-        </span>
+        <div className="writing-pad-header-actions">
+          <span className="writing-current" lang="ja">
+            {kanji || "漢"}
+          </span>
+          {onClose && (
+            <button
+              type="button"
+              className="drawer-close writing-close"
+              aria-label="Close writing pad"
+              autoFocus
+              onClick={onClose}
+            >
+              <X aria-hidden="true" />
+            </button>
+          )}
+        </div>
       </div>
 
       <div className="writing-canvas-wrap">
