@@ -1,12 +1,11 @@
 "use client";
 
 import { useEffect, useState, type MouseEvent } from "react";
-import { Check, Copy, Plus, Trash2 } from "lucide-react";
+import { Check, Copy, Trash2 } from "lucide-react";
 import type { KanjiCard } from "@/lib/srs";
 import {
   isOriginalExampleHidden,
   loadCustomMeanings,
-  parseMeaningBlock,
   saveCustomMeanings,
   setOriginalExampleHidden,
   type CustomMeaning,
@@ -23,7 +22,6 @@ type Props = {
 type MeaningsApiResponse = {
   ok: boolean;
   entries?: CustomMeaning[];
-  added?: number;
   removed?: number;
   error?: string;
 };
@@ -50,11 +48,8 @@ export default function KanjiFlashcard({
 }: Props) {
   const [copiedKanji, setCopiedKanji] = useState<string | null>(null);
   const [customMeanings, setCustomMeanings] = useState<CustomMeaning[]>([]);
-  const [editorOpen, setEditorOpen] = useState(false);
-  const [meaningInput, setMeaningInput] = useState("");
   const [meaningError, setMeaningError] = useState<string | null>(null);
   const [meaningNotice, setMeaningNotice] = useState<string | null>(null);
-  const [meaningSaving, setMeaningSaving] = useState(false);
   const [originalExampleHidden, setOriginalExampleHiddenState] = useState(false);
   const copied = copiedKanji === card.kanji;
 
@@ -62,11 +57,8 @@ export default function KanjiFlashcard({
     const savedOriginalHidden = isOriginalExampleHidden(card.kanji);
     let cancelled = false;
     setCustomMeanings(loadCustomMeanings(card.kanji));
-    setEditorOpen(false);
-    setMeaningInput("");
     setMeaningError(null);
     setMeaningNotice(null);
-    setMeaningSaving(false);
     setOriginalExampleHiddenState(savedOriginalHidden);
 
     const loadApiMeanings = async () => {
@@ -123,65 +115,6 @@ export default function KanjiFlashcard({
     window.setTimeout(() => {
       setCopiedKanji((current) => (current === card.kanji ? null : current));
     }, 1600);
-  };
-
-  const handleSaveMeanings = async () => {
-    const parsed = parseMeaningBlock(meaningInput);
-    if (parsed.entries.length === 0) {
-      setMeaningError(
-        "Use: 領収書（りょうしゅうしょ） = receipt / ပြေစာ",
-      );
-      return;
-    }
-
-    const seen = new Set(
-      customMeanings.map((entry) => `${entry.word}\u0000${entry.reading}`),
-    );
-    const newEntries = parsed.entries.filter((entry) => {
-      const key = `${entry.word}\u0000${entry.reading}`;
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    });
-
-    if (newEntries.length === 0) {
-      setMeaningError("These examples are already saved.");
-      return;
-    }
-
-    setMeaningSaving(true);
-    setMeaningError(null);
-
-    try {
-      const response = await fetch("/api/meanings", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ kanji: card.kanji, entries: newEntries }),
-      });
-      const data = (await response.json()) as MeaningsApiResponse;
-      if (!response.ok || !data.ok) {
-        throw new Error(data.error ?? "Unable to save meanings.");
-      }
-
-      const localMeanings = loadCustomMeanings(card.kanji);
-      setCustomMeanings(mergeMeanings(localMeanings, data.entries ?? []));
-      setMeaningInput("");
-      setEditorOpen(false);
-      const skipped = parsed.invalidLines.length;
-      setMeaningNotice(
-        `Added ${data.added ?? newEntries.length} example${
-          (data.added ?? newEntries.length) === 1 ? "" : "s"
-        }${skipped ? `; skipped ${skipped} invalid line${skipped === 1 ? "" : "s"}` : ""}.`,
-      );
-    } catch (saveError) {
-      setMeaningError(
-        saveError instanceof Error
-          ? saveError.message
-          : "Unable to save meanings.",
-      );
-    } finally {
-      setMeaningSaving(false);
-    }
   };
 
   const removeMeaning = async (index: number) => {
@@ -285,74 +218,14 @@ export default function KanjiFlashcard({
               )}
               {copied ? "Copied" : "Copy kanji"}
             </button>
-            <button
-              type="button"
-              className={editorOpen ? "meaning-add active" : "meaning-add"}
-              aria-expanded={editorOpen}
-              onClick={(event) => {
-                event.stopPropagation();
-                setEditorOpen((open) => !open);
-                setMeaningError(null);
-              }}
-            >
-              <Plus aria-hidden="true" />
-              Add meanings
-            </button>
           </div>
-
-          {editorOpen && (
-            <div className="meaning-editor" onClick={(event) => event.stopPropagation()}>
-              <label htmlFor={`meaning-input-${card.kanji}`}>
-                Paste examples for {card.kanji}
-              </label>
-              <textarea
-                id={`meaning-input-${card.kanji}`}
-                rows={6}
-                autoFocus
-                placeholder={`領収書（りょうしゅうしょ） = receipt / ပြေစာ\n1. **領域（りょういき）** = area, field, domain / နယ်ပယ်`}
-                value={meaningInput}
-                onChange={(event) => {
-                  setMeaningInput(event.target.value);
-                  setMeaningError(null);
-                }}
-              />
-              <div className="meaning-format-hint">
-                One example per line: Word（reading） = meaning
-              </div>
-              {meaningError && (
-                <div className="meaning-error" role="alert">
-                  {meaningError}
-                </div>
-              )}
-              <div className="meaning-editor-actions">
-                <button
-                  type="button"
-                  className="meaning-cancel"
-                  onClick={() => {
-                    setEditorOpen(false);
-                    setMeaningError(null);
-                  }}
-                >
-                  Cancel
-                </button>
-                <button
-                  type="button"
-                  className="meaning-save"
-                  disabled={!meaningInput.trim() || meaningSaving}
-                  onClick={handleSaveMeanings}
-                >
-                  {meaningSaving ? "Saving…" : "Add examples"}
-                </button>
-              </div>
-            </div>
-          )}
 
           {meaningNotice && (
             <div className="meaning-notice" role="status">
               {meaningNotice}
             </div>
           )}
-          {meaningError && !editorOpen && (
+          {meaningError && (
             <div className="meaning-error" role="alert">
               {meaningError}
             </div>
