@@ -26,20 +26,24 @@ if (!process.env.DATABASE_URL) {
 }
 
 const sql = neon(process.env.DATABASE_URL);
-const migrationPath = path.join(
-  process.cwd(),
-  "db",
-  "001_create_kanji_meanings.sql",
-);
+const migrationDirectory = path.join(process.cwd(), "db");
 const dataPath = path.join(process.cwd(), "data", "custom-meanings.json");
 
-const migration = await fs.readFile(migrationPath, "utf8");
-const statements = migration
-  .split(";")
-  .map((statement) => statement.trim())
-  .filter(Boolean);
-for (const statement of statements) {
-  await sql.query(statement);
+const migrationFiles = (await fs.readdir(migrationDirectory))
+  .filter((filename) => filename.endsWith(".sql"))
+  .sort();
+for (const filename of migrationFiles) {
+  const migration = await fs.readFile(
+    path.join(migrationDirectory, filename),
+    "utf8",
+  );
+  const statements = migration
+    .split(";")
+    .map((statement) => statement.trim())
+    .filter(Boolean);
+  for (const statement of statements) {
+    await sql.query(statement);
+  }
 }
 
 const store = JSON.parse(await fs.readFile(dataPath, "utf8"));
@@ -59,5 +63,5 @@ for (const entry of entries) {
 }
 
 console.log(
-  `Database ready. Found ${entries.length} JSON entries; inserted ${added}.`,
+  `Database ready. Applied ${migrationFiles.length} migrations. Found ${entries.length} JSON entries; inserted ${added}.`,
 );

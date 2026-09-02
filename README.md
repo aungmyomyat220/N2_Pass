@@ -41,6 +41,22 @@ The setup command is idempotent: it is safe to run again, and matching
 `kanji + word + reading` entries are not duplicated. Add the same
 `DATABASE_URL` to the deployment environment before deploying.
 
+Sentence examples are added through `POST /api/examples`:
+
+```json
+{
+  "kanji": "党",
+  "example": {
+    "japanese": "その政党は選挙で多くの議席を獲得しました。",
+    "romaji": "Sono seito wa senkyo de oku no giseki o kakutoku shimashita.",
+    "translation": "Your translation"
+  }
+}
+```
+
+The flashcard displays the first saved sentence for that kanji. Until one is
+added, its `例` section displays an empty state.
+
 ## How it works
 
 - **Study loop:** A kanji is shown; reveal it to see meanings + on/kun readings,

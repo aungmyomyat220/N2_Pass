@@ -1449,6 +1449,67 @@ button.restart-review {
   padding-right: 42px;
 }
 
+.sentence-example {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 12px;
+  padding: 14px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-align: left;
+}
+
+.sentence-example-label {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  background: rgba(110, 168, 254, 0.12);
+  border: 1px solid rgba(110, 168, 254, 0.3);
+  border-radius: 50%;
+  color: var(--accent);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.sentence-example-content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sentence-example p {
+  margin: 0;
+}
+
+.sentence-example-japanese {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.65;
+}
+
+.sentence-example-romaji {
+  color: var(--accent);
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.55;
+}
+
+.sentence-example-translation,
+.sentence-example-empty {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.sentence-example-empty {
+  align-self: center;
+}
+
 button.restore-original {
   flex: 0 0 auto;
   align-self: center;

@@ -2,6 +2,7 @@
 
 import { useEffect, useState, type MouseEvent } from "react";
 import { Check, Copy, Trash2 } from "lucide-react";
+import type { KanjiSentenceExample } from "@/lib/kanji-examples";
 import type { KanjiCard } from "@/lib/srs";
 import {
   isOriginalExampleHidden,
@@ -26,6 +27,11 @@ type MeaningsApiResponse = {
   error?: string;
 };
 
+type ExamplesApiResponse = {
+  ok: boolean;
+  examples?: KanjiSentenceExample[];
+};
+
 function mergeMeanings(
   first: CustomMeaning[],
   second: CustomMeaning[],
@@ -48,22 +54,28 @@ export default function KanjiFlashcard({
 }: Props) {
   const [copiedKanji, setCopiedKanji] = useState<string | null>(null);
   const [customMeanings, setCustomMeanings] = useState<CustomMeaning[]>([]);
+  const [sentenceExamples, setSentenceExamples] = useState<
+    KanjiSentenceExample[]
+  >([]);
   const [meaningError, setMeaningError] = useState<string | null>(null);
   const [meaningNotice, setMeaningNotice] = useState<string | null>(null);
   const [originalExampleHidden, setOriginalExampleHiddenState] = useState(false);
   const copied = copiedKanji === card.kanji;
+  const sentenceExample = sentenceExamples[0];
 
   useEffect(() => {
     const savedOriginalHidden = isOriginalExampleHidden(card.kanji);
     let cancelled = false;
     setCustomMeanings(loadCustomMeanings(card.kanji));
+    setSentenceExamples([]);
     setMeaningError(null);
     setMeaningNotice(null);
     setOriginalExampleHiddenState(savedOriginalHidden);
 
-    const loadApiMeanings = async () => {
+    const loadApiContent = async () => {
       const localMeanings = loadCustomMeanings(card.kanji);
       let combined = localMeanings;
+      let loadedExamples: KanjiSentenceExample[] | null = null;
       try {
         const response = await fetch(
           `/api/meanings?kanji=${encodeURIComponent(card.kanji)}`,
@@ -77,21 +89,33 @@ export default function KanjiFlashcard({
         // Local meanings remain available if the API cannot be reached.
       }
 
+      try {
+        const response = await fetch(
+          `/api/examples?kanji=${encodeURIComponent(card.kanji)}`,
+          { cache: "no-store" },
+        );
+        const data = (await response.json()) as ExamplesApiResponse;
+        if (response.ok && data.examples) loadedExamples = data.examples;
+      } catch {
+        // Keep the current example state if the API cannot be reached.
+      }
+
       if (cancelled) return;
       setCustomMeanings(combined);
+      if (loadedExamples) setSentenceExamples(loadedExamples);
       if (combined.length === 0 && savedOriginalHidden) {
         setOriginalExampleHidden(card.kanji, false);
         setOriginalExampleHiddenState(false);
       }
     };
 
-    void loadApiMeanings();
-    const refreshTimer = window.setInterval(loadApiMeanings, 3000);
-    window.addEventListener("focus", loadApiMeanings);
+    void loadApiContent();
+    const refreshTimer = window.setInterval(loadApiContent, 3000);
+    window.addEventListener("focus", loadApiContent);
     return () => {
       cancelled = true;
       window.clearInterval(refreshTimer);
-      window.removeEventListener("focus", loadApiMeanings);
+      window.removeEventListener("focus", loadApiContent);
     };
   }, [card.kanji]);
 
@@ -316,6 +340,24 @@ export default function KanjiFlashcard({
               Restore original example
             </button>
           )}
+          <section className="sentence-example" aria-label="Example sentence">
+            <div className="sentence-example-label">例</div>
+            {sentenceExample ? (
+              <div className="sentence-example-content">
+                <p className="sentence-example-japanese">
+                  {sentenceExample.japanese}
+                </p>
+                <p className="sentence-example-romaji">
+                  {sentenceExample.romaji}
+                </p>
+                <p className="sentence-example-translation">
+                  {sentenceExample.translation}
+                </p>
+              </div>
+            ) : (
+              <p className="sentence-example-empty">No example yet.</p>
+            )}
+          </section>
           <div className="meta">
             {card.strokes} strokes
             {card.freq ? ` · freq #${card.freq}` : ""}
