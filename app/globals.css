@@ -822,6 +822,19 @@ button.all-kanji-item.current {
   border-radius: 16px;
 }
 
+.reveal-details {
+  max-height: calc(100vh - 48px);
+  display: flex;
+  flex-direction: column;
+}
+
+.reveal-details-scroll {
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+}
+
 .reveal-details-header {
   display: flex;
   align-items: center;
@@ -892,10 +905,6 @@ button.all-kanji-item.current {
 .reveal-vocabulary-list .ex-inline {
   justify-content: flex-start;
   text-align: left;
-}
-
-.reveal-sentence-section .sentence-example-empty {
-  margin: 0;
 }
 
 .reveal-details-placeholder {
@@ -1142,9 +1151,10 @@ button.writing-tool svg {
 }
 
 .stats {
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
-  flex-wrap: wrap;
   margin-bottom: 20px;
 }
 
@@ -1153,8 +1163,6 @@ button.writing-tool svg {
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 10px 14px;
-  flex: 1;
-  min-width: 110px;
 }
 
 .stat .label {
@@ -1168,91 +1176,6 @@ button.writing-tool svg {
   font-size: 22px;
   font-weight: 700;
   margin-top: 2px;
-}
-
-.card-jump {
-  margin-bottom: 16px;
-  padding: 12px 14px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-}
-
-.card-jump-label {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 9px;
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.card-position {
-  color: var(--accent);
-}
-
-.card-jump-controls {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-button.jump-step,
-button.jump-go {
-  flex: 0 0 auto;
-  height: 38px;
-  padding: 0;
-  border: 1px solid var(--border);
-}
-
-button.jump-step {
-  width: 38px;
-  background: var(--surface-2);
-  color: var(--text);
-  font-size: 18px;
-}
-
-button.jump-go {
-  padding: 0 16px;
-  background: var(--accent);
-  color: var(--bg);
-}
-
-button.jump-step:hover:not(:disabled),
-button.jump-go:hover:not(:disabled) {
-  border-color: var(--accent);
-}
-
-button.jump-step:disabled,
-button.jump-go:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-
-.jump-input {
-  width: 82px;
-  height: 38px;
-  padding: 0 10px;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  color: var(--text);
-  font: inherit;
-  font-weight: 600;
-}
-
-.jump-input:focus {
-  border-color: var(--accent);
-  outline: none;
-}
-
-.jump-total {
-  margin-right: auto;
-  color: var(--muted);
-  font-size: 12px;
-  white-space: nowrap;
 }
 
 .card {
@@ -1515,6 +1438,20 @@ button.good {
   background: var(--good);
 }
 
+.actions button.bad,
+.actions button.good {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.actions button.bad svg,
+.actions button.good svg {
+  width: 18px;
+  height: 18px;
+}
+
 button.ghost {
   background: transparent;
   border: 1px solid var(--border);
@@ -1664,6 +1601,10 @@ button.restart-review {
 
 .sentence-example-empty {
   align-self: center;
+}
+
+.study-sentence-example {
+  margin-top: 14px;
 }
 
 button.restore-original {

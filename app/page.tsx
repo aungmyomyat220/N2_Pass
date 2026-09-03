@@ -5,12 +5,19 @@ import {
   useEffect,
   useMemo,
   useState,
-  type FormEvent,
 } from "react";
-import { Grid3X3, PencilLine, Search, X } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  Grid3X3,
+  PencilLine,
+  Search,
+  X,
+} from "lucide-react";
 import rawData from "@/data/n2-kanji.json";
 import KanjiFlashcard from "@/app/components/KanjiFlashcard";
 import KanjiRevealPanel from "@/app/components/KanjiRevealPanel";
+import KanjiSentenceCard from "@/app/components/KanjiSentenceCard";
 import KanjiWritingPad from "@/app/components/KanjiWritingPad";
 import {
   KanjiCard,
@@ -34,7 +41,6 @@ export default function Home() {
   const [revealed, setRevealed] = useState(false);
   const [now, setNow] = useState(0);
   const [manualIndex, setManualIndex] = useState<number | null>(null);
-  const [jumpValue, setJumpValue] = useState("");
   const [kanjiDrawerOpen, setKanjiDrawerOpen] = useState(false);
   const [writingPadOpen, setWritingPadOpen] = useState(false);
   const [kanjiSearch, setKanjiSearch] = useState("");
@@ -74,12 +80,6 @@ export default function Home() {
 
   const current: KanjiCard | undefined =
     manualIndex === null ? queue[0] : CARDS[manualIndex];
-  const currentNumber = current
-    ? CARDS.findIndex((card) => card.kanji === current.kanji) + 1
-    : null;
-  const jumpNumber = Number(jumpValue);
-  const jumpIsValid =
-    Number.isInteger(jumpNumber) && jumpNumber >= 1 && jumpNumber <= CARDS.length;
 
   const answer = useCallback(
     (knewIt: boolean) => {
@@ -92,10 +92,8 @@ export default function Home() {
         const nextIndex = manualIndex + 1;
         if (nextIndex < CARDS.length) {
           setManualIndex(nextIndex);
-          setJumpValue(String(nextIndex + 1));
         } else {
           setManualIndex(null);
-          setJumpValue("");
         }
       }
     },
@@ -146,25 +144,12 @@ export default function Home() {
     setRevealed(false);
     setNow(Date.now());
     setManualIndex(null);
-    setJumpValue("");
   };
 
   const jumpToIndex = (index: number) => {
     const safeIndex = Math.min(Math.max(index, 0), CARDS.length - 1);
     setManualIndex(safeIndex);
-    setJumpValue(String(safeIndex + 1));
     setRevealed(false);
-  };
-
-  const handleJump = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    if (!jumpIsValid) return;
-    jumpToIndex(jumpNumber - 1);
-  };
-
-  const skipCard = (direction: -1 | 1) => {
-    const index = currentNumber ? currentNumber - 1 : 0;
-    jumpToIndex(index + direction);
   };
 
   const handleToggleStar = () => {
@@ -200,79 +185,27 @@ export default function Home() {
         </div>
       </header>
 
+      {stats && (
+        <section className="stats" aria-label="Study progress">
+          <div className="stat">
+            <div className="label">Due now</div>
+            <div className="value">{stats.due}</div>
+          </div>
+          <div className="stat">
+            <div className="label">Studied</div>
+            <div className="value">
+              {stats.studied}/{stats.total}
+            </div>
+          </div>
+          <div className="stat">
+            <div className="label">Mastered</div>
+            <div className="value">{stats.mastered}</div>
+          </div>
+        </section>
+      )}
+
       <div className="kanji-workspace">
         <section className="kanji-study-column">
-          {stats && (
-            <div className="stats">
-              <div className="stat">
-                <div className="label">Due now</div>
-                <div className="value">{stats.due}</div>
-              </div>
-              <div className="stat">
-                <div className="label">Studied</div>
-                <div className="value">
-                  {stats.studied}/{stats.total}
-                </div>
-              </div>
-              <div className="stat">
-                <div className="label">Mastered</div>
-                <div className="value">{stats.mastered}</div>
-              </div>
-            </div>
-          )}
-
-          {progress !== null && (
-            <form className="card-jump" onSubmit={handleJump}>
-              <div className="card-jump-label">
-                <span>Jump to card</span>
-                {currentNumber && (
-                  <span className="card-position">
-                    Card {currentNumber} of {CARDS.length}
-                  </span>
-                )}
-              </div>
-              <div className="card-jump-controls">
-                <button
-                  type="button"
-                  className="jump-step"
-                  aria-label="Previous card"
-                  disabled={!currentNumber || currentNumber <= 1}
-                  onClick={() => skipCard(-1)}
-                >
-                  ←
-                </button>
-                <input
-                  className="jump-input"
-                  type="number"
-                  min="1"
-                  max={CARDS.length}
-                  inputMode="numeric"
-                  aria-label={`Card number from 1 to ${CARDS.length}`}
-                  placeholder="300"
-                  value={jumpValue}
-                  onChange={(event) => setJumpValue(event.target.value)}
-                />
-                <span className="jump-total">/ {CARDS.length}</span>
-                <button
-                  type="submit"
-                  className="jump-go"
-                  disabled={!jumpIsValid}
-                >
-                  Go
-                </button>
-                <button
-                  type="button"
-                  className="jump-step"
-                  aria-label="Next card"
-                  disabled={!currentNumber || currentNumber >= CARDS.length}
-                  onClick={() => skipCard(1)}
-                >
-                  →
-                </button>
-              </div>
-            </form>
-          )}
-
           {progress === null ? (
             <div className="empty">Loading…</div>
           ) : current ? (
@@ -295,13 +228,17 @@ export default function Home() {
               ) : (
                 <div className="actions">
                   <button className="bad" onClick={() => answer(false)}>
+                    <ArrowLeft aria-hidden="true" />
                     Again (1)
                   </button>
                   <button className="good" onClick={() => answer(true)}>
                     Got it (2)
+                    <ArrowRight aria-hidden="true" />
                   </button>
                 </div>
               )}
+
+              {revealed && <KanjiSentenceCard kanji={current.kanji} />}
 
               <div className="kbd-hint">
                 Space/Enter reveal · 1 = again · 2 = got it
@@ -324,10 +261,10 @@ export default function Home() {
           ) : (
             <div className="reveal-details-placeholder">
               <span className="reveal-details-placeholder-mark" lang="ja">
-                例
+                意
               </span>
-              <h2>Meaning &amp; Examples</h2>
-              <p>Reveal the card to see its meaning and example sentence.</p>
+              <h2>Meaning &amp; Vocabulary</h2>
+              <p>Reveal the card to see its meaning and vocabulary.</p>
             </div>
           )}
         </aside>

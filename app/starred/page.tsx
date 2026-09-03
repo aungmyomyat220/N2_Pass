@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import rawData from "@/data/n2-kanji.json";
 import KanjiFlashcard from "@/app/components/KanjiFlashcard";
 import type { KanjiCard } from "@/lib/srs";
@@ -117,10 +118,12 @@ export default function StarredPage() {
           ) : (
             <div className="actions">
               <button className="bad" onClick={() => answer(false)}>
+                <ArrowLeft aria-hidden="true" />
                 Again (1)
               </button>
               <button className="good" onClick={() => answer(true)}>
                 Got it (2)
+                <ArrowRight aria-hidden="true" />
               </button>
             </div>
           )}
