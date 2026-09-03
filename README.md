@@ -41,7 +41,16 @@ The setup command is idempotent: it is safe to run again, and matching
 `kanji + word + reading` entries are not duplicated. Add the same
 `DATABASE_URL` to the deployment environment before deploying.
 
+Set `N2_PASS_API_KEY` in `.env.local` and in the deployment environment. Every
+POST request must send that value using the `x-api-key` header. GET endpoints
+remain public.
+
 Sentence examples are added through `POST /api/examples`:
+
+```text
+x-api-key: your-N2_PASS_API_KEY-value
+Content-Type: application/json
+```
 
 ```json
 {

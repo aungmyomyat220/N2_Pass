@@ -3,6 +3,7 @@ import {
   parseMeaningBlock,
   type CustomMeaning,
 } from "@/lib/custom-meanings";
+import { requirePostApiKey } from "@/lib/api-auth";
 import { getDatabase } from "@/lib/db";
 
 export const runtime = "nodejs";
@@ -110,6 +111,9 @@ export async function GET(request: NextRequest) {
 }
 
 export async function POST(request: NextRequest) {
+  const authorizationError = requirePostApiKey(request);
+  if (authorizationError) return authorizationError;
+
   let body: unknown;
   try {
     body = await request.json();

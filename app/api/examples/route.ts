@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { requirePostApiKey } from "@/lib/api-auth";
 import { getDatabase } from "@/lib/db";
 import type { KanjiSentenceExample } from "@/lib/kanji-examples";
 
@@ -83,6 +84,9 @@ export async function GET(request: NextRequest) {
 }
 
 export async function POST(request: NextRequest) {
+  const authorizationError = requirePostApiKey(request);
+  if (authorizationError) return authorizationError;
+
   let body: unknown;
   try {
     body = await request.json();
