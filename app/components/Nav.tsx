@@ -87,7 +87,8 @@ export default function Nav() {
             <div className="nav-section-label">{section.label}</div>
             <div className="tab-list">
               {section.items.map((item) => {
-                const active = pathname === item.href;
+                const active = pathname === item.href ||
+                  (item.href !== "/" && pathname.startsWith(`${item.href}/`));
                 const Icon = item.icon;
                 return (
                   <Link

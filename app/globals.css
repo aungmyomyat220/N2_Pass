@@ -10,7 +10,6 @@
   --border: #2c313c;
 }
 
-.content > .mimetic-page { max-width: 1080px; }
 .mimetic-intro { line-height: 1.6; }
 .mimetic-note { color: var(--muted); font-size: 13px; line-height: 1.6; }
 .mimetic-filters { display: flex; flex-wrap: wrap; gap: 16px; margin: 24px 0 16px; }
@@ -18,13 +17,6 @@
 .mimetic-filters label:first-child { flex: 1 1 240px; }
 .mimetic-filters .search { margin: 0; width: 100%; }
 .mimetic-filters select { background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 10px; padding: 12px; font: inherit; min-height: 44px; }
-.mimetic-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 16px; list-style: none; padding: 0; }
-.mimetic-word { min-width: 0; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px; overflow-wrap: anywhere; }
-.mimetic-word-heading { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
-.mimetic-word h2 { margin: 0 auto 0 0; font-size: 28px; }
-.mimetic-word p { margin: 10px 0; line-height: 1.9; }
-.mimetic-reading, .mimetic-english { color: var(--muted); }
-.mimetic-example { border-top: 1px solid var(--border); margin-top: 20px; padding-top: 16px; }
 
 * {
   box-sizing: border-box;
@@ -1687,6 +1679,49 @@ button.remove-meaning svg {
 }
 
 /* ---- Exam mode ---- */
+.content > main.exam-home {
+  max-width: 1080px;
+}
+
+.exam-intro {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.exam-subject-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 20px;
+}
+
+.exam-subject-card {
+  text-align: center;
+  text-decoration: none;
+}
+
+.exam-subject-card h2,
+.exam-subject-card p {
+  margin: 0;
+}
+
+.exam-subject-card p {
+  flex: 1;
+  line-height: 1.6;
+}
+
+.exam-ready {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.exam-back-link {
+  display: inline-block;
+  color: var(--accent);
+  margin-bottom: 24px;
+  text-underline-offset: 4px;
+}
+
 .exam-tabs {
   display: grid;
   grid-template-columns: 1fr 1fr;
