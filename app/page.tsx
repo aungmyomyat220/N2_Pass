@@ -32,6 +32,7 @@ import {
 import { loadStarred, saveStarred, toggleStarred } from "@/lib/starred";
 
 const CARDS = rawData as KanjiCard[];
+type VisitedCard = { card: KanjiCard; manualIndex: number | null };
 
 export default function Home() {
   // `null` until we've hydrated from localStorage, so SSR and first client
@@ -42,6 +43,8 @@ export default function Home() {
   const [now, setNow] = useState(0);
   const [manualIndex, setManualIndex] = useState<number | null>(null);
   const [retryCard, setRetryCard] = useState<KanjiCard | null>(null);
+  const [history, setHistory] = useState<VisitedCard[]>([]);
+  const [forward, setForward] = useState<VisitedCard[]>([]);
   const [kanjiDrawerOpen, setKanjiDrawerOpen] = useState(false);
   const [writingPadOpen, setWritingPadOpen] = useState(false);
   const [kanjiSearch, setKanjiSearch] = useState("");
@@ -94,6 +97,14 @@ export default function Home() {
         setRetryCard(current);
         return;
       }
+      setHistory((items) => [...items, { card: current, manualIndex }]);
+      const upcoming = forward[forward.length - 1];
+      if (upcoming) {
+        setForward((items) => items.slice(0, -1));
+        setRetryCard(upcoming.card);
+        setManualIndex(upcoming.manualIndex);
+        return;
+      }
       setRetryCard(null);
       if (manualIndex !== null) {
         const nextIndex = manualIndex + 1;
@@ -104,8 +115,20 @@ export default function Home() {
         }
       }
     },
-    [progress, current, manualIndex],
+    [progress, current, manualIndex, forward],
   );
+
+  const goBack = () => {
+    const previous = history[history.length - 1];
+    if (!previous) return;
+    if (current) {
+      setForward((items) => [...items, { card: current, manualIndex }]);
+    }
+    setHistory((items) => items.slice(0, -1));
+    setRetryCard(previous.card);
+    setManualIndex(previous.manualIndex);
+    setRevealed(false);
+  };
 
   // Keyboard shortcuts: Space/Enter to reveal, 1=again, 2=good.
   useEffect(() => {
@@ -147,6 +170,8 @@ export default function Home() {
   const handleReset = () => {
     if (!window.confirm("Reset all study progress?")) return;
     resetProgress();
+    setHistory([]);
+    setForward([]);
     setRetryCard(null);
     setProgress({});
     setRevealed(false);
@@ -155,6 +180,10 @@ export default function Home() {
   };
 
   const jumpToIndex = (index: number) => {
+    if (current && current.kanji !== CARDS[index]?.kanji) {
+      setHistory((items) => [...items, { card: current, manualIndex }]);
+    }
+    setForward([]);
     setRetryCard(null);
     const safeIndex = Math.min(Math.max(index, 0), CARDS.length - 1);
     setManualIndex(safeIndex);
@@ -215,6 +244,11 @@ export default function Home() {
 
       <div className="kanji-workspace">
         <section className="kanji-study-column">
+          <div className="flashcard-navigation">
+            <button type="button" className="ghost" onClick={goBack} disabled={history.length === 0}>
+              <ArrowLeft aria-hidden="true" /> Back
+            </button>
+          </div>
           {progress === null ? (
             <div className="empty">Loading…</div>
           ) : current ? (

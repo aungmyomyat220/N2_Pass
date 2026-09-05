@@ -15,6 +15,7 @@ export default function StarredPage() {
   const [queue, setQueue] = useState<string[]>([]);
   const [revealed, setRevealed] = useState(false);
   const [reviewed, setReviewed] = useState(0);
+  const [history, setHistory] = useState<string[]>([]);
 
   useEffect(() => {
     const saved = loadStarred().filter((kanji) => CARD_BY_KANJI.has(kanji));
@@ -31,7 +32,10 @@ export default function StarredPage() {
     (knewIt: boolean) => {
       if (!current) return;
 
-      if (knewIt) setQueue((items) => items.slice(1));
+      if (knewIt) {
+        setHistory((items) => [...items, current.kanji]);
+        setQueue((items) => items.slice(1));
+      }
       setReviewed((count) => count + 1);
       setRevealed(false);
     },
@@ -63,13 +67,23 @@ export default function StarredPage() {
     const next = toggleStarred(starred, current.kanji);
     saveStarred(next);
     setStarred(next);
+    setHistory((items) => items.filter((kanji) => kanji !== current.kanji));
     setQueue((items) => items.filter((kanji) => kanji !== current.kanji));
     setRevealed(false);
   };
 
   const restart = () => {
+    setHistory([]);
     setQueue(starred ?? []);
     setReviewed(0);
+    setRevealed(false);
+  };
+
+  const goBack = () => {
+    const previous = history[history.length - 1];
+    if (!previous) return;
+    setHistory((items) => items.slice(0, -1));
+    setQueue((items) => [previous, ...items]);
     setRevealed(false);
   };
 
@@ -81,6 +95,12 @@ export default function StarredPage() {
           <span className="review-count">{starred.length} saved</span>
         )}
       </header>
+
+      <div className="flashcard-navigation">
+        <button type="button" className="ghost" onClick={goBack} disabled={history.length === 0}>
+          <ArrowLeft aria-hidden="true" /> Back
+        </button>
+      </div>
 
       {starred === null ? (
         <div className="empty">Loading…</div>
