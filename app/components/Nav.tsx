@@ -7,6 +7,7 @@ import {
   BookOpenText,
   ClipboardCheck,
   Languages,
+  AudioLines,
   Sparkles,
   Star,
 } from "lucide-react";
@@ -39,6 +40,7 @@ const NAV_SECTIONS = [
       { href: "/", label: "Kanji", icon: Languages },
       { href: "/starred", label: "Starred", icon: Star },
       { href: "/grammar", label: "Grammar", icon: BookOpenText },
+      { href: "/mimetic", label: "Mimetic Words", icon: AudioLines },
     ],
   },
   {
