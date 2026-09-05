@@ -31,9 +31,7 @@ export default function StarredPage() {
     (knewIt: boolean) => {
       if (!current) return;
 
-      setQueue((items) =>
-        knewIt ? items.slice(1) : [...items.slice(1), current.kanji],
-      );
+      if (knewIt) setQueue((items) => items.slice(1));
       setReviewed((count) => count + 1);
       setRevealed(false);
     },
@@ -129,7 +127,7 @@ export default function StarredPage() {
           )}
 
           <div className="kbd-hint">
-            Again keeps it in this review · Got it finishes it for this session
+            Again retries this kanji · Got it moves to the next kanji
           </div>
         </>
       ) : (

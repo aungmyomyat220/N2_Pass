@@ -41,6 +41,7 @@ export default function Home() {
   const [revealed, setRevealed] = useState(false);
   const [now, setNow] = useState(0);
   const [manualIndex, setManualIndex] = useState<number | null>(null);
+  const [retryCard, setRetryCard] = useState<KanjiCard | null>(null);
   const [kanjiDrawerOpen, setKanjiDrawerOpen] = useState(false);
   const [writingPadOpen, setWritingPadOpen] = useState(false);
   const [kanjiSearch, setKanjiSearch] = useState("");
@@ -79,7 +80,7 @@ export default function Home() {
   }, [kanjiSearch]);
 
   const current: KanjiCard | undefined =
-    manualIndex === null ? queue[0] : CARDS[manualIndex];
+    retryCard ?? (manualIndex === null ? queue[0] : CARDS[manualIndex]);
 
   const answer = useCallback(
     (knewIt: boolean) => {
@@ -88,6 +89,12 @@ export default function Home() {
       saveProgress(next);
       setProgress(next);
       setRevealed(false);
+      // Keep the failed card visible even when saving progress reorders the queue.
+      if (!knewIt) {
+        setRetryCard(current);
+        return;
+      }
+      setRetryCard(null);
       if (manualIndex !== null) {
         const nextIndex = manualIndex + 1;
         if (nextIndex < CARDS.length) {
@@ -140,6 +147,7 @@ export default function Home() {
   const handleReset = () => {
     if (!window.confirm("Reset all study progress?")) return;
     resetProgress();
+    setRetryCard(null);
     setProgress({});
     setRevealed(false);
     setNow(Date.now());
@@ -147,6 +155,7 @@ export default function Home() {
   };
 
   const jumpToIndex = (index: number) => {
+    setRetryCard(null);
     const safeIndex = Math.min(Math.max(index, 0), CARDS.length - 1);
     setManualIndex(safeIndex);
     setRevealed(false);
@@ -241,7 +250,7 @@ export default function Home() {
               {revealed && <KanjiSentenceCard kanji={current.kanji} />}
 
               <div className="kbd-hint">
-                Space/Enter reveal · 1 = again · 2 = got it
+                Space/Enter reveal · 1 = retry this kanji · 2 = next kanji
               </div>
             </>
           ) : (
