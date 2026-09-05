@@ -446,6 +446,41 @@ button.grammar-index-item.active {
   white-space: nowrap;
 }
 
+.index-item-main {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.index-item-main > span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item-number,
+.index-item-number {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 6px;
+  border-radius: 8px;
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.index-item-number {
+  min-width: 24px;
+  height: 24px;
+  font-size: 10px;
+}
+
 .grammar-index-item small {
   flex: 0 0 auto;
   max-width: 42%;

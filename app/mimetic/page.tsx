@@ -72,6 +72,7 @@ export default function MimeticPage() {
                     <button type="button" className="grammar-head"
                       onClick={() => setOpenId(open ? null : entry.id)}
                       aria-expanded={open}>
+                      <span className="item-number">{entry.id}</span>
                       <span className="g-pattern" lang="ja">{entry.word}</span>
                       <span className="g-meaning" lang="my">{entry.meaning_mm}</span>
                       <span className="g-chevron" aria-hidden="true">{open ? "−" : "+"}</span>
@@ -122,7 +123,10 @@ export default function MimeticPage() {
                   className={openId === entry.id ? "grammar-index-item active" : "grammar-index-item"}
                   aria-current={openId === entry.id ? "true" : undefined}
                   onClick={() => selectWord(entry.id)}>
-                  <span lang="ja">{entry.word}</span>
+                  <span className="index-item-main">
+                    <span className="index-item-number">{entry.id}</span>
+                    <span lang="ja">{entry.word}</span>
+                  </span>
                   <small lang="ja">{entry.reading}</small>
                 </button>
               ))}

@@ -76,6 +76,7 @@ export default function GrammarPage() {
                       onClick={() => setOpenIdx(open ? null : i)}
                       aria-expanded={open}
                     >
+                      <span className="item-number">{i + 1}</span>
                       <span className="g-pattern">{g.grammar}</span>
                       <span className="g-meaning">{g.meaning}</span>
                       <span className="g-chevron">{open ? "−" : "+"}</span>
@@ -135,7 +136,10 @@ export default function GrammarPage() {
                   onClick={() => selectGrammar(index)}
                   key={`${grammar.grammar}-${index}`}
                 >
-                  <span>{grammar.grammar}</span>
+                  <span className="index-item-main">
+                    <span className="index-item-number">{index + 1}</span>
+                    <span>{grammar.grammar}</span>
+                  </span>
                   <small>{grammar.reading}</small>
                 </button>
               ))}
