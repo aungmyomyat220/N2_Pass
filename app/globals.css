@@ -124,6 +124,12 @@ body {
   margin: 0;
 }
 
+/* The content container supplies 16px of horizontal edge padding. */
+.content > main.grammar-library-page {
+  width: 100%;
+  max-width: none;
+}
+
 .tabs {
   display: flex;
   flex-direction: column;
@@ -2244,3 +2250,18 @@ button.remove-meaning svg {
 .account-controls .google-sign-in:focus-visible { outline: 2px solid #4285f4; outline-offset: 3px; }
 .account-controls .google-sign-in:disabled { opacity: 1; }
 .google-sign-in-icon { width: 20px; height: 20px; flex-shrink: 0; }
+
+.grammar-heading-row { display: flex; align-items: flex-start; }
+.grammar-heading-row .grammar-head { flex: 1; min-width: 0; width: auto; }
+.grammar-card-actions { display: flex; gap: 6px; padding: 16px 16px 0 0; flex-shrink: 0; }
+.grammar-card-actions button { display: grid; place-items: center; width: 40px; height: 40px; padding: 0; background: var(--surface-2); color: var(--muted); border: 1px solid var(--border); border-radius: 8px; }
+.grammar-card-actions svg { width: 18px; height: 18px; }
+.grammar-card-actions button.active { color: #f7c948; border-color: #f7c948; background: rgba(247, 201, 72, .12); }
+.grammar-lessons .grammar-item.grammar-starred { border-color: #f7c948; box-shadow: 0 0 0 1px rgba(247, 201, 72, .2); }
+.grammar-index-item.grammar-index-starred { border-color: #f7c948; }
+.grammar-index-starred svg { color: #f7c948; flex-shrink: 0; }
+.grammar-copy-status { color: var(--muted); font-size: 13px; }
+.grammar-copy-status:empty { display: none; }
+@media (max-width: 600px) {
+  .grammar-card-actions { flex-direction: column; padding: 12px 12px 12px 0; }
+}

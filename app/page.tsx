@@ -192,7 +192,7 @@ export default function Home() {
 
   const handleToggleStar = () => {
     if (!current || starred === null) return;
-    const next = toggleStarred(starred, current.kanji);
+    const next = toggleStarred(loadStarred(), current.kanji);
     saveStarred(next);
     setStarred(next);
   };

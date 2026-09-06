@@ -41,3 +41,6 @@ export function toggleStarred(starred: string[], kanji: string): string[] {
 
   return [...starred, kanji];
 }
+
+// Keep existing kanji keys intact; grammar uses its stable content ID.
+export const grammarStarKey = (id: string) => `grammar:${id}`;

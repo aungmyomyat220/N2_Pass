@@ -5,12 +5,33 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import rawData from "@/data/n2-kanji.json";
 import KanjiFlashcard from "@/app/components/KanjiFlashcard";
 import type { KanjiCard } from "@/lib/srs";
-import { loadStarred, saveStarred, toggleStarred } from "@/lib/starred";
+import GrammarLibrary from "@/app/components/GrammarLibrary";
+import { loadStarred, saveStarred, STARRED_CHANGE_EVENT, toggleStarred } from "@/lib/starred";
 
 const CARDS = rawData as KanjiCard[];
 const CARD_BY_KANJI = new Map(CARDS.map((card) => [card.kanji, card]));
 
 export default function StarredPage() {
+  const [subject, setSubject] = useState<"kanji" | "grammar">("kanji");
+  const [stars, setStars] = useState<string[]>([]);
+  useEffect(() => {
+    const refresh = () => setStars(loadStarred());
+    refresh();
+    window.addEventListener(STARRED_CHANGE_EVENT, refresh);
+    window.addEventListener("storage", refresh);
+    return () => { window.removeEventListener(STARRED_CHANGE_EVENT, refresh); window.removeEventListener("storage", refresh); };
+  }, []);
+  return <main className={subject === "grammar" ? "grammar-library-page" : undefined}>
+    <header className="app-header"><h1>Starred</h1><span className="review-count">{stars.length} saved</span></header>
+    <div className="grammar-lesson-tabs" aria-label="Starred subject">
+      <button type="button" className={subject === "kanji" ? "active" : ""} aria-pressed={subject === "kanji"} onClick={() => setSubject("kanji")}>Kanji <span>{stars.filter(key => CARD_BY_KANJI.has(key)).length}</span></button>
+      <button type="button" className={subject === "grammar" ? "active" : ""} aria-pressed={subject === "grammar"} onClick={() => setSubject("grammar")}>Grammar <span>{stars.filter(key => key.startsWith("grammar:")).length}</span></button>
+    </div>
+    {subject === "kanji" ? <StarredKanji /> : <GrammarLibrary starredOnly />}
+  </main>;
+}
+
+function StarredKanji() {
   const [starred, setStarred] = useState<string[] | null>(null);
   const [queue, setQueue] = useState<string[]>([]);
   const [revealed, setRevealed] = useState(false);
@@ -64,9 +85,9 @@ export default function StarredPage() {
   const handleToggleStar = () => {
     if (!current || starred === null) return;
 
-    const next = toggleStarred(starred, current.kanji);
+    const next = toggleStarred(loadStarred(), current.kanji);
     saveStarred(next);
-    setStarred(next);
+    setStarred(next.filter(key => CARD_BY_KANJI.has(key)));
     setHistory((items) => items.filter((kanji) => kanji !== current.kanji));
     setQueue((items) => items.filter((kanji) => kanji !== current.kanji));
     setRevealed(false);
@@ -88,9 +109,9 @@ export default function StarredPage() {
   };
 
   return (
-    <main>
+    <section aria-label="Starred kanji review">
       <header className="app-header">
-        <h1>Starred Kanji</h1>
+        <h2>Kanji review</h2>
         {starred && starred.length > 0 && (
           <span className="review-count">{starred.length} saved</span>
         )}
@@ -159,6 +180,6 @@ export default function StarredPage() {
           </button>
         </div>
       )}
-    </main>
+    </section>
   );
 }

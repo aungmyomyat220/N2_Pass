@@ -31,13 +31,26 @@ test('account progress and stars stay separate from guests and other accounts', 
     saveProgress({ 日: card }); saveStarred(['日']);
     activateAccount('alice', emptyState());
     assert.deepEqual(loadProgress(), {}); assert.deepEqual(loadStarred(), []);
-    saveProgress({ 月: card }); saveStarred(['月']);
+    saveProgress({ 月: card }); saveStarred(['月', 'grammar:te-bakari-iru']);
     assert.deepEqual(loadProgress(), { 月: card });
     resetProgress();
-    assert.deepEqual(loadProgress(), {}); assert.deepEqual(loadStarred(), ['月']);
+    assert.deepEqual(loadProgress(), {}); assert.deepEqual(loadStarred(), ['月', 'grammar:te-bakari-iru']);
     activateAccount('bob', emptyState());
     assert.deepEqual(loadProgress(), {}); assert.deepEqual(loadStarred(), []);
     activateAccount(null);
     assert.deepEqual(loadProgress(), { 日: card }); assert.deepEqual(loadStarred(), ['日']);
   } finally { activateAccount(null); Reflect.deleteProperty(globalThis, 'window'); }
+});
+
+
+test('grammar stars use stable IDs and sync alongside legacy kanji stars', async () => {
+  const { grammarStarKey, toggleStarred } = await import('./starred');
+  const { default: grammar } = await import('../data/exam/grammar/lesson/power-drill-n2-grammar-lessons-01-05.json');
+  const grammarKeys = grammar.grammar.map(point => grammarStarKey(point.id));
+  assert.equal(new Set(grammarKeys).size, grammarKeys.length);
+  assert.ok(validState({ progress: {}, starred: ['日', ...grammarKeys] }));
+  const mixed = ['日', grammarKeys[0]];
+  assert.deepEqual(toggleStarred(mixed, '日'), [grammarKeys[0]]);
+  assert.deepEqual(toggleStarred(mixed, grammarKeys[0]), ['日']);
+  assert.deepEqual(importGuest({ progress: {}, starred: ['日'] }, { progress: {}, starred: [grammarKeys[0]] }).starred, mixed);
 });
