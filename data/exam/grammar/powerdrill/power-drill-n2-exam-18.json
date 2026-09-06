@@ -1,0 +1,440 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-exam-18",
+  "title": "日本語パワードリル N2文法 第18回",
+  "level": "N2",
+  "examNumber": 18,
+  "timeLimitMinutes": 10,
+  "maximumScore": 20,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [
+      48,
+      49
+    ],
+    "pdfPages": [
+      48,
+      49
+    ]
+  },
+  "sections": [
+    {
+      "id": "exam-18-section-01",
+      "number": 1,
+      "type": "grammar_selection",
+      "label": "文の文法1",
+      "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-18-s01-q01",
+          "number": 1,
+          "prompt": "面接の結果を早く知りたくて（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "限りない"
+            },
+            {
+              "id": 2,
+              "text": "違いない"
+            },
+            {
+              "id": 3,
+              "text": "たまらない"
+            },
+            {
+              "id": 4,
+              "text": "ほかならない"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-18-s01-q02",
+          "number": 2,
+          "prompt": "突然暗くなった（　）大粒の雨が降り出した。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ものの"
+            },
+            {
+              "id": 2,
+              "text": "からして"
+            },
+            {
+              "id": 3,
+              "text": "と思ったら"
+            },
+            {
+              "id": 4,
+              "text": "やいなや"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-18-s01-q03",
+          "number": 3,
+          "prompt": "環境のために、私たちができることから始め（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "そうじゃないか"
+            },
+            {
+              "id": 2,
+              "text": "そうもないか"
+            },
+            {
+              "id": 3,
+              "text": "ようがないか"
+            },
+            {
+              "id": 4,
+              "text": "ようじゃないか"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-18-s01-q04",
+          "number": 4,
+          "prompt": "野菜はコンビニでも（　）が、スーパーのほうが種類が多い。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "買えないことはない"
+            },
+            {
+              "id": 2,
+              "text": "買えるわけがない"
+            },
+            {
+              "id": 3,
+              "text": "買えるはずがない"
+            },
+            {
+              "id": 4,
+              "text": "買えないに違いない"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-18-s01-q05",
+          "number": 5,
+          "prompt": "おいしいものをがまん（　）やせたいとは思わない。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "次第で"
+            },
+            {
+              "id": 2,
+              "text": "してこそ"
+            },
+            {
+              "id": 3,
+              "text": "してまで"
+            },
+            {
+              "id": 4,
+              "text": "からして"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-18-s01-q06",
+          "number": 6,
+          "prompt": "仕事は速ければいい（　）よ。正確にやらないと。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "に違いない"
+            },
+            {
+              "id": 2,
+              "text": "ったらならない"
+            },
+            {
+              "id": 3,
+              "text": "ってもんじゃない"
+            },
+            {
+              "id": 4,
+              "text": "わけにはいかない"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-18-s01-q07",
+          "number": 7,
+          "prompt": "かいてはいけないと言われても、かゆくてかゆくて、かかない（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "しかない"
+            },
+            {
+              "id": 2,
+              "text": "でならない"
+            },
+            {
+              "id": 3,
+              "text": "わけではない"
+            },
+            {
+              "id": 4,
+              "text": "ではいられない"
+            }
+          ],
+          "correctChoice": 4
+        }
+      ]
+    },
+    {
+      "id": "exam-18-section-02",
+      "number": 2,
+      "type": "sentence_order",
+      "label": "文の文法2",
+      "instruction": "次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-18-s02-q01",
+          "number": 1,
+          "sentenceBefore": "その報告を聞けば",
+          "sentenceAfter": "だろう。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "せざるを"
+            },
+            {
+              "id": 2,
+              "text": "誰もが"
+            },
+            {
+              "id": 3,
+              "text": "えない"
+            },
+            {
+              "id": 4,
+              "text": "納得"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "completedSentence": "その報告を聞けば誰もが納得せざるをえないだろう。"
+        },
+        {
+          "id": "exam-18-s02-q02",
+          "number": 2,
+          "sentenceBefore": "彼は",
+          "sentenceAfter": "池に落ちた子どもを助けに行った。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "かまわず"
+            },
+            {
+              "id": 2,
+              "text": "自分が"
+            },
+            {
+              "id": 3,
+              "text": "のも"
+            },
+            {
+              "id": 4,
+              "text": "ぬれる"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 3,
+          "correctOrder": [
+            2,
+            4,
+            3,
+            1
+          ],
+          "completedSentence": "彼は自分がぬれるのもかまわず池に落ちた子どもを助けに行った。"
+        },
+        {
+          "id": "exam-18-s02-q03",
+          "number": 3,
+          "sentenceBefore": "一度は断った",
+          "sentenceAfter": "頼まれたので、結局引き受けてしまった。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "あまり"
+            },
+            {
+              "id": 2,
+              "text": "ものの"
+            },
+            {
+              "id": 3,
+              "text": "に"
+            },
+            {
+              "id": 4,
+              "text": "熱心に"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 3,
+          "correctOrder": [
+            2,
+            1,
+            3,
+            4
+          ],
+          "completedSentence": "一度は断ったもののあまりに熱心に頼まれたので、結局引き受けてしまった。"
+        }
+      ]
+    },
+    {
+      "id": "exam-18-section-03",
+      "number": 3,
+      "type": "passage_grammar",
+      "label": "文章の文法",
+      "instruction": "次の文章を読んで、1から5の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 2,
+      "passage": "山田花子様\n\nこのたびは、当校の「英会話レッスン3カ月集中コース」へのお申し込み、まことにありがとうございます。\n山田様の英会話力の向上のため、スタッフ一丸となってサポート［1］。\nさて、コース開始前に、いくつか注意事項がございます。まず、一度納入された受講料は、どのような場合におきましてもご返金には応じられませんので、ご了承ください。\nやむを得ずレッスンに参加できない場合は、前後1週間以内［2］、同じレベルの別のクラスを受講することが可能です。ただし、事前のご連絡がなかった場合、他のクラスにご参加いただくことは［3］のでご注意ください。\nなお、受講料には教材費が含まれておりません。初回のレッスンの際に教材のご紹介と販売をいたしますので、必要［4］ご購入ください。\n初回のレッスンは、通常より30分早いスタートとなります。くれぐれも、遅れる［5］、お気をつけください。\nそれでは、当日お会いできますことを、スタッフ一同心よりお待ちしております。\n\n英会話スクールABC\nスタッフ代表　木村太郎",
+      "questions": [
+        {
+          "id": "exam-18-s03-q01",
+          "number": 1,
+          "blank": "［1］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "させていただきます"
+            },
+            {
+              "id": 2,
+              "text": "されていただきます"
+            },
+            {
+              "id": 3,
+              "text": "させてくださいます"
+            },
+            {
+              "id": 4,
+              "text": "されてくださいます"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-18-s03-q02",
+          "number": 2,
+          "blank": "［2］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "にあれば"
+            },
+            {
+              "id": 2,
+              "text": "にすれば"
+            },
+            {
+              "id": 3,
+              "text": "であれば"
+            },
+            {
+              "id": 4,
+              "text": "ですれば"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-18-s03-q03",
+          "number": 3,
+          "blank": "［3］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "できかねます"
+            },
+            {
+              "id": 2,
+              "text": "できないままです"
+            },
+            {
+              "id": 3,
+              "text": "できるどころではありません"
+            },
+            {
+              "id": 4,
+              "text": "できないものです"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-18-s03-q04",
+          "number": 4,
+          "blank": "［4］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "に応じて"
+            },
+            {
+              "id": 2,
+              "text": "に沿って"
+            },
+            {
+              "id": 3,
+              "text": "を問わず"
+            },
+            {
+              "id": 4,
+              "text": "をもとに"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-18-s03-q05",
+          "number": 5,
+          "blank": "［5］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ことなしに"
+            },
+            {
+              "id": 2,
+              "text": "ことがないので"
+            },
+            {
+              "id": 3,
+              "text": "ことがなくても"
+            },
+            {
+              "id": 4,
+              "text": "ことのないよう"
+            }
+          ],
+          "correctChoice": 4
+        }
+      ]
+    }
+  ]
+}

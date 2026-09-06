@@ -1,0 +1,440 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-exam-20",
+  "title": "日本語パワードリル N2文法 第20回",
+  "level": "N2",
+  "examNumber": 20,
+  "timeLimitMinutes": 10,
+  "maximumScore": 20,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [
+      52,
+      53
+    ],
+    "pdfPages": [
+      52,
+      53
+    ]
+  },
+  "sections": [
+    {
+      "id": "exam-20-section-01",
+      "number": 1,
+      "type": "grammar_selection",
+      "label": "文の文法1",
+      "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-20-s01-q01",
+          "number": 1,
+          "prompt": "持ってきてくれて助かったよ。おかげで外に買いに（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "行かなくてすんだ"
+            },
+            {
+              "id": 2,
+              "text": "行かなかったんだ"
+            },
+            {
+              "id": 3,
+              "text": "行けっこなかった"
+            },
+            {
+              "id": 4,
+              "text": "行くわけにはいかなかった"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-20-s01-q02",
+          "number": 2,
+          "prompt": "日本語（　）どんな外国語でも、使う相手がいないと上達しない。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "に限らず"
+            },
+            {
+              "id": 2,
+              "text": "とはいえ"
+            },
+            {
+              "id": 3,
+              "text": "は抜きにして"
+            },
+            {
+              "id": 4,
+              "text": "のことだから"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-20-s01-q03",
+          "number": 3,
+          "prompt": "何をばかなことを言ってるんだ。就職面接のときはスーツ（　）だろう。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "も同然"
+            },
+            {
+              "id": 2,
+              "text": "ももっとも"
+            },
+            {
+              "id": 3,
+              "text": "に違いない"
+            },
+            {
+              "id": 4,
+              "text": "に決まっている"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-20-s01-q04",
+          "number": 4,
+          "prompt": "学生にとってはもちろん、教師（　）長い休みは嬉しいものだ。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "にしては"
+            },
+            {
+              "id": 2,
+              "text": "からすると"
+            },
+            {
+              "id": 3,
+              "text": "にしたって"
+            },
+            {
+              "id": 4,
+              "text": "というより"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-20-s01-q05",
+          "number": 5,
+          "prompt": "兄はいい仕事が見つかった（　）結婚も決まって、今とても幸せそうだ。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "上で"
+            },
+            {
+              "id": 2,
+              "text": "上に"
+            },
+            {
+              "id": 3,
+              "text": "以上"
+            },
+            {
+              "id": 4,
+              "text": "以上に"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-20-s01-q06",
+          "number": 6,
+          "prompt": "ここに書いてあることは、事実に（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "相違ありません"
+            },
+            {
+              "id": 2,
+              "text": "あり得ません"
+            },
+            {
+              "id": 3,
+              "text": "なりません"
+            },
+            {
+              "id": 4,
+              "text": "関わりません"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-20-s01-q07",
+          "number": 7,
+          "prompt": "この写真を見る（　）、楽しかったあの頃のことが思い出される。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "にしろ"
+            },
+            {
+              "id": 2,
+              "text": "にせよ"
+            },
+            {
+              "id": 3,
+              "text": "につき"
+            },
+            {
+              "id": 4,
+              "text": "につけ"
+            }
+          ],
+          "correctChoice": 4
+        }
+      ]
+    },
+    {
+      "id": "exam-20-section-02",
+      "number": 2,
+      "type": "sentence_order",
+      "label": "文の文法2",
+      "instruction": "次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-20-s02-q01",
+          "number": 1,
+          "sentenceBefore": "一度はサービスをやめたが、これだけ",
+          "sentenceAfter": "しかないだろう。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "集まった"
+            },
+            {
+              "id": 2,
+              "text": "多くの要望が"
+            },
+            {
+              "id": 3,
+              "text": "からには"
+            },
+            {
+              "id": 4,
+              "text": "再開する"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 3,
+          "correctOrder": [
+            2,
+            1,
+            3,
+            4
+          ],
+          "completedSentence": "一度はサービスをやめたが、これだけ多くの要望が集まったからには再開するしかないだろう。"
+        },
+        {
+          "id": "exam-20-s02-q02",
+          "number": 2,
+          "sentenceBefore": "誰もいないのに電気も",
+          "sentenceAfter": "本当にもったいない。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "なんて"
+            },
+            {
+              "id": 2,
+              "text": "つけ"
+            },
+            {
+              "id": 3,
+              "text": "エアコンも"
+            },
+            {
+              "id": 4,
+              "text": "っぱなし"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 4,
+          "correctOrder": [
+            3,
+            2,
+            4,
+            1
+          ],
+          "completedSentence": "誰もいないのに電気もエアコンもつけっぱなしなんて本当にもったいない。"
+        },
+        {
+          "id": "exam-20-s02-q03",
+          "number": 3,
+          "sentenceBefore": "その日私は、目覚まし時計が",
+          "sentenceAfter": "飛び起きた。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "の"
+            },
+            {
+              "id": 2,
+              "text": "鳴らないか"
+            },
+            {
+              "id": 3,
+              "text": "鳴るか"
+            },
+            {
+              "id": 4,
+              "text": "うちに"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "completedSentence": "その日私は、目覚まし時計が鳴るか鳴らないかのうちに飛び起きた。"
+        }
+      ]
+    },
+    {
+      "id": "exam-20-section-03",
+      "number": 3,
+      "type": "passage_grammar",
+      "label": "文章の文法",
+      "instruction": "次の文章を読んで、1から5の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 2,
+      "passage": "ある人が自分の作った米10kgを売ろうと考えました。この人は10kgの米に5,000円という値段をつけました。では、この5,000円という値段は何から決められたのでしょう。この米がとれた土地の価値［1］いるのか、それとも米を作ったこの人の働きからなのでしょうか。\nこの米の価値は、人の働きと、土地［2］自然の働きとを合わせることで生み出されたと言えます。\nイギリスのウィリアム・ペティという統計学者は「労働は富の父であり、土地（自然）は富の母である」と言っています。しかし、実際にはこの米［3］支払われた5,000円を人と自然が分け合うことはありません。5,000円はすべて人のものになります。\nところで、父親が母親の役割をみとめない家庭はよい家庭でしょうか。そのような家庭を［4-a］よい家庭とは［4-b］と思います。これは人と自然の関係にもあてはまります。人は、母である自然の役割をきちんと認めてきませんでした。だから今、家庭である地球の環境がよい状態ではないのです。\n人は自然とともに生み出した米10kgから得た5,000円を、自分たちだけのものにするのをあらためなければなりません。自然は何も要求してきませんが、このお金が自然のために使われて［5］と考えなければならないのです。",
+      "questions": [
+        {
+          "id": "exam-20-s03-q01",
+          "number": 1,
+          "blank": "［1］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "に沿って"
+            },
+            {
+              "id": 2,
+              "text": "に関して"
+            },
+            {
+              "id": 3,
+              "text": "をもとにして"
+            },
+            {
+              "id": 4,
+              "text": "をはじめとして"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-20-s03-q02",
+          "number": 2,
+          "blank": "［2］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "つまり"
+            },
+            {
+              "id": 2,
+              "text": "たとえば"
+            },
+            {
+              "id": 3,
+              "text": "それとも"
+            },
+            {
+              "id": 4,
+              "text": "または"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-20-s03-q03",
+          "number": 3,
+          "blank": "［3］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "に対して"
+            },
+            {
+              "id": 2,
+              "text": "にとって"
+            },
+            {
+              "id": 3,
+              "text": "をめぐって"
+            },
+            {
+              "id": 4,
+              "text": "を通じて"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-20-s03-q04",
+          "number": 4,
+          "blank": "［4-a］／［4-b］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "a 決して ／ b 言うまい"
+            },
+            {
+              "id": 2,
+              "text": "a 決して ／ b 言わない"
+            },
+            {
+              "id": 3,
+              "text": "a まるで ／ b 見えまい"
+            },
+            {
+              "id": 4,
+              "text": "a まるで ／ b 見えない"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-20-s03-q05",
+          "number": 5,
+          "blank": "［5］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "当然だ"
+            },
+            {
+              "id": 2,
+              "text": "同然だ"
+            },
+            {
+              "id": 3,
+              "text": "かいがある"
+            },
+            {
+              "id": 4,
+              "text": "ほかならない"
+            }
+          ],
+          "correctChoice": 1
+        }
+      ]
+    }
+  ]
+}

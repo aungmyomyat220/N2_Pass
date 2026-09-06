@@ -1,0 +1,440 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-exam-23",
+  "title": "日本語パワードリル N2文法 第23回",
+  "level": "N2",
+  "examNumber": 23,
+  "timeLimitMinutes": 10,
+  "maximumScore": 20,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [
+      60,
+      61
+    ],
+    "pdfPages": [
+      60,
+      61
+    ]
+  },
+  "sections": [
+    {
+      "id": "exam-23-section-01",
+      "number": 1,
+      "type": "grammar_selection",
+      "label": "文の文法1",
+      "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-23-s01-q01",
+          "number": 1,
+          "prompt": "メモをなくしたので、記憶（　）その料理を作った。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "を頼りに"
+            },
+            {
+              "id": 2,
+              "text": "はもとより"
+            },
+            {
+              "id": 3,
+              "text": "もかまわず"
+            },
+            {
+              "id": 4,
+              "text": "にかけては"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-23-s01-q02",
+          "number": 2,
+          "prompt": "おととし、東京の郊外に小さい（　）庭つきの家を買いました。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "のに"
+            },
+            {
+              "id": 2,
+              "text": "くせに"
+            },
+            {
+              "id": 3,
+              "text": "ばかりの"
+            },
+            {
+              "id": 4,
+              "text": "ながらも"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-23-s01-q03",
+          "number": 3,
+          "prompt": "できると言った（　）、どんなことがあってもやってみせる。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "以上"
+            },
+            {
+              "id": 2,
+              "text": "うえでは"
+            },
+            {
+              "id": 3,
+              "text": "ばかりに"
+            },
+            {
+              "id": 4,
+              "text": "ものだから"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-23-s01-q04",
+          "number": 4,
+          "prompt": "このぐらいの値段なら買えない（　）が、今は買う気にならない。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "だけましだ"
+            },
+            {
+              "id": 2,
+              "text": "わけがない"
+            },
+            {
+              "id": 3,
+              "text": "おそれがある"
+            },
+            {
+              "id": 4,
+              "text": "わけではない"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-23-s01-q05",
+          "number": 5,
+          "prompt": "すぐに謝ればいい（　）、いろいろ言い訳するからよけい怒られるんだ。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ものを"
+            },
+            {
+              "id": 2,
+              "text": "ものなら"
+            },
+            {
+              "id": 3,
+              "text": "ものだから"
+            },
+            {
+              "id": 4,
+              "text": "ものであれ"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-23-s01-q06",
+          "number": 6,
+          "prompt": "政府はワクチンを準備する（　）、同時に感染の予防も国民に呼びかけている。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "一方で"
+            },
+            {
+              "id": 2,
+              "text": "どころか"
+            },
+            {
+              "id": 3,
+              "text": "代わりに"
+            },
+            {
+              "id": 4,
+              "text": "ものなら"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-23-s01-q07",
+          "number": 7,
+          "prompt": "専門家によると、この火山は数年以内に噴火（　）そうだ。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "しがちである"
+            },
+            {
+              "id": 2,
+              "text": "せねばならない"
+            },
+            {
+              "id": 3,
+              "text": "しようとしている"
+            },
+            {
+              "id": 4,
+              "text": "するおそれがある"
+            }
+          ],
+          "correctChoice": 4
+        }
+      ]
+    },
+    {
+      "id": "exam-23-section-02",
+      "number": 2,
+      "type": "sentence_order",
+      "label": "文の文法2",
+      "instruction": "次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-23-s02-q01",
+          "number": 1,
+          "sentenceBefore": "みんなの前で意見を",
+          "sentenceAfter": "はいかなくなった。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "わけに"
+            },
+            {
+              "id": 2,
+              "text": "ばかりに"
+            },
+            {
+              "id": 3,
+              "text": "言った"
+            },
+            {
+              "id": 4,
+              "text": "やらない"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 4,
+          "correctOrder": [
+            3,
+            2,
+            4,
+            1
+          ],
+          "completedSentence": "みんなの前で意見を言ったばかりにやらないわけにはいかなくなった。"
+        },
+        {
+          "id": "exam-23-s02-q02",
+          "number": 2,
+          "sentenceBefore": "去年までの仲間がライバルチームに入ったのは、我々",
+          "sentenceAfter": "。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "ほか"
+            },
+            {
+              "id": 2,
+              "text": "挑戦に"
+            },
+            {
+              "id": 3,
+              "text": "ならない"
+            },
+            {
+              "id": 4,
+              "text": "に対する"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            4,
+            2,
+            1,
+            3
+          ],
+          "completedSentence": "去年までの仲間がライバルチームに入ったのは、我々に対する挑戦にほかならない。"
+        },
+        {
+          "id": "exam-23-s02-q03",
+          "number": 3,
+          "sentenceBefore": "彼女は子どもの頃から、絶対に歌手に",
+          "sentenceAfter": "いた。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "続けて"
+            },
+            {
+              "id": 2,
+              "text": "と言い"
+            },
+            {
+              "id": 3,
+              "text": "みせる"
+            },
+            {
+              "id": 4,
+              "text": "なって"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 2,
+          "correctOrder": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "completedSentence": "彼女は子どもの頃から、絶対に歌手になってみせると言い続けていた。"
+        }
+      ]
+    },
+    {
+      "id": "exam-23-section-03",
+      "number": 3,
+      "type": "passage_grammar",
+      "label": "文章の文法",
+      "instruction": "次の文章を読んで、1から5の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 2,
+      "passage": "さて、次は「今日の占い」のコーナーです。生まれた月によって、今日の運勢をランキング形式で発表します。\nそれでは、今日の1位の発表です。今日一番ラッキーなのは、11月生まれの方です。\n11月生まれのあなた、今日は人間関係がとてもうまくいく日です。性別や年齢［1］、いろいろな人と親しくなれるでしょう。ラッキーカラーは黄色です。黄色のものを身につけていると、すてきな出会いがあるかもしれません。［2］、誘われたことを何でもOKしていると、あとで都合がつかなくなって困ったことになりかねないので、気をつけてくださいね。\n今日、一番運勢が悪いのは……、残念、3月生まれの方です。\n3月生まれのあなたは、今日は慎重な行動を心がけましょう。思ったことをすぐに口に出して人を傷つけたり、よく考えずに行動して失敗するかもしれません。何か思いついた［3］、それをすぐに行動に移すのではなく、少し時間をおいてゆっくり考えることをおすすめします。そうすれば、つまらない失敗を［4］でしょう。今日のラッキーカラーは赤です。順位が低い［5］がっかりしないで、トマトやいちごなど、赤いものを食べて、今日一日を元気に乗り切りましょう！",
+      "questions": [
+        {
+          "id": "exam-23-s03-q01",
+          "number": 1,
+          "blank": "［1］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "も同然"
+            },
+            {
+              "id": 2,
+              "text": "も兼ねて"
+            },
+            {
+              "id": 3,
+              "text": "を問わず"
+            },
+            {
+              "id": 4,
+              "text": "を通して"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-23-s03-q02",
+          "number": 2,
+          "blank": "［2］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "さらに"
+            },
+            {
+              "id": 2,
+              "text": "ただし"
+            },
+            {
+              "id": 3,
+              "text": "つまり"
+            },
+            {
+              "id": 4,
+              "text": "および"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-23-s03-q03",
+          "number": 3,
+          "blank": "［3］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "からには"
+            },
+            {
+              "id": 2,
+              "text": "ついでに"
+            },
+            {
+              "id": 3,
+              "text": "としても"
+            },
+            {
+              "id": 4,
+              "text": "かと思うと"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-23-s03-q04",
+          "number": 4,
+          "blank": "［4］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "しなくてすむ"
+            },
+            {
+              "id": 2,
+              "text": "していられない"
+            },
+            {
+              "id": 3,
+              "text": "するおそれがある"
+            },
+            {
+              "id": 4,
+              "text": "しないことはない"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-23-s03-q05",
+          "number": 5,
+          "blank": "［5］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "からこそ"
+            },
+            {
+              "id": 2,
+              "text": "からといって"
+            },
+            {
+              "id": 3,
+              "text": "かと思ったら"
+            },
+            {
+              "id": 4,
+              "text": "かのように"
+            }
+          ],
+          "correctChoice": 2
+        }
+      ]
+    }
+  ]
+}

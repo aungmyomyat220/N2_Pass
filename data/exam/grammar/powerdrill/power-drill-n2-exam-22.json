@@ -1,0 +1,440 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-exam-22",
+  "title": "日本語パワードリル N2文法 第22回",
+  "level": "N2",
+  "examNumber": 22,
+  "timeLimitMinutes": 10,
+  "maximumScore": 20,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [
+      58,
+      59
+    ],
+    "pdfPages": [
+      58,
+      59
+    ]
+  },
+  "sections": [
+    {
+      "id": "exam-22-section-01",
+      "number": 1,
+      "type": "grammar_selection",
+      "label": "文の文法1",
+      "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-22-s01-q01",
+          "number": 1,
+          "prompt": "ガソリンが入っていなければ、車が走る（　）だろう。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "に違いない"
+            },
+            {
+              "id": 2,
+              "text": "ほかはない"
+            },
+            {
+              "id": 3,
+              "text": "わけがない"
+            },
+            {
+              "id": 4,
+              "text": "どころではない"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-22-s01-q02",
+          "number": 2,
+          "prompt": "いくら薬をかえても、父の病状は悪化する（　）だった。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "最中"
+            },
+            {
+              "id": 2,
+              "text": "一方"
+            },
+            {
+              "id": 3,
+              "text": "限り"
+            },
+            {
+              "id": 4,
+              "text": "次第"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-22-s01-q03",
+          "number": 3,
+          "prompt": "この科学者の裁判（　）、発明者の権利が見直されるようになった。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "によると"
+            },
+            {
+              "id": 2,
+              "text": "からして"
+            },
+            {
+              "id": 3,
+              "text": "を契機に"
+            },
+            {
+              "id": 4,
+              "text": "にあたって"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-22-s01-q04",
+          "number": 4,
+          "prompt": "海外で人気のこのサービスも、日本（　）まだあまり普及していない。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "においては"
+            },
+            {
+              "id": 2,
+              "text": "にとっては"
+            },
+            {
+              "id": 3,
+              "text": "にあたっては"
+            },
+            {
+              "id": 4,
+              "text": "にかけては"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-22-s01-q05",
+          "number": 5,
+          "prompt": "経験がある（　）、初めての人にすべてを任せるのはやめたほうがいい。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "にしろ"
+            },
+            {
+              "id": 2,
+              "text": "もかまわず"
+            },
+            {
+              "id": 3,
+              "text": "ならまだしも"
+            },
+            {
+              "id": 4,
+              "text": "にかかわらず"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-22-s01-q06",
+          "number": 6,
+          "prompt": "予想以上の売り上げで、社員（　）アルバイトにまでボーナスが支給された。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ながらも"
+            },
+            {
+              "id": 2,
+              "text": "のあまり"
+            },
+            {
+              "id": 3,
+              "text": "を問わず"
+            },
+            {
+              "id": 4,
+              "text": "ばかりでなく"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-22-s01-q07",
+          "number": 7,
+          "prompt": "多くの人に対して何度も同じことを説明（　）疲れてしまった。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "させて"
+            },
+            {
+              "id": 2,
+              "text": "されて"
+            },
+            {
+              "id": 3,
+              "text": "させられて"
+            },
+            {
+              "id": 4,
+              "text": "してもらって"
+            }
+          ],
+          "correctChoice": 3
+        }
+      ]
+    },
+    {
+      "id": "exam-22-section-02",
+      "number": 2,
+      "type": "sentence_order",
+      "label": "文の文法2",
+      "instruction": "次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-22-s02-q01",
+          "number": 1,
+          "sentenceBefore": "留学中は、毎日",
+          "sentenceAfter": "なかった。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "遊ぶ"
+            },
+            {
+              "id": 2,
+              "text": "ばかりで"
+            },
+            {
+              "id": 3,
+              "text": "勉強して"
+            },
+            {
+              "id": 4,
+              "text": "どころでは"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "completedSentence": "留学中は、毎日勉強してばかりで遊ぶどころではなかった。"
+        },
+        {
+          "id": "exam-22-s02-q02",
+          "number": 2,
+          "sentenceBefore": "ヨットで旅に出た",
+          "sentenceAfter": "だ。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "ただ"
+            },
+            {
+              "id": 2,
+              "text": "ばかり"
+            },
+            {
+              "id": 3,
+              "text": "祈る"
+            },
+            {
+              "id": 4,
+              "text": "友人の無事を"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 3,
+          "correctOrder": [
+            4,
+            1,
+            3,
+            2
+          ],
+          "completedSentence": "ヨットで旅に出た友人の無事をただ祈るばかりだ。"
+        },
+        {
+          "id": "exam-22-s02-q03",
+          "number": 3,
+          "sentenceBefore": "その映画は、ほかの人にも見ることを",
+          "sentenceAfter": "よかった。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "いられない"
+            },
+            {
+              "id": 2,
+              "text": "勧めず"
+            },
+            {
+              "id": 3,
+              "text": "ほど"
+            },
+            {
+              "id": 4,
+              "text": "には"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "completedSentence": "その映画は、ほかの人にも見ることを勧めずにはいられないほどよかった。"
+        }
+      ]
+    },
+    {
+      "id": "exam-22-section-03",
+      "number": 3,
+      "type": "passage_grammar",
+      "label": "文章の文法",
+      "instruction": "次の文章を読んで、1から5の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 2,
+      "passage": "私には10歳年下の弟がいる。\n弟が小さい頃は、母の代わりによく私が弟の世話をしていたものだ。ミルクをあげたり、お風呂に入れたり、遊び相手になったり。家にいるときは、とにかく何をする［1］いっしょだった。その頃の私は、［2-a］に対して、［2-b］というよりも自分の［2-c］のような気持ちで接していたように思う。\n弟は、私や母の言うことをよく聞く素直ないい子だったが、食事に関してだけは別だった。野菜が嫌いで、まったく口にしようとしなかったのだ。なんとか［3］と、母はいろいろと料理を工夫した。ところが、弟は料理の中に野菜を見つけると、すぐに口から出してしまうのだった。母は心配［4］、医者にまで相談したが、「だいじょうぶ、そのうち食べるようになりますよ」と言われるだけだった。\n医者の言葉どおり、弟は成長する［5］、少しずつ野菜を食べるようになった。そして、小学校を卒業する頃には、ほとんど何でも食べられるようになった。母はとても喜んでいたが、私はそんな弟の成長に、少し寂しさも感じていた。",
+      "questions": [
+        {
+          "id": "exam-22-s03-q01",
+          "number": 1,
+          "blank": "［1］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "でも"
+            },
+            {
+              "id": 2,
+              "text": "にも"
+            },
+            {
+              "id": 3,
+              "text": "までも"
+            },
+            {
+              "id": 4,
+              "text": "よりも"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-22-s03-q02",
+          "number": 2,
+          "blank": "［2-a］／［2-b］／［2-c］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "a 弟 ／ b 弟 ／ c 子ども"
+            },
+            {
+              "id": 2,
+              "text": "a 弟 ／ b 子ども ／ c 弟"
+            },
+            {
+              "id": 3,
+              "text": "a 子ども ／ b 弟 ／ c 子ども"
+            },
+            {
+              "id": 4,
+              "text": "a 子ども ／ b 子ども ／ c 弟"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-22-s03-q03",
+          "number": 3,
+          "blank": "［3］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "食べよう"
+            },
+            {
+              "id": 2,
+              "text": "食べさせよう"
+            },
+            {
+              "id": 3,
+              "text": "食べられそう"
+            },
+            {
+              "id": 4,
+              "text": "食べさせられそう"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-22-s03-q04",
+          "number": 4,
+          "blank": "［4］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "のあまり"
+            },
+            {
+              "id": 2,
+              "text": "をこめて"
+            },
+            {
+              "id": 3,
+              "text": "な以上"
+            },
+            {
+              "id": 4,
+              "text": "に伴って"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-22-s03-q05",
+          "number": 5,
+          "blank": "［5］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "とすれば"
+            },
+            {
+              "id": 2,
+              "text": "とたんに"
+            },
+            {
+              "id": 3,
+              "text": "につれて"
+            },
+            {
+              "id": 4,
+              "text": "にあたって"
+            }
+          ],
+          "correctChoice": 3
+        }
+      ]
+    }
+  ]
+}

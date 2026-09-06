@@ -1,0 +1,440 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-exam-16",
+  "title": "日本語パワードリル N2文法 第16回",
+  "level": "N2",
+  "examNumber": 16,
+  "timeLimitMinutes": 10,
+  "maximumScore": 20,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [
+      44,
+      45
+    ],
+    "pdfPages": [
+      44,
+      45
+    ]
+  },
+  "sections": [
+    {
+      "id": "exam-16-section-01",
+      "number": 1,
+      "type": "grammar_selection",
+      "label": "文の文法1",
+      "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-16-s01-q01",
+          "number": 1,
+          "prompt": "胃の検査の（　）他も調べてもらった。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ついでに"
+            },
+            {
+              "id": 2,
+              "text": "かわりに"
+            },
+            {
+              "id": 3,
+              "text": "わりに"
+            },
+            {
+              "id": 4,
+              "text": "きっかけに"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-16-s01-q02",
+          "number": 2,
+          "prompt": "今日もまた電池を買い忘れちゃった。明日（　）買わなきゃ。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "限り"
+            },
+            {
+              "id": 2,
+              "text": "きり"
+            },
+            {
+              "id": 3,
+              "text": "こそ"
+            },
+            {
+              "id": 4,
+              "text": "しか"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-16-s01-q03",
+          "number": 3,
+          "prompt": "携帯電話の料金はもう少し安く（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "なりようがないか"
+            },
+            {
+              "id": 2,
+              "text": "なるものだろうか"
+            },
+            {
+              "id": 3,
+              "text": "なろうではないか"
+            },
+            {
+              "id": 4,
+              "text": "ならないものだろうか"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-16-s01-q04",
+          "number": 4,
+          "prompt": "診察を受ける際は、保険証を忘れる（　）ようにご注意ください。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ことのない"
+            },
+            {
+              "id": 2,
+              "text": "はずがない"
+            },
+            {
+              "id": 3,
+              "text": "わけがない"
+            },
+            {
+              "id": 4,
+              "text": "おそれがない"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-16-s01-q05",
+          "number": 5,
+          "prompt": "彼女に（　）、教えてもらえるかどうかはわからないよ。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "聞くことは聞くけれど"
+            },
+            {
+              "id": 2,
+              "text": "聞くにしろ聞かないにしろ"
+            },
+            {
+              "id": 3,
+              "text": "聞くことさえできないが"
+            },
+            {
+              "id": 4,
+              "text": "聞くにつけ聞かないにつけ"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-16-s01-q06",
+          "number": 6,
+          "prompt": "このドキュメンタリーは（　）事実を伝える貴重なものである。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "知らず"
+            },
+            {
+              "id": 2,
+              "text": "知るまい"
+            },
+            {
+              "id": 3,
+              "text": "知られざる"
+            },
+            {
+              "id": 4,
+              "text": "知られかねる"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-16-s01-q07",
+          "number": 7,
+          "prompt": "このマンガは暴力的な場面が多く、教育（　）問題がある。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "上"
+            },
+            {
+              "id": 2,
+              "text": "以上"
+            },
+            {
+              "id": 3,
+              "text": "次第"
+            },
+            {
+              "id": 4,
+              "text": "反面"
+            }
+          ],
+          "correctChoice": 1
+        }
+      ]
+    },
+    {
+      "id": "exam-16-section-02",
+      "number": 2,
+      "type": "sentence_order",
+      "label": "文の文法2",
+      "instruction": "次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-16-s02-q01",
+          "number": 1,
+          "sentenceBefore": "そんなずるいこと",
+          "sentenceAfter": "思わない。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "とは"
+            },
+            {
+              "id": 2,
+              "text": "まで"
+            },
+            {
+              "id": 3,
+              "text": "勝ちたい"
+            },
+            {
+              "id": 4,
+              "text": "をして"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 3,
+          "correctOrder": [
+            4,
+            2,
+            3,
+            1
+          ],
+          "completedSentence": "そんなずるいことをしてまで勝ちたいとは思わない。"
+        },
+        {
+          "id": "exam-16-s02-q02",
+          "number": 2,
+          "sentenceBefore": "よく考えた",
+          "sentenceAfter": "そんなに簡単に返事をしないほうがいい。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "なら"
+            },
+            {
+              "id": 2,
+              "text": "ともかく"
+            },
+            {
+              "id": 3,
+              "text": "上で"
+            },
+            {
+              "id": 4,
+              "text": "決めるの"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            3,
+            4,
+            1,
+            2
+          ],
+          "completedSentence": "よく考えた上で決めるのならともかく、そんなに簡単に返事をしないほうがいい。"
+        },
+        {
+          "id": "exam-16-s02-q03",
+          "number": 3,
+          "sentenceBefore": "最新のモデル",
+          "sentenceAfter": "今までの携帯とは比べものにならない。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "大きさ"
+            },
+            {
+              "id": 2,
+              "text": "して"
+            },
+            {
+              "id": 3,
+              "text": "だけに"
+            },
+            {
+              "id": 4,
+              "text": "から"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 4,
+          "correctOrder": [
+            3,
+            1,
+            4,
+            2
+          ],
+          "completedSentence": "最新のモデルだけに大きさからして今までの携帯とは比べものにならない。"
+        }
+      ]
+    },
+    {
+      "id": "exam-16-section-03",
+      "number": 3,
+      "type": "passage_grammar",
+      "label": "文章の文法",
+      "instruction": "次の文章を読んで、1から5の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 2,
+      "passage": "今年も桜の季節がやってきた。\n桜といえば、花見だ。花見は7世紀頃、貴族によって始められたと言われている。はじめは野山の桜を見に出かけていたが、そのうち、庭に桜を植えて花を見ながら食事や酒を楽しむようになったそうだ。その後、この花見の習慣は多くの人に広がり、江戸時代には、身分の上下［1］、みんなが花見を楽しむようになった。\n桜は、いつ咲くかわからないうえ、待っているとなかなか咲いて［2］。ところが、咲き始めると、あたり一面が桜の色に見えるほどみごとに咲く。しかし、花は長い間咲いている［3］。10日ほどで、あっという間に散ってしまう。\n花の美しさ［4］、そんな桜の「生き方」も、日本人が桜を好む理由だろう。絵をはじめ、和歌や俳句など文学においても桜はくり返し現れる。\n実は、桜と日本人のつきあいは古い。研究に［5-a］二千年以上前から人々は桜の咲き方に［5-b］米がどのぐらいできるかを占っていたらしい。\n昔から日本人にとって、桜は特別な存在であったようだ。",
+      "questions": [
+        {
+          "id": "exam-16-s03-q01",
+          "number": 1,
+          "blank": "［1］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ばかりか"
+            },
+            {
+              "id": 2,
+              "text": "とともに"
+            },
+            {
+              "id": 3,
+              "text": "にともなって"
+            },
+            {
+              "id": 4,
+              "text": "にかかわらず"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-16-s03-q02",
+          "number": 2,
+          "blank": "［2］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "くれない"
+            },
+            {
+              "id": 2,
+              "text": "こない"
+            },
+            {
+              "id": 3,
+              "text": "いかない"
+            },
+            {
+              "id": 4,
+              "text": "あげない"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-16-s03-q03",
+          "number": 3,
+          "blank": "［3］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ものだ"
+            },
+            {
+              "id": 2,
+              "text": "ことか"
+            },
+            {
+              "id": 3,
+              "text": "わけではない"
+            },
+            {
+              "id": 4,
+              "text": "はずがない"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-16-s03-q04",
+          "number": 4,
+          "blank": "［4］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "抜きで"
+            },
+            {
+              "id": 2,
+              "text": "どころか"
+            },
+            {
+              "id": 3,
+              "text": "はもちろん"
+            },
+            {
+              "id": 4,
+              "text": "よりずっと"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-16-s03-q05",
+          "number": 5,
+          "blank": "［5-a］／［5-b］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "a によって ／ b によると"
+            },
+            {
+              "id": 2,
+              "text": "a によると ／ b によって"
+            },
+            {
+              "id": 3,
+              "text": "a によって ／ b によれば"
+            },
+            {
+              "id": 4,
+              "text": "a によると ／ b によらず"
+            }
+          ],
+          "correctChoice": 2
+        }
+      ]
+    }
+  ]
+}

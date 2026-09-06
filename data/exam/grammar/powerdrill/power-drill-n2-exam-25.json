@@ -1,0 +1,440 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-exam-25",
+  "title": "日本語パワードリル N2文法 第25回",
+  "level": "N2",
+  "examNumber": 25,
+  "timeLimitMinutes": 10,
+  "maximumScore": 20,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [
+      64,
+      65
+    ],
+    "pdfPages": [
+      64,
+      65
+    ]
+  },
+  "sections": [
+    {
+      "id": "exam-25-section-01",
+      "number": 1,
+      "type": "grammar_selection",
+      "label": "文の文法1",
+      "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-25-s01-q01",
+          "number": 1,
+          "prompt": "父は「ちょっと行ってくる」と言って出かけた（　）、まだ帰ってこない。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "あまり"
+            },
+            {
+              "id": 2,
+              "text": "うえに"
+            },
+            {
+              "id": 3,
+              "text": "たびに"
+            },
+            {
+              "id": 4,
+              "text": "っきり"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-25-s01-q02",
+          "number": 2,
+          "prompt": "何も知らない（　）、余計なことを言うな。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "くせに"
+            },
+            {
+              "id": 2,
+              "text": "ままに"
+            },
+            {
+              "id": 3,
+              "text": "からこそ"
+            },
+            {
+              "id": 4,
+              "text": "ながらも"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-25-s01-q03",
+          "number": 3,
+          "prompt": "会社をやめて独立する（　）、後悔しないようにがんばりたい。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "上"
+            },
+            {
+              "id": 2,
+              "text": "上で"
+            },
+            {
+              "id": 3,
+              "text": "上に"
+            },
+            {
+              "id": 4,
+              "text": "上は"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-25-s01-q04",
+          "number": 4,
+          "prompt": "資金が足りない（　）計画は延期になった。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "からこそ"
+            },
+            {
+              "id": 2,
+              "text": "からには"
+            },
+            {
+              "id": 3,
+              "text": "ことから"
+            },
+            {
+              "id": 4,
+              "text": "ことには"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-25-s01-q05",
+          "number": 5,
+          "prompt": "免許は持っている（　）、車がないからほとんど運転したことがない。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "につき"
+            },
+            {
+              "id": 2,
+              "text": "のみか"
+            },
+            {
+              "id": 3,
+              "text": "ものの"
+            },
+            {
+              "id": 4,
+              "text": "からには"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-25-s01-q06",
+          "number": 6,
+          "prompt": "困った（　）、3日前になってもセミナーの申し込みが一人もない。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ことに"
+            },
+            {
+              "id": 2,
+              "text": "ものに"
+            },
+            {
+              "id": 3,
+              "text": "わけで"
+            },
+            {
+              "id": 4,
+              "text": "だけあって"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-25-s01-q07",
+          "number": 7,
+          "prompt": "これだけ調べても見つからないなら、あきらめ（　）だろう。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "がいがない"
+            },
+            {
+              "id": 2,
+              "text": "てならない"
+            },
+            {
+              "id": 3,
+              "text": "ざるを得ない"
+            },
+            {
+              "id": 4,
+              "text": "て仕方がない"
+            }
+          ],
+          "correctChoice": 3
+        }
+      ]
+    },
+    {
+      "id": "exam-25-section-02",
+      "number": 2,
+      "type": "sentence_order",
+      "label": "文の文法2",
+      "instruction": "次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-25-s02-q01",
+          "number": 1,
+          "sentenceBefore": "ただの",
+          "sentenceAfter": "大事なことは決められません。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "私には"
+            },
+            {
+              "id": 2,
+              "text": "そんな"
+            },
+            {
+              "id": 3,
+              "text": "秘書に"
+            },
+            {
+              "id": 4,
+              "text": "すぎない"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            3,
+            4,
+            1,
+            2
+          ],
+          "completedSentence": "ただの秘書にすぎない私にはそんな大事なことは決められません。"
+        },
+        {
+          "id": "exam-25-s02-q02",
+          "number": 2,
+          "sentenceBefore": "運動する",
+          "sentenceAfter": "友人と会うためにジムに通っている。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "という"
+            },
+            {
+              "id": 2,
+              "text": "ため"
+            },
+            {
+              "id": 3,
+              "text": "むしろ"
+            },
+            {
+              "id": 4,
+              "text": "より"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 4,
+          "correctOrder": [
+            2,
+            1,
+            4,
+            3
+          ],
+          "completedSentence": "運動するためというよりむしろ友人と会うためにジムに通っている。"
+        },
+        {
+          "id": "exam-25-s02-q03",
+          "number": 3,
+          "sentenceBefore": "どの車を買おうかさんざん",
+          "sentenceAfter": "買うのをやめた。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "合わなくて"
+            },
+            {
+              "id": 2,
+              "text": "あげく"
+            },
+            {
+              "id": 3,
+              "text": "予算が"
+            },
+            {
+              "id": 4,
+              "text": "悩んだ"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 3,
+          "correctOrder": [
+            4,
+            2,
+            3,
+            1
+          ],
+          "completedSentence": "どの車を買おうかさんざん悩んだあげく予算が合わなくて買うのをやめた。"
+        }
+      ]
+    },
+    {
+      "id": "exam-25-section-03",
+      "number": 3,
+      "type": "passage_grammar",
+      "label": "文章の文法",
+      "instruction": "次の文章を読んで、1から5の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 2,
+      "passage": "リビングに行くと、母と姉がお茶を飲みながら話していた。\n姉は怒ったような顔をして、母に言った。\n「それでね、6時に会う約束をしていたのに彼が来たのは7時。5分や10分［1］、1時間も遅れて来たのよ。あり得ないでしょ？　しかも、絶対に『ごめんなさい』って言わないの。謝る［2］、言い訳ばっかりしているの」\n「それはひどいわね」\n母は、あきれたように言った。\n「でしょ？　そのくせ、レストランで注文した料理がなかなか運ばれてこないからって、人目もかまわず、大声で店員さんに文句言うのよ。それに……」\n姉の話が［3-a］か［3-b］かのうちに、私は思わず姉に向かって言った。\n「お姉ちゃん！　そんな男とはもう別れたら？」\n姉と母は、私の顔を見てびっくりしたような表情をしていたが、次の瞬間、二人とも大声で笑い出した。そして、私に向かってこう言った。\n「何を勘違いしてるの？　私がそんな男とつき合う［4］でしょ。ドラマの話よ。お母さんが先週見るのを忘れたって言うから、話してあげてたのよ。もう、あんたって本当にそそっかしい［5］」",
+      "questions": [
+        {
+          "id": "exam-25-s03-q01",
+          "number": 1,
+          "blank": "［1］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "のみならず"
+            },
+            {
+              "id": 2,
+              "text": "ならまだしも"
+            },
+            {
+              "id": 3,
+              "text": "はもとより"
+            },
+            {
+              "id": 4,
+              "text": "にもかかわらず"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-25-s03-q02",
+          "number": 2,
+          "blank": "［2］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "一方で"
+            },
+            {
+              "id": 2,
+              "text": "も同然"
+            },
+            {
+              "id": 3,
+              "text": "どころか"
+            },
+            {
+              "id": 4,
+              "text": "からといって"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-25-s03-q03",
+          "number": 3,
+          "blank": "［3-a］／［3-b］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "a 始まる ／ b 始まらない"
+            },
+            {
+              "id": 2,
+              "text": "a 始まらない ／ b 始まる"
+            },
+            {
+              "id": 3,
+              "text": "a 終わる ／ b 終わらない"
+            },
+            {
+              "id": 4,
+              "text": "a 終わらない ／ b 終わる"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-25-s03-q04",
+          "number": 4,
+          "blank": "［4］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "わけがない"
+            },
+            {
+              "id": 2,
+              "text": "わけではない"
+            },
+            {
+              "id": 3,
+              "text": "わけでもない"
+            },
+            {
+              "id": 4,
+              "text": "わけにはいかない"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-25-s03-q05",
+          "number": 5,
+          "blank": "［5］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "んだから"
+            },
+            {
+              "id": 2,
+              "text": "んだって"
+            },
+            {
+              "id": 3,
+              "text": "んだっけ"
+            },
+            {
+              "id": 4,
+              "text": "んじゃない"
+            }
+          ],
+          "correctChoice": 1
+        }
+      ]
+    }
+  ]
+}

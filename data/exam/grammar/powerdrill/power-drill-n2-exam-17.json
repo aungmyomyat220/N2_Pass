@@ -1,0 +1,440 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-exam-17",
+  "title": "日本語パワードリル N2文法 第17回",
+  "level": "N2",
+  "examNumber": 17,
+  "timeLimitMinutes": 10,
+  "maximumScore": 20,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [
+      46,
+      47
+    ],
+    "pdfPages": [
+      46,
+      47
+    ]
+  },
+  "sections": [
+    {
+      "id": "exam-17-section-01",
+      "number": 1,
+      "type": "grammar_selection",
+      "label": "文の文法1",
+      "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-17-s01-q01",
+          "number": 1,
+          "prompt": "もう間に合わないかと思ったが、なんとか電車に乗り遅れ（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ずにすんだ"
+            },
+            {
+              "id": 2,
+              "text": "かねなかった"
+            },
+            {
+              "id": 3,
+              "text": "ようがなかった"
+            },
+            {
+              "id": 4,
+              "text": "ざるを得なかった"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-17-s01-q02",
+          "number": 2,
+          "prompt": "今日中にやらなければならない仕事がたくさんあるから、まだ私は（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "帰れそうもない"
+            },
+            {
+              "id": 2,
+              "text": "帰ろうとしない"
+            },
+            {
+              "id": 3,
+              "text": "帰るはずがない"
+            },
+            {
+              "id": 4,
+              "text": "帰れないこともない"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-17-s01-q03",
+          "number": 3,
+          "prompt": "その研究をするなら、一度は斎藤先生に会っておく（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "までだ"
+            },
+            {
+              "id": 2,
+              "text": "ものだ"
+            },
+            {
+              "id": 3,
+              "text": "わけだ"
+            },
+            {
+              "id": 4,
+              "text": "べきだ"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-17-s01-q04",
+          "number": 4,
+          "prompt": "手術が決まった今は、ただ成功を祈る（　）です。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "以上"
+            },
+            {
+              "id": 2,
+              "text": "限り"
+            },
+            {
+              "id": 3,
+              "text": "最中"
+            },
+            {
+              "id": 4,
+              "text": "ばかり"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-17-s01-q05",
+          "number": 5,
+          "prompt": "代表に選ばれた（　）、全力をつくしてがんばります。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "上"
+            },
+            {
+              "id": 2,
+              "text": "上で"
+            },
+            {
+              "id": 3,
+              "text": "上に"
+            },
+            {
+              "id": 4,
+              "text": "上は"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-17-s01-q06",
+          "number": 6,
+          "prompt": "教育は国民の権利である（　）義務でもある。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "限りは"
+            },
+            {
+              "id": 2,
+              "text": "のみならず"
+            },
+            {
+              "id": 3,
+              "text": "からといって"
+            },
+            {
+              "id": 4,
+              "text": "にかかわらず"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-17-s01-q07",
+          "number": 7,
+          "prompt": "自分でやって（　）難しさはわからない。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "みてこそ"
+            },
+            {
+              "id": 2,
+              "text": "みない限り"
+            },
+            {
+              "id": 3,
+              "text": "みるからには"
+            },
+            {
+              "id": 4,
+              "text": "みたうえで"
+            }
+          ],
+          "correctChoice": 2
+        }
+      ]
+    },
+    {
+      "id": "exam-17-section-02",
+      "number": 2,
+      "type": "sentence_order",
+      "label": "文の文法2",
+      "instruction": "次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-17-s02-q01",
+          "number": 1,
+          "sentenceBefore": "たばこの価格が",
+          "sentenceAfter": "禁煙する人が増えている。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "きっかけ"
+            },
+            {
+              "id": 2,
+              "text": "上がった"
+            },
+            {
+              "id": 3,
+              "text": "として"
+            },
+            {
+              "id": 4,
+              "text": "のを"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "completedSentence": "たばこの価格が上がったのをきっかけとして禁煙する人が増えている。"
+        },
+        {
+          "id": "exam-17-s02-q02",
+          "number": 2,
+          "sentenceBefore": "もう9月に入ったのだから、この暑さも",
+          "sentenceAfter": "。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "そう"
+            },
+            {
+              "id": 2,
+              "text": "まい"
+            },
+            {
+              "id": 3,
+              "text": "続く"
+            },
+            {
+              "id": 4,
+              "text": "長くは"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 3,
+          "correctOrder": [
+            1,
+            4,
+            3,
+            2
+          ],
+          "completedSentence": "もう9月に入ったのだから、この暑さもそう長くは続くまい。"
+        },
+        {
+          "id": "exam-17-s02-q03",
+          "number": 3,
+          "sentenceBefore": "複数の関係者に調査を行った",
+          "sentenceAfter": "がわかった。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "べき"
+            },
+            {
+              "id": 2,
+              "text": "ところ"
+            },
+            {
+              "id": 3,
+              "text": "驚く"
+            },
+            {
+              "id": 4,
+              "text": "事実"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            2,
+            3,
+            1,
+            4
+          ],
+          "completedSentence": "複数の関係者に調査を行ったところ驚くべき事実がわかった。"
+        }
+      ]
+    },
+    {
+      "id": "exam-17-section-03",
+      "number": 3,
+      "type": "passage_grammar",
+      "label": "文章の文法",
+      "instruction": "次の文章を読んで、1から5の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 2,
+      "passage": "私は、小さい頃からずっとペットのいる生活にあこがれていた。仲の良い友達はみんな犬や猫を飼っているのに、うちは母が動物が嫌いな［1］、私は高校生になるまで一度もペットを飼ったことがなかった。\n私は何度も母に、友達の犬の写真を見せたり、感動的な動物映画を見せたりして、「いいなあ、うちにもこんなかわいいペットがいたらなあ」と、わざとらしく大きな声で言ったりしていたのだが、そのたびに母からは、「見てるだけならいいけど、花の世話もできないあんたに動物の世話なんて［2］」と、冷たい返事が返ってくるばかりだった。\nところが、そんなわが家に子犬がやってくることになった。母の長年の友人である田中さんの家に子犬が3匹生まれたので、1匹［3］というのだ。\nもちろん母はすぐに断った。しかし田中さんはあきらめず、何度も電話をかけてきて、「うちの狭い部屋じゃ、［4-a］3匹全部は育てられ［4-b］のよ。捨てるなんて絶対にできないし、他の友達はみんなペット禁止のマンションだし……。とにかく、今度の日曜、1匹連れていくから！」\nそういうわけで、田中さんは日曜日、強引に子犬を連れてわが家にやってきた。それが、私とシロとのはじめての出会いだった。\nあれから十年。あんなに反対していた母も、今ではシロ［5-a］生活［5-b］考えられないと言っている。",
+      "questions": [
+        {
+          "id": "exam-17-s03-q01",
+          "number": 1,
+          "blank": "［1］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "せいで"
+            },
+            {
+              "id": 2,
+              "text": "ところ"
+            },
+            {
+              "id": 3,
+              "text": "わけで"
+            },
+            {
+              "id": 4,
+              "text": "からに"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-17-s03-q02",
+          "number": 2,
+          "blank": "［2］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "できかねない"
+            },
+            {
+              "id": 2,
+              "text": "できっこない"
+            },
+            {
+              "id": 3,
+              "text": "できますように"
+            },
+            {
+              "id": 4,
+              "text": "できるものなら"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-17-s03-q03",
+          "number": 3,
+          "blank": "［3］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "くれないか"
+            },
+            {
+              "id": 2,
+              "text": "あげてくれ"
+            },
+            {
+              "id": 3,
+              "text": "もらってほしい"
+            },
+            {
+              "id": 4,
+              "text": "もらってあげたい"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-17-s03-q04",
+          "number": 4,
+          "blank": "［4-a］／［4-b］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "a とても ／ b そうな"
+            },
+            {
+              "id": 2,
+              "text": "a とても ／ b そうにない"
+            },
+            {
+              "id": 3,
+              "text": "a なんとか ／ b そうな"
+            },
+            {
+              "id": 4,
+              "text": "a なんとか ／ b そうにない"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-17-s03-q05",
+          "number": 5,
+          "blank": "［5-a］／［5-b］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "a だけの ／ b しか"
+            },
+            {
+              "id": 2,
+              "text": "a だけの ／ b ほど"
+            },
+            {
+              "id": 3,
+              "text": "a なしの ／ b さえ"
+            },
+            {
+              "id": 4,
+              "text": "a なしの ／ b など"
+            }
+          ],
+          "correctChoice": 4
+        }
+      ]
+    }
+  ]
+}

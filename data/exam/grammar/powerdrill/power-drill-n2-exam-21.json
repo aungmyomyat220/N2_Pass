@@ -1,0 +1,440 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-exam-21",
+  "title": "日本語パワードリル N2文法 第21回",
+  "level": "N2",
+  "examNumber": 21,
+  "timeLimitMinutes": 10,
+  "maximumScore": 20,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [
+      56,
+      57
+    ],
+    "pdfPages": [
+      56,
+      57
+    ]
+  },
+  "sections": [
+    {
+      "id": "exam-21-section-01",
+      "number": 1,
+      "type": "grammar_selection",
+      "label": "文の文法1",
+      "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-21-s01-q01",
+          "number": 1,
+          "prompt": "あいさつ（　）、さっそく乾杯しましょう。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "は抜きで"
+            },
+            {
+              "id": 2,
+              "text": "もなく"
+            },
+            {
+              "id": 3,
+              "text": "を問わず"
+            },
+            {
+              "id": 4,
+              "text": "にかかわらず"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-21-s01-q02",
+          "number": 2,
+          "prompt": "計算（　）可能ですが、実際にやってみないとわかりません。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "次第では"
+            },
+            {
+              "id": 2,
+              "text": "の上では"
+            },
+            {
+              "id": 3,
+              "text": "にとっては"
+            },
+            {
+              "id": 4,
+              "text": "にかけては"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-21-s01-q03",
+          "number": 3,
+          "prompt": "花粉症になると鼻水やせき（　）、熱まで出る場合もある。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "からして"
+            },
+            {
+              "id": 2,
+              "text": "にわたり"
+            },
+            {
+              "id": 3,
+              "text": "ばかりか"
+            },
+            {
+              "id": 4,
+              "text": "もとより"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-21-s01-q04",
+          "number": 4,
+          "prompt": "欧米の人（　）、日本の水田の風景はめずらしいのだろう。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "にしたら"
+            },
+            {
+              "id": 2,
+              "text": "によれば"
+            },
+            {
+              "id": 3,
+              "text": "につき"
+            },
+            {
+              "id": 4,
+              "text": "にかけては"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-21-s01-q05",
+          "number": 5,
+          "prompt": "台風で飛行機が飛ばないのであれば、新幹線で帰る（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ほかない"
+            },
+            {
+              "id": 2,
+              "text": "かいがない"
+            },
+            {
+              "id": 3,
+              "text": "にすぎない"
+            },
+            {
+              "id": 4,
+              "text": "にほかならない"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-21-s01-q06",
+          "number": 6,
+          "prompt": "新しい本社ビルは、場所も（　）建物も立派だ。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "いいなら"
+            },
+            {
+              "id": 2,
+              "text": "いいなり"
+            },
+            {
+              "id": 3,
+              "text": "いいやら"
+            },
+            {
+              "id": 4,
+              "text": "よければ"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-21-s01-q07",
+          "number": 7,
+          "prompt": "テスト前なのに、推理小説の続きが読みたくて（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "いられない"
+            },
+            {
+              "id": 2,
+              "text": "かまわない"
+            },
+            {
+              "id": 3,
+              "text": "しょうがない"
+            },
+            {
+              "id": 4,
+              "text": "ほかはない"
+            }
+          ],
+          "correctChoice": 3
+        }
+      ]
+    },
+    {
+      "id": "exam-21-section-02",
+      "number": 2,
+      "type": "sentence_order",
+      "label": "文の文法2",
+      "instruction": "次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-21-s02-q01",
+          "number": 1,
+          "sentenceBefore": "途中でトラブルが起こったおかげで、この旅行は",
+          "sentenceAfter": "。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "ものに"
+            },
+            {
+              "id": 2,
+              "text": "かえって"
+            },
+            {
+              "id": 3,
+              "text": "なった"
+            },
+            {
+              "id": 4,
+              "text": "忘れがたい"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "completedSentence": "途中でトラブルが起こったおかげで、この旅行はかえって忘れがたいものになった。"
+        },
+        {
+          "id": "exam-21-s02-q02",
+          "number": 2,
+          "sentenceBefore": "その子猫は",
+          "sentenceAfter": "「ゆき」と名付けられた。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "ことから"
+            },
+            {
+              "id": 2,
+              "text": "全身が"
+            },
+            {
+              "id": 3,
+              "text": "だった"
+            },
+            {
+              "id": 4,
+              "text": "真っ白"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 3,
+          "correctOrder": [
+            2,
+            4,
+            3,
+            1
+          ],
+          "completedSentence": "その子猫は全身が真っ白だったことから「ゆき」と名付けられた。"
+        },
+        {
+          "id": "exam-21-s02-q03",
+          "number": 3,
+          "sentenceBefore": "景気が",
+          "sentenceAfter": "ているが、私にはそうは思えない。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "言われ"
+            },
+            {
+              "id": 2,
+              "text": "回復し"
+            },
+            {
+              "id": 3,
+              "text": "かのように"
+            },
+            {
+              "id": 4,
+              "text": "つつある"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 3,
+          "correctOrder": [
+            2,
+            4,
+            3,
+            1
+          ],
+          "completedSentence": "景気が回復しつつあるかのように言われているが、私にはそうは思えない。"
+        }
+      ]
+    },
+    {
+      "id": "exam-21-section-03",
+      "number": 3,
+      "type": "passage_grammar",
+      "label": "文章の文法",
+      "instruction": "次の文章を読んで、1から5の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 2,
+      "passage": "もし、子どもに「自動車はどうやって動いているの？」と聞かれたら、あなたはどのように答えますか。\nかりに、あなたが自動車が動く仕組みを正確に知っていた［1］。あなたは、「それはね……」と自信を持って説明を始めるでしょう。ところが、子どもからは、「エンジンって何？」「シャフトって何？」と次々と質問が返ってきます。あなたは「あれ？　変だな。どうしてうまく説明できないんだろう？」とあわてるかもしれません。そして自分の知識を子どもがわかるように説明することが、決して簡単ではないと気づくことに［2］。\n実はこのように、どんなことでも、［3-a］言葉を使って説明するよりも［3-b］言葉で説明するほうが、はるかに［3-c］のです。\nでは、次に、あなたが自動車の仕組みを知らない場合のことを考えてください。その場合はどうするでしょうか。子どもの質問に答えられないのは大人として恥ずかしいからと、知っているふりをして適当に答えておきますか。\n「知らない」ということは決して恥ずかしいことではありません。すべてのことを知っている［4］のですから。それよりも、知らないことを隠そうとするほうが、もっと恥ずかしいことだと言えます。\nですから、自分があまりよく知らないことについて子どもに質問されたら、「私もよくわからないから、一緒に調べてみよう」と［5］。",
+      "questions": [
+        {
+          "id": "exam-21-s03-q01",
+          "number": 1,
+          "blank": "［1］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "のです"
+            },
+            {
+              "id": 2,
+              "text": "とします"
+            },
+            {
+              "id": 3,
+              "text": "わけです"
+            },
+            {
+              "id": 4,
+              "text": "ということです"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-21-s03-q02",
+          "number": 2,
+          "blank": "［2］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "なるでしょう"
+            },
+            {
+              "id": 2,
+              "text": "なりました"
+            },
+            {
+              "id": 3,
+              "text": "なっています"
+            },
+            {
+              "id": 4,
+              "text": "なったのです"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-21-s03-q03",
+          "number": 3,
+          "blank": "［3-a］／［3-b］／［3-c］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "a 易しい ／ b 易しい ／ c 難しい"
+            },
+            {
+              "id": 2,
+              "text": "a 易しい ／ b 難しい ／ c 難しい"
+            },
+            {
+              "id": 3,
+              "text": "a 難しい ／ b 易しい ／ c 易しい"
+            },
+            {
+              "id": 4,
+              "text": "a 難しい ／ b 易しい ／ c 難しい"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-21-s03-q04",
+          "number": 4,
+          "blank": "［4］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "人ばかりな"
+            },
+            {
+              "id": 2,
+              "text": "人しかいない"
+            },
+            {
+              "id": 3,
+              "text": "人などいない"
+            },
+            {
+              "id": 4,
+              "text": "人こそすばらしい"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-21-s03-q05",
+          "number": 5,
+          "blank": "［5］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "答えたらいいでしょうか"
+            },
+            {
+              "id": 2,
+              "text": "答えてもいいでしょうか"
+            },
+            {
+              "id": 3,
+              "text": "答えてはどうでしょうか"
+            },
+            {
+              "id": 4,
+              "text": "答えるのでしょうか"
+            }
+          ],
+          "correctChoice": 3
+        }
+      ]
+    }
+  ]
+}
