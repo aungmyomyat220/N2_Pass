@@ -1,0 +1,1655 @@
+{
+  "schemaVersion": "1.0.0",
+  "title": "Power Drill N2 Grammar - Lessons 1-5",
+  "scope": "Deduplicated target grammar patterns found in verified Lessons 1-5. Equivalent surface variants are merged; different meanings remain separate.",
+  "deduplication": {
+    "enabled": true,
+    "countRule": "One normalized semantic grammar pattern equals one entry."
+  },
+  "grammarCount": 68,
+  "grammar": [
+    {
+      "id": "te-bakari-iru",
+      "pattern": "～てばかりいる",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ပဲ အမြဲလုပ်နေသည်"
+      },
+      "formations": [
+        "Vて＋ばかりいる"
+      ],
+      "examples": [
+        {
+          "japanese": "弟はゲームをしてばかりいる。",
+          "myanmar": "ညီလေးက ဂိမ်းပဲ အမြဲကစားနေတယ်။"
+        },
+        {
+          "japanese": "甘い物を食べてばかりいると太ります。",
+          "myanmar": "အချိုတွေပဲ အမြဲစားနေရင် ဝလာမယ်။"
+        }
+      ],
+      "sourceLessons": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "ka-to-iu-to",
+      "pattern": "～かというと",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…လားဆိုတော့ / အဲဒီလိုတော့ မဟုတ်"
+      },
+      "formations": [
+        "普通形＋かというと"
+      ],
+      "examples": [
+        {
+          "japanese": "日本語が簡単かというと、そうではない。",
+          "myanmar": "ဂျပန်စာက လွယ်သလားဆိုတော့ အဲဒီလိုမဟုတ်ဘူး။"
+        },
+        {
+          "japanese": "彼が賛成かというと、必ずしもそうではない。",
+          "myanmar": "သူ သဘောတူသလားဆိုတော့ မဖြစ်မနေ အဲဒီလိုမဟုတ်ဘူး။"
+        }
+      ],
+      "sourceLessons": [
+        1
+      ]
+    },
+    {
+      "id": "nai-koto-niwa",
+      "pattern": "～ないことには",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…မလုပ်ဘဲနဲ့တော့ မဖြစ်နိုင်"
+      },
+      "formations": [
+        "Vない＋ことには"
+      ],
+      "examples": [
+        {
+          "japanese": "実物を見ないことには決められない。",
+          "myanmar": "ပစ္စည်းအစစ်ကို မကြည့်ဘဲနဲ့တော့ မဆုံးဖြတ်နိုင်ဘူး။"
+        },
+        {
+          "japanese": "始めないことには結果は出ない。",
+          "myanmar": "မစတင်ဘဲနဲ့တော့ ရလဒ်မထွက်နိုင်ဘူး။"
+        }
+      ],
+      "sourceLessons": [
+        1
+      ]
+    },
+    {
+      "id": "to-iu-mono-da",
+      "pattern": "～というものだ",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ဟု ဆိုရမည် / …ဖြစ်သည်"
+      },
+      "formations": [
+        "普通形＋というものだ"
+      ],
+      "examples": [
+        {
+          "japanese": "困った時に助け合うのが友情というものだ。",
+          "myanmar": "အခက်အခဲရှိချိန် ကူညီခြင်းက ခင်မင်မှုဆိုတာပဲ။"
+        },
+        {
+          "japanese": "約束を守るのが責任というものだ。",
+          "myanmar": "ကတိတည်ခြင်းက တာဝန်ဆိုတာပဲ။"
+        }
+      ],
+      "sourceLessons": [
+        1
+      ]
+    },
+    {
+      "id": "gatai",
+      "pattern": "～がたい",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…လုပ်ရန် ခက်ခဲသည်"
+      },
+      "formations": [
+        "Vます stem＋がたい"
+      ],
+      "examples": [
+        {
+          "japanese": "彼の説明は理解しがたい。",
+          "myanmar": "သူ့ရှင်းပြချက်က နားလည်ဖို့ခက်တယ်။"
+        },
+        {
+          "japanese": "信じがたいニュースを聞いた。",
+          "myanmar": "ယုံကြည်ဖို့ခက်တဲ့ သတင်းကို ကြားခဲ့တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "ageku",
+      "pattern": "～あげく",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…အကြာကြီးလုပ်ပြီး နောက်ဆုံးတော့"
+      },
+      "formations": [
+        "Vた／Nの＋あげく"
+      ],
+      "examples": [
+        {
+          "japanese": "長く悩んだあげく、会社を辞めた。",
+          "myanmar": "အကြာကြီး စဉ်းစားပြီးနောက် ကုမ္ပဏီက ထွက်ခဲ့တယ်။"
+        },
+        {
+          "japanese": "話し合ったあげく、計画を中止した。",
+          "myanmar": "ဆွေးနွေးပြီးနောက် အစီအစဉ်ကို ရပ်လိုက်တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "kanenai",
+      "pattern": "～かねない",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ဖြစ်သွားနိုင်သည် (မကောင်းသောအရာ)"
+      },
+      "formations": [
+        "Vます stem＋かねない"
+      ],
+      "examples": [
+        {
+          "japanese": "このままでは事故が起こりかねない。",
+          "myanmar": "ဒီအတိုင်းဆို မတော်တဆမှု ဖြစ်နိုင်တယ်။"
+        },
+        {
+          "japanese": "誤解を招きかねない表現だ。",
+          "myanmar": "အထင်လွဲစေနိုင်တဲ့ အသုံးအနှုန်းဖြစ်တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "ni-tomonatte",
+      "pattern": "～に伴って",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…နှင့်အတူ / …လာသည်နှင့်အမျှ"
+      },
+      "formations": [
+        "N／V辞書形＋に伴って"
+      ],
+      "examples": [
+        {
+          "japanese": "人口の増加に伴って、ごみも増えた。",
+          "myanmar": "လူဦးရေတိုးလာတာနဲ့အတူ အမှိုက်လည်းတိုးလာတယ်။"
+        },
+        {
+          "japanese": "時代が変わるに伴って、生活も変化する。",
+          "myanmar": "ခေတ်ပြောင်းလာတာနဲ့အတူ နေထိုင်မှုလည်း ပြောင်းလဲတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        1
+      ]
+    },
+    {
+      "id": "made-mo-nai",
+      "pattern": "～までもない",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…အထိ လုပ်စရာမလို"
+      },
+      "formations": [
+        "V辞書形＋までもない"
+      ],
+      "examples": [
+        {
+          "japanese": "簡単なので説明するまでもない。",
+          "myanmar": "လွယ်လို့ ရှင်းပြစရာတောင် မလိုဘူး။"
+        },
+        {
+          "japanese": "近いからタクシーに乗るまでもない。",
+          "myanmar": "နီးလို့ တက္ကစီစီးစရာ မလိုဘူး။"
+        }
+      ],
+      "sourceLessons": [
+        1
+      ]
+    },
+    {
+      "id": "monono",
+      "pattern": "～ものの",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ပေမယ့်"
+      },
+      "formations": [
+        "普通形＋ものの"
+      ],
+      "examples": [
+        {
+          "japanese": "買ったものの、まだ使っていない。",
+          "myanmar": "ဝယ်ထားပေမယ့် မသုံးရသေးဘူး။"
+        },
+        {
+          "japanese": "約束したものの、自信がない。",
+          "myanmar": "ကတိပေးထားပေမယ့် ယုံကြည်မှုမရှိဘူး။"
+        }
+      ],
+      "sourceLessons": [
+        1
+      ]
+    },
+    {
+      "id": "tokoro-o-miru-to",
+      "pattern": "～ところを見ると",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ပုံကိုကြည့်ရသလောက်"
+      },
+      "formations": [
+        "普通形＋ところを見ると"
+      ],
+      "examples": [
+        {
+          "japanese": "笑っているところを見ると、合格したようだ。",
+          "myanmar": "ပြုံးနေတဲ့ပုံကြည့်ရတော့ အောင်ခဲ့ပုံရတယ်။"
+        },
+        {
+          "japanese": "電気がついているところを見ると、まだ起きている。",
+          "myanmar": "မီးလင်းနေတာကြည့်ရတော့ မအိပ်သေးဘူး။"
+        }
+      ],
+      "sourceLessons": [
+        1
+      ]
+    },
+    {
+      "id": "ka-douka-wa-tomokaku",
+      "pattern": "～かどうかはともかく",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ဟုတ်မဟုတ်ကို အသာထားပြီး"
+      },
+      "formations": [
+        "普通形＋かどうかはともかく"
+      ],
+      "examples": [
+        {
+          "japanese": "成功するかどうかはともかく、挑戦したい。",
+          "myanmar": "အောင်မြင်မလားကို အသာထားပြီး စမ်းချင်တယ်။"
+        },
+        {
+          "japanese": "買うかどうかはともかく、見に行こう。",
+          "myanmar": "ဝယ်မဝယ်ကို အသာထားပြီး သွားကြည့်ရအောင်။"
+        }
+      ],
+      "sourceLessons": [
+        1
+      ]
+    },
+    {
+      "id": "te-hajimete",
+      "pattern": "～てはじめて",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ပြီးမှ ပထမဆုံး သိ/ဖြစ်"
+      },
+      "formations": [
+        "Vて＋はじめて"
+      ],
+      "examples": [
+        {
+          "japanese": "失ってはじめて大切さに気づいた。",
+          "myanmar": "ဆုံးရှုံးပြီးမှ တန်ဖိုးကို သိလာတယ်။"
+        },
+        {
+          "japanese": "日本に来てはじめて雪を見た。",
+          "myanmar": "ဂျပန်ရောက်ပြီးမှ ပထမဆုံး နှင်းမြင်ခဲ့တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        1
+      ]
+    },
+    {
+      "id": "kara-niwa",
+      "pattern": "～からには",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ဖြစ်ပြီးသားဆိုမှတော့"
+      },
+      "formations": [
+        "普通形＋からには"
+      ],
+      "examples": [
+        {
+          "japanese": "やるからには最後まで頑張る。",
+          "myanmar": "လုပ်မယ်ဆိုမှတော့ အဆုံးထိ ကြိုးစားမယ်။"
+        },
+        {
+          "japanese": "約束したからには守るべきだ。",
+          "myanmar": "ကတိပေးပြီးသားဆိုမှတော့ တည်သင့်တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        2
+      ]
+    },
+    {
+      "id": "ni-oujite",
+      "pattern": "～に応じて",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…နှင့်လိုက်လျောညီထွေ"
+      },
+      "formations": [
+        "N＋に応じて"
+      ],
+      "examples": [
+        {
+          "japanese": "能力に応じて仕事を分ける。",
+          "myanmar": "အရည်အချင်းအလိုက် အလုပ်ခွဲတယ်။"
+        },
+        {
+          "japanese": "状況に応じて計画を変えます。",
+          "myanmar": "အခြေအနေအလိုက် အစီအစဉ်ပြောင်းမယ်။"
+        }
+      ],
+      "sourceLessons": [
+        2
+      ]
+    },
+    {
+      "id": "nai-kagiri",
+      "pattern": "～ない限り",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…မဖြစ်သရွေ့"
+      },
+      "formations": [
+        "Vない＋限り"
+      ],
+      "examples": [
+        {
+          "japanese": "努力しない限り、上達しない。",
+          "myanmar": "မကြိုးစားသရွေ့ တိုးတက်မှာမဟုတ်ဘူး။"
+        },
+        {
+          "japanese": "雨が降らない限り、出かけます。",
+          "myanmar": "မိုးမရွာသရွေ့ အပြင်သွားမယ်။"
+        }
+      ],
+      "sourceLessons": [
+        2
+      ]
+    },
+    {
+      "id": "ni-seyo",
+      "pattern": "～にせよ",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ဖြစ်သည်ထားဦး / …ဆိုရင်တောင်"
+      },
+      "formations": [
+        "普通形＋にせよ"
+      ],
+      "examples": [
+        {
+          "japanese": "行かないにせよ、連絡してください。",
+          "myanmar": "မသွားဘူးဆိုရင်တောင် ဆက်သွယ်ပါ။"
+        },
+        {
+          "japanese": "冗談にせよ、言い方がひどい。",
+          "myanmar": "စတာဆိုရင်တောင် ပြောပုံက လွန်တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        2
+      ]
+    },
+    {
+      "id": "darake",
+      "pattern": "～だらけ",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…များနှင့် ပြည့်နေသည်"
+      },
+      "formations": [
+        "N＋だらけ"
+      ],
+      "examples": [
+        {
+          "japanese": "部屋はごみだらけだ。",
+          "myanmar": "အခန်းက အမှိုက်တွေနဲ့ ပြည့်နေတယ်။"
+        },
+        {
+          "japanese": "間違いだらけの作文だった。",
+          "myanmar": "အမှားတွေနဲ့ပြည့်တဲ့ စာစီစာကုံးဖြစ်တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        2
+      ]
+    },
+    {
+      "id": "ni-sakidatte",
+      "pattern": "～に先立って",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…မတိုင်မီ ကြိုတင်၍"
+      },
+      "formations": [
+        "N／V辞書形＋に先立って"
+      ],
+      "examples": [
+        {
+          "japanese": "会議に先立って資料を配った。",
+          "myanmar": "အစည်းအဝေးမတိုင်မီ စာရွက်ဝေခဲ့တယ်။"
+        },
+        {
+          "japanese": "工事に先立ち説明会を開いた。",
+          "myanmar": "ဆောက်လုပ်ရေးမစမီ ရှင်းလင်းပွဲလုပ်ခဲ့တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        2
+      ]
+    },
+    {
+      "id": "zu-niwa-irarenai",
+      "pattern": "～ずにはいられない",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "မ…ဘဲ မနေနိုင်"
+      },
+      "formations": [
+        "Vない→ず＋にはいられない（する→せず）"
+      ],
+      "examples": [
+        {
+          "japanese": "その話を聞いて笑わずにはいられなかった。",
+          "myanmar": "အဲဒီစကားကြားတော့ မရယ်ဘဲ မနေနိုင်ခဲ့ဘူး။"
+        },
+        {
+          "japanese": "心配せずにはいられない。",
+          "myanmar": "စိတ်မပူဘဲ မနေနိုင်ဘူး။"
+        }
+      ],
+      "sourceLessons": [
+        2,
+        5
+      ]
+    },
+    {
+      "id": "tokoro-ni",
+      "pattern": "～ところに",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…နေချိန်မှာ အတိအကျ"
+      },
+      "formations": [
+        "Vている／Vた＋ところに"
+      ],
+      "examples": [
+        {
+          "japanese": "出かけようとしたところに電話が来た。",
+          "myanmar": "ထွက်မလို့လုပ်နေချိန်မှာ ဖုန်းဝင်လာတယ်။"
+        },
+        {
+          "japanese": "食事ができたところに父が帰った。",
+          "myanmar": "ထမင်းချက်ပြီးချိန်မှာ အဖေပြန်လာတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        2
+      ]
+    },
+    {
+      "id": "o-towazu",
+      "pattern": "～を問わず",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…မရွေး / …နှင့်မသက်ဆိုင်ဘဲ"
+      },
+      "formations": [
+        "N＋を問わず"
+      ],
+      "examples": [
+        {
+          "japanese": "年齢を問わず参加できます。",
+          "myanmar": "အသက်မရွေး ပါဝင်နိုင်တယ်။"
+        },
+        {
+          "japanese": "経験の有無を問わず応募できる。",
+          "myanmar": "အတွေ့အကြုံရှိမရှိ မရွေး လျှောက်နိုင်တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        2
+      ]
+    },
+    {
+      "id": "ni-tsurete",
+      "pattern": "～につれて",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…လာသည်နှင့်အမျှ"
+      },
+      "formations": [
+        "V辞書形／N＋につれて"
+      ],
+      "examples": [
+        {
+          "japanese": "年を取るにつれて体力が落ちる。",
+          "myanmar": "အသက်ကြီးလာတာနဲ့အမျှ ခွန်အားလျော့တယ်။"
+        },
+        {
+          "japanese": "時間が経つにつれて痛みが増した。",
+          "myanmar": "အချိန်ကြာလာတာနဲ့အမျှ နာကျင်မှုပိုလာတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        2
+      ]
+    },
+    {
+      "id": "kara-koso",
+      "pattern": "～からこそ",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ဖြစ်လို့သာ"
+      },
+      "formations": [
+        "普通形＋からこそ"
+      ],
+      "examples": [
+        {
+          "japanese": "努力したからこそ成功した。",
+          "myanmar": "ကြိုးစားခဲ့လို့သာ အောင်မြင်တာ။"
+        },
+        {
+          "japanese": "家族だからこそ本音を言える。",
+          "myanmar": "မိသားစုဖြစ်လို့သာ ရင်ထဲက ပြောနိုင်တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "amari",
+      "pattern": "～あまり",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…လွန်းသောကြောင့်"
+      },
+      "formations": [
+        "V辞書形／Vた／Nの＋あまり"
+      ],
+      "examples": [
+        {
+          "japanese": "心配のあまり眠れなかった。",
+          "myanmar": "စိတ်ပူလွန်းလို့ မအိပ်နိုင်ခဲ့ဘူး။"
+        },
+        {
+          "japanese": "驚きのあまり声が出なかった。",
+          "myanmar": "အံ့သြလွန်းလို့ အသံမထွက်နိုင်ခဲ့ဘူး။"
+        }
+      ],
+      "sourceLessons": [
+        2
+      ]
+    },
+    {
+      "id": "ni-kagiri",
+      "pattern": "～に限り",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…အတွက်သာ / …ကန့်သတ်၍"
+      },
+      "formations": [
+        "N＋に限り"
+      ],
+      "examples": [
+        {
+          "japanese": "本日に限り半額です。",
+          "myanmar": "ဒီနေ့အတွက်သာ တစ်ဝက်ဈေးပါ။"
+        },
+        {
+          "japanese": "会員に限り利用できます。",
+          "myanmar": "အသင်းဝင်များသာ အသုံးပြုနိုင်တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        3
+      ]
+    },
+    {
+      "id": "koto-ni",
+      "pattern": "～ことに",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…စရာကောင်းသည်မှာ"
+      },
+      "formations": [
+        "感情形容詞／Vた＋ことに"
+      ],
+      "examples": [
+        {
+          "japanese": "驚いたことに、彼は合格した。",
+          "myanmar": "အံ့သြစရာကောင်းတာက သူအောင်ခဲ့တယ်။"
+        },
+        {
+          "japanese": "残念なことに試合は中止になった。",
+          "myanmar": "စိတ်မကောင်းစရာက ပွဲရပ်လိုက်ရတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        3
+      ]
+    },
+    {
+      "id": "osore-ga-aru",
+      "pattern": "～おそれがある",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ဖြစ်နိုင်ခြေ/အန္တရာယ်ရှိသည်"
+      },
+      "formations": [
+        "V辞書形／Nの＋おそれがある"
+      ],
+      "examples": [
+        {
+          "japanese": "台風が上陸するおそれがある。",
+          "myanmar": "တိုင်ဖွန်း ဝင်ရောက်နိုင်ခြေရှိတယ်။"
+        },
+        {
+          "japanese": "この薬は副作用のおそれがある。",
+          "myanmar": "ဒီဆေးမှာ ဘေးထွက်ဆိုးကျိုး အန္တရာယ်ရှိတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        3
+      ]
+    },
+    {
+      "id": "ni-hoka-naranai",
+      "pattern": "～にほかならない",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…မှတစ်ပါး အခြားမဟုတ်"
+      },
+      "formations": [
+        "N＋にほかならない"
+      ],
+      "examples": [
+        {
+          "japanese": "成功は努力の結果にほかならない。",
+          "myanmar": "အောင်မြင်မှုက ကြိုးစားမှုရလဒ်သာဖြစ်တယ်။"
+        },
+        {
+          "japanese": "原因は確認不足にほかならない。",
+          "myanmar": "အကြောင်းရင်းက စစ်ဆေးမှုမလုံလောက်တာသာ ဖြစ်တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        3
+      ]
+    },
+    {
+      "id": "tsutsu",
+      "pattern": "～つつ",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ရင်း / …နေသော်လည်း"
+      },
+      "formations": [
+        "Vます stem＋つつ"
+      ],
+      "examples": [
+        {
+          "japanese": "音楽を聞きつつ勉強する。",
+          "myanmar": "သီချင်းနားထောင်ရင်း စာလေ့လာတယ်။"
+        },
+        {
+          "japanese": "悪いと思いつつ続けてしまった。",
+          "myanmar": "မကောင်းမှန်းသိနေရင်း ဆက်လုပ်မိတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        3
+      ]
+    },
+    {
+      "id": "ni-tsuki",
+      "pattern": "～につき",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ကြောင့် / …လျှင်"
+      },
+      "formations": [
+        "N＋につき"
+      ],
+      "examples": [
+        {
+          "japanese": "工事中につき通行禁止です。",
+          "myanmar": "ဆောက်လုပ်နေသောကြောင့် ဖြတ်သန်းခွင့်ပိတ်ထားတယ်။"
+        },
+        {
+          "japanese": "一人につき二枚までです。",
+          "myanmar": "တစ်ယောက်လျှင် နှစ်စောင်အထိပါ။"
+        }
+      ],
+      "sourceLessons": [
+        3
+      ]
+    },
+    {
+      "id": "shidai-de",
+      "pattern": "～次第で",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ပေါ်မူတည်၍"
+      },
+      "formations": [
+        "N＋次第で"
+      ],
+      "examples": [
+        {
+          "japanese": "努力次第で合格できます。",
+          "myanmar": "ကြိုးစားမှုပေါ်မူတည်ပြီး အောင်နိုင်တယ်။"
+        },
+        {
+          "japanese": "天気次第で予定を変更する。",
+          "myanmar": "ရာသီဥတုပေါ်မူတည်ပြီး အစီအစဉ်ပြောင်းမယ်။"
+        }
+      ],
+      "sourceLessons": [
+        3
+      ]
+    },
+    {
+      "id": "koto-ka",
+      "pattern": "～ことか",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "ဘယ်လောက်…လိုက်မလဲ"
+      },
+      "formations": [
+        "疑問語＋普通形＋ことか"
+      ],
+      "examples": [
+        {
+          "japanese": "どれほど心配したことか。",
+          "myanmar": "ဘယ်လောက်တောင် စိတ်ပူခဲ့လိုက်သလဲ။"
+        },
+        {
+          "japanese": "会えてどんなにうれしかったことか。",
+          "myanmar": "တွေ့ရလို့ ဘယ်လောက်ဝမ်းသာခဲ့သလဲ။"
+        }
+      ],
+      "sourceLessons": [
+        3
+      ]
+    },
+    {
+      "id": "kireru-nai",
+      "pattern": "～きれる／～きれない",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "အကုန်…နိုင် / အကုန်…မနိုင်"
+      },
+      "formations": [
+        "Vます stem＋きる／きれない"
+      ],
+      "examples": [
+        {
+          "japanese": "この量は一人では食べきれない。",
+          "myanmar": "ဒီပမာဏကို တစ်ယောက်တည်း အကုန်မစားနိုင်ဘူး။"
+        },
+        {
+          "japanese": "長い小説を一日で読みきった。",
+          "myanmar": "ဝတ္ထုရှည်ကို တစ်ရက်တည်း အကုန်ဖတ်ခဲ့တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "yori-hoka-nai",
+      "pattern": "～よりほかない",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…မှတစ်ပါး အခြားနည်းမရှိ"
+      },
+      "formations": [
+        "V辞書形＋よりほかない"
+      ],
+      "examples": [
+        {
+          "japanese": "電車がないので歩くよりほかない。",
+          "myanmar": "ရထားမရှိလို့ လမ်းလျှောက်ရုံကလွဲ နည်းမရှိဘူး။"
+        },
+        {
+          "japanese": "今は待つよりほかない。",
+          "myanmar": "အခုတော့ စောင့်ရုံကလွဲ နည်းမရှိဘူး။"
+        }
+      ],
+      "sourceLessons": [
+        3
+      ]
+    },
+    {
+      "id": "ni-sotte",
+      "pattern": "～に沿って",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…အတိုင်း / …နှင့်အညီ"
+      },
+      "formations": [
+        "N＋に沿って"
+      ],
+      "examples": [
+        {
+          "japanese": "方針に沿って作業してください。",
+          "myanmar": "မူဝါဒအတိုင်း အလုပ်လုပ်ပါ။"
+        },
+        {
+          "japanese": "川に沿って道が続いている。",
+          "myanmar": "မြစ်တစ်လျှောက် လမ်းဆက်နေတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        3
+      ]
+    },
+    {
+      "id": "kara-to-itte-wake-dewa-nai",
+      "pattern": "～からといって～わけではない",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ဆိုရုံနဲ့ …ဟုမဆိုလို"
+      },
+      "formations": [
+        "普通形＋からといって＋普通形＋わけではない"
+      ],
+      "examples": [
+        {
+          "japanese": "高いからといって品質がいいわけではない。",
+          "myanmar": "ဈေးကြီးရုံနဲ့ အရည်အသွေးကောင်းတယ်လို့ မဆိုလိုဘူး။"
+        },
+        {
+          "japanese": "日本人だからといって漢字を全部読めるわけではない。",
+          "myanmar": "ဂျပန်လူမျိုးဆိုရုံနဲ့ ခန်းဂျီအားလုံး ဖတ်နိုင်တယ်လို့ မဆိုလိုဘူး။"
+        }
+      ],
+      "sourceLessons": [
+        3
+      ]
+    },
+    {
+      "id": "tsutsu-mo",
+      "pattern": "～つつも",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…နေရင်းနဲ့တောင် / …သော်လည်း"
+      },
+      "formations": [
+        "Vます stem＋つつも"
+      ],
+      "examples": [
+        {
+          "japanese": "危険だと知りつつも続けた。",
+          "myanmar": "အန္တရာယ်ရှိမှန်းသိသော်လည်း ဆက်လုပ်ခဲ့တယ်။"
+        },
+        {
+          "japanese": "謝ろうと思いつつも言えなかった。",
+          "myanmar": "တောင်းပန်မယ်တွေးသော်လည်း မပြောနိုင်ခဲ့ဘူး။"
+        }
+      ],
+      "sourceLessons": [
+        3
+      ]
+    },
+    {
+      "id": "koto-kara",
+      "pattern": "～ことから",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…အချက်ကြောင့် / …မှစ၍"
+      },
+      "formations": [
+        "普通形＋ことから"
+      ],
+      "examples": [
+        {
+          "japanese": "形が星に似ていることから、その名がついた。",
+          "myanmar": "ပုံသဏ္ဌာန်က ကြယ်နဲ့တူတာကြောင့် အဲဒီနာမည်ရတယ်။"
+        },
+        {
+          "japanese": "小さな誤解があったことから争いになった。",
+          "myanmar": "အထင်လွဲမှုသေးသေးကြောင့် ရန်ဖြစ်သွားတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        3
+      ]
+    },
+    {
+      "id": "ka-no-you-na",
+      "pattern": "～かのような",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…သလိုမျိုး"
+      },
+      "formations": [
+        "普通形＋かのような／に"
+      ],
+      "examples": [
+        {
+          "japanese": "彼は何も知らないかのような顔をした。",
+          "myanmar": "သူက ဘာမှမသိသလို မျက်နှာလုပ်ခဲ့တယ်။"
+        },
+        {
+          "japanese": "雪は綿であるかのように白い。",
+          "myanmar": "နှင်းက ဝါဂွမ်းလို ဖြူတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        3
+      ]
+    },
+    {
+      "id": "te-irai",
+      "pattern": "～て以来",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ပြီးကတည်းက"
+      },
+      "formations": [
+        "Vて＋以来"
+      ],
+      "examples": [
+        {
+          "japanese": "日本に来て以来、毎日日本語を使う。",
+          "myanmar": "ဂျပန်ရောက်ကတည်းက နေ့တိုင်း ဂျပန်စာသုံးတယ်။"
+        },
+        {
+          "japanese": "卒業して以来、先生に会っていない。",
+          "myanmar": "ဘွဲ့ရပြီးကတည်းက ဆရာနဲ့ မတွေ့ရသေးဘူး။"
+        }
+      ],
+      "sourceLessons": [
+        4
+      ]
+    },
+    {
+      "id": "ge",
+      "pattern": "～げ",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ပုံပေါ်သော"
+      },
+      "formations": [
+        "形容詞語幹＋げ"
+      ],
+      "examples": [
+        {
+          "japanese": "彼は寂しげな顔をしている。",
+          "myanmar": "သူက ဝမ်းနည်းပုံပေါ်တဲ့ မျက်နှာရှိတယ်။"
+        },
+        {
+          "japanese": "子どもが楽しげに話している。",
+          "myanmar": "ကလေးက ပျော်ရွှင်ပုံနဲ့ စကားပြောနေတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        4
+      ]
+    },
+    {
+      "id": "ni-saishite",
+      "pattern": "～に際して",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…အခါတွင် (တရားဝင်)"
+      },
+      "formations": [
+        "N／V辞書形＋に際して"
+      ],
+      "examples": [
+        {
+          "japanese": "契約に際して身分証が必要です。",
+          "myanmar": "စာချုပ်ချုပ်ချိန်မှာ မှတ်ပုံတင်လိုတယ်။"
+        },
+        {
+          "japanese": "出発に際し、一言ご挨拶します。",
+          "myanmar": "ထွက်ခွာချိန်မှာ နှုတ်ဆက်စကားပြောပါမယ်။"
+        }
+      ],
+      "sourceLessons": [
+        4
+      ]
+    },
+    {
+      "id": "mono-ka",
+      "pattern": "～ものか",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "ဘယ်လိုမှ…မလဲ / လုံးဝမ…"
+      },
+      "formations": [
+        "普通形＋ものか"
+      ],
+      "examples": [
+        {
+          "japanese": "二度とあの店に行くものか。",
+          "myanmar": "အဲဒီဆိုင်ကို နောက်တစ်ခါ လုံးဝမသွားဘူး။"
+        },
+        {
+          "japanese": "こんなことで負けるものか。",
+          "myanmar": "ဒီလိုကိစ္စနဲ့ ဘယ်လိုလုပ် ရှုံးရမလဲ။"
+        }
+      ],
+      "sourceLessons": [
+        4
+      ]
+    },
+    {
+      "id": "kara-ieba",
+      "pattern": "～からいえば",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…အမြင်/ဘက်က ပြောရလျှင်"
+      },
+      "formations": [
+        "N＋からいえば"
+      ],
+      "examples": [
+        {
+          "japanese": "便利さからいえば都会がいい。",
+          "myanmar": "အဆင်ပြေမှုဘက်က ပြောရရင် မြို့ကကောင်းတယ်။"
+        },
+        {
+          "japanese": "価格からいえばこちらが安い。",
+          "myanmar": "ဈေးနှုန်းဘက်က ပြောရရင် ဒီဘက်က သက်သာတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        4
+      ]
+    },
+    {
+      "id": "nomi",
+      "pattern": "～のみ",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…သာလျှင်"
+      },
+      "formations": [
+        "N／普通形＋のみ"
+      ],
+      "examples": [
+        {
+          "japanese": "参加者は会員のみです。",
+          "myanmar": "ပါဝင်သူတွေက အသင်းဝင်တွေသာ ဖြစ်တယ်။"
+        },
+        {
+          "japanese": "今は結果を待つのみだ。",
+          "myanmar": "အခု ရလဒ်ကို စောင့်ရုံသာရှိတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        4
+      ]
+    },
+    {
+      "id": "tsutsu-aru",
+      "pattern": "～つつある",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "တဖြည်းဖြည်း…လာနေသည်"
+      },
+      "formations": [
+        "Vます stem＋つつある"
+      ],
+      "examples": [
+        {
+          "japanese": "景気は回復しつつある。",
+          "myanmar": "စီးပွားရေး တဖြည်းဖြည်း ပြန်ကောင်းလာနေတယ်။"
+        },
+        {
+          "japanese": "環境は変わりつつある。",
+          "myanmar": "ပတ်ဝန်းကျင်က တဖြည်းဖြည်း ပြောင်းလဲလာနေတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        4
+      ]
+    },
+    {
+      "id": "ni-okeru",
+      "pattern": "～における",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…တွင်ရှိသော / …နှင့်ဆိုင်သော"
+      },
+      "formations": [
+        "N＋における＋N"
+      ],
+      "examples": [
+        {
+          "japanese": "日本における高齢化は深刻だ。",
+          "myanmar": "ဂျပန်နိုင်ငံရှိ လူဦးရေအိုမင်းမှုက ပြင်းထန်တယ်။"
+        },
+        {
+          "japanese": "災害時における対応を確認する。",
+          "myanmar": "ဘေးအန္တရာယ်အချိန် တုံ့ပြန်ပုံကို စစ်ဆေးတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        4
+      ]
+    },
+    {
+      "id": "ippou-de",
+      "pattern": "～一方で",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "တစ်ဖက်တွင်တော့"
+      },
+      "formations": [
+        "普通形＋一方で"
+      ],
+      "examples": [
+        {
+          "japanese": "生活が便利になる一方で、ごみも増えた。",
+          "myanmar": "ဘဝအဆင်ပြေလာတဲ့တစ်ဖက်မှာ အမှိုက်လည်းတိုးလာတယ်။"
+        },
+        {
+          "japanese": "都会は便利な一方で、家賃が高い。",
+          "myanmar": "မြို့က အဆင်ပြေပေမယ့် တစ်ဖက်မှာ အိမ်ငှားခကြီးတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        4
+      ]
+    },
+    {
+      "id": "kurai-nara",
+      "pattern": "～くらいなら",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…လုပ်ရမည့်အစား"
+      },
+      "formations": [
+        "V辞書形＋くらいなら"
+      ],
+      "examples": [
+        {
+          "japanese": "諦めるくらいなら挑戦したい。",
+          "myanmar": "လက်လျှော့ရမယ့်အစား စမ်းကြည့်ချင်တယ်။"
+        },
+        {
+          "japanese": "嫌な仕事を続けるくらいなら辞める。",
+          "myanmar": "မကြိုက်တဲ့အလုပ် ဆက်လုပ်ရမယ့်အစား ထွက်မယ်။"
+        }
+      ],
+      "sourceLessons": [
+        4
+      ]
+    },
+    {
+      "id": "nagara-mo",
+      "pattern": "～ながらも",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ဖြစ်သော်လည်း"
+      },
+      "formations": [
+        "Vます stem／Adj／N＋ながらも"
+      ],
+      "examples": [
+        {
+          "japanese": "小さいながらも快適な家だ。",
+          "myanmar": "သေးပေမယ့် သက်တောင့်သက်သာရှိတဲ့အိမ်ပါ။"
+        },
+        {
+          "japanese": "反対されながらも計画を進めた。",
+          "myanmar": "ကန့်ကွက်ခံရသော်လည်း အစီအစဉ်ကို ဆက်လုပ်ခဲ့တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        4
+      ]
+    },
+    {
+      "id": "sae",
+      "pattern": "～さえ",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…တောင်မှ"
+      },
+      "formations": [
+        "N＋さえ"
+      ],
+      "examples": [
+        {
+          "japanese": "忙しくて昼ご飯さえ食べられない。",
+          "myanmar": "အလုပ်များလို့ နေ့လယ်စာတောင် မစားနိုင်ဘူး။"
+        },
+        {
+          "japanese": "名前さえ忘れてしまった。",
+          "myanmar": "နာမည်တောင် မေ့သွားတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        4
+      ]
+    },
+    {
+      "id": "ni-chigai-nai",
+      "pattern": "～に違いない",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "သေချာပေါက်…ဖြစ်မည်"
+      },
+      "formations": [
+        "普通形＋に違いない"
+      ],
+      "examples": [
+        {
+          "japanese": "彼は来るに違いない。",
+          "myanmar": "သူ သေချာပေါက် လာမယ်။"
+        },
+        {
+          "japanese": "あの店は人気があるに違いない。",
+          "myanmar": "အဲဒီဆိုင် လူကြိုက်များတာ သေချာတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "ka-to-omou-to",
+      "pattern": "～かと思うと",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…လိုက်သည်နှင့် ချက်ချင်း"
+      },
+      "formations": [
+        "Vた＋かと思うと"
+      ],
+      "examples": [
+        {
+          "japanese": "立ち上がったかと思うと走り出した。",
+          "myanmar": "ထလိုက်သည်နှင့် ချက်ချင်း ပြေးသွားတယ်။"
+        },
+        {
+          "japanese": "泣いたかと思うと急に笑った。",
+          "myanmar": "ငိုလိုက်သည်နှင့် ချက်ချင်း ရယ်လာတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        4
+      ]
+    },
+    {
+      "id": "gotoku",
+      "pattern": "～ごとく",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ကဲ့သို့"
+      },
+      "formations": [
+        "Nの／V普通形＋ごとく"
+      ],
+      "examples": [
+        {
+          "japanese": "鳥のごとく空を飛びたい。",
+          "myanmar": "ငှက်ကဲ့သို့ ကောင်းကင်မှာ ပျံချင်တယ်။"
+        },
+        {
+          "japanese": "予想したごとく試合に勝った。",
+          "myanmar": "ခန့်မှန်းခဲ့သလိုပဲ ပွဲနိုင်ခဲ့တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        4
+      ]
+    },
+    {
+      "id": "ni-atatte",
+      "pattern": "～にあたって",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…အခါတွင် / …မစမီ"
+      },
+      "formations": [
+        "N／V辞書形＋にあたって"
+      ],
+      "examples": [
+        {
+          "japanese": "入学にあたって必要な書類を準備する。",
+          "myanmar": "ကျောင်းဝင်ချိန်အတွက် လိုအပ်တဲ့စာရွက် ပြင်တယ်။"
+        },
+        {
+          "japanese": "新事業を始めるにあたり会議を開いた。",
+          "myanmar": "လုပ်ငန်းသစ်စချိန်မှာ အစည်းအဝေးလုပ်ခဲ့တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "ba-hodo",
+      "pattern": "～ば～ほど",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…လေလေ …လေလေ"
+      },
+      "formations": [
+        "Vば＋V辞書形ほど／Adjば＋Adjほど"
+      ],
+      "examples": [
+        {
+          "japanese": "勉強すればするほど面白くなる。",
+          "myanmar": "လေ့လာလေလေ စိတ်ဝင်စားစရာကောင်းလေလေ။"
+        },
+        {
+          "japanese": "荷物は少なければ少ないほど楽だ。",
+          "myanmar": "ပစ္စည်းနည်းလေလေ ပေါ့ပါးလေလေ။"
+        }
+      ],
+      "sourceLessons": [
+        4
+      ]
+    },
+    {
+      "id": "shikaneru",
+      "pattern": "～しかねる",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…လုပ်ရန် ခက်ပါသည် / မလုပ်ပေးနိုင်"
+      },
+      "formations": [
+        "Vます stem＋しかねる"
+      ],
+      "examples": [
+        {
+          "japanese": "その依頼はお受けしかねます。",
+          "myanmar": "အဲဒီတောင်းဆိုချက်ကို လက်ခံပေးရန်ခက်ပါတယ်။"
+        },
+        {
+          "japanese": "今すぐには判断しかねる。",
+          "myanmar": "အခုချက်ချင်း ဆုံးဖြတ်ပေးဖို့ ခက်တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        5
+      ]
+    },
+    {
+      "id": "to-shite-mo",
+      "pattern": "～としても",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ဖြစ်တယ်ထားဦး"
+      },
+      "formations": [
+        "普通形＋としても"
+      ],
+      "examples": [
+        {
+          "japanese": "失敗したとしても後悔しない。",
+          "myanmar": "ရှုံးတယ်ထားဦး နောင်တမရဘူး။"
+        },
+        {
+          "japanese": "行くとしても来月になる。",
+          "myanmar": "သွားမယ်ထားဦး နောက်လမှ ဖြစ်မယ်။"
+        }
+      ],
+      "sourceLessons": [
+        5
+      ]
+    },
+    {
+      "id": "gatera",
+      "pattern": "～がてら",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ရင်း တစ်ပါတည်း"
+      },
+      "formations": [
+        "N／Vます stem＋がてら"
+      ],
+      "examples": [
+        {
+          "japanese": "散歩がてら買い物に行く。",
+          "myanmar": "လမ်းလျှောက်ရင်း တစ်ပါတည်း ဈေးဝယ်သွားမယ်။"
+        },
+        {
+          "japanese": "挨拶がてら先生を訪ねた。",
+          "myanmar": "နှုတ်ဆက်ရင်း တစ်ပါတည်း ဆရာ့ဆီသွားခဲ့တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        5
+      ]
+    },
+    {
+      "id": "no-ue",
+      "pattern": "～の上",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ပြီးနောက်"
+      },
+      "formations": [
+        "Nの／Vた＋上"
+      ],
+      "examples": [
+        {
+          "japanese": "確認の上、署名してください。",
+          "myanmar": "စစ်ဆေးပြီးနောက် လက်မှတ်ထိုးပါ။"
+        },
+        {
+          "japanese": "よく考えた上で決めます。",
+          "myanmar": "ကောင်းကောင်းစဉ်းစားပြီးနောက် ဆုံးဖြတ်မယ်။"
+        }
+      ],
+      "sourceLessons": [
+        5
+      ]
+    },
+    {
+      "id": "kara-shite",
+      "pattern": "～からして",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ကစပြီး ကြည့်ရင်တောင်"
+      },
+      "formations": [
+        "N＋からして"
+      ],
+      "examples": [
+        {
+          "japanese": "彼は話し方からして普通ではない。",
+          "myanmar": "သူ့စကားပြောပုံကစပြီး ပုံမှန်မဟုတ်ဘူး။"
+        },
+        {
+          "japanese": "この店は外観からして高そうだ。",
+          "myanmar": "ဒီဆိုင်က အပြင်ပန်းကြည့်ရုံနဲ့တောင် ဈေးကြီးပုံရတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        5
+      ]
+    },
+    {
+      "id": "kagiri",
+      "pattern": "～限り",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…သရွေ့ / သိသလောက်"
+      },
+      "formations": [
+        "V普通形／Nである＋限り"
+      ],
+      "examples": [
+        {
+          "japanese": "元気な限り働きたい。",
+          "myanmar": "ကျန်းမာနေသရွေ့ အလုပ်လုပ်ချင်တယ်။"
+        },
+        {
+          "japanese": "私が知っている限り問題はない。",
+          "myanmar": "ကျွန်တော်သိသလောက် ပြဿနာမရှိဘူး။"
+        }
+      ],
+      "sourceLessons": [
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "koto-naku",
+      "pattern": "～ことなく",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…မလုပ်ဘဲ"
+      },
+      "formations": [
+        "V辞書形＋ことなく"
+      ],
+      "examples": [
+        {
+          "japanese": "休むことなく働いた。",
+          "myanmar": "မနားဘဲ အလုပ်လုပ်ခဲ့တယ်။"
+        },
+        {
+          "japanese": "彼は諦めることなく挑戦した。",
+          "myanmar": "သူ လက်မလျှော့ဘဲ စမ်းသပ်ခဲ့တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        5
+      ]
+    },
+    {
+      "id": "dake-ni",
+      "pattern": "～だけに",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…ဖြစ်တာကြောင့် ပို၍"
+      },
+      "formations": [
+        "普通形＋だけに"
+      ],
+      "examples": [
+        {
+          "japanese": "期待していただけに残念だ。",
+          "myanmar": "မျှော်လင့်ထားတာကြောင့် ပိုစိတ်မကောင်းဘူး။"
+        },
+        {
+          "japanese": "高いだけに品質もいい。",
+          "myanmar": "ဈေးကြီးတာကြောင့် အရည်အသွေးလည်းကောင်းတယ်။"
+        }
+      ],
+      "sourceLessons": [
+        5
+      ]
+    },
+    {
+      "id": "kai-mo-naku",
+      "pattern": "～かいもなく",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…လုပ်ခဲ့သော်လည်း အကျိုးမရှိ"
+      },
+      "formations": [
+        "Vた／Nの＋かいもなく"
+      ],
+      "examples": [
+        {
+          "japanese": "練習したかいもなく負けた。",
+          "myanmar": "လေ့ကျင့်ခဲ့ပေမယ့် အကျိုးမရှိဘဲ ရှုံးခဲ့တယ်။"
+        },
+        {
+          "japanese": "待ったかいもなく会えなかった。",
+          "myanmar": "စောင့်ခဲ့ပေမယ့် အကျိုးမရှိဘဲ မတွေ့ရဘူး။"
+        }
+      ],
+      "sourceLessons": [
+        5
+      ]
+    },
+    {
+      "id": "ni-kakawaru",
+      "pattern": "～にかかわる",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…နှင့် တိုက်ရိုက်သက်ဆိုင်သည်"
+      },
+      "formations": [
+        "N＋にかかわる"
+      ],
+      "examples": [
+        {
+          "japanese": "命にかかわる病気だ。",
+          "myanmar": "အသက်နဲ့ တိုက်ရိုက်သက်ဆိုင်တဲ့ ရောဂါပါ။"
+        },
+        {
+          "japanese": "信用にかかわる問題です。",
+          "myanmar": "ယုံကြည်မှုနဲ့ သက်ဆိုင်တဲ့ ပြဿနာပါ။"
+        }
+      ],
+      "sourceLessons": [
+        5
+      ]
+    },
+    {
+      "id": "bakari-ka",
+      "pattern": "～ばかりか",
+      "level": "N2",
+      "meaning": {
+        "myanmar": "…သာမက …လည်း"
+      },
+      "formations": [
+        "普通形／N＋ばかりか"
+      ],
+      "examples": [
+        {
+          "japanese": "雨ばかりか風も強くなった。",
+          "myanmar": "မိုးသာမက လေလည်းပြင်းလာတယ်။"
+        },
+        {
+          "japanese": "彼は日本語ばかりか中国語も話せる。",
+          "myanmar": "သူ ဂျပန်စာသာမက တရုတ်စာလည်း ပြောနိုင်တယ်။"
+        }
+      ],
+      "sourceLessons": [
+        5
+      ]
+    }
+  ]
+}
