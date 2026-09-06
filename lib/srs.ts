@@ -1,3 +1,4 @@
+import { accountState, updateAccount } from "./study-storage";
 // Lightweight Leitner-box spaced repetition, persisted to localStorage.
 // Boxes 0..4 — higher box = longer interval. A correct answer promotes a card,
 // a wrong answer sends it back to box 0.
@@ -37,6 +38,7 @@ const DAY_MS = 24 * 60 * 60 * 1000;
 
 export function loadProgress(): ProgressMap {
   if (typeof window === "undefined") return {};
+  if (accountState()) return accountState()!.progress;
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY);
     return raw ? (JSON.parse(raw) as ProgressMap) : {};
@@ -47,11 +49,13 @@ export function loadProgress(): ProgressMap {
 
 export function saveProgress(progress: ProgressMap): void {
   if (typeof window === "undefined") return;
+  if (updateAccount({ progress })) return;
   window.localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
 }
 
 export function resetProgress(): void {
   if (typeof window === "undefined") return;
+  if (updateAccount({ progress: {} })) return;
   window.localStorage.removeItem(STORAGE_KEY);
 }
 

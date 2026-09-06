@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "./components/Nav";
+import AccountProvider from "./components/AccountProvider";
 
 export const metadata: Metadata = {
   title: "N2 Kanji & Grammar",
@@ -15,10 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="layout">
-          <Nav />
-          <div className="content">{children}</div>
-        </div>
+        <AccountProvider>
+          <div className="layout">
+            <Nav />
+            <div className="content">{children}</div>
+          </div>
+        </AccountProvider>
       </body>
     </html>
   );

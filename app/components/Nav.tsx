@@ -13,6 +13,8 @@ import {
 } from "lucide-react";
 import { loadStarred, STARRED_CHANGE_EVENT } from "@/lib/starred";
 
+import { AccountControls } from "./AccountProvider";
+
 const MOTTOES = [
   { japanese: "継続は力なり。", english: "Perseverance becomes strength." },
   {
@@ -109,6 +111,7 @@ export default function Nav() {
         ))}
       </nav>
 
+      <AccountControls />
       <footer className="sidebar-footer">
         <div className="motto-heading">
           <Sparkles aria-hidden="true" />

@@ -30,7 +30,7 @@ const migrationDirectory = path.join(process.cwd(), "db");
 const dataPath = path.join(process.cwd(), "data", "custom-meanings.json");
 
 const migrationFiles = (await fs.readdir(migrationDirectory))
-  .filter((filename) => filename.endsWith(".sql"))
+  .filter((filename) => /^00[12]_.*\.sql$/.test(filename))
   .sort();
 for (const filename of migrationFiles) {
   const migration = await fs.readFile(

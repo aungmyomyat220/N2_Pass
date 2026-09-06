@@ -1,3 +1,4 @@
+import { accountState, updateAccount } from "./study-storage";
 const STORAGE_KEY = "n2-kanji-starred-v1";
 
 export const STARRED_CHANGE_EVENT = "n2-kanji-starred-change";
@@ -5,6 +6,7 @@ export const STARRED_CHANGE_EVENT = "n2-kanji-starred-change";
 export function loadStarred(): string[] {
   if (typeof window === "undefined") return [];
 
+  if (accountState()) return accountState()!.starred;
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY);
     if (!raw) return [];
@@ -26,7 +28,7 @@ export function saveStarred(starred: string[]): void {
   if (typeof window === "undefined") return;
 
   const unique = [...new Set(starred)];
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(unique));
+  if (!updateAccount({ starred: unique })) window.localStorage.setItem(STORAGE_KEY, JSON.stringify(unique));
   window.dispatchEvent(
     new CustomEvent<string[]>(STARRED_CHANGE_EVENT, { detail: unique }),
   );

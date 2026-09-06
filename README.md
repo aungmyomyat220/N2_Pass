@@ -121,3 +121,19 @@ required).
 - Switch deck to other JLPT levels (the source data has N1–N5).
 - A "browse all" grid view with per-kanji mastery.
 - Export/import progress, or sync via a real backend + accounts.
+
+## Google login and study sync
+
+Login uses Better Auth and the existing Neon PostgreSQL database. Signed-in users sync kanji review progress and stars. Guests keep their existing browser storage. Personal meanings/preferences and exam sessions are not synced in this first version.
+
+1. Create a Google OAuth **Web application** client in Google Cloud Console and configure its consent screen. Add test users while the OAuth application is in testing.
+2. Add authorized JavaScript origins `http://localhost:3000` and your production origin. Add redirect URIs `http://localhost:3000/api/auth/callback/google` and `https://YOUR_DOMAIN/api/auth/callback/google`.
+3. Set `DATABASE_URL`, `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `BETTER_AUTH_URL` (the exact app origin), and `BETTER_AUTH_SECRET` in `.env.local` and your hosting environment. Generate a secret with `openssl rand -base64 32`. Never put secrets in `NEXT_PUBLIC_` variables.
+4. Run `pnpm db:auth` to create Better Auth's version-matched schema and the study-state table. Existing content tables are unchanged. `pnpm db:setup` remains the meanings/examples setup command.
+5. Restart the app. Use **Continue with Google** in the sidebar. Import guest progress explicitly when prompted; cloud progress wins for overlapping cards, and stars are combined.
+
+Sync uses server-verified sessions and revision checks. Concurrent changes from another tab/device are rejected instead of silently overwritten. Download unsynced progress before choosing **Load cloud progress** to resolve a conflict. Unsynced changes are retained locally and retried every five seconds while online; keep the page open until “Saved to your account” appears. Sign-out waits for pending sync and restores the separate guest state. Refresh on another device to load the latest cloud state.
+
+Validation: `pnpm exec tsc --noEmit`, `pnpm test:study`, `pnpm build`. Live acceptance: sign in, import guest progress, review/star a card, refresh on a second device, verify reset persists without deleting stars, check two-tab conflict handling, and sign out to verify guest/account separation.
+
+References: https://better-auth.com/docs/installation and https://better-auth.com/docs/authentication/google
