@@ -1,0 +1,498 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-exam-03",
+  "title": "日本語パワードリル N2文法 第3回",
+  "level": "N2",
+  "examNumber": 3,
+  "timeLimitMinutes": 10,
+  "maximumScore": 20,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [
+      12,
+      13
+    ],
+    "pdfPages": [
+      12,
+      13
+    ]
+  },
+  "sections": [
+    {
+      "id": "exam-03-section-01",
+      "number": 1,
+      "type": "grammar_selection",
+      "label": "文の文法1",
+      "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-03-s01-q01",
+          "number": 1,
+          "prompt": "キャンペーン期間中に（　）、入会金が無料となります。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "限り"
+            },
+            {
+              "id": 2,
+              "text": "わたり"
+            },
+            {
+              "id": 3,
+              "text": "際して"
+            },
+            {
+              "id": 4,
+              "text": "ついて"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-03-s01-q02",
+          "number": 2,
+          "prompt": "おもしろい（　）、この魚はオスが子育てをするのだそうだ。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ことに"
+            },
+            {
+              "id": 2,
+              "text": "とおり"
+            },
+            {
+              "id": 3,
+              "text": "ばかりに"
+            },
+            {
+              "id": 4,
+              "text": "ものの"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-03-s01-q03",
+          "number": 3,
+          "prompt": "このまま温暖化が進むと、その国は海中に沈む（　）そうだ。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "かねない"
+            },
+            {
+              "id": 2,
+              "text": "も同然だ"
+            },
+            {
+              "id": 3,
+              "text": "はずがない"
+            },
+            {
+              "id": 4,
+              "text": "おそれがある"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-03-s01-q04",
+          "number": 4,
+          "prompt": "このような賞がいただけたのは、これまでの皆様のご支援のおかげに（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "かまいません"
+            },
+            {
+              "id": 2,
+              "text": "かかわりません"
+            },
+            {
+              "id": 3,
+              "text": "ほかなりません"
+            },
+            {
+              "id": 4,
+              "text": "ほかはありません"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-03-s01-q05",
+          "number": 5,
+          "prompt": "地図がわかりにくかったが、電話で聞き（　）なんとか店に行くことができた。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "つつ"
+            },
+            {
+              "id": 2,
+              "text": "かけて"
+            },
+            {
+              "id": 3,
+              "text": "がてら"
+            },
+            {
+              "id": 4,
+              "text": "ながらも"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-03-s01-q06",
+          "number": 6,
+          "prompt": "私有地（　）、関係者以外立ち入り禁止。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "こそ"
+            },
+            {
+              "id": 2,
+              "text": "につき"
+            },
+            {
+              "id": 3,
+              "text": "につけ"
+            },
+            {
+              "id": 4,
+              "text": "のうえ"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-03-s01-q07",
+          "number": 7,
+          "prompt": "人はそれぞれ意見が違う（　）よく話し合うことが必要なのだ。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "からこそ"
+            },
+            {
+              "id": 2,
+              "text": "からして"
+            },
+            {
+              "id": 3,
+              "text": "からいって"
+            },
+            {
+              "id": 4,
+              "text": "からといって"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-03-s01-q08",
+          "number": 8,
+          "prompt": "お客様のご希望（　）、デザインや色の変更も可能です。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ままに"
+            },
+            {
+              "id": 2,
+              "text": "次第で"
+            },
+            {
+              "id": 3,
+              "text": "ばかりで"
+            },
+            {
+              "id": 4,
+              "text": "ものなら"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-03-s01-q09",
+          "number": 9,
+          "prompt": "工業が発展したおかげで、生活はどれほど便利になった（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ことか"
+            },
+            {
+              "id": 2,
+              "text": "ことだ"
+            },
+            {
+              "id": 3,
+              "text": "ものだ"
+            },
+            {
+              "id": 4,
+              "text": "ものか"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-03-s01-q10",
+          "number": 10,
+          "prompt": "今ある資料だけでは、この結果が絶対に正しいとは（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "言いかねない"
+            },
+            {
+              "id": 2,
+              "text": "言い切れない"
+            },
+            {
+              "id": 3,
+              "text": "言うに違いない"
+            },
+            {
+              "id": 4,
+              "text": "言わないことはない"
+            }
+          ],
+          "correctChoice": 2
+        }
+      ]
+    },
+    {
+      "id": "exam-03-section-02",
+      "number": 2,
+      "type": "sentence_order",
+      "label": "文の文法2",
+      "instruction": "次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-03-s02-q01",
+          "number": 1,
+          "sentenceBefore": "終電が出てしまったので、",
+          "sentenceAfter": "ない。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "ほか"
+            },
+            {
+              "id": 2,
+              "text": "タクシーで"
+            },
+            {
+              "id": 3,
+              "text": "より"
+            },
+            {
+              "id": 4,
+              "text": "帰る"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 3,
+          "correctOrder": [
+            2,
+            4,
+            3,
+            1
+          ],
+          "completedSentence": "終電が出てしまったので、タクシーで帰るよりほかない。"
+        },
+        {
+          "id": "exam-03-s02-q02",
+          "number": 2,
+          "sentenceBefore": "小中学校は政府",
+          "sentenceAfter": "授業計画を立てる。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "によって"
+            },
+            {
+              "id": 2,
+              "text": "決められた"
+            },
+            {
+              "id": 3,
+              "text": "に沿って"
+            },
+            {
+              "id": 4,
+              "text": "方針"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 4,
+          "correctOrder": [
+            1,
+            2,
+            4,
+            3
+          ],
+          "completedSentence": "小中学校は政府によって決められた方針に沿って授業計画を立てる。"
+        },
+        {
+          "id": "exam-03-s02-q03",
+          "number": 3,
+          "sentenceBefore": "私はあまり魚を食べないが、食べない",
+          "sentenceAfter": "ではない。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "嫌いな"
+            },
+            {
+              "id": 2,
+              "text": "といって"
+            },
+            {
+              "id": 3,
+              "text": "から"
+            },
+            {
+              "id": 4,
+              "text": "わけ"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "completedSentence": "私はあまり魚を食べないが、食べないからといって嫌いなわけではない。"
+        },
+        {
+          "id": "exam-03-s02-q04",
+          "number": 4,
+          "sentenceBefore": "集中しなければと",
+          "sentenceAfter": "を考えてしまう。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "も"
+            },
+            {
+              "id": 2,
+              "text": "つい"
+            },
+            {
+              "id": 3,
+              "text": "余計なこと"
+            },
+            {
+              "id": 4,
+              "text": "思いつつ"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 2,
+          "correctOrder": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "completedSentence": "集中しなければと思いつつも、つい余計なことを考えてしまう。"
+        }
+      ]
+    },
+    {
+      "id": "exam-03-section-03",
+      "number": 3,
+      "type": "passage_grammar",
+      "label": "文章の文法",
+      "instruction": "次の文章を読んで、1から3の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 2,
+      "passage": "「フリーター」という言葉は、1980年代中頃、あるアルバイト情報誌が使い始めた［1］世の中に広まっていったと言われています。「自由に始めたり辞めたりをくり返すアルバイトの人」を「フリーのアルバイター」と定義し、それを短くして「フリーター」という言葉ができたのです。\n「職業は？」と聞かれたとき、学生ならアルバイトをしていても「学生です」と答えるでしょう。でも、彼らは学生とも違いました。「無業者」と呼ばれたりもしていましたが、「無職」といったい何が［2-a］、「失業者」［2-b］と、わかりにくい存在でした。しかし、カタカナで「フリーター」と名付けられたことで、何か特別な、新しい職業である［3］イメージがともなってきました。それによって、就職の面接などでも、「今はフリーターをやっています」と口にできるようになったのです。",
+      "attribution": null,
+      "questions": [
+        {
+          "id": "exam-03-s03-q01",
+          "number": 1,
+          "prompt": "［1］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "からには"
+            },
+            {
+              "id": 2,
+              "text": "ことから"
+            },
+            {
+              "id": 3,
+              "text": "きっかけに"
+            },
+            {
+              "id": 4,
+              "text": "かいがあって"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-03-s03-q02",
+          "number": 2,
+          "prompt": "［2-a］／［2-b］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "a 違うのか／b ではないのか"
+            },
+            {
+              "id": 2,
+              "text": "a 違うのだ／b ではないのだ"
+            },
+            {
+              "id": 3,
+              "text": "a 違うので／b ではないのか"
+            },
+            {
+              "id": 4,
+              "text": "a 違うので／b ではないのだ"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-03-s03-q03",
+          "number": 3,
+          "prompt": "［3］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "上の"
+            },
+            {
+              "id": 2,
+              "text": "とおりの"
+            },
+            {
+              "id": 3,
+              "text": "のも当然な"
+            },
+            {
+              "id": 4,
+              "text": "かのような"
+            }
+          ],
+          "correctChoice": 4
+        }
+      ]
+    }
+  ]
+}

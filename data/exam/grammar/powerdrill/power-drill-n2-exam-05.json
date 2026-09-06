@@ -1,0 +1,498 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-exam-05",
+  "title": "日本語パワードリル N2文法 第5回",
+  "level": "N2",
+  "examNumber": 5,
+  "timeLimitMinutes": 10,
+  "maximumScore": 20,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [
+      16,
+      17
+    ],
+    "pdfPages": [
+      16,
+      17
+    ]
+  },
+  "sections": [
+    {
+      "id": "exam-05-section-01",
+      "number": 1,
+      "type": "grammar_selection",
+      "label": "文の文法1",
+      "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-05-s01-q01",
+          "number": 1,
+          "prompt": "これだけ事故が起きてもまだ酒を飲んで運転する人の気持ちが理解（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "しかねる"
+            },
+            {
+              "id": 2,
+              "text": "するものか"
+            },
+            {
+              "id": 3,
+              "text": "せざるをえない"
+            },
+            {
+              "id": 4,
+              "text": "するわけではない"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-05-s01-q02",
+          "number": 2,
+          "prompt": "政府は方針を決定する（　）、全国の病院にアンケートを実施した。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "以上"
+            },
+            {
+              "id": 2,
+              "text": "以上は"
+            },
+            {
+              "id": 3,
+              "text": "にあたり"
+            },
+            {
+              "id": 4,
+              "text": "において"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-05-s01-q03",
+          "number": 3,
+          "prompt": "たとえ失敗した（　）、やってみることに価値がある。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "せいで"
+            },
+            {
+              "id": 2,
+              "text": "だけに"
+            },
+            {
+              "id": 3,
+              "text": "からには"
+            },
+            {
+              "id": 4,
+              "text": "としても"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-05-s01-q04",
+          "number": 4,
+          "prompt": "今は辛くても、この経験はいつか必ず役に立つ（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "にすぎない"
+            },
+            {
+              "id": 2,
+              "text": "に違いない"
+            },
+            {
+              "id": 3,
+              "text": "とは限らない"
+            },
+            {
+              "id": 4,
+              "text": "よりほかない"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-05-s01-q05",
+          "number": 5,
+          "prompt": "暗くならないうちに、散歩（　）、買い物に行ってこよう。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "つつ"
+            },
+            {
+              "id": 2,
+              "text": "がてら"
+            },
+            {
+              "id": 3,
+              "text": "ついで"
+            },
+            {
+              "id": 4,
+              "text": "ながら"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-05-s01-q06",
+          "number": 6,
+          "prompt": "面接を希望される方は、電話連絡（　）、履歴書をお送りください。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "の上"
+            },
+            {
+              "id": 2,
+              "text": "の上に"
+            },
+            {
+              "id": 3,
+              "text": "の末"
+            },
+            {
+              "id": 4,
+              "text": "の末に"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-05-s01-q07",
+          "number": 7,
+          "prompt": "こんな作品が作れる彼は天才だ。発想（　）普通の人とは違っている。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "からして"
+            },
+            {
+              "id": 2,
+              "text": "はおろか"
+            },
+            {
+              "id": 3,
+              "text": "を問わず"
+            },
+            {
+              "id": 4,
+              "text": "をはじめ"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-05-s01-q08",
+          "number": 8,
+          "prompt": "その事件について私が知っている（　）のことは、もう全部話しました。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ほど"
+            },
+            {
+              "id": 2,
+              "text": "まま"
+            },
+            {
+              "id": 3,
+              "text": "限り"
+            },
+            {
+              "id": 4,
+              "text": "ばかり"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-05-s01-q09",
+          "number": 9,
+          "prompt": "インターネットを使えば、外出する（　）買い物ができる。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ことに"
+            },
+            {
+              "id": 2,
+              "text": "ことなく"
+            },
+            {
+              "id": 3,
+              "text": "どころか"
+            },
+            {
+              "id": 4,
+              "text": "どころじゃなく"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-05-s01-q10",
+          "number": 10,
+          "prompt": "このマンガは一度読み始めたら最後まで（　）ほどおもしろい。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "読みきれない"
+            },
+            {
+              "id": 2,
+              "text": "読まずにいられない"
+            },
+            {
+              "id": 3,
+              "text": "読むどころじゃない"
+            },
+            {
+              "id": 4,
+              "text": "読まないことはない"
+            }
+          ],
+          "correctChoice": 2
+        }
+      ]
+    },
+    {
+      "id": "exam-05-section-02",
+      "number": 2,
+      "type": "sentence_order",
+      "label": "文の文法2",
+      "instruction": "次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-05-s02-q01",
+          "number": 1,
+          "sentenceBefore": "準決勝までの彼の活躍が",
+          "sentenceAfter": "のは残念でならない。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "決勝に"
+            },
+            {
+              "id": 2,
+              "text": "だけに"
+            },
+            {
+              "id": 3,
+              "text": "出られない"
+            },
+            {
+              "id": 4,
+              "text": "すばらしかった"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            4,
+            2,
+            1,
+            3
+          ],
+          "completedSentence": "準決勝までの彼の活躍がすばらしかっただけに、決勝に出られないのは残念でならない。"
+        },
+        {
+          "id": "exam-05-s02-q02",
+          "number": 2,
+          "sentenceBefore": "行列に1時間",
+          "sentenceAfter": "チケットは売り切れで買えなかった。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "なく"
+            },
+            {
+              "id": 2,
+              "text": "並んだ"
+            },
+            {
+              "id": 3,
+              "text": "かいも"
+            },
+            {
+              "id": 4,
+              "text": "結局"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            2,
+            3,
+            1,
+            4
+          ],
+          "completedSentence": "行列に1時間並んだかいもなく、結局チケットは売り切れで買えなかった。"
+        },
+        {
+          "id": "exam-05-s02-q03",
+          "number": 3,
+          "sentenceBefore": "誰の",
+          "sentenceAfter": "いいときもあるものだ。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "あれば"
+            },
+            {
+              "id": 2,
+              "text": "ときも"
+            },
+            {
+              "id": 3,
+              "text": "苦しい"
+            },
+            {
+              "id": 4,
+              "text": "人生にも"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 2,
+          "correctOrder": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "completedSentence": "誰の人生にも苦しいときもあれば、いいときもあるものだ。"
+        },
+        {
+          "id": "exam-05-s02-q04",
+          "number": 4,
+          "sentenceBefore": "このことは人の命",
+          "sentenceAfter": "慎重な判断が必要だ。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "である"
+            },
+            {
+              "id": 2,
+              "text": "問題"
+            },
+            {
+              "id": 3,
+              "text": "だけに"
+            },
+            {
+              "id": 4,
+              "text": "にかかわる"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            4,
+            2,
+            3,
+            1
+          ],
+          "completedSentence": "このことは人の命にかかわる問題だけに、慎重な判断が必要だ。"
+        }
+      ]
+    },
+    {
+      "id": "exam-05-section-03",
+      "number": 3,
+      "type": "passage_grammar",
+      "label": "文章の文法",
+      "instruction": "次の文章を読んで、1から3の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 2,
+      "passage": "花粉症の方は、朝晩2回、こちらの白い錠剤を1回1錠飲んでください。また、目に痛みやかゆみを感じる際には、この目薬を1、2滴さしてください。目薬をさすのは、1日4、5回まで［1］、1度さしたら、次まで1時間以上は時間をおくようにしてください。使いすぎはよくありません。\nまた、もし目薬をさしてしばらく経ってもかゆみが引かない場合は、医師にご相談ください。かゆい［2］、目を強くこすることのないようにしてください。目を強くこすると、よりかゆみがひどくなる［3］、目やまぶたが傷つくおそれがあります。",
+      "attribution": null,
+      "questions": [
+        {
+          "id": "exam-05-s03-q01",
+          "number": 1,
+          "prompt": "［1］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "では"
+            },
+            {
+              "id": 2,
+              "text": "なら"
+            },
+            {
+              "id": 3,
+              "text": "とし"
+            },
+            {
+              "id": 4,
+              "text": "といい"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-05-s03-q02",
+          "number": 2,
+          "prompt": "［2］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ことから"
+            },
+            {
+              "id": 2,
+              "text": "からといって"
+            },
+            {
+              "id": 3,
+              "text": "のはもとより"
+            },
+            {
+              "id": 4,
+              "text": "にもかかわらず"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-05-s03-q03",
+          "number": 3,
+          "prompt": "［3］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ばかりか"
+            },
+            {
+              "id": 2,
+              "text": "ばかりで"
+            },
+            {
+              "id": 3,
+              "text": "ばかりに"
+            },
+            {
+              "id": 4,
+              "text": "ばかりなら"
+            }
+          ],
+          "correctChoice": 1
+        }
+      ]
+    }
+  ]
+}

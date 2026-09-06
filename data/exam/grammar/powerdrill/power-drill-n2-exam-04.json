@@ -1,0 +1,498 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-exam-04",
+  "title": "日本語パワードリル N2文法 第4回",
+  "level": "N2",
+  "examNumber": 4,
+  "timeLimitMinutes": 10,
+  "maximumScore": 20,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [
+      14,
+      15
+    ],
+    "pdfPages": [
+      14,
+      15
+    ]
+  },
+  "sections": [
+    {
+      "id": "exam-04-section-01",
+      "number": 1,
+      "type": "grammar_selection",
+      "label": "文の文法1",
+      "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-04-s01-q01",
+          "number": 1,
+          "prompt": "この大型店がオープン（　）、近くの道路はいつも車でいっぱいだ。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "して以来"
+            },
+            {
+              "id": 2,
+              "text": "した以上"
+            },
+            {
+              "id": 3,
+              "text": "したまま"
+            },
+            {
+              "id": 4,
+              "text": "したばかり"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-04-s01-q02",
+          "number": 2,
+          "prompt": "女の子がさびし（　）顔をして、一人で公園のベンチに座っている。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "げな"
+            },
+            {
+              "id": 2,
+              "text": "ぎみな"
+            },
+            {
+              "id": 3,
+              "text": "っぽい"
+            },
+            {
+              "id": 4,
+              "text": "らしい"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-04-s01-q03",
+          "number": 3,
+          "prompt": "ご契約に（　）、運転免許証やパスポートなど身分を証明するものが必要です。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "応じては"
+            },
+            {
+              "id": 2,
+              "text": "際しては"
+            },
+            {
+              "id": 3,
+              "text": "こたえては"
+            },
+            {
+              "id": 4,
+              "text": "わたっては"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-04-s01-q04",
+          "number": 4,
+          "prompt": "対応は遅いし情報は不正確だし、こんな旅行会社、二度と利用（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "するものか"
+            },
+            {
+              "id": 2,
+              "text": "しないもの"
+            },
+            {
+              "id": 3,
+              "text": "しないものだ"
+            },
+            {
+              "id": 4,
+              "text": "しようじゃないか"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-04-s01-q05",
+          "number": 5,
+          "prompt": "便利さ（　）都心のほうがいいが、郊外のほうが家賃が安い。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "からして"
+            },
+            {
+              "id": 2,
+              "text": "からには"
+            },
+            {
+              "id": 3,
+              "text": "ことから"
+            },
+            {
+              "id": 4,
+              "text": "からいえば"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-04-s01-q06",
+          "number": 6,
+          "prompt": "うまいやり方なんてありません。ただ目の前のことを一生懸命やる（　）です。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "限り"
+            },
+            {
+              "id": 2,
+              "text": "のみ"
+            },
+            {
+              "id": 3,
+              "text": "ほど"
+            },
+            {
+              "id": 4,
+              "text": "まま"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-04-s01-q07",
+          "number": 7,
+          "prompt": "資源の開発によって、この国も徐々に豊かに（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "なりつつある"
+            },
+            {
+              "id": 2,
+              "text": "なってみせる"
+            },
+            {
+              "id": 3,
+              "text": "なるかいがある"
+            },
+            {
+              "id": 4,
+              "text": "ならざるをえない"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-04-s01-q08",
+          "number": 8,
+          "prompt": "この公園は災害時（　）避難場所に指定されています。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "による"
+            },
+            {
+              "id": 2,
+              "text": "にあたる"
+            },
+            {
+              "id": 3,
+              "text": "における"
+            },
+            {
+              "id": 4,
+              "text": "にかけて"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-04-s01-q09",
+          "number": 9,
+          "prompt": "自然破壊が進む（　）、自然保護の活動も増えている。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "一方で"
+            },
+            {
+              "id": 2,
+              "text": "につけ"
+            },
+            {
+              "id": 3,
+              "text": "わりに"
+            },
+            {
+              "id": 4,
+              "text": "ばかりに"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-04-s01-q10",
+          "number": 10,
+          "prompt": "言葉の選び方は難しい。間違えると誤解され（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "かねない"
+            },
+            {
+              "id": 2,
+              "text": "そうもない"
+            },
+            {
+              "id": 3,
+              "text": "てたまらない"
+            },
+            {
+              "id": 4,
+              "text": "ずにはいられない"
+            }
+          ],
+          "correctChoice": 1
+        }
+      ]
+    },
+    {
+      "id": "exam-04-section-02",
+      "number": 2,
+      "type": "sentence_order",
+      "label": "文の文法2",
+      "instruction": "次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-04-s02-q01",
+          "number": 1,
+          "sentenceBefore": "授業中ずっと",
+          "sentenceAfter": "ほうがましだ。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "くらいなら"
+            },
+            {
+              "id": 2,
+              "text": "居眠り"
+            },
+            {
+              "id": 3,
+              "text": "している"
+            },
+            {
+              "id": 4,
+              "text": "来ない"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            2,
+            3,
+            1,
+            4
+          ],
+          "completedSentence": "授業中ずっと居眠りしているくらいなら、来ないほうがましだ。"
+        },
+        {
+          "id": "exam-04-s02-q02",
+          "number": 2,
+          "sentenceBefore": "彼は、マラソンが始まる直前までみんなに体調を",
+          "sentenceAfter": "みせた。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "心配され"
+            },
+            {
+              "id": 2,
+              "text": "きって"
+            },
+            {
+              "id": 3,
+              "text": "ながらも"
+            },
+            {
+              "id": 4,
+              "text": "走り"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 4,
+          "correctOrder": [
+            1,
+            3,
+            4,
+            2
+          ],
+          "completedSentence": "彼は、マラソンが始まる直前までみんなに体調を心配されながらも、走りきってみせた。"
+        },
+        {
+          "id": "exam-04-s02-q03",
+          "number": 3,
+          "sentenceBefore": "数年後には、こんな計画があったこと",
+          "sentenceAfter": "違いない。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "しまう"
+            },
+            {
+              "id": 2,
+              "text": "さえ"
+            },
+            {
+              "id": 3,
+              "text": "に"
+            },
+            {
+              "id": 4,
+              "text": "忘れられて"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "completedSentence": "数年後には、こんな計画があったことさえ忘れられてしまうに違いない。"
+        },
+        {
+          "id": "exam-04-s02-q04",
+          "number": 4,
+          "sentenceBefore": "彼は、荷物を",
+          "sentenceAfter": "走り去っていった。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "置いた"
+            },
+            {
+              "id": 2,
+              "text": "ごとく"
+            },
+            {
+              "id": 3,
+              "text": "かと思うと"
+            },
+            {
+              "id": 4,
+              "text": "陸上選手の"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 4,
+          "correctOrder": [
+            1,
+            3,
+            4,
+            2
+          ],
+          "completedSentence": "彼は、荷物を置いたかと思うと、陸上選手のごとく走り去っていった。"
+        }
+      ]
+    },
+    {
+      "id": "exam-04-section-03",
+      "number": 3,
+      "type": "passage_grammar",
+      "label": "文章の文法",
+      "instruction": "次の文章を読んで、1から3の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 2,
+      "passage": "長旅をする［1］何を持っていくべきか。そう考えたときに思い浮かぶのはこんなこと。\n「旅は、持ち物が［2］楽しい」\n実際に長い旅をしながら、ぼくはそう確信するようになりました。\n友人で、小さなバックパックひとつにコンビニのビニール袋みたいなものをときに併せ持つだけで2、3年にわたって世界中を旅している人がいます。しかも彼は、途中で何度かそのすべてを盗られたりしているのですが、［3-a］荷物が［3-b］なくしても被害は少なく、すぐに元通りに旅が続けられます。また、大切なものをなくしたらどうしようとか、荷物が重くて面倒だからここに行くのはやめようとか、そんなことを考えることなく、どこにでも気軽に行けるのです。",
+      "attribution": "近藤雄生著「旅に出よう―世界にはいろんな生き方があふれてる」岩波書店刊",
+      "questions": [
+        {
+          "id": "exam-04-s03-q01",
+          "number": 1,
+          "prompt": "［1］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "にともなって"
+            },
+            {
+              "id": 2,
+              "text": "に先立って"
+            },
+            {
+              "id": 3,
+              "text": "にあたって"
+            },
+            {
+              "id": 4,
+              "text": "に対して"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-04-s03-q02",
+          "number": 2,
+          "prompt": "［2］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "多ければ多いほど"
+            },
+            {
+              "id": 2,
+              "text": "少なければ少ないほど"
+            },
+            {
+              "id": 3,
+              "text": "重ければ重いほど"
+            },
+            {
+              "id": 4,
+              "text": "気軽であれば気軽であるほど"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-04-s03-q03",
+          "number": 3,
+          "prompt": "［3-a］／［3-b］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "a ますます／b 少なくなるので"
+            },
+            {
+              "id": 2,
+              "text": "a ますます／b 少なくなるのに"
+            },
+            {
+              "id": 3,
+              "text": "a もともと／b 少ないので"
+            },
+            {
+              "id": 4,
+              "text": "a もともと／b 少ないのに"
+            }
+          ],
+          "correctChoice": 3
+        }
+      ]
+    }
+  ]
+}

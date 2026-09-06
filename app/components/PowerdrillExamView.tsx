@@ -2,27 +2,10 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import data from "@/data/exam/grammar/powerdrill/power-drill-n2-exam-01.json";
+import type { PowerdrillExam, Question } from "@/lib/powerdrill-types";
 
-type Choice = { id: number; text: string };
-type Question = {
-  id: string;
-  number: number;
-  prompt?: string;
-  blank?: string;
-  sentenceBefore?: string;
-  sentenceAfter?: string;
-  starPosition?: number;
-  choices?: Choice[];
-  pieces?: Choice[];
-  correctChoice: number;
-  correctOrder?: number[];
-  completedSentence?: string;
-};
-
-const totalQuestions = data.sections.reduce((count, section) => count + section.questions.length, 0);
-
-export default function PowerdrillLesson1Page() {
+export default function PowerdrillExamView({ data }: { data: PowerdrillExam }) {
+  const totalQuestions = data.sections.reduce((count, section) => count + section.questions.length, 0);
   const [phase, setPhase] = useState<"ready" | "exam" | "result">("ready");
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [remaining, setRemaining] = useState(data.timeLimitMinutes * 60);
@@ -58,7 +41,7 @@ export default function PowerdrillLesson1Page() {
     <main className="powerdrill-exam">
       <Link className="exam-back-link" href="/exam/grammar">← Grammar exams</Link>
       <header className="powerdrill-header">
-        <div><span className="powerdrill-eyebrow">N2 GRAMMAR · POWERDRILL</span><h1>Lesson 01</h1><p lang="ja">{data.title}</p></div>
+        <div><span className="powerdrill-eyebrow">{data.level} GRAMMAR · POWERDRILL</span><h1>Lesson {String(data.examNumber).padStart(2, "0")}</h1><p lang="ja">{data.title}</p></div>
         <span className="powerdrill-badge">{totalQuestions} questions · {data.maximumScore} points</span>
       </header>
       {phase === "ready" ? (

@@ -1,0 +1,498 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-exam-02",
+  "title": "日本語パワードリル N2文法 第2回",
+  "level": "N2",
+  "examNumber": 2,
+  "timeLimitMinutes": 10,
+  "maximumScore": 20,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [
+      10,
+      11
+    ],
+    "pdfPages": [
+      10,
+      11
+    ]
+  },
+  "sections": [
+    {
+      "id": "exam-02-section-01",
+      "number": 1,
+      "type": "grammar_selection",
+      "label": "文の文法1",
+      "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-02-s01-q01",
+          "number": 1,
+          "prompt": "運動しないで食べて（　）と、体に悪いですよ。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ばかりでない"
+            },
+            {
+              "id": 2,
+              "text": "ばかりする"
+            },
+            {
+              "id": 3,
+              "text": "ばかりしている"
+            },
+            {
+              "id": 4,
+              "text": "ばかりいる"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-02-s01-q02",
+          "number": 2,
+          "prompt": "やると決めた（　）、最後まであきらめずにやるべきだ。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "からして"
+            },
+            {
+              "id": 2,
+              "text": "からには"
+            },
+            {
+              "id": 3,
+              "text": "ことから"
+            },
+            {
+              "id": 4,
+              "text": "ものだから"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-02-s01-q03",
+          "number": 3,
+          "prompt": "山に登るときは、自分の体力に（　）計画を立てましょう。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "つれた"
+            },
+            {
+              "id": 2,
+              "text": "応じた"
+            },
+            {
+              "id": 3,
+              "text": "とっての"
+            },
+            {
+              "id": 4,
+              "text": "ともなった"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-02-s01-q04",
+          "number": 4,
+          "prompt": "その新入社員は注意されると怒り出し、（　）は泣き出した。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "そのうえ"
+            },
+            {
+              "id": 2,
+              "text": "それ以上"
+            },
+            {
+              "id": 3,
+              "text": "あげくのはてに"
+            },
+            {
+              "id": 4,
+              "text": "あまりに"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-02-s01-q05",
+          "number": 5,
+          "prompt": "雨が降らない（　）、毎日走るようにしています。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "限り"
+            },
+            {
+              "id": 2,
+              "text": "うちに"
+            },
+            {
+              "id": 3,
+              "text": "限りに"
+            },
+            {
+              "id": 4,
+              "text": "ことには"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-02-s01-q06",
+          "number": 6,
+          "prompt": "事情があった（　）、遅れるなら連絡ぐらいしてほしい。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "にせよ"
+            },
+            {
+              "id": 2,
+              "text": "につき"
+            },
+            {
+              "id": 3,
+              "text": "につけ"
+            },
+            {
+              "id": 4,
+              "text": "せいで"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-02-s01-q07",
+          "number": 7,
+          "prompt": "選手たちは雨の中、泥（　）になって戦った。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "がち"
+            },
+            {
+              "id": 2,
+              "text": "ぎみ"
+            },
+            {
+              "id": 3,
+              "text": "だらけ"
+            },
+            {
+              "id": 4,
+              "text": "みたい"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-02-s01-q08",
+          "number": 8,
+          "prompt": "工事の開始（　）、付近の住民に向けて説明会が開かれた。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "に先立ち"
+            },
+            {
+              "id": 2,
+              "text": "に沿って"
+            },
+            {
+              "id": 3,
+              "text": "もかまわず"
+            },
+            {
+              "id": 4,
+              "text": "をかねて"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-02-s01-q09",
+          "number": 9,
+          "prompt": "このような難病が手術で治るとは、医学の進歩に感謝（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "しかねない"
+            },
+            {
+              "id": 2,
+              "text": "してならない"
+            },
+            {
+              "id": 3,
+              "text": "するわけにはいかない"
+            },
+            {
+              "id": 4,
+              "text": "せずにはいられない"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-02-s01-q10",
+          "number": 10,
+          "prompt": "ちょうど食事ができあがった（　）父が帰ってきた。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ところが"
+            },
+            {
+              "id": 2,
+              "text": "ところに"
+            },
+            {
+              "id": 3,
+              "text": "にあたり"
+            },
+            {
+              "id": 4,
+              "text": "最中に"
+            }
+          ],
+          "correctChoice": 2
+        }
+      ]
+    },
+    {
+      "id": "exam-02-section-02",
+      "number": 2,
+      "type": "sentence_order",
+      "label": "文の文法2",
+      "instruction": "次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-02-s02-q01",
+          "number": 1,
+          "sentenceBefore": "この乗馬クラブは",
+          "sentenceAfter": "気軽にご参加いただけます。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "有無を"
+            },
+            {
+              "id": 2,
+              "text": "経験の"
+            },
+            {
+              "id": 3,
+              "text": "どなたでも"
+            },
+            {
+              "id": 4,
+              "text": "問わず"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 4,
+          "correctOrder": [
+            2,
+            1,
+            4,
+            3
+          ],
+          "completedSentence": "この乗馬クラブは経験の有無を問わず、どなたでも気軽にご参加いただけます。"
+        },
+        {
+          "id": "exam-02-s02-q02",
+          "number": 2,
+          "sentenceBefore": "歯の痛みは、時間が",
+          "sentenceAfter": "なってきた。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "ものに"
+            },
+            {
+              "id": 2,
+              "text": "につれて"
+            },
+            {
+              "id": 3,
+              "text": "たえがたい"
+            },
+            {
+              "id": 4,
+              "text": "経つ"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 3,
+          "correctOrder": [
+            4,
+            2,
+            3,
+            1
+          ],
+          "completedSentence": "歯の痛みは、時間が経つにつれて、たえがたいものになってきた。"
+        },
+        {
+          "id": "exam-02-s02-q03",
+          "number": 3,
+          "sentenceBefore": "昨日のコンサートは客が8人",
+          "sentenceAfter": "ものだった。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "いない"
+            },
+            {
+              "id": 2,
+              "text": "しか"
+            },
+            {
+              "id": 3,
+              "text": "だけ"
+            },
+            {
+              "id": 4,
+              "text": "寂しい"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "completedSentence": "昨日のコンサートは客が8人だけしかいない寂しいものだった。"
+        },
+        {
+          "id": "exam-02-s02-q04",
+          "number": 4,
+          "sentenceBefore": "こちらに",
+          "sentenceAfter": "が書かれておりますのでご覧ください。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "の"
+            },
+            {
+              "id": 2,
+              "text": "注意事項"
+            },
+            {
+              "id": 3,
+              "text": "ご利用"
+            },
+            {
+              "id": 4,
+              "text": "に際して"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            3,
+            4,
+            1,
+            2
+          ],
+          "completedSentence": "こちらにご利用に際しての注意事項が書かれておりますのでご覧ください。"
+        }
+      ]
+    },
+    {
+      "id": "exam-02-section-03",
+      "number": 3,
+      "type": "passage_grammar",
+      "label": "文章の文法",
+      "instruction": "次の文章を読んで、1から3の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 2,
+      "passage": "私は旅を趣味として、様々な場所へ出かけていく。\n当然、その国、その地方で常識が違う。ごはんをはしで食べる国も［1］、フォークとナイフで食べる国もある。日本は列車やバスが時間どおり来るが、そうでない国だってある。\nしかし、私は、常識の違いに驚くことはあっても、それに対する不満を感じることはない。違っていて当然、違う［2］、旅のおもしろさがあるのだ。\n私が旅に出るのは、自分の常識が絶対でないことを確かめるためでもある。「こうしなければいけない」と［3］、知らず知らずのうちに自分をしばりつけているものから解放されたいと思っているのかもしれない。",
+      "attribution": null,
+      "questions": [
+        {
+          "id": "exam-02-s03-q01",
+          "number": 1,
+          "prompt": "［1］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "あれば"
+            },
+            {
+              "id": 2,
+              "text": "あると"
+            },
+            {
+              "id": 3,
+              "text": "あるやら"
+            },
+            {
+              "id": 4,
+              "text": "あるわりに"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-02-s03-q02",
+          "number": 2,
+          "prompt": "［2］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "うえで"
+            },
+            {
+              "id": 2,
+              "text": "につけ"
+            },
+            {
+              "id": 3,
+              "text": "からこそ"
+            },
+            {
+              "id": 4,
+              "text": "ことから"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-02-s03-q03",
+          "number": 3,
+          "prompt": "［3］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "かと思うと"
+            },
+            {
+              "id": 2,
+              "text": "思うあまり"
+            },
+            {
+              "id": 3,
+              "text": "思うとしても"
+            },
+            {
+              "id": 4,
+              "text": "思うも同然で"
+            }
+          ],
+          "correctChoice": 2
+        }
+      ]
+    }
+  ]
+}
