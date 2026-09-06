@@ -1,0 +1,497 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-exam-12",
+  "title": "日本語パワードリル N2文法 第12回",
+  "level": "N2",
+  "examNumber": 12,
+  "timeLimitMinutes": 10,
+  "maximumScore": 20,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [
+      34,
+      35
+    ],
+    "pdfPages": [
+      34,
+      35
+    ]
+  },
+  "sections": [
+    {
+      "id": "exam-12-section-01",
+      "number": 1,
+      "type": "grammar_selection",
+      "label": "文の文法1",
+      "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-12-s01-q01",
+          "number": 1,
+          "prompt": "厳しいトレーニング（　）、1回戦で負けてしまった。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "のかいもなく"
+            },
+            {
+              "id": 2,
+              "text": "のかいあって"
+            },
+            {
+              "id": 3,
+              "text": "をきっかけに"
+            },
+            {
+              "id": 4,
+              "text": "を抜きにして"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-12-s01-q02",
+          "number": 2,
+          "prompt": "団体旅行ではなく、妻と二人（　）で南の島にでも行きたい。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "限り"
+            },
+            {
+              "id": 2,
+              "text": "きり"
+            },
+            {
+              "id": 3,
+              "text": "以内"
+            },
+            {
+              "id": 4,
+              "text": "ぼっち"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-12-s01-q03",
+          "number": 3,
+          "prompt": "私の名前は、父の好きな女優の名が「さゆり」だった（　）つけられたそうだ。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ことから"
+            },
+            {
+              "id": 2,
+              "text": "ことなく"
+            },
+            {
+              "id": 3,
+              "text": "ことには"
+            },
+            {
+              "id": 4,
+              "text": "ことだから"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-12-s01-q04",
+          "number": 4,
+          "prompt": "A：新人のアルバイト、今日も遅刻でしたよ。\nB：前の人は無断で休むこともあったから、来る（　）よ。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "だけましだ"
+            },
+            {
+              "id": 2,
+              "text": "だけのことはある"
+            },
+            {
+              "id": 3,
+              "text": "もんじゃない"
+            },
+            {
+              "id": 4,
+              "text": "わけでもない"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-12-s01-q05",
+          "number": 5,
+          "prompt": "大雨と強風の中、前に進もうにも、目を開けて（　）ほどだった。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ならない"
+            },
+            {
+              "id": 2,
+              "text": "いられない"
+            },
+            {
+              "id": 3,
+              "text": "かなわない"
+            },
+            {
+              "id": 4,
+              "text": "たまらない"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-12-s01-q06",
+          "number": 6,
+          "prompt": "新しい店長の方針（　）、店を改装することにした。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "に沿って"
+            },
+            {
+              "id": 2,
+              "text": "に対して"
+            },
+            {
+              "id": 3,
+              "text": "を中心に"
+            },
+            {
+              "id": 4,
+              "text": "を通して"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-12-s01-q07",
+          "number": 7,
+          "prompt": "聞くところによると、大学に合格された（　）。よかったですね。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "こと"
+            },
+            {
+              "id": 2,
+              "text": "とか"
+            },
+            {
+              "id": 3,
+              "text": "とは"
+            },
+            {
+              "id": 4,
+              "text": "なら"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-12-s01-q08",
+          "number": 8,
+          "prompt": "この食堂は、安い（　）おいしいと評判だ。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "上で"
+            },
+            {
+              "id": 2,
+              "text": "上に"
+            },
+            {
+              "id": 3,
+              "text": "上は"
+            },
+            {
+              "id": 4,
+              "text": "上では"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-12-s01-q09",
+          "number": 9,
+          "prompt": "明日の面接は将来に（　）重要なものなので、失敗のないようにしなければ。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "関わる"
+            },
+            {
+              "id": 2,
+              "text": "かまわず"
+            },
+            {
+              "id": 3,
+              "text": "先立つ"
+            },
+            {
+              "id": 4,
+              "text": "基づく"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-12-s01-q10",
+          "number": 10,
+          "prompt": "昨年の大会では準優勝だったが、今年こそ絶対に優勝（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "しかねない"
+            },
+            {
+              "id": 2,
+              "text": "してみせる"
+            },
+            {
+              "id": 3,
+              "text": "することか"
+            },
+            {
+              "id": 4,
+              "text": "するものか"
+            }
+          ],
+          "correctChoice": 2
+        }
+      ]
+    },
+    {
+      "id": "exam-12-section-02",
+      "number": 2,
+      "type": "sentence_order",
+      "label": "文の文法2",
+      "instruction": "次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-12-s02-q01",
+          "number": 1,
+          "sentenceBefore": "木村さんに会ったとたん、ずっと前から",
+          "sentenceAfter": "気がした。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "か"
+            },
+            {
+              "id": 2,
+              "text": "のような"
+            },
+            {
+              "id": 3,
+              "text": "だった"
+            },
+            {
+              "id": 4,
+              "text": "友だち"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "completedSentence": "木村さんに会ったとたん、ずっと前から友だちだったかのような気がした。"
+        },
+        {
+          "id": "exam-12-s02-q02",
+          "number": 2,
+          "sentenceBefore": "先生に薦められた本を",
+          "sentenceAfter": "、難しすぎて全然読めない。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "ものの"
+            },
+            {
+              "id": 2,
+              "text": "読もうと"
+            },
+            {
+              "id": 3,
+              "text": "買ってみた"
+            },
+            {
+              "id": 4,
+              "text": "思って"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 3,
+          "correctOrder": [
+            2,
+            4,
+            3,
+            1
+          ],
+          "completedSentence": "先生に薦められた本を読もうと思って買ってみたものの、難しすぎて全然読めない。"
+        },
+        {
+          "id": "exam-12-s02-q03",
+          "number": 3,
+          "sentenceBefore": "今すぐに昔の",
+          "sentenceAfter": "いうものだ。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "なんて"
+            },
+            {
+              "id": 2,
+              "text": "豊かな森を"
+            },
+            {
+              "id": 3,
+              "text": "無理と"
+            },
+            {
+              "id": 4,
+              "text": "取り戻そう"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "completedSentence": "今すぐに昔の豊かな森を取り戻そうなんて無理というものだ。"
+        },
+        {
+          "id": "exam-12-s02-q04",
+          "number": 4,
+          "sentenceBefore": "ちょうど会社を",
+          "sentenceAfter": "ものだから、帰れなくなってしまった。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "とした"
+            },
+            {
+              "id": 2,
+              "text": "ところに"
+            },
+            {
+              "id": 3,
+              "text": "出よう"
+            },
+            {
+              "id": 4,
+              "text": "電話があった"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 2,
+          "correctOrder": [
+            3,
+            1,
+            2,
+            4
+          ],
+          "completedSentence": "ちょうど会社を出ようとしたところに電話があったものだから、帰れなくなってしまった。"
+        }
+      ]
+    },
+    {
+      "id": "exam-12-section-03",
+      "number": 3,
+      "type": "passage_grammar",
+      "label": "文章の文法",
+      "instruction": "次の文章を読んで、1から3の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 2,
+      "passage": "日本人は風呂好きと言われている。この場合の「風呂好き」はシャワーを浴びることではなく、湯ぶねに入ることをいうことが多い。わざわざ湯ぶねにお湯をため、そこに全身をつけて体を温める。入る前には湯ぶねの外で全身を洗う。だから家族が同じ湯ぶねのお湯に入ることは汚いことでも［1］。\n一方、西洋式のいわゆるバスルーム［2］、清潔を保つ場所といえるだろう。ここにはトイレとバスタブ、つまり日本で言う湯ぶねが一緒にある。トイレは体の内部からのものを流し、バスタブでは体表面の汚れを流す。バスルームは体全体の汚れを落とすところなのだ。だから、西洋の人々［3］、バスタブのお湯を他の人と一緒に使うなどということは考えられない。\n湯ぶねとバスタブは形は似ているが、実はまったく目的が違うのである。",
+      "questions": [
+        {
+          "id": "exam-12-s03-q01",
+          "number": 1,
+          "blank": "［1］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "なにもない"
+            },
+            {
+              "id": 2,
+              "text": "なんでもない"
+            },
+            {
+              "id": 3,
+              "text": "なんにもない"
+            },
+            {
+              "id": 4,
+              "text": "なんともいえない"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-12-s03-q02",
+          "number": 2,
+          "blank": "［2］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "かといって"
+            },
+            {
+              "id": 2,
+              "text": "といっては"
+            },
+            {
+              "id": 3,
+              "text": "はというと"
+            },
+            {
+              "id": 4,
+              "text": "ということは"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-12-s03-q03",
+          "number": 3,
+          "blank": "［3］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "こそ"
+            },
+            {
+              "id": 2,
+              "text": "からすると"
+            },
+            {
+              "id": 3,
+              "text": "だけあって"
+            },
+            {
+              "id": 4,
+              "text": "のことだから"
+            }
+          ],
+          "correctChoice": 2
+        }
+      ]
+    }
+  ]
+}

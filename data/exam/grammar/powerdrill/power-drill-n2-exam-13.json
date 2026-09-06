@@ -1,0 +1,498 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-exam-13",
+  "title": "日本語パワードリル N2文法 第13回",
+  "level": "N2",
+  "examNumber": 13,
+  "timeLimitMinutes": 10,
+  "maximumScore": 20,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [
+      36,
+      37
+    ],
+    "pdfPages": [
+      36,
+      37
+    ]
+  },
+  "sections": [
+    {
+      "id": "exam-13-section-01",
+      "number": 1,
+      "type": "grammar_selection",
+      "label": "文の文法1",
+      "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-13-s01-q01",
+          "number": 1,
+          "prompt": "私の転勤が多かった（　）子ども達も何度も学校を変わらなければならなかった。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ままに"
+            },
+            {
+              "id": 2,
+              "text": "からして"
+            },
+            {
+              "id": 3,
+              "text": "としても"
+            },
+            {
+              "id": 4,
+              "text": "ばかりに"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-13-s01-q02",
+          "number": 2,
+          "prompt": "このまま赤字経営が続けば、店はつぶれてしまうのでは（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "あるまい"
+            },
+            {
+              "id": 2,
+              "text": "ほかない"
+            },
+            {
+              "id": 3,
+              "text": "あるまいか"
+            },
+            {
+              "id": 4,
+              "text": "ほかならない"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-13-s01-q03",
+          "number": 3,
+          "prompt": "電話で指示される（　）お金を振り込んだが、後でだまされていたとわかった。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "うえに"
+            },
+            {
+              "id": 2,
+              "text": "うちに"
+            },
+            {
+              "id": 3,
+              "text": "までに"
+            },
+            {
+              "id": 4,
+              "text": "ままに"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-13-s01-q04",
+          "number": 4,
+          "prompt": "この映画には人の心を打つ（　）。ぜひ、多くの人に見てほしい。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ものがある"
+            },
+            {
+              "id": 2,
+              "text": "おそれがある"
+            },
+            {
+              "id": 3,
+              "text": "わけではない"
+            },
+            {
+              "id": 4,
+              "text": "わけにはいかない"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-13-s01-q05",
+          "number": 5,
+          "prompt": "休める（　）10日ぐらい休みたいが、しばらくは無理な話だ。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ものか"
+            },
+            {
+              "id": 2,
+              "text": "ものの"
+            },
+            {
+              "id": 3,
+              "text": "ものなら"
+            },
+            {
+              "id": 4,
+              "text": "ものだから"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-13-s01-q06",
+          "number": 6,
+          "prompt": "早朝の湖は言葉では（　）ほど美しかった。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "表しようがない"
+            },
+            {
+              "id": 2,
+              "text": "表しそうにない"
+            },
+            {
+              "id": 3,
+              "text": "表しかねない"
+            },
+            {
+              "id": 4,
+              "text": "表さざるをえない"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-13-s01-q07",
+          "number": 7,
+          "prompt": "今のアルバイトは力仕事で疲れる（　）時給が安い。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "あまり"
+            },
+            {
+              "id": 2,
+              "text": "せいで"
+            },
+            {
+              "id": 3,
+              "text": "わけで"
+            },
+            {
+              "id": 4,
+              "text": "わりに"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-13-s01-q08",
+          "number": 8,
+          "prompt": "休日の朝は平日より遅く起きて、朝食と昼食を（　）食事をとる。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "かねた"
+            },
+            {
+              "id": 2,
+              "text": "ふまえた"
+            },
+            {
+              "id": 3,
+              "text": "重ねた"
+            },
+            {
+              "id": 4,
+              "text": "通した"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-13-s01-q09",
+          "number": 9,
+          "prompt": "この曲のヒット（　）、彼は海外でもコンサートをするようになった。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "に際して"
+            },
+            {
+              "id": 2,
+              "text": "に反して"
+            },
+            {
+              "id": 3,
+              "text": "を抜きに"
+            },
+            {
+              "id": 4,
+              "text": "をきっかけに"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-13-s01-q10",
+          "number": 10,
+          "prompt": "A国とB国の間では、昔から資源（　）争いが続いている。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "の上で"
+            },
+            {
+              "id": 2,
+              "text": "を頼りに"
+            },
+            {
+              "id": 3,
+              "text": "をめぐる"
+            },
+            {
+              "id": 4,
+              "text": "のことだから"
+            }
+          ],
+          "correctChoice": 3
+        }
+      ]
+    },
+    {
+      "id": "exam-13-section-02",
+      "number": 2,
+      "type": "sentence_order",
+      "label": "文の文法2",
+      "instruction": "次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-13-s02-q01",
+          "number": 1,
+          "sentenceBefore": "いくら他の人に",
+          "sentenceAfter": "ことにはわからない。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "自分で"
+            },
+            {
+              "id": 2,
+              "text": "いい"
+            },
+            {
+              "id": 3,
+              "text": "使ってみない"
+            },
+            {
+              "id": 4,
+              "text": "と言われても"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "completedSentence": "いくら他の人にいいと言われても自分で使ってみないことにはわからない。"
+        },
+        {
+          "id": "exam-13-s02-q02",
+          "number": 2,
+          "sentenceBefore": "長時間運転する際は、眠く",
+          "sentenceAfter": "休憩をとってください。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "ように"
+            },
+            {
+              "id": 2,
+              "text": "応じて"
+            },
+            {
+              "id": 3,
+              "text": "必要に"
+            },
+            {
+              "id": 4,
+              "text": "ならない"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 3,
+          "correctOrder": [
+            4,
+            1,
+            3,
+            2
+          ],
+          "completedSentence": "長時間運転する際は、眠くならないように必要に応じて休憩をとってください。"
+        },
+        {
+          "id": "exam-13-s02-q03",
+          "number": 3,
+          "sentenceBefore": "明日は東北から北海道に",
+          "sentenceAfter": "らしい。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "おそれが"
+            },
+            {
+              "id": 2,
+              "text": "かけて"
+            },
+            {
+              "id": 3,
+              "text": "ある"
+            },
+            {
+              "id": 4,
+              "text": "大雪となる"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "completedSentence": "明日は東北から北海道にかけて大雪となるおそれがあるらしい。"
+        },
+        {
+          "id": "exam-13-s02-q04",
+          "number": 4,
+          "sentenceBefore": "うちの猫は外へ",
+          "sentenceAfter": "こないことがよくある。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "帰って"
+            },
+            {
+              "id": 2,
+              "text": "っきり"
+            },
+            {
+              "id": 3,
+              "text": "しばらく"
+            },
+            {
+              "id": 4,
+              "text": "出ていった"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 3,
+          "correctOrder": [
+            4,
+            2,
+            3,
+            1
+          ],
+          "completedSentence": "うちの猫は外へ出ていったっきりしばらく帰ってこないことがよくある。"
+        }
+      ]
+    },
+    {
+      "id": "exam-13-section-03",
+      "number": 3,
+      "type": "passage_grammar",
+      "label": "文章の文法",
+      "instruction": "次の文章を読んで、1から3の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 2,
+      "passage": "じつは川の中や水辺の周辺には、皆さんが知らない、あるいは［1］、多くの生き物たちのさまざまな暮らしがあるのです。そのことを体感するには、たくさんの本を読んだり、ビデオを見たりして知識を身につけるよりも、もっと確実な方法があります。それは、皆さんがふだんの暮らしの中で知らず知らず［2］身につけてしまった、時間や空間やさまざまな日常生活に対する「人工的な感覚」を、できるだけ捨て去ることです。\nそして水に囲まれた小宇宙に自分の身を置く心持ちになって、川を感じてみることです。つまり川の流れに身をひたして、魚たちの視線で川をながめてみるのです。\n私たちは、身のまわりの世界のほとんどを「視覚」を通して認識しています。でも、目にはして［3］、“ほんとうは見ていない”ことも多いのです。",
+      "attribution": "松浦秀俊著『川に親しむ』岩波書店刊",
+      "questions": [
+        {
+          "id": "exam-13-s03-q01",
+          "number": 1,
+          "blank": "［1］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "気づかざるをえない"
+            },
+            {
+              "id": 2,
+              "text": "気づくかもしれない"
+            },
+            {
+              "id": 3,
+              "text": "気づこうともしない"
+            },
+            {
+              "id": 4,
+              "text": "気づかないことはない"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-13-s03-q02",
+          "number": 2,
+          "blank": "［2］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "としても"
+            },
+            {
+              "id": 2,
+              "text": "のうちに"
+            },
+            {
+              "id": 3,
+              "text": "の限りに"
+            },
+            {
+              "id": 4,
+              "text": "にかかわらず"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-13-s03-q03",
+          "number": 3,
+          "blank": "［3］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "いながら"
+            },
+            {
+              "id": 2,
+              "text": "いるものなら"
+            },
+            {
+              "id": 3,
+              "text": "いるにつけても"
+            },
+            {
+              "id": 4,
+              "text": "いるのみならず"
+            }
+          ],
+          "correctChoice": 1
+        }
+      ]
+    }
+  ]
+}

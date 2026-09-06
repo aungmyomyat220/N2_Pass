@@ -1,0 +1,268 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-exam-11",
+  "title": "日本語パワードリル N2文法 第11回",
+  "level": "N2",
+  "examNumber": 11,
+  "timeLimitMinutes": 10,
+  "maximumScore": 20,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [32, 33],
+    "pdfPages": [32, 33]
+  },
+  "sections": [
+    {
+      "id": "exam-11-section-01",
+      "number": 1,
+      "type": "grammar_selection",
+      "label": "文の文法1",
+      "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-11-s01-q01",
+          "number": 1,
+          "prompt": "このカードは、一年間の利用金額（　）買い物の割引率が上がる。",
+          "choices": [
+            { "id": 1, "text": "に応じて" },
+            { "id": 2, "text": "にこたえて" },
+            { "id": 3, "text": "に関わって" },
+            { "id": 4, "text": "を頼りに" }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-11-s01-q02",
+          "number": 2,
+          "prompt": "弟は、足の速さ（　）学校の誰にも負けない。",
+          "choices": [
+            { "id": 1, "text": "にしては" },
+            { "id": 2, "text": "だけあって" },
+            { "id": 3, "text": "にかけては" },
+            { "id": 4, "text": "については" }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-11-s01-q03",
+          "number": 3,
+          "prompt": "水1リットル（　）塩10グラムを入れてください。",
+          "choices": [
+            { "id": 1, "text": "にかけて" },
+            { "id": 2, "text": "に限って" },
+            { "id": 3, "text": "に対して" },
+            { "id": 4, "text": "にしたがって" }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-11-s01-q04",
+          "number": 4,
+          "prompt": "残念（　）その商品はもう売り切れてしまいました。",
+          "choices": [
+            { "id": 1, "text": "なら" },
+            { "id": 2, "text": "ながら" },
+            { "id": 3, "text": "がてら" },
+            { "id": 4, "text": "次第" }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-11-s01-q05",
+          "number": 5,
+          "prompt": "子どもの頃は、サンタクロースが本当にいると信じ（　）いました。",
+          "choices": [
+            { "id": 1, "text": "かねて" },
+            { "id": 2, "text": "切って" },
+            { "id": 3, "text": "出して" },
+            { "id": 4, "text": "抜いて" }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-11-s01-q06",
+          "number": 6,
+          "prompt": "就職して（　）社会の厳しさを知った。",
+          "choices": [
+            { "id": 1, "text": "ほど" },
+            { "id": 2, "text": "さえ" },
+            { "id": 3, "text": "ばかり" },
+            { "id": 4, "text": "はじめて" }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-11-s01-q07",
+          "number": 7,
+          "prompt": "田中さんは飽き（　）から、きっと3日で練習をやめてしまうだろう。",
+          "choices": [
+            { "id": 1, "text": "がちだ" },
+            { "id": 2, "text": "気味だ" },
+            { "id": 3, "text": "っぽい" },
+            { "id": 4, "text": "すぎる" }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-11-s01-q08",
+          "number": 8,
+          "prompt": "娘が交通事故にあったという知らせを受け、ショック（　）倒れてしまった。",
+          "choices": [
+            { "id": 1, "text": "の上で" },
+            { "id": 2, "text": "にあたり" },
+            { "id": 3, "text": "につれて" },
+            { "id": 4, "text": "のあまり" }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-11-s01-q09",
+          "number": 9,
+          "prompt": "気がついたら外は暗くなっていた。5時間もゲームをやっていた（　）。",
+          "choices": [
+            { "id": 1, "text": "とか" },
+            { "id": 2, "text": "とは" },
+            { "id": 3, "text": "だけだ" },
+            { "id": 4, "text": "ものだ" }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-11-s01-q10",
+          "number": 10,
+          "prompt": "予想（　）最悪の事態に備えて、今から準備をしておこう。",
+          "choices": [
+            { "id": 1, "text": "し得る" },
+            { "id": 2, "text": "しかねる" },
+            { "id": 3, "text": "しかねない" },
+            { "id": 4, "text": "しつつある" }
+          ],
+          "correctChoice": 1
+        }
+      ]
+    },
+    {
+      "id": "exam-11-section-02",
+      "number": 2,
+      "type": "sentence_order",
+      "label": "文の文法2",
+      "instruction": "次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-11-s02-q01",
+          "number": 1,
+          "sentenceBefore": "この部品を国内で生産",
+          "sentenceAfter": "だろう。",
+          "pieces": [
+            { "id": 1, "text": "しかない" },
+            { "id": 2, "text": "となると" },
+            { "id": 3, "text": "輸入する" },
+            { "id": 4, "text": "できない" }
+          ],
+          "starPosition": 3,
+          "correctChoice": 3,
+          "correctOrder": [4, 2, 3, 1],
+          "completedSentence": "この部品を国内で生産できないとなると輸入するしかないだろう。"
+        },
+        {
+          "id": "exam-11-s02-q02",
+          "number": 2,
+          "sentenceBefore": "申しわけありませんが、",
+          "sentenceAfter": "かねます。",
+          "pieces": [
+            { "id": 1, "text": "答え" },
+            { "id": 2, "text": "については" },
+            { "id": 3, "text": "そういった" },
+            { "id": 4, "text": "こと" }
+          ],
+          "starPosition": 3,
+          "correctChoice": 2,
+          "correctOrder": [3, 4, 2, 1],
+          "completedSentence": "申しわけありませんが、そういったことについては答えかねます。"
+        },
+        {
+          "id": "exam-11-s02-q03",
+          "number": 3,
+          "sentenceBefore": "おいしいラーメン屋があると聞いたら、どんなに",
+          "sentenceAfter": "。",
+          "pieces": [
+            { "id": 1, "text": "行かず" },
+            { "id": 2, "text": "いられない" },
+            { "id": 3, "text": "には" },
+            { "id": 4, "text": "遠くても" }
+          ],
+          "starPosition": 3,
+          "correctChoice": 3,
+          "correctOrder": [4, 1, 3, 2],
+          "completedSentence": "おいしいラーメン屋があると聞いたら、どんなに遠くても行かずにはいられない。"
+        },
+        {
+          "id": "exam-11-s02-q04",
+          "number": 4,
+          "sentenceBefore": "一番後ろの席でほとんど見えなかったが、",
+          "sentenceAfter": "。",
+          "pieces": [
+            { "id": 1, "text": "コンサートに" },
+            { "id": 2, "text": "だけ" },
+            { "id": 3, "text": "行けた" },
+            { "id": 4, "text": "ましだ" }
+          ],
+          "starPosition": 3,
+          "correctChoice": 2,
+          "correctOrder": [1, 3, 2, 4],
+          "completedSentence": "一番後ろの席でほとんど見えなかったが、コンサートに行けただけましだ。"
+        }
+      ]
+    },
+    {
+      "id": "exam-11-section-03",
+      "number": 3,
+      "type": "passage_grammar",
+      "label": "文章の文法",
+      "instruction": "次の文章を読んで、1から3の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 2,
+      "passage": "人が暮らしのなかで何かを選ぶという機会は、私が生きたこの六十年で、ずいぶんと増えたように思います。衣類一つをとっても、今は家の中に溢れかえっていて、いかに処分するかが問題となる状況です。［1］デパートやスーパーに行って、商品の山にさらされると、ついついまた何かを選んで買ってしまう。そういう生活になっています。\nあるいは子どものおもちゃ［2］、私が子どもだった頃には、買ってもらえるものが本当にかぎられていました。子ども向けの商品は、［3-a］に比べてずいぶん貧弱でした。\nところが、いまは子どもをターゲットとした商品市場が、親を巻き込んだかたちで、圧倒的な広がりを持つようになっていて、子どもが小学校に上がる頃には、ダンボール数箱分のおもちゃのガラクタがたまっていたりします。［3-b］の子どもたちが持っているおもちゃの量は、［3-c］に比べて、おそらく100倍以上に達しているのではないかと思います。",
+      "attribution": "浜田寿美男著『心はなぜ不自由なのか』PHP研究所刊",
+      "questions": [
+        {
+          "id": "exam-11-s03-q01",
+          "number": 1,
+          "blank": "［1］",
+          "choices": [
+            { "id": 1, "text": "つまり" },
+            { "id": 2, "text": "それでも" },
+            { "id": 3, "text": "ですから" },
+            { "id": 4, "text": "このように" }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-11-s03-q02",
+          "number": 2,
+          "blank": "［2］",
+          "choices": [
+            { "id": 1, "text": "にして" },
+            { "id": 2, "text": "にしたら" },
+            { "id": 3, "text": "にしても" },
+            { "id": 4, "text": "にしては" }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-11-s03-q03",
+          "number": 3,
+          "blank": "［3］",
+          "choices": [
+            { "id": 1, "text": "a いま / b いま / c 昔" },
+            { "id": 2, "text": "a いま / b 昔 / c いま" },
+            { "id": 3, "text": "a 昔 / b いま / c 昔" },
+            { "id": 4, "text": "a 昔 / b 昔 / c いま" }
+          ],
+          "correctChoice": 1
+        }
+      ]
+    }
+  ]
+}
