@@ -1,9 +1,16 @@
-import { loadEnvConfig } from '@next/env';
 import { getMigrations } from 'better-auth/db/migration';
 import { Pool } from 'pg';
 import { readFile } from 'node:fs/promises';
-loadEnvConfig(process.cwd());
 async function main() {
+  // Match the content migration script without relying on Next's transitive dependencies.
+  for (const filename of ['.env.local', '.env']) {
+    if (process.env.DATABASE_URL) break;
+    try {
+      process.loadEnvFile(filename);
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
+    }
+  }
   if (!process.env.DATABASE_URL) throw new Error('DATABASE_URL is required');
   const pool = new Pool({ connectionString: process.env.DATABASE_URL });
   try {

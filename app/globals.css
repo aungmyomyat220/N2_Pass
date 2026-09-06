@@ -2224,3 +2224,23 @@ button.remove-meaning svg {
 .account-controls button:disabled { opacity: .5; cursor: default; }
 .account-controls > div { display: grid; gap: 8px; }
 .account-loading { padding: 40px; color: var(--muted); }
+
+.account-controls .google-sign-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  background: #fff;
+  color: #1f1f1f;
+  border: 1px solid #747775;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.account-controls .google-sign-in:hover:not(:disabled) { background: #f2f2f2; }
+.account-controls .google-sign-in:focus-visible { outline: 2px solid #4285f4; outline-offset: 3px; }
+.account-controls .google-sign-in:disabled { opacity: 1; }
+.google-sign-in-icon { width: 20px; height: 20px; flex-shrink: 0; }
