@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const SUBJECTS = [
   { slug: "kanji", title: "Kanji", mark: "漢", description: "Practice single kanji and compound readings.", soon: false },
-  { slug: "grammar", title: "Grammar", mark: "文", description: "Practice Japanese grammar.", soon: true },
+  { slug: "grammar", title: "Grammar", mark: "文", description: "Study Powerdrill lessons.", soon: false },
   { slug: "mimetic", title: "Mimetic Words", mark: "音", description: "Practice mimetic and onomatopoeic words.", soon: true },
 ];
 
@@ -18,7 +18,7 @@ export default function ExamPage() {
             <h2 className="mode-name">{subject.title}</h2>
             <p className="mode-sub">{subject.description}</p>
             <span className={subject.soon ? "coming-badge" : "exam-ready"}>
-              {subject.soon ? "Coming soon" : "Start exam →"}
+              {subject.soon ? "Coming soon" : subject.slug === "grammar" ? "Choose lesson →" : "Start exam →"}
             </span>
           </Link>
         ))}

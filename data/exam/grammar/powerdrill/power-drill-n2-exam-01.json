@@ -1,0 +1,268 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-exam-01",
+  "title": "日本語パワードリル N2文法 第1回",
+  "level": "N2",
+  "examNumber": 1,
+  "timeLimitMinutes": 10,
+  "maximumScore": 20,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [8, 9],
+    "pdfPages": [8, 9]
+  },
+  "sections": [
+    {
+      "id": "exam-01-section-01",
+      "number": 1,
+      "type": "grammar_selection",
+      "label": "文の文法1",
+      "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-01-s01-q01",
+          "number": 1,
+          "prompt": "毎晩お酒を飲んで（　）、病気になりますよ。",
+          "choices": [
+            { "id": 1, "text": "ばかりに" },
+            { "id": 2, "text": "ばかりは" },
+            { "id": 3, "text": "ばかりいると" },
+            { "id": 4, "text": "ばかりでなく" }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-01-s01-q02",
+          "number": 2,
+          "prompt": "雪国の人なら誰でもスキーが上手（　）、必ずしもそうではない。",
+          "choices": [
+            { "id": 1, "text": "というと" },
+            { "id": 2, "text": "かというと" },
+            { "id": 3, "text": "といったら" },
+            { "id": 4, "text": "というなら" }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-01-s01-q03",
+          "number": 3,
+          "prompt": "手術をしない（　）、命は助からないだろう。",
+          "choices": [
+            { "id": 1, "text": "ことには" },
+            { "id": 2, "text": "うちに" },
+            { "id": 3, "text": "ものには" },
+            { "id": 4, "text": "もので" }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-01-s01-q04",
+          "number": 4,
+          "prompt": "苦しい時に支えあう、それが家族という（　）。",
+          "choices": [
+            { "id": 1, "text": "ことだ" },
+            { "id": 2, "text": "そうだ" },
+            { "id": 3, "text": "ものだ" },
+            { "id": 4, "text": "ようだ" }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-01-s01-q05",
+          "number": 5,
+          "prompt": "信じ（　）ことに、日本の借金は800兆円以上もあるそうだ。",
+          "choices": [
+            { "id": 1, "text": "がたい" },
+            { "id": 2, "text": "づらい" },
+            { "id": 3, "text": "られる" },
+            { "id": 4, "text": "やすい" }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-01-s01-q06",
+          "number": 6,
+          "prompt": "彼女は何年も悩んだ（　）、ついに離婚した。",
+          "choices": [
+            { "id": 1, "text": "あげく" },
+            { "id": 2, "text": "ところで" },
+            { "id": 3, "text": "ばかりに" },
+            { "id": 4, "text": "からには" }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-01-s01-q07",
+          "number": 7,
+          "prompt": "こんなに欠席が多くては、単位を落とし（　）。",
+          "choices": [
+            { "id": 1, "text": "がちだ" },
+            { "id": 2, "text": "かねない" },
+            { "id": 3, "text": "そうにない" },
+            { "id": 4, "text": "てはいけない" }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-01-s01-q08",
+          "number": 8,
+          "prompt": "時代の変化に（　）、日本人の食生活も変化してきた。",
+          "choices": [
+            { "id": 1, "text": "続いて" },
+            { "id": 2, "text": "先立って" },
+            { "id": 3, "text": "ともなって" },
+            { "id": 4, "text": "つながって" }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-01-s01-q09",
+          "number": 9,
+          "prompt": "簡単な調べものならインターネットでできるので、図書館に行く（　）。",
+          "choices": [
+            { "id": 1, "text": "までもない" },
+            { "id": 2, "text": "ほかはない" },
+            { "id": 3, "text": "のみか" },
+            { "id": 4, "text": "まいか" }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-01-s01-q10",
+          "number": 10,
+          "prompt": "ある程度の困難は予想していた（　）、ここまで大変だとは思わなかった。",
+          "choices": [
+            { "id": 1, "text": "ものの" },
+            { "id": 2, "text": "だけに" },
+            { "id": 3, "text": "からこそ" },
+            { "id": 4, "text": "ことから" }
+          ],
+          "correctChoice": 1
+        }
+      ]
+    },
+    {
+      "id": "exam-01-section-02",
+      "number": 2,
+      "type": "sentence_order",
+      "label": "文の文法2",
+      "instruction": "次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-01-s02-q01",
+          "number": 1,
+          "sentenceBefore": "映画館から出てきた人が",
+          "sentenceAfter": "よほど感動的な映画なのだろう。",
+          "pieces": [
+            { "id": 1, "text": "見ると" },
+            { "id": 2, "text": "ところを" },
+            { "id": 3, "text": "泣いている" },
+            { "id": 4, "text": "あんなに" }
+          ],
+          "starPosition": 3,
+          "correctChoice": 2,
+          "correctOrder": [4, 3, 2, 1],
+          "completedSentence": "映画館から出てきた人があんなに泣いているところを見ると、よほど感動的な映画なのだろう。"
+        },
+        {
+          "id": "exam-01-s02-q02",
+          "number": 2,
+          "sentenceBefore": "採用",
+          "sentenceAfter": "受けてみることにした。",
+          "pieces": [
+            { "id": 1, "text": "面接を" },
+            { "id": 2, "text": "されるか" },
+            { "id": 3, "text": "ともかく" },
+            { "id": 4, "text": "どうかは" }
+          ],
+          "starPosition": 3,
+          "correctChoice": 3,
+          "correctOrder": [2, 4, 3, 1],
+          "completedSentence": "採用されるかどうかはともかく、面接を受けてみることにした。"
+        },
+        {
+          "id": "exam-01-s02-q03",
+          "number": 3,
+          "sentenceBefore": "お客様に満足して",
+          "sentenceAfter": "の価値があるのではないだろうか。",
+          "pieces": [
+            { "id": 1, "text": "商品" },
+            { "id": 2, "text": "はじめて" },
+            { "id": 3, "text": "いただけて" },
+            { "id": 4, "text": "として" }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [3, 2, 1, 4],
+          "completedSentence": "お客様に満足していただけてはじめて、商品としての価値があるのではないだろうか。"
+        },
+        {
+          "id": "exam-01-s02-q04",
+          "number": 4,
+          "sentenceBefore": "志望校に合格するために、",
+          "sentenceAfter": "。",
+          "pieces": [
+            { "id": 1, "text": "だけの" },
+            { "id": 2, "text": "ことは" },
+            { "id": 3, "text": "やった" },
+            { "id": 4, "text": "やれる" }
+          ],
+          "starPosition": 3,
+          "correctChoice": 2,
+          "correctOrder": [4, 1, 2, 3],
+          "completedSentence": "志望校に合格するために、やれるだけのことはやった。"
+        }
+      ]
+    },
+    {
+      "id": "exam-01-section-03",
+      "number": 3,
+      "type": "passage_grammar",
+      "label": "文章の文法",
+      "instruction": "次の文章を読んで、1から3の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 2,
+      "passage": "常にメモ帳とペンを持っていましょう。一日を過ごすなかで、自分の感情や思い、つぶやきなど、どんなことでも気にかけたことを書き記しておきます。人に見せるものでは［1］、できるだけ正直な言葉を残します。\n仕事と暮らし［2］、自分を知ることはとても大切なことです。しかし、今自分が何を考えていて、何を感じていて、何を思っているのか。また、何が好きで、何が嫌いなのかなど、わかっているつもりでも、なかなかわからないものです。［3］、日々のメモにその断片を書き記すことで、自分を知るためのヒントとしましょう。\nどんなことでも、書き記すという習慣はよいことです。",
+      "attribution": "松浦弥太郎『暮らしのヒント集2』暮しの手帖社刊",
+      "questions": [
+        {
+          "id": "exam-01-s03-q01",
+          "number": 1,
+          "blank": "［1］",
+          "choices": [
+            { "id": 1, "text": "なくても" },
+            { "id": 2, "text": "ないのに" },
+            { "id": 3, "text": "ないので" },
+            { "id": 4, "text": "ないなら" }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-01-s03-q02",
+          "number": 2,
+          "blank": "［2］",
+          "choices": [
+            { "id": 1, "text": "において" },
+            { "id": 2, "text": "にかけて" },
+            { "id": 3, "text": "にとって" },
+            { "id": 4, "text": "に際して" }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-01-s03-q03",
+          "number": 3,
+          "blank": "［3］",
+          "choices": [
+            { "id": 1, "text": "また" },
+            { "id": 2, "text": "しかし" },
+            { "id": 3, "text": "そのため" },
+            { "id": 4, "text": "ですから" }
+          ],
+          "correctChoice": 4
+        }
+      ]
+    }
+  ]
+}
