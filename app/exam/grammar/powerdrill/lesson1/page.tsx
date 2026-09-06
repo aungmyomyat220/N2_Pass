@@ -77,7 +77,11 @@ export default function PowerdrillLesson1Page() {
                 <p className="meta">{section.pointsPerQuestion} {section.pointsPerQuestion === 1 ? "point" : "points"} per question</p>
                 {section.passage && (
                   <div className="powerdrill-passage" lang="ja">
-                    <p>{section.passage}</p>
+                    <p>{section.passage.split(/(［\d+］|\[\d+\])/g).map((part, index) =>
+                      /^(?:［\d+］|\[\d+\])$/.test(part)
+                        ? <mark className="powerdrill-blank" key={index}>{part}</mark>
+                        : part,
+                    )}</p>
                     <small>{section.attribution}</small>
                   </div>
                 )}
