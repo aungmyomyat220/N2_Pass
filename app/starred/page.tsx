@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpenText, Languages } from "lucide-react";
 import rawData from "@/data/n2-kanji.json";
 import KanjiFlashcard from "@/app/components/KanjiFlashcard";
 import type { KanjiCard } from "@/lib/srs";
@@ -14,6 +14,8 @@ const CARD_BY_KANJI = new Map(CARDS.map((card) => [card.kanji, card]));
 export default function StarredPage() {
   const [subject, setSubject] = useState<"kanji" | "grammar">("kanji");
   const [stars, setStars] = useState<string[]>([]);
+  const kanjiCount = stars.filter((key) => CARD_BY_KANJI.has(key)).length;
+  const grammarCount = stars.filter((key) => key.startsWith("grammar:")).length;
   useEffect(() => {
     const refresh = () => setStars(loadStarred());
     refresh();
@@ -22,10 +24,24 @@ export default function StarredPage() {
     return () => { window.removeEventListener(STARRED_CHANGE_EVENT, refresh); window.removeEventListener("storage", refresh); };
   }, []);
   return <main className={subject === "grammar" ? "grammar-library-page" : undefined}>
-    <header className="app-header"><h1>Starred</h1><span className="review-count">{stars.length} saved</span></header>
-    <div className="grammar-lesson-tabs" aria-label="Starred subject">
-      <button type="button" className={subject === "kanji" ? "active" : ""} aria-pressed={subject === "kanji"} onClick={() => setSubject("kanji")}>Kanji <span>{stars.filter(key => CARD_BY_KANJI.has(key)).length}</span></button>
-      <button type="button" className={subject === "grammar" ? "active" : ""} aria-pressed={subject === "grammar"} onClick={() => setSubject("grammar")}>Grammar <span>{stars.filter(key => key.startsWith("grammar:")).length}</span></button>
+    <header className="app-header">
+      <div>
+        <h1>Starred</h1>
+        <p className="starred-header-note">Choose what you want to review.</p>
+      </div>
+      <span className="review-count">{kanjiCount + grammarCount} saved</span>
+    </header>
+    <div className="starred-subjects" aria-label="Choose starred section">
+      <button type="button" className={subject === "kanji" ? "active" : ""} aria-pressed={subject === "kanji"} onClick={() => setSubject("kanji")}>
+        <Languages aria-hidden="true" />
+        <span><strong>Kanji</strong><small>Review saved kanji cards</small></span>
+        <b>{kanjiCount}</b>
+      </button>
+      <button type="button" className={subject === "grammar" ? "active" : ""} aria-pressed={subject === "grammar"} onClick={() => setSubject("grammar")}>
+        <BookOpenText aria-hidden="true" />
+        <span><strong>Grammar</strong><small>Open saved grammar patterns</small></span>
+        <b>{grammarCount}</b>
+      </button>
     </div>
     {subject === "kanji" ? <StarredKanji /> : <GrammarLibrary starredOnly />}
   </main>;

@@ -2262,6 +2262,17 @@ button.remove-meaning svg {
 .grammar-index-starred svg { color: #f7c948; flex-shrink: 0; }
 .grammar-copy-status { color: var(--muted); font-size: 13px; }
 .grammar-copy-status:empty { display: none; }
+.starred-header-note { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
+.starred-subjects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 24px 0 28px; }
+.starred-subjects button { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 14px; padding: 16px; text-align: left; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: 12px; }
+.starred-subjects button > svg { width: 22px; height: 22px; color: var(--muted); }
+.starred-subjects button > span { display: grid; gap: 4px; }
+.starred-subjects button strong { font-size: 15px; }
+.starred-subjects button small { color: var(--muted); font-size: 12px; }
+.starred-subjects button b { display: grid; place-items: center; min-width: 34px; height: 28px; padding: 0 8px; color: #f7c948; background: rgba(247, 201, 72, .12); border-radius: 999px; font-size: 13px; }
+.starred-subjects button.active { border-color: #f7c948; box-shadow: 0 0 0 1px rgba(247, 201, 72, .2); }
+.starred-subjects button.active > svg { color: #f7c948; }
 @media (max-width: 600px) {
   .grammar-card-actions { flex-direction: column; padding: 12px 12px 12px 0; }
+  .starred-subjects { grid-template-columns: 1fr; }
 }
