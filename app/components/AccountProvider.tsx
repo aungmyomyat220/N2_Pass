@@ -24,10 +24,6 @@ function GoogleIcon() {
   </svg>;
 }
 
-function userInitials(user: User | null | undefined) {
-  if (!user?.name) return '';
-  return user.name.split(/\s+/).filter(Boolean).slice(0, 2).map(part => part[0]).join('').toUpperCase();
-}
 export default function AccountProvider({ children }: { children: ReactNode }) {
   const [account, setAccount] = useState<Account | null>(null);
   const [error, setError] = useState('');
@@ -170,11 +166,11 @@ export default function AccountProvider({ children }: { children: ReactNode }) {
     <HoverCardTrigger
       delay={100}
       closeDelay={150}
-      render={<Button variant="ghost" className="account-profile-trigger" aria-label={account?.user ? `Open ${account.user.name} profile` : 'Open user profile'} />}
+      render={<Button variant="outline" className="account-profile-trigger" aria-label={account?.user ? `Open ${account.user.name} profile` : 'Open user profile'} />}
     >
       <Avatar>
         {account?.user?.image && <AvatarImage src={account.user.image} alt={account.user.name} />}
-        <AvatarFallback>{account?.user ? userInitials(account.user) : <UserRound aria-hidden="true" />}</AvatarFallback>
+        <AvatarFallback><UserRound aria-hidden="true" /></AvatarFallback>
       </Avatar>
       {account?.user && <span className="account-profile-name">{account.user.name}</span>}
     </HoverCardTrigger>
