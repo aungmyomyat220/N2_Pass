@@ -48,12 +48,15 @@ export default function MimeticWordList({ data, title = "Mimetic Words", backLin
 
   return (
     <main className="grammar-page mimetic-page">
-      <header className="app-header">
-        <h1>{title}</h1>
-        <span className="meta">{data.entries.length} words</span>
+      <header className="grammar-lessons-header">
+        <div>
+          <span className="grammar-eyebrow">擬音語・擬態語 · N3/N2</span>
+          <h1>{title}</h1>
+          <p>{data.title}</p>
+        </div>
+        <span className="grammar-library-stat mimetic-stat">{data.entries.length} words</span>
       </header>
       {backLink && <Link className="exam-back-link" href={backLink.href}>{backLink.label}</Link>}
-      <p className="mimetic-intro">{data.title}</p>
       <p className="mimetic-note">{data.note}</p>
 
       <div className="grammar-workspace">

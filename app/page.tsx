@@ -84,6 +84,9 @@ export default function Home() {
 
   const current: KanjiCard | undefined =
     retryCard ?? (manualIndex === null ? queue[0] : CARDS[manualIndex]);
+  const currentIndex = current
+    ? CARDS.findIndex((card) => card.kanji === current.kanji)
+    : -1;
 
   const answer = useCallback(
     (knewIt: boolean) => {
@@ -217,7 +220,7 @@ export default function Home() {
             <Grid3X3 aria-hidden="true" />
             All Kanji
           </button>
-          <button className="ghost" onClick={handleReset}>
+          <button className="ghost reset-progress" onClick={handleReset}>
             Reset progress
           </button>
         </div>
@@ -236,8 +239,10 @@ export default function Home() {
             </div>
           </div>
           <div className="stat">
-            <div className="label">Mastered</div>
-            <div className="value">{stats.mastered}</div>
+            <div className="label">Current index</div>
+            <div className="value">
+              {currentIndex >= 0 ? currentIndex + 1 : "—"}/{stats.total}
+            </div>
           </div>
         </section>
       )}

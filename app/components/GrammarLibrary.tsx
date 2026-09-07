@@ -74,13 +74,30 @@ export default function GrammarLibrary({ starredOnly = false }: { starredOnly?: 
     <section className="grammar-page grammar-lessons">
       {!starredOnly && <header className="grammar-lessons-header">
         <div><span className="grammar-eyebrow">日本語の文法 · N2</span><h1>Grammar</h1><p>Build your understanding, one pattern at a time.</p></div>
-        <span className="grammar-library-stat">{GRAMMAR.length} patterns · {LESSONS.length} lessons</span>
+        <span className="grammar-library-stat grammar-stat">{GRAMMAR.length} patterns · {LESSONS.length} lessons</span>
       </header>}
 
       <p className="grammar-copy-status" role="status">{copyStatus}</p>
-      <div className="grammar-lesson-tabs" aria-label="Filter by lesson">
-        {[null, ...LESSONS].map((number) => <button type="button" key={number ?? "all"} aria-pressed={lesson === number} className={lesson === number ? "active" : ""} onClick={() => { setLesson(number); setOpenIdx(null); }}>{number === null ? "All lessons" : `Lesson ${String(number).padStart(2, "0")}`}<span>{number === null ? available.length : available.filter((point) => point.lessons.includes(number)).length}</span></button>)}
-      </div>
+      {!starredOnly && <div className="grammar-lesson-filter">
+        <label htmlFor={starredOnly ? "starred-grammar-lesson" : "grammar-lesson"}>
+          Lesson
+        </label>
+        <select
+          id={starredOnly ? "starred-grammar-lesson" : "grammar-lesson"}
+          value={lesson ?? "all"}
+          onChange={(event) => {
+            setLesson(event.target.value === "all" ? null : Number(event.target.value));
+            setOpenIdx(null);
+          }}
+        >
+          <option value="all">All lessons ({available.length})</option>
+          {LESSONS.map((number) => (
+            <option value={number} key={number}>
+              Lesson {String(number).padStart(2, "0")} ({available.filter((point) => point.lessons.includes(number)).length})
+            </option>
+          ))}
+        </select>
+      </div>}
 
       <div className="grammar-workspace">
         <section className="grammar-study-column">

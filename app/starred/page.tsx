@@ -23,13 +23,14 @@ export default function StarredPage() {
     window.addEventListener("storage", refresh);
     return () => { window.removeEventListener(STARRED_CHANGE_EVENT, refresh); window.removeEventListener("storage", refresh); };
   }, []);
-  return <main className={subject === "grammar" ? "grammar-library-page" : undefined}>
-    <header className="app-header">
+  return <main className="grammar-library-page starred-page">
+    <header className="grammar-lessons-header">
       <div>
+        <span className="grammar-eyebrow">YOUR STUDY LIST · N2</span>
         <h1>Starred</h1>
-        <p className="starred-header-note">Choose what you want to review.</p>
+        <p>Review the kanji and grammar patterns you saved for later.</p>
       </div>
-      <span className="review-count">{kanjiCount + grammarCount} saved</span>
+      <span className="grammar-library-stat starred-stat">{kanjiCount + grammarCount} saved</span>
     </header>
     <div className="starred-subjects" aria-label="Choose starred section">
       <button type="button" className={subject === "kanji" ? "active" : ""} aria-pressed={subject === "kanji"} onClick={() => setSubject("kanji")}>
