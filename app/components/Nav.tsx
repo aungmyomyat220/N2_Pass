@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   BookOpenText,
+  ChevronDown,
   ClipboardCheck,
   Languages,
   AudioLines,
@@ -39,7 +40,6 @@ const NAV_SECTIONS = [
   {
     label: "Study",
     items: [
-      { href: "/", label: "Kanji", icon: Languages },
       { href: "/starred", label: "Starred", icon: Star },
       { href: "/grammar", label: "Grammar", icon: BookOpenText },
       { href: "/mimetic", label: "Mimetic Words", icon: AudioLines },
@@ -54,11 +54,17 @@ const NAV_SECTIONS = [
 export default function Nav() {
   const pathname = usePathname();
   const [starredCount, setStarredCount] = useState(0);
+  const [kanjiOpen, setKanjiOpen] = useState(false);
   const [motto, setMotto] = useState<(typeof MOTTOES)[number]>(MOTTOES[0]);
+  const kanjiActive = pathname === "/" || pathname.startsWith("/kanji/");
 
   useEffect(() => {
     setMotto(MOTTOES[Math.floor(Math.random() * MOTTOES.length)]);
   }, []);
+
+  useEffect(() => {
+    if (kanjiActive) setKanjiOpen(true);
+  }, [kanjiActive]);
 
   useEffect(() => {
     const refreshCount = () => setStarredCount(loadStarred().length);
@@ -88,6 +94,27 @@ export default function Nav() {
           >
             <div className="nav-section-label">{section.label}</div>
             <div className="tab-list">
+              {section.label === "Study" && (
+                <div className="kanji-nav">
+                  <button
+                    type="button"
+                    className={kanjiActive ? "tab kanji-nav-toggle active" : "tab kanji-nav-toggle"}
+                    aria-expanded={kanjiOpen}
+                    aria-controls="kanji-study-menu"
+                    onClick={() => setKanjiOpen((open) => !open)}
+                  >
+                    <Languages className="tab-icon" aria-hidden="true" />
+                    <span className="tab-label">Kanji</span>
+                    <ChevronDown className={kanjiOpen ? "kanji-chevron open" : "kanji-chevron"} aria-hidden="true" />
+                  </button>
+                  {kanjiOpen && (
+                    <div className="kanji-submenu" id="kanji-study-menu">
+                      <Link className={pathname === "/" ? "active" : ""} href="/">Normal</Link>
+                      <Link className={pathname === "/kanji/same-pattern" ? "active" : ""} href="/kanji/same-pattern">Same Pattern</Link>
+                    </div>
+                  )}
+                </div>
+              )}
               {section.items.map((item) => {
                 const active = pathname === item.href ||
                   (item.href !== "/" && pathname.startsWith(`${item.href}/`));

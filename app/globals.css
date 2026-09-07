@@ -163,6 +163,15 @@ body {
   gap: 4px;
 }
 
+.kanji-nav { position: relative; }
+.kanji-nav-toggle { width: 100%; background: transparent; text-align: left; }
+.kanji-chevron { width: 16px; height: 16px; margin-left: auto; transition: transform .15s ease; }
+.kanji-chevron.open { transform: rotate(180deg); }
+.kanji-submenu { display: grid; gap: 3px; padding: 4px 0 4px 38px; }
+.kanji-submenu a { padding: 7px 10px; color: var(--muted); border-radius: 7px; text-decoration: none; font-size: 13px; font-weight: 600; }
+.kanji-submenu a:hover { color: var(--text); background: var(--surface-2); }
+.kanji-submenu a.active { color: var(--accent); background: rgba(110, 168, 254, .1); }
+
 .tab {
   display: flex;
   align-items: center;
@@ -364,6 +373,11 @@ body {
     border-bottom: 3px solid transparent;
     border-radius: 8px;
   }
+
+  .kanji-nav { flex: 1; }
+  .kanji-nav-toggle { height: 100%; justify-content: center; }
+  .kanji-submenu { position: absolute; z-index: 150; top: calc(100% + 8px); left: 0; min-width: 180px; padding: 8px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 12px 30px rgba(0, 0, 0, .35); }
+  .kanji-submenu a { padding: 10px 12px; }
 
   .tab.active {
     border-left: none;
