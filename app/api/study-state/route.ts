@@ -11,7 +11,17 @@ export async function GET(request: Request) {
     if (!session) return json({ user: null, configured: true });
     const sql = getDatabase();
     const rows = await sql`SELECT state, revision FROM user_study_state WHERE user_id = ${session.user.id}` as { state: StudyState; revision: number }[];
-    return json({ user: { id: session.user.id, name: session.user.name }, configured: true, state: rows[0]?.state ?? emptyState(), revision: rows[0]?.revision ?? 0 });
+    return json({
+      user: {
+        id: session.user.id,
+        name: session.user.name,
+        email: session.user.email,
+        image: session.user.image,
+      },
+      configured: true,
+      state: rows[0]?.state ?? emptyState(),
+      revision: rows[0]?.revision ?? 0,
+    });
   } catch { return json({ message: 'Unable to load your account. Please retry.' }, 503); }
 }
 export async function PUT(request: Request) {

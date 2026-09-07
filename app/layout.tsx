@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "./components/Nav";
-import AccountProvider from "./components/AccountProvider";
+import AccountProvider, { AccountProfile } from "./components/AccountProvider";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
@@ -27,6 +27,7 @@ export default function RootLayout({
               <div className="shadcn-main-shell">
                 <div className="sidebar-toolbar">
                   <SidebarTrigger aria-label="Toggle navigation" />
+                  <AccountProfile />
                 </div>
                 <div className="content">{children}</div>
               </div>
