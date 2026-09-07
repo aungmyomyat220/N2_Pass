@@ -12,7 +12,11 @@ export function updateAccount(patch: Partial<StudyState>) {
 }
 export function guestState(): StudyState {
   try {
-    const value = { progress: JSON.parse(localStorage.getItem('n2-kanji-progress-v1') || '{}'), starred: JSON.parse(localStorage.getItem('n2-kanji-starred-v1') || '[]') };
+    const value = {
+      progress: JSON.parse(localStorage.getItem('n2-kanji-progress-v1') || '{}'),
+      samePatternProgress: JSON.parse(localStorage.getItem('n2-kanji-same-pattern-progress-v1') || '{}'),
+      starred: JSON.parse(localStorage.getItem('n2-kanji-starred-v1') || '[]'),
+    };
     return validState(value) ? value : emptyState();
   } catch { return emptyState(); }
 }

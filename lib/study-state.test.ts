@@ -5,16 +5,22 @@ const card = { box: 1, due: 123, seen: 2, correct: 1 };
 test('validates persisted state and rejects invalid review data', () => {
   assert.ok(validState(emptyState()));
   assert.ok(validState({ progress: { 日: card }, starred: ['日'] }));
+  assert.ok(validState({ progress: {}, samePatternProgress: { 月: card }, starred: [] }));
   for (const progress of [[], { 日: { ...card, box: 5 } }, { 日: { ...card, seen: -1 } }, { 日: { ...card, correct: 3 } }, { 日: { ...card, due: Infinity } }]) {
     assert.equal(validState({ progress, starred: [] }), false);
+    assert.equal(validState({ progress: {}, samePatternProgress: progress, starred: [] }), false);
   }
   assert.equal(validState({ progress: {}, starred: [42] }), false);
   assert.equal(validState(null), false);
 });
 test('guest import preserves cloud progress and combines unique stars', () => {
-  const cloud = { progress: { 日: card }, starred: ['日'] };
-  const guest = { progress: { 日: { ...card, box: 0 }, 月: card }, starred: ['日', '月'] };
-  assert.deepEqual(importGuest(cloud, guest), { progress: { 日: card, 月: card }, starred: ['日', '月'] });
+  const cloud = { progress: { 日: card }, samePatternProgress: { 木: card }, starred: ['日'] };
+  const guest = { progress: { 日: { ...card, box: 0 }, 月: card }, samePatternProgress: { 木: { ...card, box: 0 }, 水: card }, starred: ['日', '月'] };
+  assert.deepEqual(importGuest(cloud, guest), {
+    progress: { 日: card, 月: card },
+    samePatternProgress: { 木: card, 水: card },
+    starred: ['日', '月'],
+  });
   assert.deepEqual(cloud.starred, ['日']);
 });
 
@@ -28,17 +34,22 @@ test('account progress and stars stay separate from guests and other accounts', 
   Object.defineProperty(globalThis, 'window', { configurable: true, value: mockWindow });
   try {
     activateAccount(null);
-    saveProgress({ 日: card }); saveStarred(['日']);
+    saveProgress({ 日: card }); saveProgress({ 木: card }, 'same-pattern'); saveStarred(['日']);
+    resetProgress('same-pattern');
+    assert.deepEqual(loadProgress(), { 日: card }); assert.deepEqual(loadProgress('same-pattern'), {});
+    saveProgress({ 水: card }, 'same-pattern');
     activateAccount('alice', emptyState());
-    assert.deepEqual(loadProgress(), {}); assert.deepEqual(loadStarred(), []);
-    saveProgress({ 月: card }); saveStarred(['月', 'grammar:te-bakari-iru']);
-    assert.deepEqual(loadProgress(), { 月: card });
+    assert.deepEqual(loadProgress(), {}); assert.deepEqual(loadProgress('same-pattern'), {}); assert.deepEqual(loadStarred(), []);
+    saveProgress({ 月: card }); saveProgress({ 火: card }, 'same-pattern'); saveStarred(['月', 'grammar:te-bakari-iru']);
+    assert.deepEqual(loadProgress(), { 月: card }); assert.deepEqual(loadProgress('same-pattern'), { 火: card });
     resetProgress();
-    assert.deepEqual(loadProgress(), {}); assert.deepEqual(loadStarred(), ['月', 'grammar:te-bakari-iru']);
+    assert.deepEqual(loadProgress(), {}); assert.deepEqual(loadProgress('same-pattern'), { 火: card }); assert.deepEqual(loadStarred(), ['月', 'grammar:te-bakari-iru']);
+    resetProgress('same-pattern');
+    assert.deepEqual(loadProgress('same-pattern'), {}); assert.deepEqual(loadStarred(), ['月', 'grammar:te-bakari-iru']);
     activateAccount('bob', emptyState());
-    assert.deepEqual(loadProgress(), {}); assert.deepEqual(loadStarred(), []);
+    assert.deepEqual(loadProgress(), {}); assert.deepEqual(loadProgress('same-pattern'), {}); assert.deepEqual(loadStarred(), []);
     activateAccount(null);
-    assert.deepEqual(loadProgress(), { 日: card }); assert.deepEqual(loadStarred(), ['日']);
+    assert.deepEqual(loadProgress(), { 日: card }); assert.deepEqual(loadProgress('same-pattern'), { 水: card }); assert.deepEqual(loadStarred(), ['日']);
   } finally { activateAccount(null); Reflect.deleteProperty(globalThis, 'window'); }
 });
 

@@ -20,6 +20,7 @@ import KanjiSentenceCard from "@/app/components/KanjiSentenceCard";
 import KanjiWritingPad from "@/app/components/KanjiWritingPad";
 import {
   KanjiCard,
+  ProgressDeck,
   ProgressMap,
   buildQueue,
   computeStats,
@@ -35,9 +36,11 @@ type VisitedCard = { card: KanjiCard; manualIndex: number | null };
 export default function KanjiStudyPage({
   cards: CARDS,
   title = "N2 Kanji Flashcards",
+  progressDeck = "normal",
 }: {
   cards: KanjiCard[];
   title?: string;
+  progressDeck?: ProgressDeck;
 }) {
   // `null` until we've hydrated from localStorage, so SSR and first client
   // render agree (avoids hydration mismatch).
@@ -54,10 +57,10 @@ export default function KanjiStudyPage({
   const [kanjiSearch, setKanjiSearch] = useState("");
 
   useEffect(() => {
-    setProgress(loadProgress());
+    setProgress(loadProgress(progressDeck));
     setStarred(loadStarred());
     setNow(Date.now());
-  }, []);
+  }, [progressDeck]);
 
   const queue = useMemo(() => {
     if (progress === null) return [];
@@ -96,7 +99,7 @@ export default function KanjiStudyPage({
     (knewIt: boolean) => {
       if (progress === null || !current) return;
       const next = review(progress, current.kanji, knewIt, Date.now());
-      saveProgress(next);
+      saveProgress(next, progressDeck);
       setProgress(next);
       setRevealed(false);
       // Keep the failed card visible even when saving progress reorders the queue.
@@ -122,7 +125,7 @@ export default function KanjiStudyPage({
         }
       }
     },
-    [progress, current, manualIndex, forward],
+    [progress, current, manualIndex, forward, progressDeck],
   );
 
   const goBack = () => {
@@ -175,8 +178,9 @@ export default function KanjiStudyPage({
   }, [current, revealed, answer, kanjiDrawerOpen, writingPadOpen]);
 
   const handleReset = () => {
-    if (!window.confirm("Reset all study progress?")) return;
-    resetProgress();
+    const deckName = progressDeck === "same-pattern" ? "Same Pattern" : "Normal Flashcard";
+    if (!window.confirm(`Reset ${deckName} progress?`)) return;
+    resetProgress(progressDeck);
     setHistory([]);
     setForward([]);
     setRetryCard(null);

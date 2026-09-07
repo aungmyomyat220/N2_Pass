@@ -7,6 +7,7 @@ export default function SamePatternKanjiPage() {
     <KanjiStudyPage
       cards={shapeOrderedData as KanjiCard[]}
       title="N2 Kanji · Same Pattern"
+      progressDeck="same-pattern"
     />
   );
 }

@@ -28,7 +28,12 @@ export type CardProgress = {
 
 export type ProgressMap = Record<string, CardProgress>;
 
-const STORAGE_KEY = "n2-kanji-progress-v1";
+export type ProgressDeck = "normal" | "same-pattern";
+
+const STORAGE_KEYS: Record<ProgressDeck, string> = {
+  normal: "n2-kanji-progress-v1",
+  "same-pattern": "n2-kanji-same-pattern-progress-v1",
+};
 
 // Interval per box, in days. Box 0 is due immediately.
 const BOX_INTERVALS_DAYS = [0, 1, 3, 7, 16];
@@ -36,27 +41,34 @@ export const MAX_BOX = BOX_INTERVALS_DAYS.length - 1;
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
-export function loadProgress(): ProgressMap {
+export function loadProgress(deck: ProgressDeck = "normal"): ProgressMap {
   if (typeof window === "undefined") return {};
-  if (accountState()) return accountState()!.progress;
+  const currentAccount = accountState();
+  if (currentAccount) {
+    return deck === "same-pattern"
+      ? currentAccount.samePatternProgress ?? {}
+      : currentAccount.progress;
+  }
   try {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
+    const raw = window.localStorage.getItem(STORAGE_KEYS[deck]);
     return raw ? (JSON.parse(raw) as ProgressMap) : {};
   } catch {
     return {};
   }
 }
 
-export function saveProgress(progress: ProgressMap): void {
+export function saveProgress(progress: ProgressMap, deck: ProgressDeck = "normal"): void {
   if (typeof window === "undefined") return;
-  if (updateAccount({ progress })) return;
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+  const patch = deck === "same-pattern" ? { samePatternProgress: progress } : { progress };
+  if (updateAccount(patch)) return;
+  window.localStorage.setItem(STORAGE_KEYS[deck], JSON.stringify(progress));
 }
 
-export function resetProgress(): void {
+export function resetProgress(deck: ProgressDeck = "normal"): void {
   if (typeof window === "undefined") return;
-  if (updateAccount({ progress: {} })) return;
-  window.localStorage.removeItem(STORAGE_KEY);
+  const patch = deck === "same-pattern" ? { samePatternProgress: {} } : { progress: {} };
+  if (updateAccount(patch)) return;
+  window.localStorage.removeItem(STORAGE_KEYS[deck]);
 }
 
 function dueDateFor(box: number, now: number): number {
