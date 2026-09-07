@@ -1,0 +1,441 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-exam-30",
+  "title": "日本語パワードリル N2文法 第30回",
+  "level": "N2",
+  "examNumber": 30,
+  "timeLimitMinutes": 10,
+  "maximumScore": 20,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [
+      76,
+      77
+    ],
+    "pdfPages": [
+      76,
+      77
+    ]
+  },
+  "sections": [
+    {
+      "id": "exam-30-section-01",
+      "number": 1,
+      "type": "grammar_selection",
+      "label": "文の文法1",
+      "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-30-s01-q01",
+          "number": 1,
+          "prompt": "政府には、もっと税金を有効に使ってもらいたい（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ことだ"
+            },
+            {
+              "id": 2,
+              "text": "ほどだ"
+            },
+            {
+              "id": 3,
+              "text": "ものだ"
+            },
+            {
+              "id": 4,
+              "text": "くらいだ"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-30-s01-q02",
+          "number": 2,
+          "prompt": "そんなこと言われたら、誰（　）怒るに決まっている。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "さえ"
+            },
+            {
+              "id": 2,
+              "text": "だって"
+            },
+            {
+              "id": 3,
+              "text": "ばかり"
+            },
+            {
+              "id": 4,
+              "text": "までも"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-30-s01-q03",
+          "number": 3,
+          "prompt": "天気が悪くなりそうなので、出発しよう（　）迷っている。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "かしまいか"
+            },
+            {
+              "id": 2,
+              "text": "がしまいが"
+            },
+            {
+              "id": 3,
+              "text": "としまいと"
+            },
+            {
+              "id": 4,
+              "text": "ともしまいとも"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-30-s01-q04",
+          "number": 4,
+          "prompt": "10回頼んでだめだったら、あきらめる（　）だ。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "限り"
+            },
+            {
+              "id": 2,
+              "text": "まで"
+            },
+            {
+              "id": 3,
+              "text": "まま"
+            },
+            {
+              "id": 4,
+              "text": "ほど"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-30-s01-q05",
+          "number": 5,
+          "prompt": "線路の安全が確認できるまで、電車を動かす（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "に限らない"
+            },
+            {
+              "id": 2,
+              "text": "に違いない"
+            },
+            {
+              "id": 3,
+              "text": "にほかならない"
+            },
+            {
+              "id": 4,
+              "text": "わけにはいかない"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-30-s01-q06",
+          "number": 6,
+          "prompt": "日本に来て友達ができるまでは、国に帰り（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "たくてたまらなかった"
+            },
+            {
+              "id": 2,
+              "text": "たいに違いなかった"
+            },
+            {
+              "id": 3,
+              "text": "たくてはならなかった"
+            },
+            {
+              "id": 4,
+              "text": "たいとは限らなかった"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-30-s01-q07",
+          "number": 7,
+          "prompt": "帰り道で彼は何か（　）だったが、結局何も言わずに帰っていった。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "言いがち"
+            },
+            {
+              "id": 2,
+              "text": "言いかけ"
+            },
+            {
+              "id": 3,
+              "text": "言いたげ"
+            },
+            {
+              "id": 4,
+              "text": "言いっぱなし"
+            }
+          ],
+          "correctChoice": 3
+        }
+      ]
+    },
+    {
+      "id": "exam-30-section-02",
+      "number": 2,
+      "type": "sentence_order",
+      "label": "文の文法2",
+      "instruction": "次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-30-s02-q01",
+          "number": 1,
+          "sentenceBefore": "自分の欠点を",
+          "sentenceAfter": "かねない。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "失敗し"
+            },
+            {
+              "id": 2,
+              "text": "再び"
+            },
+            {
+              "id": 3,
+              "text": "ない限り"
+            },
+            {
+              "id": 4,
+              "text": "意識し"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 2,
+          "correctOrder": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "completedSentence": "自分の欠点を意識しない限り再び失敗しかねない。"
+        },
+        {
+          "id": "exam-30-s02-q02",
+          "number": 2,
+          "sentenceBefore": "その時父は何も言わなかったが、心の中では",
+          "sentenceAfter": "か。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "どれほど"
+            },
+            {
+              "id": 2,
+              "text": "こと"
+            },
+            {
+              "id": 3,
+              "text": "嬉しかった"
+            },
+            {
+              "id": 4,
+              "text": "だろう"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 2,
+          "correctOrder": [
+            1,
+            3,
+            2,
+            4
+          ],
+          "completedSentence": "その時父は何も言わなかったが、心の中ではどれほど嬉しかったことだろうか。"
+        },
+        {
+          "id": "exam-30-s02-q03",
+          "number": 3,
+          "sentenceBefore": "この野菜はよくゆでて",
+          "sentenceAfter": "苦くてとても食べられない。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "でないと"
+            },
+            {
+              "id": 2,
+              "text": "でなく"
+            },
+            {
+              "id": 3,
+              "text": "から"
+            },
+            {
+              "id": 4,
+              "text": "固いだけ"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 4,
+          "correctOrder": [
+            3,
+            1,
+            4,
+            2
+          ],
+          "completedSentence": "この野菜はよくゆでてからでないと固いだけでなく苦くてとても食べられない。"
+        }
+      ]
+    },
+    {
+      "id": "exam-30-section-03",
+      "number": 3,
+      "type": "passage_grammar",
+      "label": "文章の文法",
+      "instruction": "次の文章を読んで、1から5の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 2,
+      "passage": "自分自身が幸せを感じられることを仕事にする。本来仕事［1-a］そういうものでは［1-b］。\n毎日会社に行かなくちゃならない。仕事をしなくちゃならない。しなくちゃいけないことばかりに囲まれて、それが人［2］幸福になるのでしょうか。お前はミュージシャンだからそんなことが言えるんだ。そう言う人もいるでしょう。でも、ミュージシャンもサラリーマンも本当は同じ。［3］、自分のやりたいことを行動に移すかどうか。自分が思っている幸せに向かって、一歩を踏み出すかどうかだけです。\n「俺、本当は会社を辞めて、好きな釣りを仕事にしたいんだ。それが俺の幸せなんだ」と言う人間がいる。「だったらやればいいじゃない」「でも、会社もあるし家族もあるからできないよ」「［4］、会社や家族って、君を不幸にするものなの？」と僕は問い掛けたい。\n人生と仕事は切り離すことができません。生活するためには働かなくてはいけない。それも何十年という永きにわたって。［5］やりたいことを仕事にするべきではないでしょうか。「そんなことは夢だ」と言うかもしれない。でも、夢は夢だと思った瞬間に夢になるもの。「夢は夢にあらず」というのが僕の人生哲学です。",
+      "attribution": "谷村新司著『心の命ずるままに』PHP研究所刊『幸福論』所収",
+      "questions": [
+        {
+          "id": "exam-30-s03-q01",
+          "number": 1,
+          "blank": "［1-a］／［1-b］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "a とは ／ b ないでしょう"
+            },
+            {
+              "id": 2,
+              "text": "a とは ／ b ないでしょうか"
+            },
+            {
+              "id": 3,
+              "text": "a なら ／ b ないでしょう"
+            },
+            {
+              "id": 4,
+              "text": "a なら ／ b ないでしょうか"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-30-s03-q02",
+          "number": 2,
+          "blank": "［2］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "に対しての"
+            },
+            {
+              "id": 2,
+              "text": "につけては"
+            },
+            {
+              "id": 3,
+              "text": "としての"
+            },
+            {
+              "id": 4,
+              "text": "といっては"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-30-s03-q03",
+          "number": 3,
+          "blank": "［3］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ただ"
+            },
+            {
+              "id": 2,
+              "text": "もし"
+            },
+            {
+              "id": 3,
+              "text": "たとえ"
+            },
+            {
+              "id": 4,
+              "text": "けっして"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-30-s03-q04",
+          "number": 4,
+          "blank": "［4］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "というのは"
+            },
+            {
+              "id": 2,
+              "text": "ということは"
+            },
+            {
+              "id": 3,
+              "text": "といっても"
+            },
+            {
+              "id": 4,
+              "text": "というより"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-30-s03-q05",
+          "number": 5,
+          "blank": "［5］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "これといって"
+            },
+            {
+              "id": 2,
+              "text": "だからといって"
+            },
+            {
+              "id": 3,
+              "text": "これでこそ"
+            },
+            {
+              "id": 4,
+              "text": "だからこそ"
+            }
+          ],
+          "correctChoice": 4
+        }
+      ]
+    }
+  ]
+}

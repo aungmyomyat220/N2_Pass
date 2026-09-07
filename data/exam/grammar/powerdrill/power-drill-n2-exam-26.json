@@ -1,0 +1,440 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-exam-26",
+  "title": "日本語パワードリル N2文法 第26回",
+  "level": "N2",
+  "examNumber": 26,
+  "timeLimitMinutes": 10,
+  "maximumScore": 20,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [
+      68,
+      69
+    ],
+    "pdfPages": [
+      68,
+      69
+    ]
+  },
+  "sections": [
+    {
+      "id": "exam-26-section-01",
+      "number": 1,
+      "type": "grammar_selection",
+      "label": "文の文法1",
+      "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-26-s01-q01",
+          "number": 1,
+          "prompt": "現地に到着（　）、ご連絡します。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "以上"
+            },
+            {
+              "id": 2,
+              "text": "上で"
+            },
+            {
+              "id": 3,
+              "text": "次第"
+            },
+            {
+              "id": 4,
+              "text": "ついでに"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-26-s01-q02",
+          "number": 2,
+          "prompt": "子どもの頃は、よくけんかをして兄に泣かされた（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "ことだ"
+            },
+            {
+              "id": 2,
+              "text": "だけだ"
+            },
+            {
+              "id": 3,
+              "text": "はずだ"
+            },
+            {
+              "id": 4,
+              "text": "ものだ"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-26-s01-q03",
+          "number": 3,
+          "prompt": "真夏の暑さの中、選手たちは汗（　）で練習している。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "がち"
+            },
+            {
+              "id": 2,
+              "text": "のまま"
+            },
+            {
+              "id": 3,
+              "text": "ばかり"
+            },
+            {
+              "id": 4,
+              "text": "まみれ"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-26-s01-q04",
+          "number": 4,
+          "prompt": "友達とはいえ、毎日泊まりに来られては（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "いられない"
+            },
+            {
+              "id": 2,
+              "text": "限らない"
+            },
+            {
+              "id": 3,
+              "text": "かなわない"
+            },
+            {
+              "id": 4,
+              "text": "かまわない"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-26-s01-q05",
+          "number": 5,
+          "prompt": "サラさんの送別会を（　）、クラスで懇親会を開いた。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "かねて"
+            },
+            {
+              "id": 2,
+              "text": "込めて"
+            },
+            {
+              "id": 3,
+              "text": "ともに"
+            },
+            {
+              "id": 4,
+              "text": "ついでに"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-26-s01-q06",
+          "number": 6,
+          "prompt": "ベジタリアン（　）、肉だけでなく、魚や卵も食べないんですね。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "かと思うと"
+            },
+            {
+              "id": 2,
+              "text": "ことだから"
+            },
+            {
+              "id": 3,
+              "text": "にあたって"
+            },
+            {
+              "id": 4,
+              "text": "ということは"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-26-s01-q07",
+          "number": 7,
+          "prompt": "日本人だ（　）米ばかり食べているわけではない。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "からこそ"
+            },
+            {
+              "id": 2,
+              "text": "からして"
+            },
+            {
+              "id": 3,
+              "text": "からには"
+            },
+            {
+              "id": 4,
+              "text": "からといって"
+            }
+          ],
+          "correctChoice": 4
+        }
+      ]
+    },
+    {
+      "id": "exam-26-section-02",
+      "number": 2,
+      "type": "sentence_order",
+      "label": "文の文法2",
+      "instruction": "次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-26-s02-q01",
+          "number": 1,
+          "sentenceBefore": "結果発表を見る",
+          "sentenceAfter": "どころじゃなかった。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "食事する"
+            },
+            {
+              "id": 2,
+              "text": "あまり"
+            },
+            {
+              "id": 3,
+              "text": "までは"
+            },
+            {
+              "id": 4,
+              "text": "緊張の"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 2,
+          "correctOrder": [
+            3,
+            4,
+            2,
+            1
+          ],
+          "completedSentence": "結果発表を見るまでは緊張のあまり食事するどころじゃなかった。"
+        },
+        {
+          "id": "exam-26-s02-q02",
+          "number": 2,
+          "sentenceBefore": "連絡の取れない友人が心配で、ハガキの",
+          "sentenceAfter": "行った。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "家を"
+            },
+            {
+              "id": 2,
+              "text": "頼りに"
+            },
+            {
+              "id": 3,
+              "text": "探しに"
+            },
+            {
+              "id": 4,
+              "text": "住所を"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            4,
+            2,
+            1,
+            3
+          ],
+          "completedSentence": "連絡の取れない友人が心配で、ハガキの住所を頼りに家を探しに行った。"
+        },
+        {
+          "id": "exam-26-s02-q03",
+          "number": 3,
+          "sentenceBefore": "妹は、やせたいと言い",
+          "sentenceAfter": "よく甘い物を食べている。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "一方で"
+            },
+            {
+              "id": 2,
+              "text": "食事を"
+            },
+            {
+              "id": 3,
+              "text": "ながらも"
+            },
+            {
+              "id": 4,
+              "text": "減らす"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 4,
+          "correctOrder": [
+            3,
+            2,
+            4,
+            1
+          ],
+          "completedSentence": "妹は、やせたいと言いながらも食事を減らす一方でよく甘い物を食べている。"
+        }
+      ]
+    },
+    {
+      "id": "exam-26-section-03",
+      "number": 3,
+      "type": "passage_grammar",
+      "label": "文章の文法",
+      "instruction": "次の文章を読んで、1から5の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 2,
+      "passage": "5月5日の「こどもの日」を前に、政府が出生率の調査結果を発表した。それによると、日本の人口全体における子どもの割合は、30年間減少し続けており、今年はついに14％を下回ったそうだ。日本の少子化問題は、ますます深刻化していると［1］。\n少子化の大きな原因として、女性の社会進出が進んだことや、育児費用が高いことなどが挙げられている。\nたしかに、今の日本社会では、子どもが生まれた［2］、女性が長い間会社を休みにくい雰囲気がある。そのうえ、小さい子どもを預ける施設の数も十分ではないため、女性にとって、子どもを産むことは仕事を失うことにも［3］のだ。\nまた、経済的な問題で子どもを産むことをためらう人もいる。「職を失ううえに育児費用がかかるのでは、とても育てられ［4］」とあきらめたり、夫婦二人でゆとりある生活を送ることを選択したりするケースも増えている。\nこのままでは将来の労働力が不足するおそれがあるとして、国による早急な対応を望む声があがっている。しかしその一方で、少子化は必ずしも［5］という意見もある。むしろ少子化の現状に対応した社会システムを作るべきだ、という声も少なくない。",
+      "questions": [
+        {
+          "id": "exam-26-s03-q01",
+          "number": 1,
+          "blank": "［1］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "言い切れない"
+            },
+            {
+              "id": 2,
+              "text": "言わないではいられない"
+            },
+            {
+              "id": 3,
+              "text": "言わざるを得ない"
+            },
+            {
+              "id": 4,
+              "text": "言いようがない"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-26-s03-q02",
+          "number": 2,
+          "blank": "［2］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "とすると"
+            },
+            {
+              "id": 2,
+              "text": "にしては"
+            },
+            {
+              "id": 3,
+              "text": "ところが"
+            },
+            {
+              "id": 4,
+              "text": "からといって"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-26-s03-q03",
+          "number": 3,
+          "blank": "［3］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "つながるほかはない"
+            },
+            {
+              "id": 2,
+              "text": "つながりかねない"
+            },
+            {
+              "id": 3,
+              "text": "つながるに決まっている"
+            },
+            {
+              "id": 4,
+              "text": "つながろうとする"
+            }
+          ],
+          "correctChoice": 2
+        },
+        {
+          "id": "exam-26-s03-q04",
+          "number": 4,
+          "blank": "［4］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "わけがない"
+            },
+            {
+              "id": 2,
+              "text": "ようがない"
+            },
+            {
+              "id": 3,
+              "text": "てならない"
+            },
+            {
+              "id": 4,
+              "text": "そうにない"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-26-s03-q05",
+          "number": 5,
+          "blank": "［5］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "悪いとも言えない"
+            },
+            {
+              "id": 2,
+              "text": "いいとも言えない"
+            },
+            {
+              "id": 3,
+              "text": "悪いとは言いかねる"
+            },
+            {
+              "id": 4,
+              "text": "いいとは言いかねない"
+            }
+          ],
+          "correctChoice": 1
+        }
+      ]
+    }
+  ]
+}

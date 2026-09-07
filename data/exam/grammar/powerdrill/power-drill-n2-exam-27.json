@@ -1,0 +1,440 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-exam-27",
+  "title": "日本語パワードリル N2文法 第27回",
+  "level": "N2",
+  "examNumber": 27,
+  "timeLimitMinutes": 10,
+  "maximumScore": 20,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [
+      70,
+      71
+    ],
+    "pdfPages": [
+      70,
+      71
+    ]
+  },
+  "sections": [
+    {
+      "id": "exam-27-section-01",
+      "number": 1,
+      "type": "grammar_selection",
+      "label": "文の文法1",
+      "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-27-s01-q01",
+          "number": 1,
+          "prompt": "制度（　）、男性社員も育児休暇を取ることが認められている。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "上は"
+            },
+            {
+              "id": 2,
+              "text": "上に"
+            },
+            {
+              "id": 3,
+              "text": "以上は"
+            },
+            {
+              "id": 4,
+              "text": "以上に"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-27-s01-q02",
+          "number": 2,
+          "prompt": "初めて会った人に自宅に招待され、夕食（　）ごちそうになってしまった。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "さえ"
+            },
+            {
+              "id": 2,
+              "text": "すら"
+            },
+            {
+              "id": 3,
+              "text": "ほど"
+            },
+            {
+              "id": 4,
+              "text": "まで"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-27-s01-q03",
+          "number": 3,
+          "prompt": "すぐ帰りますので、おかまい（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "なく"
+            },
+            {
+              "id": 2,
+              "text": "がちで"
+            },
+            {
+              "id": 3,
+              "text": "なしで"
+            },
+            {
+              "id": 4,
+              "text": "抜きで"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-27-s01-q04",
+          "number": 4,
+          "prompt": "海へ行ったが、人が多すぎて泳ぐ（　）ではなかった。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "はず"
+            },
+            {
+              "id": 2,
+              "text": "わけ"
+            },
+            {
+              "id": 3,
+              "text": "あまり"
+            },
+            {
+              "id": 4,
+              "text": "どころ"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-27-s01-q05",
+          "number": 5,
+          "prompt": "A：ごめんなさい。やっと就職が決まったから、嬉しくて飲みすぎちゃって……。\nB：ふーん、それで寝坊して、遅刻したって（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "はずか"
+            },
+            {
+              "id": 2,
+              "text": "もんか"
+            },
+            {
+              "id": 3,
+              "text": "わけか"
+            },
+            {
+              "id": 4,
+              "text": "ものやら"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-27-s01-q06",
+          "number": 6,
+          "prompt": "兄は答えを知っている（　）聞いても教えてくれない。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "せいで"
+            },
+            {
+              "id": 2,
+              "text": "ために"
+            },
+            {
+              "id": 3,
+              "text": "ものの"
+            },
+            {
+              "id": 4,
+              "text": "くせして"
+            }
+          ],
+          "correctChoice": 4
+        },
+        {
+          "id": "exam-27-s01-q07",
+          "number": 7,
+          "prompt": "30代になっても遊んでばかりいる彼を、親が心配するのも（　）。",
+          "choices": [
+            {
+              "id": 1,
+              "text": "同然だ"
+            },
+            {
+              "id": 2,
+              "text": "違いない"
+            },
+            {
+              "id": 3,
+              "text": "もっともだ"
+            },
+            {
+              "id": 4,
+              "text": "ほかならない"
+            }
+          ],
+          "correctChoice": 3
+        }
+      ]
+    },
+    {
+      "id": "exam-27-section-02",
+      "number": 2,
+      "type": "sentence_order",
+      "label": "文の文法2",
+      "instruction": "次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "exam-27-s02-q01",
+          "number": 1,
+          "sentenceBefore": "数人で始めた会社をここ",
+          "sentenceAfter": "、やはり社長は他の人とは違う。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "まで"
+            },
+            {
+              "id": 2,
+              "text": "だけ"
+            },
+            {
+              "id": 3,
+              "text": "あって"
+            },
+            {
+              "id": 4,
+              "text": "成長させた"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 2,
+          "correctOrder": [
+            1,
+            4,
+            2,
+            3
+          ],
+          "completedSentence": "数人で始めた会社をここまで成長させただけあって、やはり社長は他の人とは違う。"
+        },
+        {
+          "id": "exam-27-s02-q02",
+          "number": 2,
+          "sentenceBefore": "この方法が必ずしも",
+          "sentenceAfter": "か。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "最良"
+            },
+            {
+              "id": 2,
+              "text": "のではない"
+            },
+            {
+              "id": 3,
+              "text": "限らない"
+            },
+            {
+              "id": 4,
+              "text": "とは"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 3,
+          "correctOrder": [
+            1,
+            4,
+            3,
+            2
+          ],
+          "completedSentence": "この方法が必ずしも最良とは限らないのではないか。"
+        },
+        {
+          "id": "exam-27-s02-q03",
+          "number": 3,
+          "sentenceBefore": "本番直前にトイレに",
+          "sentenceAfter": "、本当に困った。",
+          "pieces": [
+            {
+              "id": 1,
+              "text": "なって"
+            },
+            {
+              "id": 2,
+              "text": "たまらなく"
+            },
+            {
+              "id": 3,
+              "text": "行きたくて"
+            },
+            {
+              "id": 4,
+              "text": "しまって"
+            }
+          ],
+          "starPosition": 3,
+          "correctChoice": 1,
+          "correctOrder": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "completedSentence": "本番直前にトイレに行きたくてたまらなくなってしまって、本当に困った。"
+        }
+      ]
+    },
+    {
+      "id": "exam-27-section-03",
+      "number": 3,
+      "type": "passage_grammar",
+      "label": "文章の文法",
+      "instruction": "次の文章を読んで、1から5の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "pointsPerQuestion": 2,
+      "passage": "当図書館の貸出手続きは次の通りです。\n\n1．ご利用には貸出カードが必要となります。「貸出カード申込書」に必要事項を記入の［1］、図書館カウンターにお出しください。その際、ご本人確認をさせていただきますので、運転免許証やパスポート、学生証などの身分証明書が必要となります。\n\n2．一度に借りることができるのは、本と雑誌が合わせて10冊以内、CDが3点以内です。貸出期間は2週間ですが、1回［2］、1週間の延長が可能です。ただし、事前の連絡が必要です。\n\n3．お借りになった資料は、返却期限内に図書館の「返却カウンター」にお返しください。開館時間外のご返却は、入り口の横に設置してある「返却ポスト」に入れてください。ただし、CDは破損する［3］ので、ポストには入れず、必ず返却カウンターまでお持ちください。\n\n4．資料の返却が遅れると、その資料を［4］他の利用者の方にご迷惑がかかります。長期にわたって返却が遅れた場合には、延滞日数［5］、一定期間図書館の利用が制限されます。",
+      "questions": [
+        {
+          "id": "exam-27-s03-q01",
+          "number": 1,
+          "blank": "［1］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "上"
+            },
+            {
+              "id": 2,
+              "text": "末"
+            },
+            {
+              "id": 3,
+              "text": "あげく"
+            },
+            {
+              "id": 4,
+              "text": "以上"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-27-s03-q02",
+          "number": 2,
+          "blank": "［2］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "に限り"
+            },
+            {
+              "id": 2,
+              "text": "にあたり"
+            },
+            {
+              "id": 3,
+              "text": "に対し"
+            },
+            {
+              "id": 4,
+              "text": "にかかわらず"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-27-s03-q03",
+          "number": 3,
+          "blank": "［3］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "次第です"
+            },
+            {
+              "id": 2,
+              "text": "かいがあります"
+            },
+            {
+              "id": 3,
+              "text": "おそれがあります"
+            },
+            {
+              "id": 4,
+              "text": "ことになっています"
+            }
+          ],
+          "correctChoice": 3
+        },
+        {
+          "id": "exam-27-s03-q04",
+          "number": 4,
+          "blank": "［4］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "お待ちの"
+            },
+            {
+              "id": 2,
+              "text": "お待ちしている"
+            },
+            {
+              "id": 3,
+              "text": "待たされている"
+            },
+            {
+              "id": 4,
+              "text": "待ってくださる"
+            }
+          ],
+          "correctChoice": 1
+        },
+        {
+          "id": "exam-27-s03-q05",
+          "number": 5,
+          "blank": "［5］",
+          "choices": [
+            {
+              "id": 1,
+              "text": "にかけて"
+            },
+            {
+              "id": 2,
+              "text": "に応じて"
+            },
+            {
+              "id": 3,
+              "text": "に加えて"
+            },
+            {
+              "id": 4,
+              "text": "にこたえて"
+            }
+          ],
+          "correctChoice": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-type Choice = { id: number; text: string };
+type Choice = { id: number | string; text: string };
 export type Question = {
   id: string;
   number: number;
@@ -9,7 +9,7 @@ export type Question = {
   starPosition?: number;
   choices?: Choice[];
   pieces?: Choice[];
-  correctChoice: number;
+  correctChoice: number | string;
   correctOrder?: number[];
   completedSentence?: string;
 };

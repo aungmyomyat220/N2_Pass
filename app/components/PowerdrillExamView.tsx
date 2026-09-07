@@ -4,15 +4,30 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import type { PowerdrillExam, Question } from "@/lib/powerdrill-types";
 
-export default function PowerdrillExamView({ data }: { data: PowerdrillExam }) {
+export default function PowerdrillExamView({
+  data,
+  backHref = "/exam/grammar/powerdrill",
+  backLabel = "PowerDrill exams",
+  eyebrow = `${data.level} GRAMMAR · POWERDRILL`,
+  heading = `Lesson ${String(data.examNumber).padStart(2, "0")}`,
+  shuffleQuestions = false,
+}: {
+  data: PowerdrillExam;
+  backHref?: string;
+  backLabel?: string;
+  eyebrow?: string;
+  heading?: string;
+  shuffleQuestions?: boolean;
+}) {
   const totalQuestions = data.sections.reduce((count, section) => count + section.questions.length, 0);
   const [phase, setPhase] = useState<"ready" | "exam" | "result">("ready");
-  const [answers, setAnswers] = useState<Record<string, number>>({});
+  const [sections, setSections] = useState(data.sections);
+  const [answers, setAnswers] = useState<Record<string, number | string>>({});
   const [remaining, setRemaining] = useState(data.timeLimitMinutes * 60);
   const deadline = useRef(0);
   const resultRef = useRef<HTMLDivElement>(null);
   const submitted = phase === "result";
-  const score = data.sections.reduce((sum, section) => sum + section.questions.reduce(
+  const score = sections.reduce((sum, section) => sum + section.questions.reduce(
     (points, question) => points + (answers[question.id] === question.correctChoice ? section.pointsPerQuestion : 0), 0), 0);
 
   useEffect(() => {
@@ -32,6 +47,10 @@ export default function PowerdrillExamView({ data }: { data: PowerdrillExam }) {
 
   function start() {
     setAnswers({});
+    setSections(data.sections.map((section) => ({
+      ...section,
+      questions: shuffleQuestions ? shuffle(section.questions) : section.questions,
+    })));
     setRemaining(data.timeLimitMinutes * 60);
     deadline.current = Date.now() + data.timeLimitMinutes * 60_000;
     setPhase("exam");
@@ -39,9 +58,9 @@ export default function PowerdrillExamView({ data }: { data: PowerdrillExam }) {
 
   return (
     <main className="powerdrill-exam">
-      <Link className="exam-back-link" href="/exam/grammar">← Grammar exams</Link>
+      <Link className="exam-back-link" href={backHref}>← {backLabel}</Link>
       <header className="powerdrill-header">
-        <div><span className="powerdrill-eyebrow">{data.level} GRAMMAR · POWERDRILL</span><h1>Lesson {String(data.examNumber).padStart(2, "0")}</h1><p lang="ja">{data.title}</p></div>
+        <div><span className="powerdrill-eyebrow">{eyebrow}</span><h1>{heading}</h1><p lang="ja">{data.title}</p></div>
         <span className="powerdrill-badge">{totalQuestions} questions · {data.maximumScore} points</span>
       </header>
       {phase === "ready" ? (
@@ -53,7 +72,7 @@ export default function PowerdrillExamView({ data }: { data: PowerdrillExam }) {
       ) : (
         <div className="powerdrill-workspace">
           <form className="powerdrill-questions" id="powerdrill-exam-form" onSubmit={(event) => { event.preventDefault(); setPhase("result"); }}>
-            {data.sections.map((section) => (
+            {sections.map((section) => (
               <section className="powerdrill-section" key={section.id} aria-labelledby={section.id}>
                 <div className="powerdrill-section-heading"><span className="powerdrill-section-number">0{section.number}</span><h2 id={section.id} lang="ja">{section.label}</h2></div>
                 <p lang="ja">{section.instruction}</p>
@@ -116,7 +135,7 @@ export default function PowerdrillExamView({ data }: { data: PowerdrillExam }) {
               <div className="powerdrill-completion"><span>Completed</span><strong>{Object.keys(answers).length}<span> / {totalQuestions}</span></strong></div>
               <progress className="powerdrill-meter" value={Object.keys(answers).length} max={totalQuestions} aria-label="Questions answered" />
               <nav className="powerdrill-question-map" aria-label="Jump to question">
-                {data.sections.flatMap<Question>((section) => section.questions).map((question, index) => (
+                {sections.flatMap<Question>((section) => section.questions).map((question, index) => (
                   <a key={question.id} href={`#${question.id}`} className={answers[question.id] !== undefined ? "is-answered" : ""}
                     aria-label={`Question ${index + 1}, ${answers[question.id] !== undefined ? "answered" : "unanswered"}`}>{index + 1}</a>
                 ))}
@@ -136,4 +155,13 @@ export default function PowerdrillExamView({ data }: { data: PowerdrillExam }) {
       )}
     </main>
   );
+}
+
+function shuffle<T>(values: T[]): T[] {
+  const result = [...values];
+  for (let index = result.length - 1; index > 0; index -= 1) {
+    const randomIndex = Math.floor(Math.random() * (index + 1));
+    [result[index], result[randomIndex]] = [result[randomIndex], result[index]];
+  }
+  return result;
 }

@@ -1,0 +1,1787 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "power-drill-n2-intensive-training-all",
+  "title": "日本語パワードリル N2文法 集中トレーニング 全10回",
+  "level": "N2",
+  "trainingCount": 10,
+  "totalQuestions": 100,
+  "totalTimeLimitMinutes": 30,
+  "maximumScore": 100,
+  "source": {
+    "title": "日本語パワードリル N2文法",
+    "printedPages": [
+      18,
+      19,
+      30,
+      31,
+      42,
+      43,
+      54,
+      55,
+      66,
+      67
+    ]
+  },
+  "trainings": [
+    {
+      "id": "power-drill-n2-intensive-01",
+      "trainingNumber": 1,
+      "title": "集中トレーニング① 助詞（1）",
+      "category": "助詞",
+      "part": 1,
+      "printedPage": 18,
+      "pdfPage": 18,
+      "timeLimitMinutes": 3,
+      "maximumScore": 10,
+      "type": "binary_choice",
+      "instruction": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "intensive-01-q01",
+          "number": 1,
+          "prompt": "それっぽっちのお金、ない（　）同然だ。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "と"
+            },
+            {
+              "id": "b",
+              "text": "も"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-01-q02",
+          "number": 2,
+          "prompt": "冷静になって考えてみると、彼だって普通の人（　）すぎない。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "で"
+            },
+            {
+              "id": "b",
+              "text": "に"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-01-q03",
+          "number": 3,
+          "prompt": "父（　）してみたら、私の将来が心配でしかたがないのだろう。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "に"
+            },
+            {
+              "id": "b",
+              "text": "を"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-01-q04",
+          "number": 4,
+          "prompt": "明日は広い範囲（　）わたって、大雨となるでしょう。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "に"
+            },
+            {
+              "id": "b",
+              "text": "を"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-01-q05",
+          "number": 5,
+          "prompt": "1回や2回（　）まだしも、こんなに失敗が多くては……。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "こそ"
+            },
+            {
+              "id": "b",
+              "text": "なら"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-01-q06",
+          "number": 6,
+          "prompt": "見た目（　）ともかく、味は最高だから、とにかく食べてみて！",
+          "choices": [
+            {
+              "id": "a",
+              "text": "が"
+            },
+            {
+              "id": "b",
+              "text": "は"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-01-q07",
+          "number": 7,
+          "prompt": "マラソン大会開催（　）ともない、10時から13時まで通行止めとなります。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "と"
+            },
+            {
+              "id": "b",
+              "text": "に"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-01-q08",
+          "number": 8,
+          "prompt": "心（　）こめて話せば、きっとわかってくれるはずだよ。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "に"
+            },
+            {
+              "id": "b",
+              "text": "を"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-01-q09",
+          "number": 9,
+          "prompt": "彼はスタンドの声援（　）こたえて、手を振った。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "に"
+            },
+            {
+              "id": "b",
+              "text": "を"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-01-q10",
+          "number": 10,
+          "prompt": "休む（　）しろ、連絡だけはしておいたほうがいい。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "に"
+            },
+            {
+              "id": "b",
+              "text": "を"
+            }
+          ],
+          "correctChoice": "a"
+        }
+      ]
+    },
+    {
+      "id": "power-drill-n2-intensive-02",
+      "trainingNumber": 2,
+      "title": "集中トレーニング② 助詞（2）",
+      "category": "助詞",
+      "part": 2,
+      "printedPage": 19,
+      "pdfPage": 19,
+      "timeLimitMinutes": 3,
+      "maximumScore": 10,
+      "type": "binary_choice",
+      "instruction": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "intensive-02-q01",
+          "number": 1,
+          "prompt": "開会（　）あたり、ひと言ごあいさつ申し上げます。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "が"
+            },
+            {
+              "id": "b",
+              "text": "に"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-02-q02",
+          "number": 2,
+          "prompt": "話を聞く（　）つけ、事態の深刻さがわかってきた。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "に"
+            },
+            {
+              "id": "b",
+              "text": "を"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-02-q03",
+          "number": 3,
+          "prompt": "メモ（　）頼りに、なんとか説明することができた。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "に"
+            },
+            {
+              "id": "b",
+              "text": "を"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-02-q04",
+          "number": 4,
+          "prompt": "ご入場は20歳以上の方（　）限ります。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "に"
+            },
+            {
+              "id": "b",
+              "text": "を"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-02-q05",
+          "number": 5,
+          "prompt": "彼女は人目（　）かまわず泣き出した。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "に"
+            },
+            {
+              "id": "b",
+              "text": "も"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-02-q06",
+          "number": 6,
+          "prompt": "この地域には、スポーツ施設はもとより図書館（　）ない。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "は"
+            },
+            {
+              "id": "b",
+              "text": "も"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-02-q07",
+          "number": 7,
+          "prompt": "勝つのはうちのチーム（　）決まっているじゃないか。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "が"
+            },
+            {
+              "id": "b",
+              "text": "に"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-02-q08",
+          "number": 8,
+          "prompt": "期間限定と言われると、買わず（　）いられない。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "では"
+            },
+            {
+              "id": "b",
+              "text": "には"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-02-q09",
+          "number": 9,
+          "prompt": "計画（　）沿って、間違いなく行うようにしてください。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "に"
+            },
+            {
+              "id": "b",
+              "text": "を"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-02-q10",
+          "number": 10,
+          "prompt": "この地方は4月から7月中旬（　）かけて、雨が多い。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "に"
+            },
+            {
+              "id": "b",
+              "text": "を"
+            }
+          ],
+          "correctChoice": "a"
+        }
+      ]
+    },
+    {
+      "id": "power-drill-n2-intensive-03",
+      "trainingNumber": 3,
+      "title": "集中トレーニング③ 助詞（3）",
+      "category": "助詞",
+      "part": 3,
+      "printedPage": 30,
+      "pdfPage": 30,
+      "timeLimitMinutes": 3,
+      "maximumScore": 10,
+      "type": "binary_choice",
+      "instruction": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "intensive-03-q01",
+          "number": 1,
+          "prompt": "この仕事は経験（　）問いません。誰でも応募できます。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "に"
+            },
+            {
+              "id": "b",
+              "text": "を"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-03-q02",
+          "number": 2,
+          "prompt": "長くつきあっても、結婚する（　）限らない。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "とは"
+            },
+            {
+              "id": "b",
+              "text": "には"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-03-q03",
+          "number": 3,
+          "prompt": "発売（　）先立って、駅前で試供品を配布した。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "が"
+            },
+            {
+              "id": "b",
+              "text": "に"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-03-q04",
+          "number": 4,
+          "prompt": "この土地（　）めぐって、何度となく争いが起きた。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "と"
+            },
+            {
+              "id": "b",
+              "text": "を"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-03-q05",
+          "number": 5,
+          "prompt": "今回の受賞は佐藤さんの活躍（　）抜きにしてはありえなかっただろう。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "が"
+            },
+            {
+              "id": "b",
+              "text": "を"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-03-q06",
+          "number": 6,
+          "prompt": "彼はアルバイト（　）かかわらず、責任感は正社員以上だ。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "にも"
+            },
+            {
+              "id": "b",
+              "text": "でも"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-03-q07",
+          "number": 7,
+          "prompt": "契約（　）際して、以下の点を必ずご確認ください。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "に"
+            },
+            {
+              "id": "b",
+              "text": "を"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-03-q08",
+          "number": 8,
+          "prompt": "これだけきたなければ、苦情がくる（　）もっともだ。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "のが"
+            },
+            {
+              "id": "b",
+              "text": "のも"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-03-q09",
+          "number": 9,
+          "prompt": "テレビ出演（　）契機として、彼は徐々に人気が出てきた。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "に"
+            },
+            {
+              "id": "b",
+              "text": "を"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-03-q10",
+          "number": 10,
+          "prompt": "この地方では桃やぶどう（　）はじめとして、様々な果物が栽培されています。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "が"
+            },
+            {
+              "id": "b",
+              "text": "を"
+            }
+          ],
+          "correctChoice": "b"
+        }
+      ]
+    },
+    {
+      "id": "power-drill-n2-intensive-04",
+      "trainingNumber": 4,
+      "title": "集中トレーニング④ 文末表現（1）",
+      "category": "文末表現",
+      "part": 1,
+      "printedPage": 31,
+      "pdfPage": 31,
+      "timeLimitMinutes": 3,
+      "maximumScore": 10,
+      "type": "binary_choice",
+      "instruction": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "intensive-04-q01",
+          "number": 1,
+          "prompt": "いまさら「ごめん」と言われたって、許せる（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "ものか"
+            },
+            {
+              "id": "b",
+              "text": "ものだ"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-04-q02",
+          "number": 2,
+          "prompt": "今の私の気持ちは誰にもわかる（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "まい"
+            },
+            {
+              "id": "b",
+              "text": "まいか"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-04-q03",
+          "number": 3,
+          "prompt": "やれるものならやって（　）！",
+          "choices": [
+            {
+              "id": "a",
+              "text": "みろ"
+            },
+            {
+              "id": "b",
+              "text": "みる"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-04-q04",
+          "number": 4,
+          "prompt": "ぜひ一度挑戦してみよう（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "でもない"
+            },
+            {
+              "id": "b",
+              "text": "ではないか"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-04-q05",
+          "number": 5,
+          "prompt": "茶道の歴史は、この人物を抜きにしては（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "語らない"
+            },
+            {
+              "id": "b",
+              "text": "語れない"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-04-q06",
+          "number": 6,
+          "prompt": "そんなにきれいな花があるのなら、一度見てみたい（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "ものか"
+            },
+            {
+              "id": "b",
+              "text": "ものだ"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-04-q07",
+          "number": 7,
+          "prompt": "成功のためには、ただ努力ある（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "のみか"
+            },
+            {
+              "id": "b",
+              "text": "のみだ"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-04-q08",
+          "number": 8,
+          "prompt": "ただ息子の帰りを信じて待つ（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "ばかりか"
+            },
+            {
+              "id": "b",
+              "text": "ばかりだ"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-04-q09",
+          "number": 9,
+          "prompt": "部下がそんな失敗をして注意もしないなんて、部下も部下なら上司も（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "上司か"
+            },
+            {
+              "id": "b",
+              "text": "上司だ"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-04-q10",
+          "number": 10,
+          "prompt": "なんとかお願いできない（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "ものでしょうか"
+            },
+            {
+              "id": "b",
+              "text": "ものでしょう"
+            }
+          ],
+          "correctChoice": "a"
+        }
+      ]
+    },
+    {
+      "id": "power-drill-n2-intensive-05",
+      "trainingNumber": 5,
+      "title": "集中トレーニング⑤ 文末表現（2）",
+      "category": "文末表現",
+      "part": 2,
+      "printedPage": 42,
+      "pdfPage": 42,
+      "timeLimitMinutes": 3,
+      "maximumScore": 10,
+      "type": "binary_choice",
+      "instruction": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "intensive-05-q01",
+          "number": 1,
+          "prompt": "いくらお金がなくても、知らない人からお金をもらう（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "わけではない"
+            },
+            {
+              "id": "b",
+              "text": "わけにはいかない"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-05-q02",
+          "number": 2,
+          "prompt": "お世話になった先生に何度も頼まれたら、「はい」と（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "言いかねない"
+            },
+            {
+              "id": "b",
+              "text": "言わざるをえない"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-05-q03",
+          "number": 3,
+          "prompt": "昨日ぜんぜん寝られなかったから、眠くて（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "いられない"
+            },
+            {
+              "id": "b",
+              "text": "しょうがない"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-05-q04",
+          "number": 4,
+          "prompt": "彼女が何か隠しているように思えて（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "ならない"
+            },
+            {
+              "id": "b",
+              "text": "たまらない"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-05-q05",
+          "number": 5,
+          "prompt": "まさにそれが私の一番言いたかったことに（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "すぎない"
+            },
+            {
+              "id": "b",
+              "text": "ほかならない"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-05-q06",
+          "number": 6,
+          "prompt": "何でも、大きければいい（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "というものでもない"
+            },
+            {
+              "id": "b",
+              "text": "わけにはいかない"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-05-q07",
+          "number": 7,
+          "prompt": "新郎新婦が来ないことには、結婚式が（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "始まらない"
+            },
+            {
+              "id": "b",
+              "text": "始まった"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-05-q08",
+          "number": 8,
+          "prompt": "私にとって、10キロ走ることぐらいは、ほんの準備運動に（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "すぎない"
+            },
+            {
+              "id": "b",
+              "text": "相違ない"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-05-q09",
+          "number": 9,
+          "prompt": "この病気が治るなら、お金はいくらかかっても（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "かまわない"
+            },
+            {
+              "id": "b",
+              "text": "かかわらない"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-05-q10",
+          "number": 10,
+          "prompt": "新しいのを買ったほうがいい。こんなに壊れていたら、直し（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "てはならない"
+            },
+            {
+              "id": "b",
+              "text": "ようがない"
+            }
+          ],
+          "correctChoice": "b"
+        }
+      ]
+    },
+    {
+      "id": "power-drill-n2-intensive-06",
+      "trainingNumber": 6,
+      "title": "集中トレーニング⑥ 文末表現（3）",
+      "category": "文末表現",
+      "part": 3,
+      "printedPage": 43,
+      "pdfPage": 43,
+      "timeLimitMinutes": 3,
+      "maximumScore": 10,
+      "type": "binary_choice",
+      "instruction": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "intensive-06-q01",
+          "number": 1,
+          "prompt": "自分の行動に責任を持つのが、社会人という（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "ものだ"
+            },
+            {
+              "id": "b",
+              "text": "ものではない"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-06-q02",
+          "number": 2,
+          "prompt": "咳が出るからといって風邪とは（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "限る"
+            },
+            {
+              "id": "b",
+              "text": "限らない"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-06-q03",
+          "number": 3,
+          "prompt": "そんな要求には応じ（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "かねます"
+            },
+            {
+              "id": "b",
+              "text": "かねません"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-06-q04",
+          "number": 4,
+          "prompt": "あの男なら、そんなことをやり（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "かねる"
+            },
+            {
+              "id": "b",
+              "text": "かねない"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-06-q05",
+          "number": 5,
+          "prompt": "思ったことを何でも口にする（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "ものだ"
+            },
+            {
+              "id": "b",
+              "text": "ものではない"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-06-q06",
+          "number": 6,
+          "prompt": "沖縄で雪が降ったなんて、そんなことある（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "わけない"
+            },
+            {
+              "id": "b",
+              "text": "わけじゃない"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-06-q07",
+          "number": 7,
+          "prompt": "田中さんの言うこともわからない（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "でもない"
+            },
+            {
+              "id": "b",
+              "text": "ではいられない"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-06-q08",
+          "number": 8,
+          "prompt": "まさかあのまじめな吉田さんが飲酒運転をする（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "とは"
+            },
+            {
+              "id": "b",
+              "text": "とか"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-06-q09",
+          "number": 9,
+          "prompt": "毎日35度以上の日が続く。こう暑くては（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "いられない"
+            },
+            {
+              "id": "b",
+              "text": "かなわない"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-06-q10",
+          "number": 10,
+          "prompt": "伝統的な祭りを復活させようという運動が、町全体に広がり（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "一方だ"
+            },
+            {
+              "id": "b",
+              "text": "つつある"
+            }
+          ],
+          "correctChoice": "b"
+        }
+      ]
+    },
+    {
+      "id": "power-drill-n2-intensive-07",
+      "trainingNumber": 7,
+      "title": "集中トレーニング⑦ 似ている文型（1）",
+      "category": "似ている文型",
+      "part": 1,
+      "printedPage": 54,
+      "pdfPage": 54,
+      "timeLimitMinutes": 3,
+      "maximumScore": 10,
+      "type": "binary_choice",
+      "instruction": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "intensive-07-q01",
+          "number": 1,
+          "prompt": "監督にそんなこと言おう（　）、殴られるぞ。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "ものなら"
+            },
+            {
+              "id": "b",
+              "text": "ものだから"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-07-q02",
+          "number": 2,
+          "prompt": "遅刻なら（　）、無断で休むとは信じられない。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "とにかく"
+            },
+            {
+              "id": "b",
+              "text": "まだしも"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-07-q03",
+          "number": 3,
+          "prompt": "このテーマパークは、年齢や性別を（　）人気がある。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "問わず"
+            },
+            {
+              "id": "b",
+              "text": "かかわらず"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-07-q04",
+          "number": 4,
+          "prompt": "母が入院したため、家族旅行（　）、大変だった。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "どころか"
+            },
+            {
+              "id": "b",
+              "text": "どころじゃなく"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-07-q05",
+          "number": 5,
+          "prompt": "何かある（　）、すぐに私が疑われる。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "につき"
+            },
+            {
+              "id": "b",
+              "text": "につけ"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-07-q06",
+          "number": 6,
+          "prompt": "今のままでは、優勝（　）一回戦で勝つのも難しいだろう。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "どころか"
+            },
+            {
+              "id": "b",
+              "text": "どころではなく"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-07-q07",
+          "number": 7,
+          "prompt": "うちの犬に（　）、人を噛んだりするはずがない。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "かぎり"
+            },
+            {
+              "id": "b",
+              "text": "かぎって"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-07-q08",
+          "number": 8,
+          "prompt": "その話（　）、犯人はおそらくA氏だろう。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "からいうと"
+            },
+            {
+              "id": "b",
+              "text": "からすると"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-07-q09",
+          "number": 9,
+          "prompt": "予約はした（　）、結局忙しくて行けなかった。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "ものの"
+            },
+            {
+              "id": "b",
+              "text": "ものだが"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-07-q10",
+          "number": 10,
+          "prompt": "そんな話を聞くと、私もひと言意見を（　）いられない。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "言わないでは"
+            },
+            {
+              "id": "b",
+              "text": "言わないでも"
+            }
+          ],
+          "correctChoice": "a"
+        }
+      ]
+    },
+    {
+      "id": "power-drill-n2-intensive-08",
+      "trainingNumber": 8,
+      "title": "集中トレーニング⑧ 似ている文型（2）",
+      "category": "似ている文型",
+      "part": 2,
+      "printedPage": 55,
+      "pdfPage": 55,
+      "timeLimitMinutes": 3,
+      "maximumScore": 10,
+      "type": "binary_choice",
+      "instruction": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "intensive-08-q01",
+          "number": 1,
+          "prompt": "トッピングはチーズ（　）、お願いします。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "抜きで"
+            },
+            {
+              "id": "b",
+              "text": "抜きに"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-08-q02",
+          "number": 2,
+          "prompt": "自分でちゃんと調べた（　）、この結論を出しました。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "上で"
+            },
+            {
+              "id": "b",
+              "text": "上に"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-08-q03",
+          "number": 3,
+          "prompt": "参加する（　）、1時間程度しかいられません。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "としては"
+            },
+            {
+              "id": "b",
+              "text": "としても"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-08-q04",
+          "number": 4,
+          "prompt": "向こうから回答があり（　）、すぐにご報告します。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "次第"
+            },
+            {
+              "id": "b",
+              "text": "次第で"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-08-q05",
+          "number": 5,
+          "prompt": "私は声を（　）叫んだが、彼には届かなかった。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "かぎり"
+            },
+            {
+              "id": "b",
+              "text": "かぎりに"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-08-q06",
+          "number": 6,
+          "prompt": "伊藤コーチの指導の（　）、私たちは毎日練習に励んだ。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "もと"
+            },
+            {
+              "id": "b",
+              "text": "もとに"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-08-q07",
+          "number": 7,
+          "prompt": "驚くべき（　）、その少女は3歳で5カ国語が話せるそうだ。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "ことに"
+            },
+            {
+              "id": "b",
+              "text": "ことには"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-08-q08",
+          "number": 8,
+          "prompt": "こうなった（　）、もう正直に真実を告白するしかない。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "上で"
+            },
+            {
+              "id": "b",
+              "text": "上は"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-08-q09",
+          "number": 9,
+          "prompt": "その子は泣く（　）、近くにあるものを投げ始めた。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "ばかりか"
+            },
+            {
+              "id": "b",
+              "text": "ばかりに"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-08-q10",
+          "number": 10,
+          "prompt": "初めて書道をした（　）、なかなかうまく書けている。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "にしては"
+            },
+            {
+              "id": "b",
+              "text": "にしても"
+            }
+          ],
+          "correctChoice": "a"
+        }
+      ]
+    },
+    {
+      "id": "power-drill-n2-intensive-09",
+      "trainingNumber": 9,
+      "title": "集中トレーニング⑨ 似ている文型（3）",
+      "category": "似ている文型",
+      "part": 3,
+      "printedPage": 66,
+      "pdfPage": 66,
+      "timeLimitMinutes": 3,
+      "maximumScore": 10,
+      "type": "binary_choice",
+      "instruction": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "intensive-09-q01",
+          "number": 1,
+          "prompt": "彼女はジャンプ力（　）、このチームで一番だ。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "にかけて"
+            },
+            {
+              "id": "b",
+              "text": "にかけては"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-09-q02",
+          "number": 2,
+          "prompt": "え、これだけ？ これじゃ、やってないも（　）よ。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "同然だ"
+            },
+            {
+              "id": "b",
+              "text": "当然だ"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-09-q03",
+          "number": 3,
+          "prompt": "このレストラン、入り口（　）高級そう。とても入れないよ。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "からして"
+            },
+            {
+              "id": "b",
+              "text": "からすると"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-09-q04",
+          "number": 4,
+          "prompt": "伊藤さんは現場を見てきた（　）、その事故についてくわしく知っていた。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "かのように"
+            },
+            {
+              "id": "b",
+              "text": "かのうちに"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-09-q05",
+          "number": 5,
+          "prompt": "定員になり（　）締め切ります。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "次第"
+            },
+            {
+              "id": "b",
+              "text": "次第で"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-09-q06",
+          "number": 6,
+          "prompt": "みんなで温泉に行く（　）、いつがいいでしょうね。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "としても"
+            },
+            {
+              "id": "b",
+              "text": "としたら"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-09-q07",
+          "number": 7,
+          "prompt": "みんなに宣言してしまった（　）、絶対に実験を成功させなければ。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "以上"
+            },
+            {
+              "id": "b",
+              "text": "以来"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-09-q08",
+          "number": 8,
+          "prompt": "田口さんは留学したことがある（　）、イギリスについてよく知っているね。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "だけで"
+            },
+            {
+              "id": "b",
+              "text": "だけに"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-09-q09",
+          "number": 9,
+          "prompt": "時間さえ（　）、全部できたのに。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "あると"
+            },
+            {
+              "id": "b",
+              "text": "あれば"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-09-q10",
+          "number": 10,
+          "prompt": "銀行で働いている（　）、たくさん貯金があるわけじゃないよ。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "からって"
+            },
+            {
+              "id": "b",
+              "text": "からいって"
+            }
+          ],
+          "correctChoice": "a"
+        }
+      ]
+    },
+    {
+      "id": "power-drill-n2-intensive-10",
+      "trainingNumber": 10,
+      "title": "集中トレーニング⑩ 敬語",
+      "category": "敬語",
+      "part": 1,
+      "printedPage": 67,
+      "pdfPage": 67,
+      "timeLimitMinutes": 3,
+      "maximumScore": 10,
+      "type": "binary_choice",
+      "instruction": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "intensive-10-q01",
+          "number": 1,
+          "prompt": "何卒、ご理解（　）、お願い申し上げます。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "いただきたく"
+            },
+            {
+              "id": "b",
+              "text": "いただきたくて"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-10-q02",
+          "number": 2,
+          "prompt": "何かありましたら、どうぞ（　）お呼びください。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "ご遠慮ぬきで"
+            },
+            {
+              "id": "b",
+              "text": "ご遠慮なく"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-10-q03",
+          "number": 3,
+          "prompt": "先生、私たちの結婚式にご出席（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "願えませんか"
+            },
+            {
+              "id": "b",
+              "text": "願いませんか"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-10-q04",
+          "number": 4,
+          "prompt": "このたびは（　）くださいまして、ありがとうございます。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "お招き"
+            },
+            {
+              "id": "b",
+              "text": "お招きして"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-10-q05",
+          "number": 5,
+          "prompt": "先生のお名前はよく（　）おります。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "ご存じで"
+            },
+            {
+              "id": "b",
+              "text": "存じ上げて"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-10-q06",
+          "number": 6,
+          "prompt": "お元気で（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "ございますか"
+            },
+            {
+              "id": "b",
+              "text": "いらっしゃいますか"
+            }
+          ],
+          "correctChoice": "b"
+        },
+        {
+          "id": "intensive-10-q07",
+          "number": 7,
+          "prompt": "こちらからお好きなものを（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "お選びになれます"
+            },
+            {
+              "id": "b",
+              "text": "お選びされます"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-10-q08",
+          "number": 8,
+          "prompt": "A：社長は？\nB：会議中です。会議室に（　）。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "おいでです"
+            },
+            {
+              "id": "b",
+              "text": "お越しです"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-10-q09",
+          "number": 9,
+          "prompt": "（　）光栄です。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "お目にかかれて"
+            },
+            {
+              "id": "b",
+              "text": "お会いになれて"
+            }
+          ],
+          "correctChoice": "a"
+        },
+        {
+          "id": "intensive-10-q10",
+          "number": 10,
+          "prompt": "お近くに（　）の際は、どうぞお寄りください。",
+          "choices": [
+            {
+              "id": "a",
+              "text": "お越し"
+            },
+            {
+              "id": "b",
+              "text": "越された"
+            }
+          ],
+          "correctChoice": "a"
+        }
+      ]
+    }
+  ]
+}
