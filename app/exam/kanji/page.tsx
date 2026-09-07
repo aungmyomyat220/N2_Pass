@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import rawData from "@/data/n2-kanji.json";
+import rawData from "@/data/study/kanji/n2-kanji.json";
 import type { KanjiCard } from "@/lib/srs";
 import {
   buildCompoundQuiz,

@@ -14,7 +14,7 @@ import {
   Search,
   X,
 } from "lucide-react";
-import rawData from "@/data/n2-kanji.json";
+import rawData from "@/data/study/kanji/n2-kanji.json";
 import KanjiFlashcard from "@/app/components/KanjiFlashcard";
 import KanjiRevealPanel from "@/app/components/KanjiRevealPanel";
 import KanjiSentenceCard from "@/app/components/KanjiSentenceCard";

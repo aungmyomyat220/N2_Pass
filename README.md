@@ -98,7 +98,7 @@ dataset exists — the well-known lists are copyrighted website content). It
 covers the canonical N2 points but is not exhaustive; add more by appending to
 the JSON.
 
-### Kanji — [data/n2-kanji.json](data/n2-kanji.json)
+### Kanji — [ddata/study/kanji/n2-kanji.json](data/study/kanji/n2-kanji.json)
 
 367 N2 kanji, sorted by frequency
 (most common first). Each record:

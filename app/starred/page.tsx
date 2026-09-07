@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { ArrowLeft, ArrowRight, BookOpenText, Languages } from "lucide-react";
-import rawData from "@/data/n2-kanji.json";
+import rawData from "@/data/study/kanji/n2-kanji.json";
 import KanjiFlashcard from "@/app/components/KanjiFlashcard";
 import type { KanjiCard } from "@/lib/srs";
 import GrammarLibrary from "@/app/components/GrammarLibrary";
