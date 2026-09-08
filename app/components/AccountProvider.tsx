@@ -102,7 +102,7 @@ export default function AccountProvider({ children }: { children: ReactNode }) {
           a.revision = pending.revision;
         }
         const guest = guestState();
-        setCanImport(!localStorage.getItem(`n2-imported:${a.user.id}`) && Boolean(Object.keys(guest.progress).length || Object.keys(guest.samePatternProgress ?? {}).length || guest.starred.length));
+        setCanImport(!localStorage.getItem(`n2-imported:${a.user.id}`) && Boolean(Object.keys(guest.progress).length || Object.keys(guest.samePatternProgress ?? {}).length || guest.currentIndex !== null || guest.samePatternCurrentIndex !== null || guest.starred.length));
       }
       activateAccount(a.user?.id ?? null, value);
       setAccount(a); setVersion(v => v + 1);

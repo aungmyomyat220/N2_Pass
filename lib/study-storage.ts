@@ -15,6 +15,8 @@ export function guestState(): StudyState {
     const value = {
       progress: JSON.parse(localStorage.getItem('n2-kanji-progress-v1') || '{}'),
       samePatternProgress: JSON.parse(localStorage.getItem('n2-kanji-same-pattern-progress-v1') || '{}'),
+      currentIndex: JSON.parse(localStorage.getItem('n2-kanji-current-index-v1') || 'null'),
+      samePatternCurrentIndex: JSON.parse(localStorage.getItem('n2-kanji-same-pattern-current-index-v1') || 'null'),
       starred: JSON.parse(localStorage.getItem('n2-kanji-starred-v1') || '[]'),
     };
     return validState(value) ? value : emptyState();

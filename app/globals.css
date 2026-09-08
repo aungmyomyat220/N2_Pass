@@ -52,7 +52,7 @@
 
 /* Grammar lesson library */
 .grammar-lessons { --library-accent: var(--accent); }
-.mimetic-page { --library-accent: #b79aff; }
+.mimetic-page { --library-accent: var(--accent); }
 .grammar-eyebrow { color: var(--library-accent, var(--accent)); font-size: 11px; font-weight: 700; letter-spacing: .15em; }
 .grammar-library-stat { position: relative; z-index: 1; padding: 10px 16px; border: 1px solid var(--border); border-radius: 24px; background: var(--surface); color: var(--muted); font-size: 12px; white-space: nowrap; }
 .grammar-library-stat.grammar-stat { color: #8ab4f8; border-color: rgba(110, 168, 254, .55); background: rgba(110, 168, 254, .12); }
@@ -134,7 +134,7 @@
 }
 
 .mimetic-intro { line-height: 1.6; }
-.mimetic-note { color: var(--muted); font-size: 13px; line-height: 1.6; padding: 12px 14px; background: color-mix(in srgb, var(--library-accent) 6%, var(--surface)); border-left: 3px solid var(--library-accent); border-radius: 0 9px 9px 0; }
+.mimetic-page .grammar-workspace { grid-template-columns: 280px minmax(0, 1fr); gap: 24px; margin-top: 20px; }
 .mimetic-filters { display: flex; flex-wrap: wrap; gap: 16px; margin: 18px 0 16px; padding: 16px; background: color-mix(in srgb, var(--library-accent) 4%, var(--surface)); border: 1px solid color-mix(in srgb, var(--library-accent) 18%, var(--border)); border-radius: 12px; }
 .mimetic-filters label { display: flex; flex-direction: column; gap: 8px; font-size: 13px; color: var(--muted); }
 .mimetic-filters label:first-child { flex: 1 1 240px; }
@@ -2538,8 +2538,7 @@ button.remove-meaning svg {
 }
 
 @media (max-width: 1280px) {
-  .kanji-workspace,
-  .grammar-workspace {
+  .kanji-workspace {
     grid-template-columns: minmax(0, 640px);
   }
 
@@ -2547,9 +2546,11 @@ button.remove-meaning svg {
     position: static;
   }
 
-  .grammar-index {
-    display: none;
-  }
+}
+
+@media (max-width: 900px) {
+  .grammar-workspace { grid-template-columns: minmax(0, 1fr); }
+  .grammar-index { display: none; }
 }
 
 /* Powerdrill grammar exam */

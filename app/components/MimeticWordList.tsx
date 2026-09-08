@@ -6,7 +6,6 @@ import { AudioLines } from "lucide-react";
 
 type MimeticData = {
   title: string;
-  note: string;
   entries: {
     id: number;
     word: string;
@@ -61,9 +60,36 @@ export default function MimeticWordList({ data, title = "Mimetic Words", backLin
         <div className="starred-total"><strong>{data.entries.length}</strong><span>Mimetic words</span></div>
       </header>
       {backLink && <Link className="exam-back-link" href={backLink.href}>{backLink.label}</Link>}
-      <p className="mimetic-note">{data.note}</p>
 
       <div className="grammar-workspace">
+        <aside className="grammar-index" aria-label="Mimetic words quick index">
+          <div className="grammar-index-header">
+            <div>
+              <h2>Word Index</h2>
+              <p>Jump to a mimetic word</p>
+            </div>
+            <span>{entries.length}</span>
+          </div>
+          {entries.length === 0 ? (
+            <div className="grammar-index-empty">No matching words</div>
+          ) : (
+            <nav className="grammar-index-list">
+              {entries.map((entry) => (
+                <button type="button" key={entry.id}
+                  className={openId === entry.id ? "grammar-index-item active" : "grammar-index-item"}
+                  aria-current={openId === entry.id ? "true" : undefined}
+                  onClick={() => selectWord(entry.id)}>
+                  <span className="index-item-main">
+                    <span className="index-item-number">{entry.id}</span>
+                    <span lang="ja">{entry.word}</span>
+                  </span>
+                  <small lang="ja">{entry.reading}</small>
+                </button>
+              ))}
+            </nav>
+          )}
+        </aside>
+
         <section className="grammar-study-column">
           <div className="mimetic-filters">
             <label>
@@ -133,33 +159,6 @@ export default function MimeticWordList({ data, title = "Mimetic Words", backLin
             </ul>
           )}
         </section>
-        <aside className="grammar-index" aria-label="Mimetic words quick index">
-          <div className="grammar-index-header">
-            <div>
-              <h2>Word Index</h2>
-              <p>Jump to a mimetic word</p>
-            </div>
-            <span>{entries.length}</span>
-          </div>
-          {entries.length === 0 ? (
-            <div className="grammar-index-empty">No matching words</div>
-          ) : (
-            <nav className="grammar-index-list">
-              {entries.map((entry) => (
-                <button type="button" key={entry.id}
-                  className={openId === entry.id ? "grammar-index-item active" : "grammar-index-item"}
-                  aria-current={openId === entry.id ? "true" : undefined}
-                  onClick={() => selectWord(entry.id)}>
-                  <span className="index-item-main">
-                    <span className="index-item-number">{entry.id}</span>
-                    <span lang="ja">{entry.word}</span>
-                  </span>
-                  <small lang="ja">{entry.reading}</small>
-                </button>
-              ))}
-            </nav>
-          )}
-        </aside>
       </div>
     </main>
   );

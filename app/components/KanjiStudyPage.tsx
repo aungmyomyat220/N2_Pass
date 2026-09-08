@@ -28,9 +28,11 @@ import {
   ProgressMap,
   buildQueue,
   computeStats,
+  loadCurrentIndex,
   loadProgress,
   resetProgress,
   review,
+  saveCurrentIndex,
   saveProgress,
 } from "@/lib/srs";
 import { loadStarred, saveStarred, toggleStarred } from "@/lib/starred";
@@ -61,7 +63,9 @@ export default function KanjiStudyPage({
     setProgress(loadProgress(progressDeck));
     setStarred(loadStarred());
     setNow(Date.now());
-  }, [progressDeck]);
+    const savedIndex = loadCurrentIndex(progressDeck);
+    setManualIndex(savedIndex !== null && savedIndex < CARDS.length ? savedIndex : null);
+  }, [progressDeck, CARDS.length]);
 
   const queue = useMemo(() => {
     if (progress === null) return [];
@@ -117,8 +121,10 @@ export default function KanjiStudyPage({
         const nextIndex = manualIndex + 1;
         if (nextIndex < CARDS.length) {
           setManualIndex(nextIndex);
+          saveCurrentIndex(nextIndex, progressDeck);
         } else {
           setManualIndex(null);
+          saveCurrentIndex(null, progressDeck);
         }
       }
     },
@@ -189,6 +195,7 @@ export default function KanjiStudyPage({
     setRetryCard(null);
     const safeIndex = Math.min(Math.max(index, 0), CARDS.length - 1);
     setManualIndex(safeIndex);
+    saveCurrentIndex(safeIndex, progressDeck);
     setRevealed(false);
   };
 
@@ -204,6 +211,7 @@ export default function KanjiStudyPage({
 
   const returnToProgress = () => {
     setManualIndex(null);
+    saveCurrentIndex(null, progressDeck);
     setRetryCard(null);
     setRevealed(false);
     setNow(Date.now());

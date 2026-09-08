@@ -35,6 +35,11 @@ const STORAGE_KEYS: Record<ProgressDeck, string> = {
   "same-pattern": "n2-kanji-same-pattern-progress-v1",
 };
 
+const INDEX_STORAGE_KEYS: Record<ProgressDeck, string> = {
+  normal: "n2-kanji-current-index-v1",
+  "same-pattern": "n2-kanji-same-pattern-current-index-v1",
+};
+
 // Interval per box, in days. Box 0 is due immediately.
 const BOX_INTERVALS_DAYS = [0, 1, 3, 7, 16];
 export const MAX_BOX = BOX_INTERVALS_DAYS.length - 1;
@@ -64,11 +69,35 @@ export function saveProgress(progress: ProgressMap, deck: ProgressDeck = "normal
   window.localStorage.setItem(STORAGE_KEYS[deck], JSON.stringify(progress));
 }
 
+export function loadCurrentIndex(deck: ProgressDeck = "normal"): number | null {
+  if (typeof window === "undefined") return null;
+  const currentAccount = accountState();
+  let value: unknown;
+  if (currentAccount) {
+    value = deck === "same-pattern" ? currentAccount.samePatternCurrentIndex : currentAccount.currentIndex;
+  } else {
+    const stored = window.localStorage.getItem(INDEX_STORAGE_KEYS[deck]);
+    value = stored === null ? null : Number(stored);
+  }
+  return Number.isInteger(value) && Number(value) >= 0 ? Number(value) : null;
+}
+
+export function saveCurrentIndex(index: number | null, deck: ProgressDeck = "normal"): void {
+  if (typeof window === "undefined") return;
+  const patch = deck === "same-pattern" ? { samePatternCurrentIndex: index } : { currentIndex: index };
+  if (updateAccount(patch)) return;
+  if (index === null) window.localStorage.removeItem(INDEX_STORAGE_KEYS[deck]);
+  else window.localStorage.setItem(INDEX_STORAGE_KEYS[deck], String(index));
+}
+
 export function resetProgress(deck: ProgressDeck = "normal"): void {
   if (typeof window === "undefined") return;
-  const patch = deck === "same-pattern" ? { samePatternProgress: {} } : { progress: {} };
+  const patch = deck === "same-pattern"
+    ? { samePatternProgress: {}, samePatternCurrentIndex: null }
+    : { progress: {}, currentIndex: null };
   if (updateAccount(patch)) return;
   window.localStorage.removeItem(STORAGE_KEYS[deck]);
+  window.localStorage.removeItem(INDEX_STORAGE_KEYS[deck]);
 }
 
 function dueDateFor(box: number, now: number): number {

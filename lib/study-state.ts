@@ -3,6 +3,8 @@ import type { ProgressMap } from './srs';
 export type StudyState = {
   progress: ProgressMap;
   samePatternProgress?: ProgressMap;
+  currentIndex?: number | null;
+  samePatternCurrentIndex?: number | null;
   starred: string[];
 };
 export const emptyState = (): StudyState => ({ progress: {}, samePatternProgress: {}, starred: [] });
@@ -20,7 +22,9 @@ const validProgress = (progress: unknown): progress is ProgressMap => {
 export function validState(value: unknown): value is StudyState {
   if (!value || typeof value !== 'object') return false;
   const v = value as StudyState;
-  if (!validProgress(v.progress) || (v.samePatternProgress !== undefined && !validProgress(v.samePatternProgress)) || !Array.isArray(v.starred)) return false;
+  const validIndex = (index: unknown) => index === undefined || index === null || (Number.isInteger(index) && (index as number) >= 0 && (index as number) < 10000);
+  if (!validProgress(v.progress) || (v.samePatternProgress !== undefined && !validProgress(v.samePatternProgress)) ||
+      !validIndex(v.currentIndex) || !validIndex(v.samePatternCurrentIndex) || !Array.isArray(v.starred)) return false;
   if (v.starred.length > 10000) return false;
   return v.starred.every(s => typeof s === "string" && s.length > 0 && s.length <= 160);
 }
@@ -28,6 +32,8 @@ export function importGuest(cloud: StudyState, guest: StudyState): StudyState {
   return {
     progress: { ...guest.progress, ...cloud.progress },
     samePatternProgress: { ...(guest.samePatternProgress ?? {}), ...(cloud.samePatternProgress ?? {}) },
+    currentIndex: cloud.currentIndex ?? guest.currentIndex ?? null,
+    samePatternCurrentIndex: cloud.samePatternCurrentIndex ?? guest.samePatternCurrentIndex ?? null,
     starred: [...new Set([...cloud.starred, ...guest.starred])],
   };
 }
