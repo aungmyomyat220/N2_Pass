@@ -216,7 +216,7 @@ export default function KanjiFlashcard({
           starred ? `Remove bookmark from ${card.kanji}` : `Bookmark ${card.kanji}`
         }
         aria-pressed={starred}
-        title={starred ? "Remove bookmark" : "Save to review later"}
+        title={starred ? "Remove bookmark (S)" : "Save to review later (S)"}
         onClick={(event) => {
           event.stopPropagation();
           onToggleStar();

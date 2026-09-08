@@ -11,6 +11,7 @@ export default function MixedQuestionsPage() {
       eyebrow="N2 GRAMMAR · MIXED QUESTIONS"
       heading="Intensive Training"
       shuffleQuestions
+      startImmediately
     />
   );
 }

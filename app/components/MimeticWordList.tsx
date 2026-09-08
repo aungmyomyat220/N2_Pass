@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import { AudioLines } from "lucide-react";
 
 type MimeticData = {
   title: string;
@@ -48,13 +49,16 @@ export default function MimeticWordList({ data, title = "Mimetic Words", backLin
 
   return (
     <main className="grammar-page mimetic-page">
-      <header className="grammar-lessons-header">
-        <div>
-          <span className="grammar-eyebrow">擬音語・擬態語 · N3/N2</span>
-          <h1>{title}</h1>
-          <p>{data.title}</p>
+      <header className="starred-hero mimetic-library-hero">
+        <div className="starred-hero-main">
+          <span className="starred-hero-icon" aria-hidden="true"><AudioLines /></span>
+          <div>
+            <span className="grammar-eyebrow">擬音語・擬態語 · N3/N2</span>
+            <h1>{title}</h1>
+            <p>{data.title}</p>
+          </div>
         </div>
-        <span className="grammar-library-stat mimetic-stat">{data.entries.length} words</span>
+        <div className="starred-total"><strong>{data.entries.length}</strong><span>Mimetic words</span></div>
       </header>
       {backLink && <Link className="exam-back-link" href={backLink.href}>{backLink.label}</Link>}
       <p className="mimetic-note">{data.note}</p>

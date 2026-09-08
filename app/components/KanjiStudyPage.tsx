@@ -123,6 +123,13 @@ export default function KanjiStudyPage({
     [progress, current, manualIndex, progressDeck],
   );
 
+  const handleToggleStar = useCallback(() => {
+    if (!current || starred === null) return;
+    const next = toggleStarred(loadStarred(), current.kanji);
+    saveStarred(next);
+    setStarred(next);
+  }, [current, starred]);
+
   // Keyboard shortcuts: Space/Enter to reveal, 1=again, 2=good.
   useEffect(() => {
     if (!kanjiDrawerOpen && !writingPadOpen) return;
@@ -150,15 +157,20 @@ export default function KanjiStudyPage({
       if (!revealed && (e.key === " " || e.key === "Enter")) {
         e.preventDefault();
         setRevealed(true);
-      } else if (revealed && (e.key === "1" || e.key === "ArrowLeft")) {
+      } else if (revealed && (["a", "1"].includes(e.key.toLowerCase()) || e.key === "ArrowLeft")) {
+        e.preventDefault();
         answer(false);
-      } else if (revealed && (e.key === "2" || e.key === "ArrowRight")) {
+      } else if (revealed && (["d", "2"].includes(e.key.toLowerCase()) || e.key === "ArrowRight")) {
+        e.preventDefault();
         answer(true);
+      } else if (revealed && e.key.toLowerCase() === "s") {
+        e.preventDefault();
+        handleToggleStar();
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [current, revealed, answer, kanjiDrawerOpen, writingPadOpen]);
+  }, [current, revealed, answer, handleToggleStar, kanjiDrawerOpen, writingPadOpen]);
 
   const handleReset = () => {
     const deckName = progressDeck === "same-pattern" ? "Same Pattern" : "Normal Flashcard";
@@ -193,13 +205,6 @@ export default function KanjiStudyPage({
     setRetryCard(null);
     setRevealed(false);
     setNow(Date.now());
-  };
-
-  const handleToggleStar = () => {
-    if (!current || starred === null) return;
-    const next = toggleStarred(loadStarred(), current.kanji);
-    saveStarred(next);
-    setStarred(next);
   };
 
   return (
@@ -301,10 +306,10 @@ export default function KanjiStudyPage({
                 <div className="actions">
                   <button className="bad" onClick={() => answer(false)}>
                     <ArrowLeft aria-hidden="true" />
-                    Again (1)
+                    Again (A)
                   </button>
                   <button className="good" onClick={() => answer(true)}>
-                    Got it (2)
+                    Next (D)
                     <ArrowRight aria-hidden="true" />
                   </button>
                 </div>
@@ -313,7 +318,7 @@ export default function KanjiStudyPage({
               {revealed && <KanjiSentenceCard kanji={current.kanji} />}
 
               <div className="kbd-hint">
-                Space/Enter reveal · 1 = retry this kanji · 2 = next kanji
+                Space/Enter reveal · A = again · D = next · S = bookmark
               </div>
             </>
           ) : (

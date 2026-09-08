@@ -99,7 +99,7 @@ export default function KanjiExamPage() {
   );
 
   return (
-    <main>
+    <main className="exam-home">
       <header className="app-header">
         <h1>Kanji Exam</h1>
         {phase !== "choose" && (

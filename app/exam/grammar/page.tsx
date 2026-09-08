@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { getPowerdrillLessons } from "@/lib/powerdrill-lessons";
-import { getIntensiveTrainings } from "@/lib/intensive-training";
+import { getIntensiveTrainings, getMixedIntensiveExam } from "@/lib/intensive-training";
+import MixedQuestionLauncher from "@/app/components/MixedQuestionLauncher";
 
 export const dynamic = "force-dynamic";
 
 export default async function GrammarExamPage() {
   const lessons = await getPowerdrillLessons();
   const trainings = getIntensiveTrainings();
+  const mixedExam = getMixedIntensiveExam();
   return (
     <main className="exam-home">
       <header className="app-header"><h1>Grammar Exam</h1></header>
@@ -20,13 +22,7 @@ export default async function GrammarExamPage() {
           <p className="mode-sub">{lessons.length} lessons</p>
           <span className="exam-ready">Choose lesson →</span>
         </Link>
-        <Link className="mode-card exam-subject-card" href="/exam/grammar/mixed-question">
-          <span className="mode-emoji" lang="ja" aria-hidden="true">集</span>
-          <h2 className="mode-name">Mixed Questions</h2>
-          <p className="mode-sub" lang="ja">集中トレーニング</p>
-          <p className="mode-sub">{trainings.length} trainings · {trainings.reduce((total, exam) => total + exam.sections[0].questions.length, 0)} questions</p>
-          <span className="exam-ready">Choose training →</span>
-        </Link>
+        <MixedQuestionLauncher data={mixedExam} trainingCount={trainings.length} />
       </div>
     </main>
   );

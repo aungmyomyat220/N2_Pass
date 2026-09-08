@@ -11,6 +11,7 @@ export default function PowerdrillExamView({
   eyebrow = `${data.level} GRAMMAR · POWERDRILL`,
   heading = `Lesson ${String(data.examNumber).padStart(2, "0")}`,
   shuffleQuestions = false,
+  startImmediately = false,
 }: {
   data: PowerdrillExam;
   backHref?: string;
@@ -18,13 +19,14 @@ export default function PowerdrillExamView({
   eyebrow?: string;
   heading?: string;
   shuffleQuestions?: boolean;
+  startImmediately?: boolean;
 }) {
   const totalQuestions = data.sections.reduce((count, section) => count + section.questions.length, 0);
-  const [phase, setPhase] = useState<"ready" | "exam" | "result">("ready");
+  const [phase, setPhase] = useState<"ready" | "exam" | "result">(startImmediately ? "exam" : "ready");
   const [sections, setSections] = useState(data.sections);
   const [answers, setAnswers] = useState<Record<string, number | string>>({});
   const [remaining, setRemaining] = useState(data.timeLimitMinutes * 60);
-  const deadline = useRef(0);
+  const deadline = useRef(startImmediately ? Date.now() + data.timeLimitMinutes * 60_000 : 0);
   const resultRef = useRef<HTMLDivElement>(null);
   const submitted = phase === "result";
   const score = sections.reduce((sum, section) => sum + section.questions.reduce(

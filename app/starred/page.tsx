@@ -1,12 +1,16 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { ArrowLeft, ArrowRight, BookOpenText, Languages } from "lucide-react";
+import { ArrowLeft, ArrowRight, Bookmark, BookOpenText, Languages } from "lucide-react";
 import rawData from "@/data/study/kanji/n2-kanji.json";
 import KanjiFlashcard from "@/app/components/KanjiFlashcard";
+import KanjiRevealPanel from "@/app/components/KanjiRevealPanel";
+import KanjiSentenceCard from "@/app/components/KanjiSentenceCard";
 import type { KanjiCard } from "@/lib/srs";
 import GrammarLibrary from "@/app/components/GrammarLibrary";
 import { loadStarred, saveStarred, STARRED_CHANGE_EVENT, toggleStarred } from "@/lib/starred";
+import { Badge } from "@/components/ui/badge";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const CARDS = rawData as KanjiCard[];
 const CARD_BY_KANJI = new Map(CARDS.map((card) => [card.kanji, card]));
@@ -24,27 +28,33 @@ export default function StarredPage() {
     return () => { window.removeEventListener(STARRED_CHANGE_EVENT, refresh); window.removeEventListener("storage", refresh); };
   }, []);
   return <main className="grammar-library-page starred-page">
-    <header className="grammar-lessons-header">
-      <div>
-        <span className="grammar-eyebrow">YOUR STUDY LIST · N2</span>
-        <h1>Starred</h1>
-        <p>Review the kanji and grammar patterns you saved for later.</p>
+    <header className="starred-hero">
+      <div className="starred-hero-main">
+        <span className="starred-hero-icon" aria-hidden="true"><Bookmark /></span>
+        <div>
+          <span className="grammar-eyebrow">YOUR COLLECTION · N2</span>
+          <h1>Saved Library</h1>
+          <p>Everything you bookmarked, ready for focused review.</p>
+        </div>
       </div>
-      <span className="grammar-library-stat starred-stat">{kanjiCount + grammarCount} saved</span>
+      <div className="starred-total"><strong>{kanjiCount + grammarCount}</strong><span>Total saved</span></div>
     </header>
-    <div className="starred-subjects" aria-label="Choose starred section">
-      <button type="button" className={subject === "kanji" ? "active" : ""} aria-pressed={subject === "kanji"} onClick={() => setSubject("kanji")}>
-        <Languages aria-hidden="true" />
-        <span><strong>Kanji</strong><small>Review saved kanji cards</small></span>
-        <b>{kanjiCount}</b>
-      </button>
-      <button type="button" className={subject === "grammar" ? "active" : ""} aria-pressed={subject === "grammar"} onClick={() => setSubject("grammar")}>
-        <BookOpenText aria-hidden="true" />
-        <span><strong>Grammar</strong><small>Open saved grammar patterns</small></span>
-        <b>{grammarCount}</b>
-      </button>
-    </div>
-    {subject === "kanji" ? <StarredKanji /> : <GrammarLibrary starredOnly />}
+    <Tabs className="starred-tabs" value={subject} onValueChange={(value) => setSubject(value as "kanji" | "grammar")}>
+      <TabsList className="starred-tabs-list">
+        <TabsTrigger value="kanji"><Languages data-icon="inline-start" />Kanji <Badge variant="secondary">{kanjiCount}</Badge></TabsTrigger>
+        <TabsTrigger value="grammar"><BookOpenText data-icon="inline-start" />Grammar <Badge variant="secondary">{grammarCount}</Badge></TabsTrigger>
+      </TabsList>
+      <TabsContent className="starred-tab-content" value="kanji"><StarredKanji /></TabsContent>
+      <TabsContent className="starred-tab-content" value="grammar">
+        <section className="starred-grammar-panel">
+          <header className="starred-section-header">
+            <div><span>Grammar collection</span><h2>Bookmarked patterns</h2></div>
+            <Badge variant="outline">{grammarCount} saved</Badge>
+          </header>
+          <GrammarLibrary starredOnly />
+        </section>
+      </TabsContent>
+    </Tabs>
   </main>;
 }
 
@@ -53,7 +63,6 @@ function StarredKanji() {
   const [queue, setQueue] = useState<string[]>([]);
   const [revealed, setRevealed] = useState(false);
   const [reviewed, setReviewed] = useState(0);
-  const [history, setHistory] = useState<string[]>([]);
 
   useEffect(() => {
     const saved = loadStarred().filter((kanji) => CARD_BY_KANJI.has(kanji));
@@ -65,13 +74,13 @@ function StarredKanji() {
     () => (queue[0] ? CARD_BY_KANJI.get(queue[0]) : undefined),
     [queue],
   );
+  const completion = starred?.length ? ((starred.length - queue.length) / starred.length) * 100 : 0;
 
   const answer = useCallback(
     (knewIt: boolean) => {
       if (!current) return;
 
       if (knewIt) {
-        setHistory((items) => [...items, current.kanji]);
         setQueue((items) => items.slice(1));
       }
       setReviewed((count) => count + 1);
@@ -79,6 +88,16 @@ function StarredKanji() {
     },
     [current],
   );
+
+  const handleToggleStar = useCallback(() => {
+    if (!current || starred === null) return;
+
+    const next = toggleStarred(loadStarred(), current.kanji);
+    saveStarred(next);
+    setStarred(next.filter(key => CARD_BY_KANJI.has(key)));
+    setQueue((items) => items.filter((kanji) => kanji !== current.kanji));
+    setRevealed(false);
+  }, [current, starred]);
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
@@ -88,110 +107,105 @@ function StarredKanji() {
       if (!revealed && (event.key === " " || event.key === "Enter")) {
         event.preventDefault();
         setRevealed(true);
-      } else if (revealed && (event.key === "1" || event.key === "ArrowLeft")) {
+      } else if (revealed && (["a", "1"].includes(event.key.toLowerCase()) || event.key === "ArrowLeft")) {
+        event.preventDefault();
         answer(false);
-      } else if (revealed && (event.key === "2" || event.key === "ArrowRight")) {
+      } else if (revealed && (["d", "2"].includes(event.key.toLowerCase()) || event.key === "ArrowRight")) {
+        event.preventDefault();
         answer(true);
+      } else if (revealed && event.key.toLowerCase() === "s") {
+        event.preventDefault();
+        handleToggleStar();
       }
     };
 
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [current, revealed, answer]);
-
-  const handleToggleStar = () => {
-    if (!current || starred === null) return;
-
-    const next = toggleStarred(loadStarred(), current.kanji);
-    saveStarred(next);
-    setStarred(next.filter(key => CARD_BY_KANJI.has(key)));
-    setHistory((items) => items.filter((kanji) => kanji !== current.kanji));
-    setQueue((items) => items.filter((kanji) => kanji !== current.kanji));
-    setRevealed(false);
-  };
+  }, [current, revealed, answer, handleToggleStar]);
 
   const restart = () => {
-    setHistory([]);
     setQueue(starred ?? []);
     setReviewed(0);
     setRevealed(false);
   };
 
-  const goBack = () => {
-    const previous = history[history.length - 1];
-    if (!previous) return;
-    setHistory((items) => items.slice(0, -1));
-    setQueue((items) => [previous, ...items]);
-    setRevealed(false);
-  };
-
   return (
-    <section aria-label="Starred kanji review">
-      <header className="app-header">
-        <h2>Kanji review</h2>
-        {starred && starred.length > 0 && (
-          <span className="review-count">{starred.length} saved</span>
-        )}
+    <section className="starred-review-panel" aria-label="Bookmarked kanji review">
+      <header className="starred-section-header">
+        <div><span>Kanji collection</span><h2>Bookmark review</h2></div>
+        <div className="starred-review-badges">
+          <Badge variant="outline">{queue.length} left</Badge>
+          <Badge variant="secondary">{reviewed} attempts</Badge>
+        </div>
       </header>
 
-      <div className="flashcard-navigation">
-        <button type="button" className="ghost" onClick={goBack} disabled={history.length === 0}>
-          <ArrowLeft aria-hidden="true" /> Back
-        </button>
-      </div>
+      {starred && starred.length > 0 && <div className="starred-review-meter" aria-label={`${Math.round(completion)}% complete`}><span style={{ width: `${completion}%` }} /></div>}
 
       {starred === null ? (
-        <div className="empty">Loading…</div>
+        <div className="empty starred-empty">Loading bookmarks…</div>
       ) : starred.length === 0 ? (
-        <div className="empty">
-          <div className="big">☆</div>
-          <div>No starred kanji yet.</div>
+        <div className="empty starred-empty">
+          <Bookmark className="starred-empty-icon" aria-hidden="true" />
+          <strong>No bookmarked Kanji yet</strong>
           <div className="empty-note">
-            Tap the star on a kanji flashcard to save it here for later.
+            Tap the bookmark on a Kanji flashcard to save it here.
           </div>
         </div>
       ) : current ? (
-        <>
-          <div className="review-progress">
-            <span>{queue.length} left in this review</span>
-            <span>{reviewed} answers</span>
-          </div>
+        <div className="starred-kanji-workspace">
+          <section className="starred-kanji-study">
+            <KanjiFlashcard
+              card={current}
+              revealed={revealed}
+              starred
+              showDetails={false}
+              onReveal={() => setRevealed(true)}
+              onToggleStar={handleToggleStar}
+            />
 
-          <KanjiFlashcard
-            card={current}
-            revealed={revealed}
-            starred
-            onReveal={() => setRevealed(true)}
-            onToggleStar={handleToggleStar}
-          />
+            {!revealed ? (
+              <div className="actions">
+                <button className="reveal" onClick={() => setRevealed(true)}>
+                  Reveal
+                </button>
+              </div>
+            ) : (
+              <div className="actions">
+                <button className="bad" onClick={() => answer(false)}>
+                  <ArrowLeft aria-hidden="true" />
+                  Again (A)
+                </button>
+                <button className="good" onClick={() => answer(true)}>
+                  Next (D)
+                  <ArrowRight aria-hidden="true" />
+                </button>
+              </div>
+            )}
 
-          {!revealed ? (
-            <div className="actions">
-              <button className="reveal" onClick={() => setRevealed(true)}>
-                Reveal
-              </button>
+            {revealed && <KanjiSentenceCard kanji={current.kanji} />}
+
+            <div className="kbd-hint">
+              A = again · D = next · S = remove bookmark
             </div>
-          ) : (
-            <div className="actions">
-              <button className="bad" onClick={() => answer(false)}>
-                <ArrowLeft aria-hidden="true" />
-                Again (1)
-              </button>
-              <button className="good" onClick={() => answer(true)}>
-                Got it (2)
-                <ArrowRight aria-hidden="true" />
-              </button>
-            </div>
-          )}
+          </section>
 
-          <div className="kbd-hint">
-            Again retries this kanji · Got it moves to the next kanji
-          </div>
-        </>
+          <aside className="reveal-details-panel starred-meaning-panel" aria-label="Kanji meaning and vocabulary">
+            {revealed ? (
+              <KanjiRevealPanel card={current} />
+            ) : (
+              <div className="reveal-details-placeholder">
+                <span className="reveal-details-placeholder-mark" lang="ja">意</span>
+                <h2>Meaning &amp; Vocabulary</h2>
+                <p>Reveal the card to see its meaning and vocabulary.</p>
+              </div>
+            )}
+          </aside>
+        </div>
       ) : (
-        <div className="empty">
+        <div className="empty starred-empty">
           <div className="big">🎉</div>
-          <div>Starred review complete.</div>
+          <strong>Bookmark review complete</strong>
+          <div className="empty-note">You finished every saved Kanji in this session.</div>
           <button className="reveal restart-review" onClick={restart}>
             Review again
           </button>

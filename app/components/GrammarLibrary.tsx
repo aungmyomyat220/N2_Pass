@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { Bookmark, Copy } from "lucide-react";
+import { Bookmark, BookOpenText, Copy, Search } from "lucide-react";
 import { grammarStarKey, loadStarred, saveStarred, STARRED_CHANGE_EVENT, toggleStarred } from "@/lib/starred";
 import data from "@/data/exam/grammar/lesson/power-drill-n2-grammar-lessons-01-05.json";
 
@@ -47,15 +47,6 @@ export default function GrammarLibrary({ starredOnly = false }: { starredOnly?: 
   const [openIdx, setOpenIdx] = useState<string | null>(null);
   const [lesson, setLesson] = useState<number | null>(null);
 
-  const selectGrammar = (index: string) => {
-    setOpenIdx(index);
-    window.requestAnimationFrame(() => {
-      document
-        .getElementById(`grammar-point-${index}`)
-        ?.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-  };
-
   const available = useMemo(() => GRAMMAR.filter(g => !starredOnly || stars.includes(grammarStarKey(g.id))), [stars, starredOnly]);
 
   const filtered = useMemo(() => {
@@ -72,47 +63,72 @@ export default function GrammarLibrary({ starredOnly = false }: { starredOnly?: 
 
   return (
     <section className="grammar-page grammar-lessons">
-      {!starredOnly && <header className="grammar-lessons-header">
-        <div><span className="grammar-eyebrow">日本語の文法 · N2</span><h1>Grammar</h1><p>Build your understanding, one pattern at a time.</p></div>
-        <span className="grammar-library-stat grammar-stat">{GRAMMAR.length} patterns · {LESSONS.length} lessons</span>
+      {!starredOnly && <header className="starred-hero grammar-library-hero">
+        <div className="starred-hero-main">
+          <span className="starred-hero-icon" aria-hidden="true"><BookOpenText /></span>
+          <div><span className="grammar-eyebrow">日本語の文法 · N2</span><h1>Grammar</h1><p>Build your understanding, one pattern at a time.</p></div>
+        </div>
+        <div className="starred-total"><strong>{GRAMMAR.length}</strong><span>patterns · {LESSONS.length} lessons</span></div>
       </header>}
 
       <p className="grammar-copy-status" role="status">{copyStatus}</p>
-      {!starredOnly && <div className="grammar-lesson-filter">
-        <label htmlFor={starredOnly ? "starred-grammar-lesson" : "grammar-lesson"}>
-          Lesson
-        </label>
-        <select
-          id={starredOnly ? "starred-grammar-lesson" : "grammar-lesson"}
-          value={lesson ?? "all"}
-          onChange={(event) => {
-            setLesson(event.target.value === "all" ? null : Number(event.target.value));
-            setOpenIdx(null);
-          }}
-        >
-          <option value="all">All lessons ({available.length})</option>
-          {LESSONS.map((number) => (
-            <option value={number} key={number}>
-              Lesson {String(number).padStart(2, "0")} ({available.filter((point) => point.lessons.includes(number)).length})
-            </option>
-          ))}
-        </select>
-      </div>}
+      <div className={`grammar-library-layout${starredOnly ? " grammar-library-layout-starred" : ""}`}>
+        {!starredOnly && (
+          <aside className="grammar-lesson-panel" aria-label="Grammar lessons">
+            <div className="grammar-lesson-panel-header">
+              <span>学習順序</span>
+              <h2>Lessons</h2>
+              <p>Choose a lesson to focus your study.</p>
+            </div>
+            <nav className="grammar-lesson-nav">
+              <button
+                type="button"
+                className={lesson === null ? "active" : ""}
+                aria-current={lesson === null ? "page" : undefined}
+                onClick={() => { setLesson(null); setOpenIdx(null); }}
+              >
+                <span><small>ALL</small>All patterns</span>
+                <strong>{available.length}</strong>
+              </button>
+              {LESSONS.map((number) => (
+                <button
+                  type="button"
+                  className={lesson === number ? "active" : ""}
+                  aria-current={lesson === number ? "page" : undefined}
+                  onClick={() => { setLesson(number); setOpenIdx(null); }}
+                  key={number}
+                >
+                  <span><small>{String(number).padStart(2, "0")}</small>Lesson {String(number).padStart(2, "0")}</span>
+                  <strong>{available.filter((point) => point.lessons.includes(number)).length}</strong>
+                </button>
+              ))}
+            </nav>
+          </aside>
+        )}
 
-      <div className="grammar-workspace">
         <section className="grammar-study-column">
-          <input
-            className="search"
-            type="search"
-            aria-label="Search grammar"
-            placeholder="Search a pattern, meaning, or example…"
-            value={query}
-            onChange={(e) => {
-              setQuery(e.target.value);
-              setOpenIdx(null);
-            }}
-          />
-          <p className="grammar-results-count" role="status">{filtered.length} patterns{lesson === null ? " across all lessons" : ` in Lesson ${lesson}`}</p>
+          <div className="grammar-library-toolbar">
+            <div className="grammar-view-heading">
+              <span>{starredOnly ? "YOUR COLLECTION" : lesson === null ? "FULL LIBRARY" : `LESSON ${String(lesson).padStart(2, "0")}`}</span>
+              <h2>{starredOnly ? "Saved grammar" : lesson === null ? "All grammar patterns" : `Lesson ${String(lesson).padStart(2, "0")}`}</h2>
+              <p>{lesson === null ? "Browse every N2 grammar pattern." : "Study this lesson one pattern at a time."}</p>
+            </div>
+            <label className="grammar-search-box">
+              <Search aria-hidden="true" />
+              <input
+                className="search"
+                type="search"
+                aria-label="Search grammar"
+                placeholder="Search grammar…"
+                value={query}
+                onChange={(e) => {
+                  setQuery(e.target.value);
+                  setOpenIdx(null);
+                }}
+              />
+            </label>
+          </div>
+          <p className="grammar-results-count" role="status"><strong>{filtered.length}</strong> patterns found</p>
 
           {filtered.length === 0 ? (
             <div className="empty">{starredOnly && !stars.some(key => key.startsWith("grammar:")) ? "No starred grammar yet. Tap a star in Grammar to save a pattern here." : `No grammar points match “${query}”.`}</div>
@@ -170,36 +186,6 @@ export default function GrammarLibrary({ starredOnly = false }: { starredOnly?: 
           )}
         </section>
 
-        <aside className="grammar-index" aria-label="Grammar quick index">
-          <div className="grammar-index-header">
-            <div>
-              <h2>Pattern index</h2>
-              <p>Jump to a grammar point</p>
-            </div>
-            <span>{filtered.length}</span>
-          </div>
-          {filtered.length === 0 ? (
-            <div className="grammar-index-empty">No matching patterns</div>
-          ) : (
-            <nav className="grammar-index-list">
-              {filtered.map((grammar) => (
-                <button
-                  type="button"
-                  className={`grammar-index-item${openIdx === grammar.id ? " active" : ""}${stars.includes(grammarStarKey(grammar.id)) ? " grammar-index-starred" : ""}`}
-                  aria-current={openIdx === grammar.id ? "true" : undefined}
-                  onClick={() => selectGrammar(grammar.id)}
-                  key={grammar.id}
-                >
-                  <span className="index-item-main">
-                    <span className="index-item-number">{String(grammar.number).padStart(2, "0")}</span>
-                    <span>{grammar.grammar}</span>
-                    {stars.includes(grammarStarKey(grammar.id)) && <Bookmark size={14} fill="currentColor" aria-label="Bookmarked" />}
-                  </span>
-                </button>
-              ))}
-            </nav>
-          )}
-        </aside>
       </div>
     </section>
   );

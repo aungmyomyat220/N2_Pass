@@ -9,5 +9,5 @@ export default async function PowerdrillLessonPage({ params }: { params: Promise
   const lessons = await getPowerdrillLessons();
   const data = lessons.find((exam) => `lesson${exam.examNumber}` === lesson);
   if (!data) notFound();
-  return <PowerdrillExamView key={data.id} data={data} />;
+  return <PowerdrillExamView key={data.id} data={data} startImmediately />;
 }

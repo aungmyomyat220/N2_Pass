@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   AudioLines,
+  Bookmark,
   BookOpenText,
   Check,
   ChevronDown,
@@ -13,7 +14,6 @@ import {
   ClipboardCheck,
   Languages,
   Sparkles,
-  Star,
 } from "lucide-react";
 import {
   Sidebar,
@@ -54,7 +54,7 @@ const MOTTOES = [
 ] as const;
 
 const STUDY_ITEMS = [
-  { href: "/starred", label: "Starred", icon: Star },
+  { href: "/starred", label: "Starred", icon: Bookmark },
   { href: "/grammar", label: "Grammar", icon: BookOpenText },
   { href: "/mimetic", label: "Mimetic Words", icon: AudioLines },
 ];
@@ -169,7 +169,7 @@ export default function Nav() {
                       <span>{item.label}</span>
                     </SidebarMenuButton>
                     {item.href === "/starred" && starredCount > 0 && (
-                      <SidebarMenuBadge>{starredCount}</SidebarMenuBadge>
+                      <SidebarMenuBadge className="sidebar-starred-count">{starredCount}</SidebarMenuBadge>
                     )}
                   </SidebarMenuItem>
                 );
