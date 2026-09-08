@@ -24,6 +24,25 @@ function GoogleIcon() {
   </svg>;
 }
 
+function StudyLoading({ error, onRetry }: { error: string; onRetry: () => void }) {
+  return <main className="account-loading" aria-live="polite" aria-busy={!error}>
+    <section className="account-loading-card" role={error ? "alert" : "status"}>
+      <div className="account-loading-emblem" aria-hidden="true">
+        <span className="account-loading-sun" />
+        <span className="account-loading-torii">⛩</span>
+      </div>
+      <span className="account-loading-eyebrow">日本語学習 · N2</span>
+      <h1>{error ? '読み込みできません' : '読み込み中'}</h1>
+      <p>{error || 'Preparing your next Japanese study session…'}</p>
+      {error ? (
+        <button type="button" onClick={onRetry}>Try again</button>
+      ) : (
+        <div className="account-loading-track" aria-hidden="true"><span /></div>
+      )}
+    </section>
+  </main>;
+}
+
 export default function AccountProvider({ children }: { children: ReactNode }) {
   const [account, setAccount] = useState<Account | null>(null);
   const [error, setError] = useState('');
@@ -180,5 +199,5 @@ export default function AccountProvider({ children }: { children: ReactNode }) {
   </HoverCard>;
 
   const accountUI = { sidebar: account?.user ? null : controls, profile };
-  return <Context.Provider value={accountUI}>{account ? <div key={`${account.user?.id ?? 'guest'}:${version}`}>{children}</div> : <div className="account-loading">{error ? <>{error} <button onClick={() => void load()}>Retry</button></> : 'Loading your study progress…'}</div>}</Context.Provider>;
+  return <Context.Provider value={accountUI}>{account ? <div key={`${account.user?.id ?? 'guest'}:${version}`}>{children}</div> : <StudyLoading error={error} onRetry={() => void load()} />}</Context.Provider>;
 }

@@ -1,12 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   AudioLines,
   BookOpenText,
+  Check,
   ChevronDown,
+  ChevronsUpDown,
   ClipboardCheck,
   Languages,
   Sparkles,
@@ -31,6 +34,14 @@ import {
   SidebarSeparator,
   useSidebar,
 } from "@/components/ui/sidebar";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { loadStarred, STARRED_CHANGE_EVENT } from "@/lib/starred";
 import { AccountControls } from "./AccountProvider";
 
@@ -82,10 +93,36 @@ export default function Nav() {
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton size="lg" render={<Link href="/" onClick={closeMobile} />} tooltip="N2 学習">
-              <span className="grid size-8 place-items-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">N2</span>
-              <span className="font-semibold">N2 学習</span>
-            </SidebarMenuButton>
+            <DropdownMenu>
+              <DropdownMenuTrigger
+                render={<SidebarMenuButton size="lg" className="sidebar-app-switcher" tooltip="Switch JLPT app" />}
+              >
+                <span className="sidebar-brand-logo" aria-hidden="true">
+                  <Image src="/torii-gate-logo.jpeg" alt="" width={64} height={64} priority />
+                </span>
+                <span className="sidebar-app-copy group-data-[collapsible=icon]:hidden">
+                  <strong><span className="sidebar-app-level">N2</span><span className="sidebar-app-japanese" lang="ja">学習</span></strong>
+                  <small>JLPT Study App</small>
+                </span>
+                <ChevronsUpDown className="sidebar-app-chevron ml-auto group-data-[collapsible=icon]:hidden" aria-hidden="true" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="sidebar-app-menu" side="bottom" align="start" sideOffset={8}>
+                <DropdownMenuGroup>
+                  <DropdownMenuLabel>Switch JLPT app</DropdownMenuLabel>
+                  <DropdownMenuItem className="sidebar-level-option" render={<Link href="/" onClick={closeMobile} />}>
+                    <span className="sidebar-level-mark">N2</span>
+                    <span className="sidebar-level-copy"><strong>N2 Study</strong><small>Current app</small></span>
+                    <Check className="sidebar-level-check" aria-hidden="true" />
+                  </DropdownMenuItem>
+                  {(["N1", "N3", "N5"] as const).map((level) => (
+                    <DropdownMenuItem className="sidebar-level-option" disabled key={level}>
+                      <span className="sidebar-level-mark is-muted">{level}</span>
+                      <span className="sidebar-level-copy"><strong>{level} Study</strong><small>Coming soon</small></span>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuGroup>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>

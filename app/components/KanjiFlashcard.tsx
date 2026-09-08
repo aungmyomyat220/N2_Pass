@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, type MouseEvent } from "react";
-import { Check, Copy, Trash2 } from "lucide-react";
+import { Bookmark, Check, Copy, Trash2 } from "lucide-react";
 import type { KanjiSentenceExample } from "@/lib/kanji-examples";
 import type { KanjiCard } from "@/lib/srs";
 import {
@@ -211,18 +211,18 @@ export default function KanjiFlashcard({
     >
       <button
         type="button"
-        className={starred ? "star-button active" : "star-button"}
+        className={starred ? "bookmark-button active" : "bookmark-button"}
         aria-label={
-          starred ? `Remove ${card.kanji} from starred` : `Star ${card.kanji}`
+          starred ? `Remove bookmark from ${card.kanji}` : `Bookmark ${card.kanji}`
         }
         aria-pressed={starred}
-        title={starred ? "Remove from starred" : "Save to relearn later"}
+        title={starred ? "Remove bookmark" : "Save to review later"}
         onClick={(event) => {
           event.stopPropagation();
           onToggleStar();
         }}
       >
-        {starred ? "★" : "☆"}
+        <Bookmark aria-hidden="true" fill={starred ? "currentColor" : "none"} />
       </button>
 
       <div className="kanji">{card.kanji}</div>

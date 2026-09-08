@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { Copy, Star } from "lucide-react";
+import { Bookmark, Copy } from "lucide-react";
 import { grammarStarKey, loadStarred, saveStarred, STARRED_CHANGE_EVENT, toggleStarred } from "@/lib/starred";
 import data from "@/data/exam/grammar/lesson/power-drill-n2-grammar-lessons-01-05.json";
 
@@ -140,7 +140,7 @@ export default function GrammarLibrary({ starredOnly = false }: { starredOnly?: 
 
                     <div className="grammar-card-actions">
                       <button type="button" aria-label={`Copy ${g.grammar}`} title="Copy grammar, meaning and examples" onClick={() => void copyGrammar(g)}><Copy aria-hidden="true" /></button>
-                      <button type="button" className={starred ? "active" : ""} aria-label={`${starred ? "Unstar" : "Star"} ${g.grammar}`} aria-pressed={starred} onClick={() => saveStarred(toggleStarred(loadStarred(), grammarStarKey(g.id)))}><Star aria-hidden="true" fill={starred ? "currentColor" : "none"} /></button>
+                      <button type="button" className={starred ? "grammar-bookmark-action active" : "grammar-bookmark-action"} aria-label={`${starred ? "Remove bookmark from" : "Bookmark"} ${g.grammar}`} aria-pressed={starred} onClick={() => saveStarred(toggleStarred(loadStarred(), grammarStarKey(g.id)))}><Bookmark aria-hidden="true" fill={starred ? "currentColor" : "none"} /></button>
                     </div>
                     </div>
                     {open && (
@@ -193,7 +193,7 @@ export default function GrammarLibrary({ starredOnly = false }: { starredOnly?: 
                   <span className="index-item-main">
                     <span className="index-item-number">{String(grammar.number).padStart(2, "0")}</span>
                     <span>{grammar.grammar}</span>
-                    {stars.includes(grammarStarKey(grammar.id)) && <Star size={14} fill="currentColor" aria-label="Starred" />}
+                    {stars.includes(grammarStarKey(grammar.id)) && <Bookmark size={14} fill="currentColor" aria-label="Bookmarked" />}
                   </span>
                 </button>
               ))}

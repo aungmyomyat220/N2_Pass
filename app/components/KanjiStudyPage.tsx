@@ -5,12 +5,14 @@ import {
   useEffect,
   useMemo,
   useState,
+  type FormEvent,
 } from "react";
 import {
   ArrowLeft,
   ArrowRight,
   Grid3X3,
   PencilLine,
+  RotateCcw,
   Search,
   X,
 } from "lucide-react";
@@ -31,8 +33,6 @@ import {
 } from "@/lib/srs";
 import { loadStarred, saveStarred, toggleStarred } from "@/lib/starred";
 
-type VisitedCard = { card: KanjiCard; manualIndex: number | null };
-
 export default function KanjiStudyPage({
   cards: CARDS,
   title = "N2 Kanji Flashcards",
@@ -50,11 +50,10 @@ export default function KanjiStudyPage({
   const [now, setNow] = useState(0);
   const [manualIndex, setManualIndex] = useState<number | null>(null);
   const [retryCard, setRetryCard] = useState<KanjiCard | null>(null);
-  const [history, setHistory] = useState<VisitedCard[]>([]);
-  const [forward, setForward] = useState<VisitedCard[]>([]);
   const [kanjiDrawerOpen, setKanjiDrawerOpen] = useState(false);
   const [writingPadOpen, setWritingPadOpen] = useState(false);
   const [kanjiSearch, setKanjiSearch] = useState("");
+  const [indexInput, setIndexInput] = useState("");
 
   useEffect(() => {
     setProgress(loadProgress(progressDeck));
@@ -95,6 +94,10 @@ export default function KanjiStudyPage({
     ? CARDS.findIndex((card) => card.kanji === current.kanji)
     : -1;
 
+  useEffect(() => {
+    setIndexInput(currentIndex >= 0 ? String(currentIndex + 1) : "");
+  }, [currentIndex]);
+
   const answer = useCallback(
     (knewIt: boolean) => {
       if (progress === null || !current) return;
@@ -107,14 +110,6 @@ export default function KanjiStudyPage({
         setRetryCard(current);
         return;
       }
-      setHistory((items) => [...items, { card: current, manualIndex }]);
-      const upcoming = forward[forward.length - 1];
-      if (upcoming) {
-        setForward((items) => items.slice(0, -1));
-        setRetryCard(upcoming.card);
-        setManualIndex(upcoming.manualIndex);
-        return;
-      }
       setRetryCard(null);
       if (manualIndex !== null) {
         const nextIndex = manualIndex + 1;
@@ -125,20 +120,8 @@ export default function KanjiStudyPage({
         }
       }
     },
-    [progress, current, manualIndex, forward, progressDeck],
+    [progress, current, manualIndex, progressDeck],
   );
-
-  const goBack = () => {
-    const previous = history[history.length - 1];
-    if (!previous) return;
-    if (current) {
-      setForward((items) => [...items, { card: current, manualIndex }]);
-    }
-    setHistory((items) => items.slice(0, -1));
-    setRetryCard(previous.card);
-    setManualIndex(previous.manualIndex);
-    setRevealed(false);
-  };
 
   // Keyboard shortcuts: Space/Enter to reveal, 1=again, 2=good.
   useEffect(() => {
@@ -181,8 +164,6 @@ export default function KanjiStudyPage({
     const deckName = progressDeck === "same-pattern" ? "Same Pattern" : "Normal Flashcard";
     if (!window.confirm(`Reset ${deckName} progress?`)) return;
     resetProgress(progressDeck);
-    setHistory([]);
-    setForward([]);
     setRetryCard(null);
     setProgress({});
     setRevealed(false);
@@ -191,14 +172,27 @@ export default function KanjiStudyPage({
   };
 
   const jumpToIndex = (index: number) => {
-    if (current && current.kanji !== CARDS[index]?.kanji) {
-      setHistory((items) => [...items, { card: current, manualIndex }]);
-    }
-    setForward([]);
     setRetryCard(null);
     const safeIndex = Math.min(Math.max(index, 0), CARDS.length - 1);
     setManualIndex(safeIndex);
     setRevealed(false);
+  };
+
+  const handleIndexSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const requestedIndex = Number(indexInput);
+    if (!Number.isInteger(requestedIndex) || requestedIndex < 1 || requestedIndex > CARDS.length) {
+      setIndexInput(currentIndex >= 0 ? String(currentIndex + 1) : "");
+      return;
+    }
+    jumpToIndex(requestedIndex - 1);
+  };
+
+  const returnToProgress = () => {
+    setManualIndex(null);
+    setRetryCard(null);
+    setRevealed(false);
+    setNow(Date.now());
   };
 
   const handleToggleStar = () => {
@@ -246,22 +240,44 @@ export default function KanjiStudyPage({
               {stats.studied}/{stats.total}
             </div>
           </div>
-          <div className="stat">
-            <div className="label">Current index</div>
-            <div className="value">
-              {currentIndex >= 0 ? currentIndex + 1 : "—"}/{stats.total}
+          <div className={manualIndex === null ? "stat current-index-stat" : "stat current-index-stat is-browsing"}>
+            <div className="current-index-heading">
+              <div className="label">Current index</div>
+              <span>{manualIndex === null ? "Study queue" : "Browsing"}</span>
             </div>
+            <form className="current-index-control" onSubmit={handleIndexSubmit}>
+              <label className="current-index-value">
+                <span className="sr-only">Kanji index</span>
+                <input
+                  type="number"
+                  min={1}
+                  max={stats.total}
+                  inputMode="numeric"
+                  aria-label={`Go to Kanji index, 1 to ${stats.total}`}
+                  value={indexInput}
+                  onChange={(event) => setIndexInput(event.target.value)}
+                  onBlur={(event) => event.currentTarget.form?.requestSubmit()}
+                  onFocus={(event) => event.currentTarget.select()}
+                />
+                <span className="current-index-separator">/</span>
+                <span className="current-index-total">{stats.total}</span>
+                <kbd aria-hidden="true">Enter</kbd>
+              </label>
+              {manualIndex === null ? (
+                <span className="current-index-hint">Type a number to jump</span>
+              ) : (
+                <button type="button" className="back-to-progress" onClick={returnToProgress}>
+                  <RotateCcw aria-hidden="true" />
+                  Resume progress
+                </button>
+              )}
+            </form>
           </div>
         </section>
       )}
 
       <div className="kanji-workspace">
         <section className="kanji-study-column">
-          <div className="flashcard-navigation">
-            <button type="button" className="ghost" onClick={goBack} disabled={history.length === 0}>
-              <ArrowLeft aria-hidden="true" /> Back
-            </button>
-          </div>
           {progress === null ? (
             <div className="empty">Loading…</div>
           ) : current ? (
