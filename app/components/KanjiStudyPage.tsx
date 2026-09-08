@@ -11,11 +11,14 @@ import {
   ArrowLeft,
   ArrowRight,
   Grid3X3,
+  Languages,
   PencilLine,
   RotateCcw,
   Search,
+  Shapes,
   X,
 } from "lucide-react";
+import PageHero from "@/app/components/PageHero";
 import KanjiFlashcard from "@/app/components/KanjiFlashcard";
 import KanjiRevealPanel from "@/app/components/KanjiRevealPanel";
 import KanjiSentenceCard from "@/app/components/KanjiSentenceCard";
@@ -209,8 +212,16 @@ export default function KanjiStudyPage({
 
   return (
     <main className="kanji-page">
-      <header className="app-header">
-        <h1>{title}</h1>
+      <PageHero
+        icon={progressDeck === "same-pattern" ? Shapes : Languages}
+        eyebrow={progressDeck === "same-pattern" ? "形で学ぶ · N2" : "漢字学習 · N2"}
+        title={title}
+        description={progressDeck === "same-pattern" ? "Study visually related kanji together, one group at a time." : "Build recognition and recall with focused flashcard review."}
+        stat={CARDS.length}
+        statLabel="Kanji cards"
+      />
+      <div className="kanji-study-toolbar">
+        <span>Study tools</span>
         <div className="app-header-actions">
           <button
             className="ghost writing-pad-trigger"
@@ -231,7 +242,7 @@ export default function KanjiStudyPage({
             Reset progress
           </button>
         </div>
-      </header>
+      </div>
 
       {stats && (
         <section className="stats" aria-label="Study progress">

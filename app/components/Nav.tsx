@@ -54,7 +54,7 @@ const MOTTOES = [
 ] as const;
 
 const STUDY_ITEMS = [
-  { href: "/starred", label: "Starred", icon: Bookmark },
+  { href: "/starred", label: "Bookmark", icon: Bookmark },
   { href: "/grammar", label: "Grammar", icon: BookOpenText },
   { href: "/mimetic", label: "Mimetic Words", icon: AudioLines },
 ];
