@@ -1,5 +1,7 @@
 import Link from "next/link";
+import { BookOpenCheck } from "lucide-react";
 import { getPowerdrillLessons } from "@/lib/powerdrill-lessons";
+import ExamPageHeader from "@/app/components/ExamPageHeader";
 import PowerdrillLessonBrowser from "@/app/components/PowerdrillLessonBrowser";
 
 export const dynamic = "force-dynamic";
@@ -8,9 +10,8 @@ export default async function PowerDrillPage() {
   const lessons = await getPowerdrillLessons();
   return (
     <main className="exam-home">
-      <header className="app-header"><h1>PowerDrill</h1></header>
+      <ExamPageHeader icon={BookOpenCheck} eyebrow="文法集中 · N2" title="PowerDrill" description="Choose a lesson and review its details before you begin." stat={lessons.length} statLabel="Exam lessons" />
       <Link className="exam-back-link" href="/exam/grammar">← Grammar exams</Link>
-      <p className="exam-intro">Choose a lesson to review the exam details before you begin.</p>
       <PowerdrillLessonBrowser lessons={lessons} />
     </main>
   );

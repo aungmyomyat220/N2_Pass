@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { Languages } from "lucide-react";
+import ExamPageHeader from "@/app/components/ExamPageHeader";
 import rawData from "@/data/study/kanji/n2-kanji.json";
 import type { KanjiCard } from "@/lib/srs";
 import {
@@ -100,14 +102,19 @@ export default function KanjiExamPage() {
 
   return (
     <main className="exam-home">
-      <header className="app-header">
-        <h1>Kanji Exam</h1>
-        {phase !== "choose" && (
+      <ExamPageHeader
+        icon={Languages}
+        eyebrow="漢字試験 · N2"
+        title="Kanji Exam"
+        description="Test single kanji and compound readings."
+        stat={CARDS.length}
+        statLabel="Kanji available"
+        action={phase !== "choose" ? (
           <button className="ghost" onClick={startOver}>
             Start over
           </button>
-        )}
-      </header>
+        ) : undefined}
+      />
 
       <Link className="exam-back-link" href="/exam">← Back to exams</Link>
       <div>

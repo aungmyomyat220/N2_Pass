@@ -2,7 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { ListChecks } from "lucide-react";
 import type { PowerdrillExam, Question } from "@/lib/powerdrill-types";
+import ExamPageHeader from "./ExamPageHeader";
 
 export default function PowerdrillExamView({
   data,
@@ -60,11 +62,8 @@ export default function PowerdrillExamView({
 
   return (
     <main className="powerdrill-exam">
+      <ExamPageHeader icon={ListChecks} eyebrow={eyebrow} title={heading} description={data.title} descriptionLang="ja" stat={totalQuestions} statLabel={`${data.maximumScore} points`} />
       <Link className="exam-back-link" href={backHref}>← {backLabel}</Link>
-      <header className="powerdrill-header">
-        <div><span className="powerdrill-eyebrow">{eyebrow}</span><h1>{heading}</h1><p lang="ja">{data.title}</p></div>
-        <span className="powerdrill-badge">{totalQuestions} questions · {data.maximumScore} points</span>
-      </header>
       {phase === "ready" ? (
         <div className="chooser">
           <p>{totalQuestions} questions · {data.timeLimitMinutes} minutes · {data.maximumScore} points</p>

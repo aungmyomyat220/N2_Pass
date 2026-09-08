@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { ClipboardCheck } from "lucide-react";
+import ExamPageHeader from "@/app/components/ExamPageHeader";
 
 const SUBJECTS = [
   { slug: "kanji", title: "Kanji", mark: "漢", description: "Practice single kanji and compound readings.", soon: false },
@@ -9,8 +11,7 @@ const SUBJECTS = [
 export default function ExamPage() {
   return (
     <main className="exam-home">
-      <header className="app-header"><h1>Exam</h1></header>
-      <p className="exam-intro">Choose a subject to practice.</p>
+      <ExamPageHeader icon={ClipboardCheck} eyebrow="試験練習 · N2" title="Exam" description="Choose a subject and test what you have learned." stat={SUBJECTS.length} statLabel="Practice subjects" />
       <div className="exam-subject-grid">
         {SUBJECTS.map((subject) => (
           <Link className="mode-card exam-subject-card" href={`/exam/${subject.slug}`} key={subject.slug}>

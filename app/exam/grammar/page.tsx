@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { BookOpenText } from "lucide-react";
 import { getPowerdrillLessons } from "@/lib/powerdrill-lessons";
 import { getIntensiveTrainings, getMixedIntensiveExam } from "@/lib/intensive-training";
+import ExamPageHeader from "@/app/components/ExamPageHeader";
 import MixedQuestionLauncher from "@/app/components/MixedQuestionLauncher";
 
 export const dynamic = "force-dynamic";
@@ -11,9 +13,8 @@ export default async function GrammarExamPage() {
   const mixedExam = getMixedIntensiveExam();
   return (
     <main className="exam-home">
-      <header className="app-header"><h1>Grammar Exam</h1></header>
+      <ExamPageHeader icon={BookOpenText} eyebrow="文法試験 · N2" title="Grammar Exam" description="Choose PowerDrill lessons or mixed-question intensive training." stat="2" statLabel="Practice modes" />
       <Link className="exam-back-link" href="/exam">← Back to exams</Link>
-      <p className="exam-intro">Choose PowerDrill lessons or short mixed-question intensive training.</p>
       <div className="exam-subject-grid">
         <Link className="mode-card exam-subject-card" href="/exam/grammar/powerdrill">
           <span className="mode-emoji" lang="ja" aria-hidden="true">文</span>
