@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { ListChecks } from "lucide-react";
 import type { PowerdrillExam, Question } from "@/lib/powerdrill-types";
+import { useAutoSubmitOnFocusLoss } from "@/lib/use-auto-submit-on-focus-loss";
 import ExamPageHeader from "./ExamPageHeader";
 
 export default function PowerdrillExamView({
@@ -28,6 +29,7 @@ export default function PowerdrillExamView({
   const [sections, setSections] = useState(data.sections);
   const [answers, setAnswers] = useState<Record<string, number | string>>({});
   const [remaining, setRemaining] = useState(data.timeLimitMinutes * 60);
+  const [autoSubmitReason, setAutoSubmitReason] = useState<"focus" | "time" | null>(null);
   const deadline = useRef(startImmediately ? Date.now() + data.timeLimitMinutes * 60_000 : 0);
   const resultRef = useRef<HTMLDivElement>(null);
   const submitted = phase === "result";
@@ -39,7 +41,10 @@ export default function PowerdrillExamView({
     const tick = () => {
       const seconds = Math.max(0, Math.ceil((deadline.current - Date.now()) / 1000));
       setRemaining(seconds);
-      if (seconds === 0) setPhase("result");
+      if (seconds === 0) {
+        setAutoSubmitReason("time");
+        setPhase("result");
+      }
     };
     const timer = window.setInterval(tick, 250);
     return () => window.clearInterval(timer);
@@ -49,8 +54,14 @@ export default function PowerdrillExamView({
     if (submitted) resultRef.current?.focus();
   }, [submitted]);
 
+  useAutoSubmitOnFocusLoss(phase === "exam", () => {
+    setAutoSubmitReason("focus");
+    setPhase("result");
+  });
+
   function start() {
     setAnswers({});
+    setAutoSubmitReason(null);
     setSections(data.sections.map((section) => ({
       ...section,
       questions: shuffleQuestions ? shuffle(section.questions) : section.questions,
@@ -72,7 +83,7 @@ export default function PowerdrillExamView({
         </div>
       ) : (
         <div className="powerdrill-workspace">
-          <form className="powerdrill-questions" id="powerdrill-exam-form" onSubmit={(event) => { event.preventDefault(); setPhase("result"); }}>
+          <form className="powerdrill-questions" id="powerdrill-exam-form" onSubmit={(event) => { event.preventDefault(); setAutoSubmitReason(null); setPhase("result"); }}>
             {sections.map((section) => (
               <section className="powerdrill-section" key={section.id} aria-labelledby={section.id}>
                 <div className="powerdrill-section-heading"><span className="powerdrill-section-number">0{section.number}</span><h2 id={section.id} lang="ja">{section.label}</h2></div>
@@ -127,7 +138,8 @@ export default function PowerdrillExamView({
           </form>
           <aside className="powerdrill-summary" aria-label="Exam summary">
             <div ref={resultRef} tabIndex={-1}>
-              <h2>{submitted ? remaining === 0 ? "Time is up" : "Exam results" : "Exam summary"}</h2>
+              <h2>{submitted ? autoSubmitReason === "focus" ? "Exam auto-submitted" : autoSubmitReason === "time" ? "Time is up" : "Exam results" : "Exam summary"}</h2>
+              {autoSubmitReason === "focus" && <p className="exam-focus-notice">This exam was submitted because the tab or window lost focus.</p>}
               <p className="meta">Total score</p>
               <div className="powerdrill-score"><strong>{submitted ? score : "—"}</strong><span>/ {data.maximumScore}</span></div>
               {submitted ? (

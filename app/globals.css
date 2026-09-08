@@ -2522,6 +2522,17 @@ button.remove-meaning svg {
   font-size: 16px;
 }
 
+.exam-focus-notice {
+  margin: 0 0 18px;
+  padding: 11px 13px;
+  border: 1px solid color-mix(in srgb, var(--bad) 42%, var(--border));
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--bad) 10%, var(--surface));
+  color: var(--bad);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
 .result .actions {
   margin-top: 28px;
 }
@@ -2560,6 +2571,10 @@ button.remove-meaning svg {
 .exam-confirmation-stats svg { width: 16px; height: 16px; margin-bottom: 3px; color: var(--accent); }
 .exam-confirmation-stats strong { font-size: 19px; line-height: 1.1; }
 .exam-confirmation-stats span { color: var(--muted); font-size: 9px; text-transform: uppercase; letter-spacing: .06em; }
+.exam-focus-rule { display: grid; gap: 3px; margin: 2px 22px 10px; padding: 11px 13px; border: 1px solid color-mix(in srgb, var(--bad) 42%, var(--border)); border-radius: 10px; background: color-mix(in srgb, var(--bad) 10%, var(--surface)); font-size: 11px; line-height: 1.55; }
+.exam-focus-rule strong { color: var(--bad); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
+.exam-focus-rule span { color: color-mix(in srgb, var(--bad) 58%, var(--text)); }
+.chooser > .exam-focus-rule { max-width: 620px; margin: 0 auto 16px; text-align: left; }
 .exam-confirmation-note { margin: 0; padding: 7px 24px 21px; color: var(--muted); font-size: 12px; line-height: 1.7; }
 .exam-confirmation-dialog .exam-confirmation-actions { margin: 0; padding: 16px 20px; border-radius: 0; background: color-mix(in srgb, var(--surface-2) 60%, var(--surface)); }
 .exam-confirmation-actions [data-slot="button"] { min-width: 108px; }
@@ -2684,6 +2699,7 @@ button.remove-meaning svg {
   .exam-confirmation-header { align-items: flex-start; padding: 21px 52px 18px 18px; }
   .exam-confirmation-icon { width: 42px; height: 42px; flex-basis: 42px; border-radius: 12px; }
   .exam-confirmation-stats { padding: 16px 16px 10px; }
+  .exam-focus-rule { margin-right: 16px; margin-left: 16px; }
   .exam-confirmation-note { padding: 6px 18px 18px; }
   .exam-confirmation-dialog .exam-confirmation-actions { flex-direction: row; padding: 14px 16px; }
   .exam-confirmation-actions [data-slot="button"] { min-width: 0; flex: 1; }

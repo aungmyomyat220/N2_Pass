@@ -46,6 +46,10 @@ export default function ExamConfirmationDialog({
           <div><Clock3 aria-hidden="true" /><strong>{data.timeLimitMinutes}</strong><span>Minutes</span></div>
           <div><Trophy aria-hidden="true" /><strong>{data.maximumScore}</strong><span>Points</span></div>
         </div>
+        <div className="exam-focus-rule" role="note">
+          <strong>Focus rule</strong>
+          <span>Changing tabs, minimizing the browser, or leaving the browser window will automatically submit your exam.</span>
+        </div>
         <p className="exam-confirmation-note">The timer starts when you press Start exam. Choose one answer for each question and submit before time runs out.</p>
 
         <DialogFooter className="exam-confirmation-actions">

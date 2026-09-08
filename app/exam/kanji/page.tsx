@@ -6,6 +6,7 @@ import { Languages } from "lucide-react";
 import ExamPageHeader from "@/app/components/ExamPageHeader";
 import rawData from "@/data/study/kanji/n2-kanji.json";
 import type { KanjiCard } from "@/lib/srs";
+import { useAutoSubmitOnFocusLoss } from "@/lib/use-auto-submit-on-focus-loss";
 import {
   buildCompoundQuiz,
   buildQuiz,
@@ -26,6 +27,7 @@ export default function KanjiExamPage() {
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [picked, setPicked] = useState<number | null>(null);
+  const [autoSubmitted, setAutoSubmitted] = useState(false);
 
   const current = questions[index];
   const answered = picked !== null;
@@ -36,6 +38,7 @@ export default function KanjiExamPage() {
     setIndex(0);
     setScore(0);
     setPicked(null);
+    setAutoSubmitted(false);
   }, []);
 
   const startOver = () => {
@@ -55,6 +58,7 @@ export default function KanjiExamPage() {
       setIndex(0);
       setScore(0);
       setPicked(null);
+      setAutoSubmitted(false);
       setPhase("quiz");
     },
     [kanjiMode],
@@ -94,6 +98,11 @@ export default function KanjiExamPage() {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [phase, answered, current, choose, next]);
+
+  useAutoSubmitOnFocusLoss(phase === "quiz", () => {
+    setAutoSubmitted(true);
+    setPhase("result");
+  });
 
   const percent = useMemo(
     () => (questions.length ? Math.round((score / questions.length) * 100) : 0),
@@ -153,6 +162,10 @@ export default function KanjiExamPage() {
               <div className="chooser-title">
                 {kanjiMode === "compound" ? "Compound Kanji" : "Single Kanji"}
                 : How many questions?
+              </div>
+              <div className="exam-focus-rule" role="note">
+                <strong>Focus rule</strong>
+                <span>Changing tabs, minimizing the browser, or leaving the browser window will automatically submit your exam.</span>
               </div>
               <div className="count-grid">
                 {COUNT_OPTIONS.map((count) => (
@@ -245,6 +258,7 @@ export default function KanjiExamPage() {
 
           {phase === "result" && (
             <div className="result">
+              {autoSubmitted && <p className="exam-focus-notice">This exam was submitted because the tab or window lost focus.</p>}
               <div className="result-score">
                 {score} / {questions.length}
               </div>
