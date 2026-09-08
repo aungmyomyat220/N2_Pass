@@ -11,7 +11,6 @@ import {
   ArrowLeft,
   ArrowRight,
   Grid3X3,
-  Languages,
   PencilLine,
   RotateCcw,
   Search,
@@ -212,14 +211,16 @@ export default function KanjiStudyPage({
 
   return (
     <main className="kanji-page">
-      <PageHero
-        icon={progressDeck === "same-pattern" ? Shapes : Languages}
-        eyebrow={progressDeck === "same-pattern" ? "形で学ぶ · N2" : "漢字学習 · N2"}
-        title={title}
-        description={progressDeck === "same-pattern" ? "Study visually related kanji together, one group at a time." : "Build recognition and recall with focused flashcard review."}
-        stat={CARDS.length}
-        statLabel="Kanji cards"
-      />
+      {progressDeck === "same-pattern" && (
+        <PageHero
+          icon={Shapes}
+          eyebrow="形で学ぶ · N2"
+          title={title}
+          description="Study visually related kanji together, one group at a time."
+          stat={CARDS.length}
+          statLabel="Kanji cards"
+        />
+      )}
       <div className="kanji-study-toolbar">
         <span>Study tools</span>
         <div className="app-header-actions">

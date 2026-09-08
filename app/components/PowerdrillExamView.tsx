@@ -32,15 +32,44 @@ export default function PowerdrillExamView({
   const [autoSubmitReason, setAutoSubmitReason] = useState<"focus" | "time" | null>(null);
   const deadline = useRef(startImmediately ? Date.now() + data.timeLimitMinutes * 60_000 : 0);
   const resultRef = useRef<HTMLDivElement>(null);
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const reminderPlayedRef = useRef(false);
   const submitted = phase === "result";
   const score = sections.reduce((sum, section) => sum + section.questions.reduce(
     (points, question) => points + (answers[question.id] === question.correctChoice ? section.pointsPerQuestion : 0), 0), 0);
+
+  function playTimeReminder() {
+    const context = audioContextRef.current;
+    if (!context || context.state !== "running") return false;
+    const startAt = context.currentTime;
+    [
+      { delay: 0, frequency: 880 },
+      { delay: 0.24, frequency: 1046 },
+    ].forEach(({ delay, frequency }) => {
+      const oscillator = context.createOscillator();
+      const gain = context.createGain();
+      const noteStart = startAt + delay;
+      oscillator.type = "sine";
+      oscillator.frequency.setValueAtTime(frequency, noteStart);
+      gain.gain.setValueAtTime(0.0001, noteStart);
+      gain.gain.exponentialRampToValueAtTime(0.045, noteStart + 0.018);
+      gain.gain.exponentialRampToValueAtTime(0.0001, noteStart + 0.14);
+      oscillator.connect(gain);
+      gain.connect(context.destination);
+      oscillator.start(noteStart);
+      oscillator.stop(noteStart + 0.15);
+    });
+    return true;
+  }
 
   useEffect(() => {
     if (phase !== "exam") return;
     const tick = () => {
       const seconds = Math.max(0, Math.ceil((deadline.current - Date.now()) / 1000));
       setRemaining(seconds);
+      if (seconds === 30 && !reminderPlayedRef.current && playTimeReminder()) {
+        reminderPlayedRef.current = true;
+      }
       if (seconds === 0) {
         setAutoSubmitReason("time");
         setPhase("result");
@@ -49,6 +78,24 @@ export default function PowerdrillExamView({
     const timer = window.setInterval(tick, 250);
     return () => window.clearInterval(timer);
   }, [phase]);
+
+  useEffect(() => {
+    if (phase !== "exam") return;
+    const enableReminderSound = () => {
+      if (!audioContextRef.current) audioContextRef.current = new AudioContext();
+      if (audioContextRef.current.state === "suspended") void audioContextRef.current.resume();
+    };
+    window.addEventListener("pointerdown", enableReminderSound, { once: true });
+    window.addEventListener("keydown", enableReminderSound, { once: true });
+    return () => {
+      window.removeEventListener("pointerdown", enableReminderSound);
+      window.removeEventListener("keydown", enableReminderSound);
+    };
+  }, [phase]);
+
+  useEffect(() => () => {
+    if (audioContextRef.current) void audioContextRef.current.close();
+  }, []);
 
   useEffect(() => {
     if (submitted) resultRef.current?.focus();
@@ -62,6 +109,7 @@ export default function PowerdrillExamView({
   function start() {
     setAnswers({});
     setAutoSubmitReason(null);
+    reminderPlayedRef.current = false;
     setSections(data.sections.map((section) => ({
       ...section,
       questions: shuffleQuestions ? shuffle(section.questions) : section.questions,
@@ -154,7 +202,7 @@ export default function PowerdrillExamView({
                 ))}
               </nav>
               {!submitted && (
-                <p>Time remaining <strong role="timer">{Math.floor(remaining / 60)}:{String(remaining % 60).padStart(2, "0")}</strong></p>
+                <p>Time remaining <strong role="timer">{Math.floor(remaining / 60)}:{String(remaining % 60).padStart(2, "0")}</strong><span className="time-reminder-note">Two-tone reminder at 00:30</span></p>
               )}
               {submitted ? (
                 <>

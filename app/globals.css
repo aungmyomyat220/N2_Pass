@@ -2553,11 +2553,28 @@ button.remove-meaning svg {
 }
 
 /* Powerdrill grammar exam */
-.powerdrill-lesson-card { width: 100%; min-height: 250px; cursor: pointer; font: inherit; }
+.powerdrill-lesson-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.powerdrill-lesson-card { display: grid; width: 100%; min-width: 0; grid-template-columns: 62px minmax(0, 1fr) 20px; align-items: center; gap: 16px; padding: 18px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); color: var(--text); cursor: pointer; font: inherit; text-align: left; transition: border-color .18s ease, background-color .18s ease; }
+.powerdrill-lesson-card:hover { border-color: color-mix(in srgb, var(--accent) 60%, var(--border)); background: color-mix(in srgb, var(--accent) 4%, var(--surface)); }
+.powerdrill-lesson-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.powerdrill-lesson-number { display: grid; height: 62px; place-content: center; gap: 2px; border-radius: 12px; background: rgba(247, 201, 72, .1); color: #f7c948; text-align: center; }
+.powerdrill-lesson-number small { font-size: 7px; font-weight: 800; letter-spacing: .1em; }
+.powerdrill-lesson-number strong { font-size: 22px; line-height: 1; letter-spacing: -.04em; }
+.powerdrill-lesson-content { display: flex; min-width: 0; flex-direction: column; align-items: flex-start; }
+.powerdrill-lesson-name { font-size: 16px; font-weight: 750; letter-spacing: -.02em; }
+.powerdrill-lesson-title { width: 100%; margin-top: 3px; overflow: hidden; color: var(--muted); font-size: 11px; line-height: 1.5; text-overflow: ellipsis; }
+.powerdrill-lesson-meta { margin-top: 9px; color: var(--muted); font-size: 10px; }
+.powerdrill-lesson-arrow { width: 17px; height: 17px; color: var(--text); transition: color .18s ease, transform .18s ease; }
+.powerdrill-lesson-card:hover .powerdrill-lesson-arrow { color: var(--accent); transform: translateX(2px); }
 .exam-subject-grid > button.exam-subject-card { width: 100%; cursor: pointer; font: inherit; }
-.powerdrill-lesson-icon { display: grid; width: 50px; height: 50px; margin-bottom: 6px; place-items: center; border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--border)); border-radius: 14px; background: color-mix(in srgb, var(--accent) 11%, var(--surface-2)); color: var(--accent); }
-.powerdrill-lesson-icon svg { width: 23px; height: 23px; }
-.powerdrill-lesson-card:hover .powerdrill-lesson-icon { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 17%, var(--surface-2)); }
+@media (max-width: 760px) {
+  .powerdrill-lesson-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 440px) {
+  .powerdrill-lesson-card { grid-template-columns: 54px minmax(0, 1fr) 18px; gap: 12px; padding: 14px; }
+  .powerdrill-lesson-number { height: 54px; border-radius: 10px; }
+  .powerdrill-lesson-number strong { font-size: 21px; }
+}
 .exam-confirmation-dialog { width: min(520px, calc(100vw - 32px)); max-width: min(520px, calc(100vw - 32px)); gap: 0; overflow: hidden; padding: 0; border-radius: 18px; background: var(--surface); }
 .exam-confirmation-dialog > [data-slot="dialog-close"] { top: 16px; right: 16px; border: 1px solid var(--border); background: color-mix(in srgb, var(--surface) 90%, transparent); }
 .exam-confirmation-header { display: flex; align-items: center; flex-direction: row; gap: 15px; padding: 24px 58px 21px 24px; border-bottom: 1px solid var(--border); background: radial-gradient(circle at 12% 0%, rgba(247, 201, 72, .13), transparent 42%), var(--surface); }
@@ -2683,6 +2700,7 @@ button.remove-meaning svg {
 .powerdrill-question-map a.is-answered { color: var(--accent); background: #6ea8fe16; border-color: #6ea8fe55; }
 .powerdrill-question-map a:hover { border-color: var(--accent); }
 .powerdrill-summary [role="timer"] { display: block; font-size: 24px; color: var(--text); font-variant-numeric: tabular-nums; margin-top: 4px; }
+.time-reminder-note { display: block; margin-top: 5px; color: var(--muted); font-size: 10px; }
 .powerdrill-summary .reveal { font-size: 13px; border-radius: 10px; }
 @media (max-width: 1100px) {
   .powerdrill-question .options { grid-template-columns: 1fr; }

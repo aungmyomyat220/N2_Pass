@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { BookOpenText } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import type { PowerdrillExam } from "@/lib/powerdrill-types";
 import ExamConfirmationDialog from "./ExamConfirmationDialog";
 
@@ -10,21 +10,23 @@ export default function PowerdrillLessonBrowser({ lessons }: { lessons: Powerdri
 
   return (
     <>
-      <div className="exam-subject-grid">
+      <div className="powerdrill-lesson-grid">
         {lessons.map((lesson) => {
           const questionCount = lesson.sections.reduce((count, section) => count + section.questions.length, 0);
           return (
             <button
               type="button"
               key={lesson.id}
-              className="mode-card exam-subject-card powerdrill-lesson-card"
+              className="powerdrill-lesson-card"
               onClick={() => setSelected(lesson)}
             >
-              <span className="powerdrill-lesson-icon" aria-hidden="true"><BookOpenText /></span>
-              <h2 className="mode-name">Lesson {String(lesson.examNumber).padStart(2, "0")}</h2>
-              <p className="mode-sub" lang="ja">{lesson.title}</p>
-              <p className="mode-sub">{questionCount} questions · {lesson.timeLimitMinutes} minutes · {lesson.maximumScore} points</p>
-              <span className="exam-ready">Review &amp; start →</span>
+              <span className="powerdrill-lesson-number" aria-hidden="true"><small>LESSON</small><strong>{String(lesson.examNumber).padStart(2, "0")}</strong></span>
+              <span className="powerdrill-lesson-content">
+                <span className="powerdrill-lesson-name">Lesson {String(lesson.examNumber).padStart(2, "0")}</span>
+                <span className="powerdrill-lesson-title" lang="ja">{lesson.title}</span>
+                <span className="powerdrill-lesson-meta">{questionCount} questions · {lesson.timeLimitMinutes} min · {lesson.maximumScore} points</span>
+              </span>
+              <ArrowRight className="powerdrill-lesson-arrow" aria-hidden="true" />
             </button>
           );
         })}
