@@ -26,7 +26,7 @@ test('guest import preserves cloud progress and combines unique stars', () => {
 
 test('account progress and stars stay separate from guests and other accounts', async () => {
   const { activateAccount } = await import('./study-storage');
-  const { loadProgress, saveProgress, resetProgress } = await import('./srs');
+  const { loadCurrentIndex, loadProgress, saveCurrentIndex, saveProgress, resetProgress } = await import('./srs');
   const { loadStarred, saveStarred } = await import('./starred');
   const values = new Map<string, string>();
   const storage = { getItem: (key: string) => values.get(key) ?? null, setItem: (key: string, value: string) => { values.set(key, value); }, removeItem: (key: string) => { values.delete(key); } };
@@ -34,22 +34,22 @@ test('account progress and stars stay separate from guests and other accounts', 
   Object.defineProperty(globalThis, 'window', { configurable: true, value: mockWindow });
   try {
     activateAccount(null);
-    saveProgress({ 日: card }); saveProgress({ 木: card }, 'same-pattern'); saveStarred(['日']);
+    saveProgress({ 日: card }); saveProgress({ 木: card }, 'same-pattern'); saveStarred(['日']); saveCurrentIndex(49); saveCurrentIndex(12, 'same-pattern');
     resetProgress('same-pattern');
-    assert.deepEqual(loadProgress(), { 日: card }); assert.deepEqual(loadProgress('same-pattern'), {});
-    saveProgress({ 水: card }, 'same-pattern');
+    assert.deepEqual(loadProgress(), { 日: card }); assert.deepEqual(loadProgress('same-pattern'), {}); assert.equal(loadCurrentIndex(), 49); assert.equal(loadCurrentIndex('same-pattern'), null);
+    saveProgress({ 水: card }, 'same-pattern'); saveCurrentIndex(12, 'same-pattern');
     activateAccount('alice', emptyState());
-    assert.deepEqual(loadProgress(), {}); assert.deepEqual(loadProgress('same-pattern'), {}); assert.deepEqual(loadStarred(), []);
-    saveProgress({ 月: card }); saveProgress({ 火: card }, 'same-pattern'); saveStarred(['月', 'grammar:te-bakari-iru']);
+    assert.deepEqual(loadProgress(), {}); assert.deepEqual(loadProgress('same-pattern'), {}); assert.deepEqual(loadStarred(), []); assert.equal(loadCurrentIndex(), null);
+    saveProgress({ 月: card }); saveProgress({ 火: card }, 'same-pattern'); saveStarred(['月', 'grammar:te-bakari-iru']); saveCurrentIndex(8); saveCurrentIndex(5, 'same-pattern');
     assert.deepEqual(loadProgress(), { 月: card }); assert.deepEqual(loadProgress('same-pattern'), { 火: card });
     resetProgress();
-    assert.deepEqual(loadProgress(), {}); assert.deepEqual(loadProgress('same-pattern'), { 火: card }); assert.deepEqual(loadStarred(), ['月', 'grammar:te-bakari-iru']);
+    assert.deepEqual(loadProgress(), {}); assert.deepEqual(loadProgress('same-pattern'), { 火: card }); assert.deepEqual(loadStarred(), ['月', 'grammar:te-bakari-iru']); assert.equal(loadCurrentIndex(), null); assert.equal(loadCurrentIndex('same-pattern'), 5);
     resetProgress('same-pattern');
-    assert.deepEqual(loadProgress('same-pattern'), {}); assert.deepEqual(loadStarred(), ['月', 'grammar:te-bakari-iru']);
+    assert.deepEqual(loadProgress('same-pattern'), {}); assert.deepEqual(loadStarred(), ['月', 'grammar:te-bakari-iru']); assert.equal(loadCurrentIndex('same-pattern'), null);
     activateAccount('bob', emptyState());
-    assert.deepEqual(loadProgress(), {}); assert.deepEqual(loadProgress('same-pattern'), {}); assert.deepEqual(loadStarred(), []);
+    assert.deepEqual(loadProgress(), {}); assert.deepEqual(loadProgress('same-pattern'), {}); assert.deepEqual(loadStarred(), []); assert.equal(loadCurrentIndex(), null);
     activateAccount(null);
-    assert.deepEqual(loadProgress(), { 日: card }); assert.deepEqual(loadProgress('same-pattern'), { 水: card }); assert.deepEqual(loadStarred(), ['日']);
+    assert.deepEqual(loadProgress(), { 日: card }); assert.deepEqual(loadProgress('same-pattern'), { 水: card }); assert.deepEqual(loadStarred(), ['日']); assert.equal(loadCurrentIndex(), 49); assert.equal(loadCurrentIndex('same-pattern'), 12);
   } finally { activateAccount(null); Reflect.deleteProperty(globalThis, 'window'); }
 });
 

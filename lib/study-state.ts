@@ -32,8 +32,12 @@ export function importGuest(cloud: StudyState, guest: StudyState): StudyState {
   return {
     progress: { ...guest.progress, ...cloud.progress },
     samePatternProgress: { ...(guest.samePatternProgress ?? {}), ...(cloud.samePatternProgress ?? {}) },
-    currentIndex: cloud.currentIndex ?? guest.currentIndex ?? null,
-    samePatternCurrentIndex: cloud.samePatternCurrentIndex ?? guest.samePatternCurrentIndex ?? null,
+    ...(cloud.currentIndex !== undefined || guest.currentIndex !== undefined
+      ? { currentIndex: cloud.currentIndex !== undefined ? cloud.currentIndex : guest.currentIndex }
+      : {}),
+    ...(cloud.samePatternCurrentIndex !== undefined || guest.samePatternCurrentIndex !== undefined
+      ? { samePatternCurrentIndex: cloud.samePatternCurrentIndex !== undefined ? cloud.samePatternCurrentIndex : guest.samePatternCurrentIndex }
+      : {}),
     starred: [...new Set([...cloud.starred, ...guest.starred])],
   };
 }
